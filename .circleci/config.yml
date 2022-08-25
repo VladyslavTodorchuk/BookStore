@@ -26,10 +26,7 @@ commands:
           keys:
             - *bundle_cache_full
             - *bundle_cache
-      - run:
-          command: |
-            gem install bundler-1.15.0
-            bundle install --path vendor/bundle
+      - run: bundle install --path vendor/bundle
       - save_cache:
           key: *bundle_cache_full
           paths:
