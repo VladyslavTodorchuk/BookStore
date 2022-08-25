@@ -20,8 +20,12 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 
-group :development, :test do
+gem 'i18n', '~> 1.12'
 
+gem 'haml', '~> 5.2', '>= 5.2.2'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
