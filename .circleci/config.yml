@@ -28,7 +28,7 @@ commands:
             - *bundle_cache
       - run:
           command: |
-            gem install bundler
+            gem install bundler-2.3.21
             bundle install --path vendor/bundle
       - save_cache:
           key: *bundle_cache_full
