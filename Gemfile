@@ -11,6 +11,8 @@ gem 'puma', '~> 5.0'
 
 gem 'sass-rails', '>= 6'
 
+gem 'haml', '~> 5.2', '>= 5.2.2'
+
 gem 'webpacker', '~> 5.0'
 
 gem 'turbolinks', '~> 5'
@@ -20,14 +22,20 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'fasterer', '~> 0.10.0'
+  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
+  gem 'rubocop', '~> 1.35', '>= 1.35.1'
+  gem 'rubocop-performance', '~> 1.14', '>= 1.14.3'
+  gem 'rubocop-rails', '~> 2.15', '>= 2.15.2'
+  gem 'rubocop-rspec', '~> 2.12', '>= 2.12.1'
 end
 
 group :development do
-  gem 'web-console', '>= 4.1.0'
-  gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
+  gem 'rack-mini-profiler', '~> 2.0'
   gem 'spring'
+  gem 'web-console', '>= 4.1.0'
 end
 
 group :test do
@@ -36,4 +44,4 @@ group :test do
   gem 'webdrivers'
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
