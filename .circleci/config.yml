@@ -45,7 +45,7 @@ commands:
           keys:
             - rails-demo-yarn-{{ checksum "yarn.lock" }}
             - rails-demo-yarn-
-            -
+
       - run: yarn install --cache-folder ~/.cache/yarn
 
       - save_cache:
