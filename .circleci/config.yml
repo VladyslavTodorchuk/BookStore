@@ -45,15 +45,13 @@ commands:
           keys:
             - rails-demo-yarn-{{ checksum "yarn.lock" }}
             - rails-demo-yarn-
-
             - run:
-                name: Yarn Install
-                command: yarn install --cache-folder ~/.cache/yarn
-
-            - save_cache:
-                key: rails-demo-yarn-{{ checksum "yarn.lock" }}
-                paths:
-                  - ~/.cache/yarn
+               name: Yarn Install
+               command: yarn install --cache-folder ~/.cache/yarn
+      - save_cache:
+          key: rails-demo-yarn-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
 
   run_rubocop:
     description: command to start rubocop
