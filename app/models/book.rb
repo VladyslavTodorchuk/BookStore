@@ -1,7 +1,9 @@
 class Book < ApplicationRecord
   belongs_to :author
 
-  validate :title, presence: true, length: 2..80
-  validate :description, presence: true, length: 2..500
-  validates :price, presence: true, numericality: { greater_than_or_equal_to: 0 }
+  validates :title, presence: true, length: { in: 2..80 },
+                    format: { with: %r{\A[a-zA-Z!#$%&'*+-/=?^_`{|}~. ]+\z}, message: 'Title is invalid' }
+  validates :description, presence: true, length: { in: 2..500 },
+                          format: { with: %r{\A[a-zA-Z!#$%&'*+-/=?^_`{|}~. ]+\z}, message: 'Description is invalid' }
+  validates :price, presence: true
 end

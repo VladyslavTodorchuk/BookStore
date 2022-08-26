@@ -9,7 +9,7 @@ executors:
       - image: cimg/postgres:14.0
         auth:
           username: vlad
-          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+          password: $DOCKERHUB_PASSWORD
         environment:
           POSTGRES_USER: bookstore_test
           POSTGRES_DB: circle-test_test

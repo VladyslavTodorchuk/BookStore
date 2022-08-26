@@ -1,6 +1,8 @@
 class Author < ApplicationRecord
   has_many :books, dependent: :destroy
 
-  validate :first_name, presence: true, length: 2..80
-  validate :last_name, presence: true, length: 2..80
+  validates :first_name, presence: true, format: { with: /\A[a-zA-Z-]+\z/, message: 'Fist Name is invalid' },
+                         length: { in: 2..50 }
+  validates :last_name, presence: true, format: { with: /\A[a-zA-Z-]+\z/, message: 'Last Name is invalid' },
+                        length: { in: 2..50 }
 end

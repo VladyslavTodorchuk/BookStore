@@ -25,9 +25,11 @@ ActiveRecord::Schema.define(version: 2022_08_25_141746) do
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "description"
-    t.integer "price"
+    t.float "price"
+    t.bigint "author_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["author_id"], name: "index_books_on_author_id"
   end
 
 end

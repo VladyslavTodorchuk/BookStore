@@ -25,6 +25,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails', '~> 6.2'
   gem 'fasterer', '~> 0.10.0'
   gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
   gem 'rubocop', '~> 1.35', '>= 1.35.1'
@@ -42,7 +43,9 @@ end
 
 group :test do
   gem 'capybara', '>= 3.26'
+  gem 'ffaker', '~> 2.21'
   gem 'selenium-webdriver'
+  gem 'simplecov', '~> 0.21.2'
   gem 'webdrivers'
 end
 
