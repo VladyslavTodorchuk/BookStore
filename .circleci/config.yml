@@ -51,6 +51,7 @@ commands:
       - run:
           name: specs
           command: |
+            gem update --system
             bin/rails db:migrate RAILS_ENV=test
             bundle exec rspec
       - store_artifacts:
