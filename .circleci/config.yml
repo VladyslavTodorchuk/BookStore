@@ -5,8 +5,12 @@ executors:
     working_directory: ~/codebreaker
     description: The official CircleCI Ruby Docker image
     docker:
-      - image: cimg/ruby:2.6.10
-      - image: cimg/postgres:14.5.0
+      - image: cimg/ruby:2.7.10
+        environment:
+          TEST_DATABASE_URL: postgresql://postgres@localhost/bookstore_test
+        auth:
+          username: vlad
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
 
 cashes:
   - &bundle_cache_full v2-codebreaker-{{ checksum "Gemfile.lock" }}
