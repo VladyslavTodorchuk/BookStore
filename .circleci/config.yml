@@ -5,21 +5,12 @@ executors:
     working_directory: ~/codebreaker
     description: The official CircleCI Ruby Docker image
     docker:
-      # include node
-      -  image: cimg/ruby:2.6.10
+      - image: cimg/ruby:2.6.10
         environment:
-          BUNDLE_JOBS: 3
-          BUNDLE_PATH: ./vendor/bundle
-          RAILS_ENV: test
-          DB_USERNAME: vlad
-          DB_NAME: bookstore_test
-          DB_PASSWORD: '6975'
-      - image: circleci/postgres:14.5.0
-        environment:
-          POSTGRES_USER: vlad
-          POSTGRES_DB: bookstore_test
-          POSTGRES_PASSWORD: '6975'
-          POSTGRES_HOST_AUTH_METHOD: trust
+          TEST_DATABASE_URL: postgresql://postgres@localhost/bookstore_test
+        auth:
+          username: vlad
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
 
 cashes:
   - &bundle_cache_full v2-codebreaker-{{ checksum "Gemfile.lock" }}
@@ -33,14 +24,11 @@ commands:
           keys:
             - *bundle_cache_full
             - *bundle_cache
-
       - run: bundle install --path vendor/bundle
-
       - save_cache:
           key: *bundle_cache_full
           paths:
             - vendor/bundle
-
       - restore_cache:
           keys:
             - rails-demo-yarn-{{ checksum "yarn.lock" }}
