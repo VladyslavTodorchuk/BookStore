@@ -33,11 +33,13 @@ commands:
           keys:
             - *bundle_cache_full
             - *bundle_cache
+
       - run: bundle install --path vendor/bundle
 
-      - run:
-          name: Install System Dependencies
-          command: sudo apt-get update && sudo apt-get install g++ qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
+      - save_cache:
+          key: *bundle_cache_full
+          paths:
+            - vendor/bundle
 
       - restore_cache:
           keys:
@@ -45,13 +47,13 @@ commands:
             - rails-demo-yarn-
 
             - run:
-                name: Yarn install
+                name: Yarn Install
                 command: yarn install --cache-folder ~/.cache/yarn
 
-      - save_cache:
-          key: *bundle_cache_full
-          paths:
-            - vendor/bundle
+            - save_cache:
+                key: rails-demo-yarn-{{ checksum "yarn.lock" }}
+                paths:
+                  - ~/.cache/yarn
 
   run_rubocop:
     description: command to start rubocop
