@@ -76,6 +76,6 @@ workflows:
   build:
     jobs:
       - lintering
-      - rspec:
-          requires:
-            - lintering
+      #- rspec:
+       #   requires:
+      #      - lintering

@@ -8,10 +8,10 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-import '../../assets/javascripts/bootstrap'
-import '../../assets/javascripts/jquery'
+import '../../assets/javascripts/bootstrap.js'
+import '../../assets/javascripts/jquery.js'
 
-import '../../assets/shylesheets/application'
+import '../../assets/stylesheets/application.css'
 
 Rails.start()
 Turbolinks.start()
