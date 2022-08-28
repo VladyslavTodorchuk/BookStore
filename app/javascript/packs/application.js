@@ -11,7 +11,7 @@ import "channels"
 import '../../assets/javascripts/bootstrap'
 import '../../assets/javascripts/jquery'
 
-import 'assets/shylesheets/application'
+import '../../assets/shylesheets/application'
 
 Rails.start()
 Turbolinks.start()
