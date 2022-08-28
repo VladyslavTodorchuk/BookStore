@@ -45,10 +45,7 @@ RSpec.describe Book, type: :model do
   describe 'book invalid' do
     context 'when book invalid without title' do
       let(:my_book) do
-        FactoryBot.build(:book, title: nil, description: FFaker::Book.description,
-                                price: FFaker::Number.rand(100),
-                                year_of_publication: FFaker::Number.rand(1900..2022),
-                                materials: 'Soft', dimensions: '12:32:12')
+        FactoryBot.build(:book, title: nil)
       end
 
       include_examples 'invalid test'
@@ -56,10 +53,7 @@ RSpec.describe Book, type: :model do
 
     context 'when book invalid without description' do
       let(:my_book) do
-        FactoryBot.build(:book, title: FFaker::Book.title, description: nil,
-                                price: FFaker::Number.rand(100),
-                                year_of_publication: FFaker::Number.rand(1900..2022),
-                                materials: 'Soft', dimensions: '12:32:12')
+        FactoryBot.build(:book, description: nil)
       end
 
       include_examples 'invalid test'
@@ -67,10 +61,7 @@ RSpec.describe Book, type: :model do
 
     context 'when book invalid without price' do
       let(:my_book) do
-        FactoryBot.build(:book, title: FFaker::Book.title, description: FFaker::Book.description,
-                                price: nil,
-                                year_of_publication: FFaker::Number.rand(1900..2022),
-                                materials: 'Soft', dimensions: '12:32:12')
+        FactoryBot.build(:book, price: nil)
       end
 
       include_examples 'invalid test'
