@@ -15,7 +15,7 @@ RSpec.describe Author, type: :model do
 
   shared_examples 'save test' do
     it 'save' do
-      expect(described_class.new(params).save).to eq(result)
+      expect(author.save).to eq(result)
     end
   end
 
@@ -31,7 +31,7 @@ RSpec.describe Author, type: :model do
 
   describe '#valid' do
     context 'when first_name and last_name is valid' do
-      let(:author) { described_class.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name) }
+      let(:author) { FactoryBot.build(:author) }
 
       include_examples 'valid test'
     end
@@ -39,13 +39,13 @@ RSpec.describe Author, type: :model do
 
   describe '#invalid' do
     context 'when first_name is not passed' do
-      let(:author) { described_class.new(first_name: FFaker::Name.first_name) }
+      let(:author) { FactoryBot.build(:author, first_name: nil) }
 
       include_examples 'invalid test'
     end
 
     context 'when last_name is not passed' do
-      let(:author) { described_class.new(last_name: FFaker::Name.last_name) }
+      let(:author) { FactoryBot.build(:author, last_name: nil) }
 
       include_examples 'invalid test'
     end
@@ -53,14 +53,14 @@ RSpec.describe Author, type: :model do
 
   describe 'save' do
     context 'when valid author save' do
-      let(:params) { { first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name } }
+      let(:author) { FactoryBot.build(:author) }
       let(:result) { true }
 
       include_examples 'save test'
     end
 
     context 'when invalid author dont save' do
-      let(:params) { { first_name: FFaker::Name.first_name } }
+      let(:author) { FactoryBot.build(:author, last_name: nil) }
       let(:result) { false }
 
       include_examples 'save test'
@@ -68,48 +68,21 @@ RSpec.describe Author, type: :model do
   end
 
   describe 'add books' do
-    let(:author) { described_class.create(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name) }
-    let(:book_params) do
-      { title: FFaker::Book.title,
-        description: FFaker::Book.description,
-        price: FFaker::Number.rand(100) }
-    end
+    let(:author) { FactoryBot.create(:author) }
+    let(:book) { FactoryBot.create(:book) }
 
     it 'added book to author' do
-      author.books.create(book_params)
-      expect(author.books.first.title).to eq(book_params[:title])
+      FactoryBot.create(:authors_book, book_id: book.id, author_id: author.id)
+      expect(author.books.size).to eq(1)
     end
   end
 
   describe 'destroy' do
     context 'when author was destroyed' do
-      let(:author) { described_class.create(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name) }
+      let(:author) { FactoryBot.create(:author) }
       let(:result) { true }
 
       include_examples 'destroy test'
-    end
-
-    context 'when author was destroyed and book also' do
-      let(:author) { described_class.create(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name) }
-      let(:book_params) do
-        { title: FFaker::Book.title,
-          description: FFaker::Book.description,
-          price: FFaker::Number.rand(100) }
-      end
-
-      it 'check that book was added' do
-        author.books.create(book_params)
-        expect(author.books.empty?).to eq(false)
-      end
-
-      it 'destroy author' do
-        author.destroy
-        expect(author.destroyed?).to eq(true)
-      end
-
-      it 'destroy book' do
-        expect(author.books.empty?).to eq(true)
-      end
     end
   end
 end

@@ -32,10 +32,7 @@ RSpec.describe Book, type: :model do
   describe 'book valid' do
     context 'when book valid' do
       let(:my_book) do
-        FactoryBot.build(:book, title: FFaker::Book.title, description: FFaker::Book.description,
-                                price: FFaker::Number.rand(100),
-                                year_of_publication: FFaker::Number.rand(1900..2022),
-                                materials: 'Soft', dimensions: '12:32:12')
+        FactoryBot.build(:book)
       end
 
       include_examples 'valid test'
