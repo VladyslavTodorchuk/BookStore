@@ -51,9 +51,7 @@ commands:
     steps:
       - run:
           name: specs
-          command: |
-            bin/rails db:migrate RAILS_ENV=test
-            bundle exec rspec
+          command: bundle exec rspec
       - store_artifacts:
           path: ~/codebreaker/coverage
           destination: coverage
