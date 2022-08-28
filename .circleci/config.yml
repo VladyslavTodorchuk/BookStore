@@ -7,10 +7,16 @@ executors:
     docker:
       - image: cimg/ruby:2.6.10
         environment:
-          TEST_DATABASE_URL: postgresql://postgres@localhost/bookstore_test
+          RAILS_ENV: test
+          PGHOST: 127.0.0.1
+          PGUSER: root
+      - image: cimg/postgres:14.0
         auth:
-          username: vlad
+          username: vladtodorchuk
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+        environment:
+          POSTGRES_USER: vladtodorchuk
+          POSTGRES_DB: bookstore_test
 
 cashes:
   - &bundle_cache_full v2-codebreaker-{{ checksum "Gemfile.lock" }}
@@ -29,6 +35,17 @@ commands:
           key: *bundle_cache_full
           paths:
             - vendor/bundle
+      - run:
+          name: Install dependencies
+          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs 4 --retry 3
+
+      - run: sudo apt install -y postgresql-client || true
+        -
+      - run:
+          name: Database setup
+          command: |
+            bundle exec rake db:create
+            bundle exec rake db:schema:load
 
   run_rubocop:
     description: command to start rubocop
@@ -76,6 +93,6 @@ workflows:
   build:
     jobs:
       - lintering
-      #- rspec:
-       #   requires:
-      #      - lintering
+      - rspec:
+          requires:
+            - lintering
