@@ -1,9 +1,11 @@
 class Book < ApplicationRecord
-  belongs_to :author
+  has_many :authors_books, dependent: :destroy
+  has_many :authors, through: :authors_books
 
-  validates :title, presence: true, length: { in: 2..80 },
-                    format: { with: %r{\A[a-zA-Z!#$%&'*+-/=?^_`{|}~. ]+\z}, message: 'Title is invalid' }
-  validates :description, presence: true, length: { in: 2..500 },
-                          format: { with: %r{\A[a-zA-Z!#$%&'*+-/=?^_`{|}~. ]+\z}, message: 'Description is invalid' }
-  validates :price, presence: true
+  has_many :books_categories, dependent: :destroy
+  has_many :categories, through: :books_categories
+
+  validates :title, presence: true
+  validates :description, presence: true
+  validates :price, :year_of_publication, :materials, :dimensions, presence: true
 end

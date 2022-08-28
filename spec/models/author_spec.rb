@@ -38,18 +38,6 @@ RSpec.describe Author, type: :model do
   end
 
   describe '#invalid' do
-    context 'when first_name is invalid' do
-      let(:author) { described_class.new(first_name: '!@#@', last_name: FFaker::Name.last_name) }
-
-      include_examples 'invalid test'
-    end
-
-    context 'when last_name is invalid' do
-      let(:author) { described_class.new(first_name: FFaker::Name.first_name, last_name: '!@#@') }
-
-      include_examples 'invalid test'
-    end
-
     context 'when first_name is not passed' do
       let(:author) { described_class.new(first_name: FFaker::Name.first_name) }
 
@@ -58,30 +46,6 @@ RSpec.describe Author, type: :model do
 
     context 'when last_name is not passed' do
       let(:author) { described_class.new(last_name: FFaker::Name.last_name) }
-
-      include_examples 'invalid test'
-    end
-
-    context 'when first_name is too short' do
-      let(:author) { described_class.new(first_name: 'A' * 2.pred, last_name: FFaker::Name.last_name) }
-
-      include_examples 'invalid test'
-    end
-
-    context 'when first_name is too long' do
-      let(:author) { described_class.new(first_name: 'A' * 80.next, last_name: FFaker::Name.last_name) }
-
-      include_examples 'invalid test'
-    end
-
-    context 'when last_name is too short' do
-      let(:author) { described_class.new(first_name: FFaker::Name.first_name, last_name: 'A' * 2.pred) }
-
-      include_examples 'invalid test'
-    end
-
-    context 'when last_name is too long' do
-      let(:author) { described_class.new(first_name: FFaker::Name.first_name, last_name: 'A' * 80.next) }
 
       include_examples 'invalid test'
     end

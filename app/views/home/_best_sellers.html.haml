@@ -18,5 +18,7 @@
           %p.title.mr-55= book.title
         %span.divider-sm
         %p.lead.small
-          = book.author.first_name
-          = book.author.last_name
+          - book.authors.each do |author|
+            = author.first_name
+            = author.last_name
+            ,
