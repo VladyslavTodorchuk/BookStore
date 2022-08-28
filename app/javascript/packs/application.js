@@ -8,8 +8,8 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-import '../app/assets/javascripts/bootstrap'
-import '../app/assets/javascripts/jquery'
+import '../../assets/javascripts/bootstrap'
+import '../../assets/javascripts/jquery'
 
 import 'assets/shylesheets/application'
 
