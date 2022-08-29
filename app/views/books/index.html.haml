@@ -17,15 +17,15 @@
             %a{href: "#"}= t('catalog_page.sorting.price.high_to_low')
     %ul.list-inline.pt-10.mb-25.mr-240
       %li.mr-35
-        %a.filter-link{href: "#"}
+        %a.filter-link{href: "/books"}
           = t('catalog_page.all')
-          %span.badge.general-badge= @books.size
+          %span.badge.general-badge= @books_count
+      %a.filter-link{href: "#"}
       - @categories.each do |category|
         %li.mr-35
-        %a.filter-link{href: "#"}
-          = category.name
-          %span.badge.general-badge
-            = category.books.size
+          .filter-link
+            = link_to category.name, books_path(category: category.id), class: 'collapse-link'
+            %span.badge.general-badge= category.books.count
   .dropdowns.mb-25.visible-xs
     %p.lead.small.mb-10= t('catalog_page.filter_by_categories')
     .dropdown

@@ -13,7 +13,7 @@ import 'bootstrap'
 
 require('../../assets/javascripts/bootstrap.js');
 require('../../assets/javascripts/jquery.js');
-require('../../assets/javascripts/custome.js');
+require('../../assets/javascripts/custome.js')
 
 import '../../assets/stylesheets/application.css'
 
