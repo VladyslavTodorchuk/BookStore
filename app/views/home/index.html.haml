@@ -1,16 +1,7 @@
 %main.container
-  #slider.carousel.slide{'data-ride': "carousel"}
-    %ol.carousel-indicators
-      %li.active{'data-target': "#slider", 'data-slide-to': "0"}
-      %li{'data-target': "#slider", 'data-slide-to': "1"}
-    .carousel-inner{role: "listbox"}
-      = render partial: 'home/catalog'
-    %a.left.carousel-control{href: "#slider", role: "button", 'data-slide': "prev"}
-      %span.icon-prev{'aria-hidden': "true"}
-      %span.sr-only= t('catalog.prev')
-    %a.right.carousel-control{href: "#slider", role: "button", 'data-slide': "next"}
-      %span.icon-next{'aria-hidden': "true"}
-      %span.sr-only= t('catalog.next')
+
+  = render partial: 'home/catalog'
+
   .container
     .jumbotron.text-center.mb-0
       %h2.h1= t('home.title')

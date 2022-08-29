@@ -1,0 +1,23 @@
+%ul.nav.navbar-nav
+  %li
+    %a{href: root_path}= t('header.home')
+  %li.dropdown
+    %a.dropdown-toggle{href: "", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+      = t('header.shop')
+    %ul.dropdown-menu
+      %li
+        %a{href: '/books'}= t('header.all')
+      %li.divider{role: "separator"}
+      - Category.all.each do |category|
+        %li
+          %a{href: "#"}= category.name
+  %li.dropdown
+    %a.dropdown-toggle{href: "", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}= t('header.account')
+    %ul.dropdown-menu
+      %li
+        %a{href: "#"}= t('header.orders')
+      %li
+        %a{href: "#"}= t('header.settings')
+      %li.divider{role: "separator"}
+      %li
+        = t('header.log_out')

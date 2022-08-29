@@ -1,0 +1,5 @@
+.general-info-wrap.divider-lg#short_description
+  %p= t('book_page.book.description')
+  %p.lead.small.line-height-2
+    = @book.description[0..20]
+    %a.in-gold-500.ml-10{onclick: "readMore()"}= t('book_page.read_more')
