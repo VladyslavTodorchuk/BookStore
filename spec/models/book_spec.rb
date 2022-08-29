@@ -63,6 +63,14 @@ RSpec.describe Book, type: :model do
 
       include_examples 'invalid test'
     end
+
+    context 'when book invalid price is negative' do
+      let(:my_book) do
+        FactoryBot.build(:book, price: -1)
+      end
+
+      include_examples 'invalid test'
+    end
   end
 
   describe 'book save' do
