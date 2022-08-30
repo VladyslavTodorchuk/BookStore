@@ -8,52 +8,26 @@
           %i.fa.fa-angle-down.dropdown-icon.pull-right
         %ul.dropdown-menu
           %li
-            %a{href: "#"}= t('catalog_page.sorting.newer_first')
+            = link_to t('catalog_page.sorting.newer_first'), books_path(category: params[:category], sort: 'created_at DESC')
           %li
-            %a{href: "#"}= t('catalog_page.sorting.popular_first')
+            = link_to t('catalog_page.sorting.popular_first'), books_path(category: params[:category], sort: 'created_at')
           %li
-            %a{href: "#"}= t('catalog_page.sorting.price.low_to_high')
+            = link_to t('catalog_page.sorting.price.low_to_high'), books_path(category: params[:category], sort: 'price')
           %li
-            %a{href: "#"}= t('catalog_page.sorting.price.high_to_low')
+            = link_to t('catalog_page.sorting.price.high_to_low'), books_path(category: params[:category], sort: 'price DESC')
     %ul.list-inline.pt-10.mb-25.mr-240
       %li.mr-35
-        %a.filter-link{href: "/books"}
+        %a.filter-link{href: "/books?sort=title"}
           = t('catalog_page.all')
           %span.badge.general-badge= @books_count
       %a.filter-link{href: "#"}
       - @categories.each do |category|
         %li.mr-35
           .filter-link
-            = link_to category.name, books_path(category: category.id), class: 'collapse-link'
+            = link_to category.name, books_path(category: category.id, sort: params[:sort]), class: 'collapse-link'
             %span.badge.general-badge= category.books.count
-  .dropdowns.mb-25.visible-xs
-    %p.lead.small.mb-10= t('catalog_page.filter_by_categories')
-    .dropdown
-      %a.dropdown-toggle.lead.small{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
-        = t('catalog_page.sorting.newer_first')
-        %i.fa.fa-angle-down.dropdown-icon.pull-right
-      %ul.dropdown-menu
-        %li
-          %a{href: "#"}= t('catalog_page.sorting.newer_first')
-        %li
-          %a{href: "#"}= t('catalog_page.sorting.popular_first')
-        %li
-          %a{href: "#"}= t('catalog_page.sorting.price.low_to_high')
-        %li
-          %a{href: "#"}= t('catalog_page.sorting.price.high_to_low')
-    %p.lead.small.mb-10= t('catalog_page.sort_by')
-    .dropdown
-      %a.dropdown-toggle.lead.small{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
-        = t('catalog_page.sorting.newer_first')
-        %i.fa.fa-angle-down.dropdown-icon.pull-right
-      %ul.dropdown-menu
-        %li
-          %a{href: "#"}= t('catalog_page.sorting.newer_first')
-        %li
-          %a{href: "#"}= t('catalog_page.sorting.popular_first')
-        %li
-          %a{href: "#"}= t('catalog_page.sorting.price.low_to_high')
-        %li
-          %a{href: "#"}= t('catalog_page.sorting.price.high_to_low')
+    .dropdowns.mb-25.visible-xs
+      = render partial: 'books/index/mobile_filter'
+      = render partial: 'books/index/mobile_sort'
 
   = render partial: 'books/index/catalog'

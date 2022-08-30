@@ -17,7 +17,6 @@ require('../../assets/javascripts/custome.js')
 
 import '../../assets/stylesheets/application.css'
 
-
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

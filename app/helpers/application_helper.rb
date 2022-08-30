@@ -1,5 +1,3 @@
 module ApplicationHelper
-  def price_calculation(price)
-    price * params[:item_amount].nil? ? 1 : params[:item_amount]
-  end
+  SORT_METHODS = ['created_at', 'created_at DESC', 'price DESC', 'most_popular', 'price', 'title', 'title DESC'].freeze
 end

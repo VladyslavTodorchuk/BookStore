@@ -1,5 +1,5 @@
 
-let readMore = () => {
+function readMore(){
     if (document.getElementById('full_description')){
         $("#full_description").replaceWith("= render partial: 'books/show/short_description'");
     }
@@ -8,26 +8,20 @@ let readMore = () => {
     }
 }
 
-let decrementValue = (price) => {
-    let input = document.getElementById("counter");
-
-    if (input.value > 1) {
-        input.value--;
-        calculatePrice(price, input.value);
+function decrementValue(price){
+    let counter = document.getElementById("counter");
+    if (counter.value > 1) {
+        counter.value--;
+        calculatePrice(price, counter.value);
     }
-
 }
 
-let incrementValue = (price) => {
-    let input = document.getElementById("counter");
-
-    input.value++;
-    calculatePrice(price, input.value);
+function incrementValue(price){
+    let counter = document.getElementById("counter");
+    counter.value++;
+    calculatePrice(price, counter.value);
 }
 
-let calculatePrice = (price, amount) => {
-    let price_element = document.getElementById("price");
-    let currency = price_element.textContent.substring(0, 1);
-
-    price_element.textContent = currency + (price * amount).toFixed(2);
+function calculatePrice(price, amount){
+    document.getElementById("price").textContent = '€ ' + (price * amount).toFixed(2);
 }

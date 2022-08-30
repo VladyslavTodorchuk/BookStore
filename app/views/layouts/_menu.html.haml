@@ -4,15 +4,16 @@
   %li.dropdown
     %a.dropdown-toggle{href: "", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
       = t('header.shop')
-    %ul.dropdown-menu
+    %ul.collapse.dropdown-menu
       %li
-        %a{href: '/books'}= t('header.all')
+        %a{href: '/books?sort=created_at DESC'}= t('header.all')
       %li.divider{role: "separator"}
       - Category.all.each do |category|
         %li
-          %a{href: "#"}= category.name
+          = link_to category.name, books_path(category: category.id, sort: 'title'), class: 'collapse-link'
   %li.dropdown
-    %a.dropdown-toggle{href: "", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}= t('header.account')
+    %a.dropdown-toggle{href: "", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+      = t('header.account')
     %ul.dropdown-menu
       %li
         %a{href: "#"}= t('header.orders')
@@ -20,4 +21,4 @@
         %a{href: "#"}= t('header.settings')
       %li.divider{role: "separator"}
       %li
-        %a{href: "#"}= t('header.log_out')
+        %a{href: "#"}= t('header.log_in')
