@@ -4,3 +4,26 @@ if (document.getElementById('#full_description')){
 else {
     $("#short_description").replaceWith("<%=j render(partial: 'books/show/full_description') %>");
 }
+
+function decrementValue(price) {
+    let counter = document.getElementById("quantity_input");
+
+    if (counter.value > 1) {
+        counter.value--;
+        calculatePrice(price, counter.value);
+    }
+}
+
+function decrementValue(price) {
+    let counter = document.getElementById("quantity_input");
+
+    counter.value++;
+    calculatePrice(price, counter.value);
+}
+
+function calculatePrice(price, input){
+    let price_element = document.getElementById("price");
+    let currency = price_element.textContent.substring(0, 1);
+
+    price_element.textContent = "€ " + (price * input).toFixed(2);
+}

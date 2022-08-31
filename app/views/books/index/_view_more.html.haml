@@ -1,6 +1,6 @@
 - if params[:category].nil?
     - if @page < @books_count / ApplicationHelper::PAGINATION_PER_PAGE
-        = link_to t('catalog_page.view_more'), books_path(category: params[:category], sort: params[:sort], page: @page.next), class: 'load-more'
+        = link_to t('catalog_page.view_more'), books_path(category: params[:category], sort: params[:sort], page: @page.next), class: 'btn.btn-primary'
 - else
     - if @page < @books.size / ApplicationHelper::PAGINATION_PER_PAGE
-        = link_to t('catalog_page.view_more'), books_path(category: params[:category], sort: params[:sort], page: @page.next), class: 'load-more'
+        = link_to t('catalog_page.view_more'), books_path(category: params[:category], sort: params[:sort], page: @page.next), class: 'btn.btn-primary'

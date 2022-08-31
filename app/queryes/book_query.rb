@@ -7,7 +7,7 @@ class BookQuery
         Category.find(params[:category]).books.order(params[:sort])
       end
     else
-      return params[:category].nil? ? Book.all : Category.find(params[:category]).books
+      params[:category].nil? ? Book.all : Category.find(params[:category]).books
     end
   end
 end

@@ -14,3 +14,7 @@
  *= require_self
  *= require style
  */
+
+#load_more_users {
+    display: none;
+}

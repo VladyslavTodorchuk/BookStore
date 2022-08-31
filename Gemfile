@@ -21,6 +21,8 @@ gem 'bootstrap-will_paginate', '~> 1.0'
 
 gem 'webpacker', '~> 5.0'
 
+gem 'turbolinks', '~> 5'
+
 gem 'i18n', '~> 1.12'
 
 gem 'jbuilder', '~> 2.7'
