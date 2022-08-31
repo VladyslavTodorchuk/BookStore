@@ -10,15 +10,30 @@ import "channels"
 
 global.jQuery = require('jquery');
 import 'bootstrap'
-
-require('../../assets/javascripts/bootstrap.js');
-require('../../assets/javascripts/jquery.js');
-require('../../assets/javascripts/custome.js')
-
-import '../../assets/stylesheets/application.css'
+import 'popper.js'
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import  '../../assets/javascripts/bootstrap.js'
+import  '../../assets/javascripts/jquery.js'
+
+import '../../assets/javascripts/custom.js'
+import '../../assets/stylesheets/application.css'
+
+$(document).ready(function () {
+    $('a.load-more').click(function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: "GET",
+            url: $(this).attr('href'),
+            dataType: "script",
+            success: function () {
+                $('.load-more').show();
+            }
+        });
+    });
+});
 
 

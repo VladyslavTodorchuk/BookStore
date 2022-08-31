@@ -1,9 +1,13 @@
 class BookQuery
   def self.query(params)
     if ApplicationHelper::SORT_METHODS.include?(params[:sort].to_s)
-      return Book.all.order(params[:sort]) if params[:category].nil?
-      return Category.find(params[:category]).books.order(params[:sort]) unless params[:category].nil?
+      if params[:category].nil?
+        Book.all.order(params[:sort])
+      else
+        Category.find(params[:category]).books.order(params[:sort])
+      end
+    else
+      return params[:category].nil? ? Book.all : Category.find(params[:category]).books
     end
-    params[:category].nil? ? Book.all : Category.find(params[:category]).books
   end
 end

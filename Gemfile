@@ -13,13 +13,19 @@ gem 'sass-rails', '>= 6'
 
 gem 'haml', '~> 5.2', '>= 5.2.2'
 
-gem 'webpacker', '~> 5.0'
+gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 
-gem 'turbolinks', '~> 5'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+
+gem 'bootstrap-will_paginate', '~> 1.0'
+
+gem 'webpacker', '~> 5.0'
 
 gem 'i18n', '~> 1.12'
 
 gem 'jbuilder', '~> 2.7'
+
+gem 'pagy', '~> 5.10', '>= 5.10.1'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 

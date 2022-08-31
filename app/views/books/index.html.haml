@@ -15,6 +15,10 @@
             = link_to t('catalog_page.sorting.price.low_to_high'), books_path(category: params[:category], sort: 'price')
           %li
             = link_to t('catalog_page.sorting.price.high_to_low'), books_path(category: params[:category], sort: 'price DESC')
+          %li
+            = link_to t('catalog_page.sorting.title.A-Z'), books_path(category: params[:category], sort: 'title')
+          %li
+            = link_to t('catalog_page.sorting.title.Z-A'), books_path(category: params[:category], sort: 'title DESC')
     %ul.list-inline.pt-10.mb-25.mr-240
       %li.mr-35
         %a.filter-link{href: "/books?sort=title"}
@@ -30,4 +34,7 @@
       = render partial: 'books/index/mobile_filter'
       = render partial: 'books/index/mobile_sort'
 
-  = render partial: 'books/index/catalog'
+  .mb-120
+    = render partial: 'books/index/catalog', object: @books
+    .text-center
+      = render partial: 'books/index/view_more', object: @books

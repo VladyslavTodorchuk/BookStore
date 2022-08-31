@@ -24,10 +24,10 @@
       .col-xs-5.col-md-3
         .input-group.general-position
           %a.input-link
-            %i.fa.fa-minus.line-height-40{onclick: "decrementValue(#{@book.price});"}
-          %input#counter.form-control.quantity-input{name: 'counter',type: "number", value: 1}
+            %i.fa.fa-minus.line-height-40{ onclick: "decrementValue(#{@book.price});" }
+          %input#counter.form-control.quantity-input{name: 'counter', value: 1}
           %a.input-link
-            %i.fa.fa-plus.line-height-40{onclick: "incrementValue(#{@book.price});"}
+            %i.fa.fa-plus.line-height-40{ onclick: "incrementValue(#{@book.price});" }
       .col-xs-7.col-md-5
         %button.btn.btn-default.pull-right.general-position= t('book_page.add_to_card')
     = render partial: 'books/show/sort_description'

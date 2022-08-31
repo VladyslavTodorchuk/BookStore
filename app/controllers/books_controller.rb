@@ -1,10 +1,15 @@
 class BooksController < ApplicationController
   def index
     @books_count = Book.count
-    @catalog = Book.order(:created_at).first(3)
     @categories = Category.all
 
-    @book = BookQuery.query(params)
+    @page = params.fetch(:page, 1).to_i
+    @books = BookQuery.query(params).limit(@page * ApplicationHelper::PAGINATION_PER_PAGE)
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def show
