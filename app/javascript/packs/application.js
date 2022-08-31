@@ -22,18 +22,3 @@ import  '../../assets/javascripts/jquery.js'
 import '../../assets/javascripts/custom.js'
 import '../../assets/stylesheets/application.css'
 
-$(document).ready(function () {
-    $('a.load-more').click(function (e) {
-        e.preventDefault();
-        $.ajax({
-            type: "GET",
-            url: $(this).attr('href'),
-            dataType: "script",
-            success: function () {
-                $('.load-more').show();
-            }
-        });
-    });
-});
-
-
