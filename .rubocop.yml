@@ -33,3 +33,6 @@ Metrics/AbcSize:
 
 RSpec/MessageSpies:
   Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 6

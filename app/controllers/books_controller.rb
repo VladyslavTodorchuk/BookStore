@@ -5,11 +5,6 @@ class BooksController < ApplicationController
 
     @page = params[:page].nil? ? 1 : params[:page].to_i
     @books = BookQuery.query(params).limit(@page * ApplicationHelper::PAGINATION_PER_PAGE)
-
-    respond_to do |format|
-      format.html
-      format.js
-    end
   end
 
   def show
