@@ -68,7 +68,9 @@ commands:
     steps:
       - run:
           name: specs
-          command: bundle exec rspec
+          command: |
+            sudo apt-get install chromium-chromedriver
+            bundle exec rspec
       - store_artifacts:
           path: ~/codebreaker/coverage
           destination: coverage

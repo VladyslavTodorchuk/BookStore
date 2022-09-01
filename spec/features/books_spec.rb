@@ -140,4 +140,58 @@ RSpec.describe 'Books', type: :feature do
       end
     end
   end
+
+  describe 'sort' do
+    shared_examples 'sort test' do
+      it 'sort books' do
+        FactoryBot.create(:book, title: 'Zimbabwe', price: 75,
+                                 created_at: 'Thu, 25 Aug 2022 15:20:38.761014000 UTC +00:00')
+        FactoryBot.create(:book, title: 'Anna', price: 23, created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
+
+        visit books_path
+
+        find('a', class: 'dropdown-toggle', text: 'Newest first').click
+
+        within '.dropdown-menu' do
+          click_link button
+        end
+        expect(find('.col-xs-6.col-sm-3', match: :first)).to have_content(book_title)
+      end
+    end
+
+    context 'when sort by title A to Z' do
+      let(:button) { 'Title: A to Z' }
+      let(:book_title) { 'Anna' }
+
+      include_examples 'sort test'
+    end
+
+    context 'when sort by title Z to A' do
+      let(:button) { 'Title: Z to A' }
+      let(:book_title) { 'Zimbabwe' }
+
+      include_examples 'sort test'
+    end
+
+    context 'when sort by price High to Low' do
+      let(:button) { 'Price: High to Low' }
+      let(:book_title) { 'Zimbabwe' }
+
+      include_examples 'sort test'
+    end
+
+    context 'when sort by price Low to High' do
+      let(:button) { 'Price: Low to High' }
+      let(:book_title) { 'Anna' }
+
+      include_examples 'sort test'
+    end
+
+    context 'when sort by newest' do
+      let(:button) { 'Newest first' }
+      let(:book_title) { 'Zimbabwe' }
+
+      include_examples 'sort test'
+    end
+  end
 end
