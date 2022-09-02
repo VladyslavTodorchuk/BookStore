@@ -10,7 +10,7 @@ RSpec.describe 'Books', type: :feature do
       dimensions: FFaker::Book.cover,
       year_of_publication: FFaker::Number.rand(1900..2022),
       materials: 'Soft cover',
-      quantity: FFaker::Number.rand(2..5)}
+      quantity: FFaker::Number.rand(2..5) }
   end
   let(:book) { FactoryBot.create(:book) }
 
