@@ -25,7 +25,7 @@ export default class extends Controller {
             success: (data) => {
                 //this.entriesTarget.insertAdjacentHTML("beforeend", data.entries)
                 //this.paginationTarget.insertAdjacentHTML = data.pagination
-                console.log(data)
+                console.log(data.pagination)
             }
         })
     }

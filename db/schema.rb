@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2022_08_28_101722) do
     t.string "dimensions"
     t.integer "year_of_publication"
     t.string "materials"
+    t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -6,5 +6,6 @@ FactoryBot.define do
     materials { 'Soft' }
     year_of_publication { FFaker::Number.rand(1900..2022) }
     dimensions { '30:20:14' }
+    quantity { FFaker::Number.rand(2..10) }
   end
 end

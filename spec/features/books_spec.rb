@@ -9,7 +9,8 @@ RSpec.describe 'Books', type: :feature do
       price: FFaker::Number.rand(1..100),
       dimensions: FFaker::Book.cover,
       year_of_publication: FFaker::Number.rand(1900..2022),
-      materials: 'Soft cover' }
+      materials: 'Soft cover',
+      quantity: FFaker::Number.rand(2..5)}
   end
   let(:book) { FactoryBot.create(:book) }
 
@@ -52,12 +53,12 @@ RSpec.describe 'Books', type: :feature do
       end
 
       it 'increase quantity' do
-        expect(page).to have_content("€ #{book.price * 2}")
+        expect(page).to have_content("€#{book.price * 2}")
       end
 
       it 'decrease quantity' do
         find('a', class: 'dec').click
-        expect(page).to have_content("€ #{book.price}")
+        expect(page).to have_content("€#{book.price}")
       end
     end
   end
