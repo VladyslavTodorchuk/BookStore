@@ -3,7 +3,7 @@ class BooksController < ApplicationController
     @books_count = Book.count
     @categories = Category.all
 
-    @books = BookQuery.query(params).paginate(page: params[:page], per_page: 4)
+    @books = BookQuery.query(params).paginate(page: params[:page], per_page: ApplicationHelper::PAGINATION_PER_PAGE)
 
     respond_to do |format|
       format.html
