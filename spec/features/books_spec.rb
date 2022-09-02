@@ -122,21 +122,21 @@ RSpec.describe 'Books', type: :feature do
     it 'show books without view more button' do
       visit books_path
 
-      find('a', class: 'view-more').click
-      expect(page).not_to have_css('a', class: 'view-more')
+      find('a', class: 'view_more').click
+      expect(page).not_to have_css('a', class: 'view_more')
     end
 
     context 'when view more' do
       it 'show books with view more button' do
         visit books_path
 
-        expect(page).to have_css('a', class: 'view-more')
+        expect(page).to have_css('a', class: 'view_more')
       end
 
       it 'show loaded books' do
         visit books_path
 
-        find('a', class: 'view-more').click
+        find('a', class: 'view_more').click
         expect(page).to have_content(books.last.title)
       end
     end

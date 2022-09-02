@@ -21,5 +21,4 @@ import  '../../assets/javascripts/jquery.js'
 
 import '../../assets/stylesheets/application.css'
 
-
 import "controllers"
