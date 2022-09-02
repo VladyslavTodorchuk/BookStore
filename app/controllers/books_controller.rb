@@ -3,8 +3,18 @@ class BooksController < ApplicationController
     @books_count = Book.count
     @categories = Category.all
 
-    @page = params[:page].nil? ? 1 : params[:page].to_i
-    @books = BookQuery.query(params).limit(@page * ApplicationHelper::PAGINATION_PER_PAGE)
+    @books = BookQuery.query(params).paginate(page: params[:page], per_page: 4)
+
+    respond_to do |format|
+      format.html
+      format.json do
+        render json: {
+          entries: render_to_string(partial: 'books',
+                                    formats: [:html],
+                                    pagination: view_context.will_paginate(@books))
+        }
+      end
+    end
   end
 
   def show
