@@ -122,7 +122,8 @@ RSpec.describe 'Books', type: :feature do
     it 'show books without view more button' do
       visit books_path
 
-      find('a', class: 'view_more').click
+      find('a', id: 'view_more', class: 'view_more').click
+
       expect(page).not_to have_css('a', class: 'view_more')
     end
 
@@ -136,7 +137,8 @@ RSpec.describe 'Books', type: :feature do
       it 'show loaded books' do
         visit books_path
 
-        find('a', class: 'view_more').click
+        find('a', id: 'view_more', class: 'view_more').click
+
         expect(page).to have_content(books.last.title)
       end
     end

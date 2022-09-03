@@ -23,7 +23,6 @@ export default class extends Controller {
             dataType: "json",
             success: (data) => {
                 this.hide(data.pagination)
-                console.log(data.pagination.search("\<li class=\"next next_page disabled\"><a href=\"#\">Next &#8594;</a></li\>"))
                 this.entriesTarget.insertAdjacentHTML("beforeend", data.entries)
                 this.paginationTarget.innerHTML = data.pagination
             }
@@ -37,6 +36,5 @@ export default class extends Controller {
         } else {
             this.buttonTarget.classList.remove("hidden")
         }
-
     }
 }

@@ -40,8 +40,6 @@
       .text-center.hidden
         %div{"data-view-more-target" => "pagination"}
           = will_paginate(@books)
-      - if @books.size == ApplicationHelper::PAGINATION_PER_PAGE
-        .text-center
-          %a.btn.btn-primary.view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#incrementValue" }
-
-            = t("catalog_page.view_more")
+      .text-center
+        %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#next" }
+          = t("catalog_page.view_more")
