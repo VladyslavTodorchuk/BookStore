@@ -19,11 +19,9 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
 gem 'bootstrap-will_paginate', '~> 1.0'
 
-gem 'webpacker', '~> 5.0'
-
 gem 'turbolinks', '~> 5'
 
-gem 'i18n', '~> 1.12'
+gem 'webpacker', '~> 5'
 
 gem 'jbuilder', '~> 2.7'
 

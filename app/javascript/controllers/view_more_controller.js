@@ -4,6 +4,7 @@ import Rails from "@rails/ujs";
 export default class extends Controller {
     static targets = ["entries", "pagination", "button"]
 
+
     next() {
         let next_page = this.paginationTarget.querySelector("a[rel='next']")
 

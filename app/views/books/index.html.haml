@@ -42,5 +42,6 @@
           = will_paginate(@books)
       - if @books.size == ApplicationHelper::PAGINATION_PER_PAGE
         .text-center
-          %a.btn.btn-primary.view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#next"}
+          %a.btn.btn-primary.view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#incrementValue" }
+
             = t("catalog_page.view_more")

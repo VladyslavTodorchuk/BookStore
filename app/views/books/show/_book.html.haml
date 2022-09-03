@@ -16,20 +16,21 @@
       - @book.authors.each do |author|
         = author.first_name
         = author.last_name
-    .row
-      .col-xs-12.col-md-4
-        %p.h1.in-gold-500.mt-10#price
-          €
-          = @book.price
-      .col-xs-5.col-md-3
-        .input-group.general-position
-          %a.input-link.dec
-            %i.fa.fa-minus.line-height-40{ onclick: "decrementValue(#{@book.price});" }
-          %input#counter.form-control.quantity-input{name: 'counter', value: 1}
-          %a.input-link.inc
-            %i.fa.fa-plus.line-height-40{ onclick: "incrementValue(#{@book.price}, #{@book.quantity});" }
-      .col-xs-7.col-md-5
-        %button.btn.btn-default.pull-right.general-position= t('book_page.add_to_card')
+    %div{"data-controller" => "price"}
+      .row
+        .col-xs-12.col-md-4
+          %p.h1.in-gold-500.mt-10#price
+            €
+            = @book.price
+        .col-xs-5.col-md-3
+          .input-group.general-position
+            %a.input-link.dec#dec{"data-target" => "price.decrement", "data-action" => "click->price#decrementValue", "value_price" => @book.price }
+              %i.fa.fa-minus.line-height-40
+            %input#counter.form-control.quantity-input{ value: 1 }
+            %a.input-link.inc#inc{"data-target" => "price.increment", "data-action" => "click->price#incrementValue", "value_price" => @book.price, "value_books" => @book.quantity }
+              %i.fa.fa-plus.line-height-40
+        .col-xs-7.col-md-5
+          %button.btn.btn-default.pull-right.general-position= t('book_page.add_to_card')
     = render partial: 'books/show/sort_description'
     .general-info-wrap.divider-lg
       .clearfix

@@ -17,24 +17,3 @@
     = render partial: 'layouts/header'
     = yield
     = render partial: 'layouts/footer'
-
-  :javascript
-    function decrementValue(price) {
-      let counter = document.getElementById("counter");
-      if (counter.value > 1) {
-        counter.value--;
-        calculatePrice(price, counter.value);
-      }
-    }
-    function incrementValue(price, count_of_books) {
-      let counter = document.getElementById("counter");
-      if (counter.value != count_of_books) {
-        counter.value++;
-        calculatePrice(price, counter.value);
-      }
-    }
-    function calculatePrice(price, amount) {
-      document.getElementById("price").textContent = '€' + (price * amount).toFixed(2);
-    }
-
-
