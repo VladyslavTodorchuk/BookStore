@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 =======
 require 'rails_helper'
-<<<<<<< HEAD
 require_relative '../support/shared_context'
 
 >>>>>>> 4e81ea2 (Featire specs)
