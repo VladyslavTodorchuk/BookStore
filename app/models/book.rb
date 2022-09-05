@@ -9,5 +9,5 @@ class Book < ApplicationRecord
   validates :description, presence: true
   validates :year_of_publication, :materials, :dimensions, presence: true
   validates :price, :quantity, presence: true,
-            numericality: { greater_than_or_equal_to: 0.0, less_than_or_equal_to: 100 }
+                               numericality: { greater_than_or_equal_to: 0.0, less_than_or_equal_to: 100 }
 end
