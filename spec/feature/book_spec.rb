@@ -1,8 +1,24 @@
 RSpec.describe 'Book', type: :feature do
   let(:category_one) { create(:category) }
   let(:category_two) { create(:category) }
+<<<<<<< HEAD
   let(:params) { attributes_for(:book) }
+=======
+  let(:params) do
+    { title: FFaker::Book.title,
+      description: FFaker::Book.description,
+      price_cents: FFaker::Number.rand(1..100),
+      dimensions: FFaker::Book.cover,
+      year_of_publication: FFaker::Number.rand(1900..2022),
+      materials: 'Soft cover',
+      quantity: FFaker::Number.rand(2..5) }
+  end
+<<<<<<< HEAD
+>>>>>>> 2a25e4c (Featire specs)
   let(:book) { create(:book).decorate }
+=======
+  let(:book) { BookDecorator.new(FactoryBot.create(:book, authors_count: 1)) }
+>>>>>>> d0dc1f1 (Featire specs)
 
   describe '#show' do
     it 'show books info' do
