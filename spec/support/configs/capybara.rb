@@ -27,3 +27,4 @@ Capybara.register_driver :headless_chrome do |app|
     options: options
   )
 end
+
