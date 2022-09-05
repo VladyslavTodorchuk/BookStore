@@ -1,33 +1,59 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  catalog:
+    buy_now: 'Buy Now'
+    next: 'Next'
+    prev: 'Previous'
+  home:
+    title: 'Welcome to our amazing Bookstore!'
+    desc: 'We pore through hundreds of new books each month and select the five best we can find to share with our members.'
+    get_started: 'Get Started'
+    best_sellers: 'Best Sellers'
+  header:
+    name: 'Bookstore'
+    home: 'Home'
+    mobile: 'Mobile development'
+    photo: 'Photo'
+    shop: 'Shop'
+    web: 'Web design'
+    account: 'My account'
+    log_out: 'Log out'
+    log_in: 'Log in'
+    orders: 'Orders'
+    settings: 'Settings'
+    all: 'Books'
+  footer:
+    home: 'Home'
+    shop: 'Shop'
+    orders: 'Orders'
+    settings: 'Settings'
+  catalog_page:
+    title: 'Catalog'
+    sorting:
+      newer_first: 'Newest first'
+      popular_first: 'Popular first'
+      price:
+        low_to_high: 'Price: Low to High'
+        high_to_low: 'Price: High to Low'
+      title:
+        A-Z: 'Title: A to Z'
+        Z-A: 'Title: Z to A'
+    all: 'All'
+    filter_by_categories: 'Filter by category'
+    sort_by: 'Sort by'
+    view_more: 'View More'
+  book_page:
+    back_to_result: 'Back to results'
+    add_to_card: 'Add to Cart'
+    book:
+      description: 'Description'
+      year_of_publication: 'Year of publication'
+      dimensions: 'Dimensions'
+      materials: 'Materials'
+    read_more: 'Read More'
+    read_less: 'Read Less'
+  review:
+    write: 'Write a Review'
+    title: 'Title'
+    review: 'Review'
+    post: 'Post'
