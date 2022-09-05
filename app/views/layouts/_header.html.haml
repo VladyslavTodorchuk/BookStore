@@ -7,14 +7,45 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand= t('header.name')
-
-    #navbar.navbar-collapse.collapse.pl-30{'aria-expanded': "false"}
-      %a.shop-link.pull-right{href: '#'}
+      %a.shop-link.pull-right.visible-xs{href: "#"}
         %span.shop-icon
-          %span.shop-quantity#cart= 3
-
+          %span.shop-quantity 3
+    %a.shop-link.pull-right.hidden-xs{href: "#"}
+      %span.shop-icon
+        %span.shop-quantity 3
+    #navbar.navbar-collapse.collapse.pl-30{'aria-expanded': "false"}
       .visible-xs
-        = render partial: 'layouts/mobile_menu'
-
+        %button.close{type: "button", 'aria-label': "Close"}
+          %span{'aria-hidden': "true"} &times;
+        %ul.nav.navbar-nav
+          %li
+            %a{href: "#"}= t('header.home')
+          %li
+            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
+            %ul#menu.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
+              %li
+                %a.collapse-link{href: "#"}= t('header.mobile')
+              %li
+                %a.collapse-link{href: "#"}= t('header.photo')
+              %li
+                %a.collapse-link{href: "#"}= t('header.web')
+          %li
+            %a{href: "#"}= t('header.account')
       .hidden-xs
-        = render partial: 'layouts/menu'
+        %ul.nav.navbar-nav
+          %li
+            %a{href: "#"}= t('header.home')
+          %li.dropdown
+            %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"} Shop
+            %ul.dropdown-menu
+              %li
+                %a{href: "#"}= t('header.mobile')
+              %li
+                %a{href: "#"}= t('header.photo')
+              %li
+                %a{href: "#"}= t('header.web')
+              %li.divider{role: "separator"}
+              %li
+                %a{href: "#"}= t('header.log_in')
+          %li
+            %a{href: "#"}= t('header.account')

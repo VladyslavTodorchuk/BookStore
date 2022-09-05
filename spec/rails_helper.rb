@@ -9,7 +9,7 @@ require 'capybara/rails'
 require 'shoulda-matchers'
 require 'webdrivers/chromedriver'
 
-require_relative 'support/config/capybara'
+require_relative 'support/config//capybara'
 require_relative 'support/config/should_matcher'
 
 begin
