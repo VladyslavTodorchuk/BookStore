@@ -19,3 +19,4 @@ class BookDecorator < Draper::Decorator
     Money.new(price_cents)
   end
 end
+

@@ -1,9 +1,13 @@
 class BooksController < ApplicationController
+  PAGINATION_PER_PAGE = 12
+
   def index
     @books_count = Book.count
     @categories = Category.all
+    sorted_books = BookQuery.query(params).paginate(page: params[:page],
+                                                    per_page: PAGINATION_PER_PAGE)
 
-    @books = BookQuery.query(params).paginate(page: params[:page], per_page: ApplicationHelper::PAGINATION_PER_PAGE)
+    @books = BookDecorator.decorate_collection(sorted_books)
 
     respond_to do |format|
       format.html
@@ -17,7 +21,7 @@ class BooksController < ApplicationController
   end
 
   def show
-    @book = Book.find_by(id: params[:id])
+    @book = Book.find_by(id: params[:id]).decorate
 
     redirect_to books_path if @book.nil?
   end

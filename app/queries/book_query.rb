@@ -1,6 +1,8 @@
 class BookQuery
+  SORT_METHODS = ['created_at', 'created_at DESC', 'price DESC', 'most_popular', 'price', 'title', 'title DESC'].freeze
+
   def self.query(params)
-    if ApplicationHelper::SORT_METHODS.include?(params[:sort].to_s)
+    if SORT_METHODS.include?(params[:sort].to_s)
       if params[:category].nil?
         Book.all.order(params[:sort])
       else

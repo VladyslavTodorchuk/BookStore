@@ -41,5 +41,6 @@
         %div{"data-view-more-target" => "pagination"}
           = will_paginate(@books)
       .text-center
-        %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#next" }
-          = t("catalog_page.view_more")
+        - unless @books.last_page?
+          %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#next" }
+            = t("catalog_page.view_more")
