@@ -25,22 +25,10 @@
           %span{'aria-hidden': "true"} &times;
         %ul.nav.navbar-nav
           %li
-<<<<<<< HEAD
             %a#root{href: "/"}= t('header.home')
-          %li
-            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
-=======
-<<<<<<< HEAD
-            %a#root{href: "/"}= t('.home')
           %li
             %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
-              = t('.shop')
-=======
-            %a#root{href: "/"}= t('header.home')
-          %li
-            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
->>>>>>> c0950c6 (Featire specs)
->>>>>>> 752f0c0 (Featire specs)
+              = t('header.shop')
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
@@ -87,17 +75,8 @@
                       = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
-<<<<<<< HEAD
-
             - else
               %li
                 = link_to t('header.log_in'), new_user_session_path
               %li
                 = link_to t('header.sing_up'), new_user_registration_path
-=======
-          - else
-            %li
-              = link_to t('header.log_in'), new_user_session_path
-            %li
-              = link_to t('header.sing_up'), new_user_registration_path
->>>>>>> 752f0c0 (Featire specs)
