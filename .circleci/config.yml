@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  browser-tools: circleci/browser-tools@1.4.0
+
 executors:
   default:
     working_directory: ~/codebreaker
@@ -46,11 +49,18 @@ commands:
           command: |
             bundle exec rake db:create
             bundle exec rake db:schema:load
-  install_chrome:
+  test:
+    docker:
+      - image: cimg/node:13.12-browsers
     steps:
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
       - run:
-          name: Setup Chrome
-          command: sudo apt-get update
+          command: |
+            google-chrome --version
+            chromedriver --version
+          name: Check install
+
   run_rubocop:
     description: command to start rubocop
     steps:
