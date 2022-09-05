@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2022_08_28_101722) do
   enable_extension "plpgsql"
 
   create_table "authors", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -32,12 +32,12 @@ ActiveRecord::Schema.define(version: 2022_08_28_101722) do
   end
 
   create_table "books", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-    t.float "price"
-    t.string "dimensions"
-    t.integer "year_of_publication"
-    t.string "materials"
+    t.string "title", null: false
+    t.string "description", null: false
+    t.float "price", null: false
+    t.string "dimensions", null: false
+    t.integer "year_of_publication", null: false
+    t.string "materials", null: false
     t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -48,12 +48,18 @@ ActiveRecord::Schema.define(version: 2022_08_28_101722) do
     t.bigint "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["book_id"], name: "index_books_categories_on_book_id"
+    t.index ["category_id"], name: "index_books_categories_on_category_id"
   end
 
   create_table "categories", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "authors_books", "authors"
+  add_foreign_key "authors_books", "books"
+  add_foreign_key "books_categories", "books"
+  add_foreign_key "books_categories", "categories"
 end

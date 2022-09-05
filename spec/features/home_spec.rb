@@ -28,7 +28,10 @@ RSpec.describe 'Homes', type: :feature do
       visit root_path
 
       find('a', class: 'dropdown-toggle', text: 'Shop').click
-      find('a', class: 'collapse-link', text: books_category.category.name).click
+
+      within('ul', id: 'nav') do
+        find('a', class: 'collapse-link', text: books_category.category.name).click
+      end
 
       expect(page).to have_content(books_category.category.books.first.title)
     end

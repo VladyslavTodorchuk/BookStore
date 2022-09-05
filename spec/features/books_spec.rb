@@ -36,7 +36,7 @@ RSpec.describe 'Books', type: :feature do
         expect(page).to have_content('Read More')
       end
 
-      it 'clicked read more' do
+      it 'clicked read more', js: true do
         visit "books/#{book.id}"
 
         click_link 'Read More'
@@ -45,18 +45,18 @@ RSpec.describe 'Books', type: :feature do
       end
     end
 
-    context 'when quantity changes' do
+    context 'when quantity changes', js: true do
       before do
         visit "books/#{book.id}"
 
         find('a', class: 'inc').click
       end
 
-      it 'increase quantity' do
+      it 'increase quantity', js: true do
         expect(page).to have_content("€#{book.price * 2}")
       end
 
-      it 'decrease quantity' do
+      it 'decrease quantity', js: true do
         find('a', class: 'dec').click
         expect(page).to have_content("€#{book.price}")
       end
@@ -79,7 +79,9 @@ RSpec.describe 'Books', type: :feature do
       end
 
       it 'filter book by category' do
-        click_on category_one.name
+        within 'ul', class: 'list-inline pt-10 mb-25 mr-240', id: 'filter' do
+          click_on category_one.name
+        end
 
         expect(page).to have_content(category_one.books.first.title)
       end
@@ -124,7 +126,7 @@ RSpec.describe 'Books', type: :feature do
 
       find('a', id: 'view_more', class: 'view_more').click
 
-      expect(page).not_to have_css('a', class: 'view_more')
+      expect(page).not_to have_css('a', class: 'view_more hidden', id: 'view_more')
     end
 
     context 'when view more' do
@@ -134,7 +136,7 @@ RSpec.describe 'Books', type: :feature do
         expect(page).to have_css('a', class: 'view_more')
       end
 
-      it 'show loaded books' do
+      it 'show loaded books', js: true do
         visit books_path
 
         find('a', id: 'view_more', class: 'view_more').click
@@ -153,9 +155,9 @@ RSpec.describe 'Books', type: :feature do
 
         visit books_path
 
-        find('a', class: 'dropdown-toggle', text: 'Newest first').click
+        find('a', class: 'dropdown-toggle lead small', text: 'Newest first', id: 'menu').click
 
-        within '.dropdown-menu' do
+        within 'ul', class: 'dropdown-menu', id: 'sort' do
           click_link button
         end
         expect(find('.col-xs-6.col-sm-3', match: :first)).to have_content(book_title)
