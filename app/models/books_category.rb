@@ -1,0 +1,2 @@
+class BooksCategory < ApplicationRecord
+end
