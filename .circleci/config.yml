@@ -12,10 +12,10 @@ executors:
           PGUSER: root
       - image: cimg/postgres:14.0
         auth:
-          username: vladtodorchuk
+          username: postgres
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
         environment:
-          POSTGRES_USER: vladtodorchuk
+          POSTGRES_USER: postgres
           POSTGRES_DB: bookstore_test
 
 cashes:
