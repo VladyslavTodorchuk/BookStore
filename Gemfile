@@ -19,6 +19,8 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 
 gem 'bootstrap-will_paginate', '~> 1.0'
 
+gem 'draper', '~> 4.0', '>= 4.0.2'
+
 gem 'turbolinks', '~> 5'
 
 gem 'webpacker', '~> 5'

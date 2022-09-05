@@ -46,6 +46,7 @@ commands:
           command: |
             bundle exec rake db:create
             bundle exec rake db:schema:load
+
   run_rubocop:
     description: command to start rubocop
     steps:
