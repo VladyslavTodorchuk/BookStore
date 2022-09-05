@@ -19,11 +19,11 @@
           %span{'aria-hidden': "true"} &times;
         %ul.nav.navbar-nav
           %li
-            %a{href: "/"}= t('.home')
+            %a#root{href: "/"}= t('.home')
           %li
             %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
               = t('.shop')
-            %ul#menu.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
+            %ulnav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
                   %a.collapse-link{href: "#"}= category.name
@@ -32,19 +32,14 @@
       .hidden-xs
         %ul.nav.navbar-nav
           %li
-            %a{href: "#"}= t('.home')
+            %a#root_mobile{href: "#"}= t('.home')
           %li.dropdown
             %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
               = t('.shop')
             %ul.dropdown-menu
-              %li
-                %a{href: "#"}= t('.mobile')
-              %li
-                %a{href: "#"}= t('.photo')
-              %li
-                %a{href: "#"}= t('.web')
-              %li.divider{role: "separator"}
-              %li
-                %a{href: "#"}= t('.log_in')
+              - Category.all.each do |category|
+                %li
+                  %a{href: "#"}= category.name
+              %a{href: "#"}= t('header.log_in')
           %li
             %a{href: "#"}= t('.account')

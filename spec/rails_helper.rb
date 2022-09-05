@@ -6,6 +6,7 @@ require 'rspec/rails'
 require 'shoulda-matchers'
 
 require_relative 'support/configs/shoulda_matcher'
+require_relative 'support/configs/capybara'
 
 begin
   ActiveRecord::Migration.maintain_test_schema!

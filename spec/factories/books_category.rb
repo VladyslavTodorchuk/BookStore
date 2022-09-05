@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :books_categories do
+  factory :books_category do
     book
     category
   end
