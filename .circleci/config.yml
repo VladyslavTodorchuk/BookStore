@@ -50,7 +50,7 @@ commands:
     steps:
       - run:
           name: Setup Chrome
-          command: brew install chromedriver
+          command: sudo apt install chromedriver
   run_rubocop:
     description: command to start rubocop
     steps:
