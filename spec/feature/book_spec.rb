@@ -1,7 +1,19 @@
 RSpec.describe 'Book', type: :feature do
   let(:category_one) { create(:category) }
   let(:category_two) { create(:category) }
+<<<<<<< HEAD
   let(:params) { attributes_for(:book) }
+=======
+  let(:params) do
+    { title: FFaker::Book.title,
+      description: FFaker::Book.description,
+      price_cents: FFaker::Number.rand(1..100),
+      dimensions: FFaker::Book.cover,
+      year_of_publication: FFaker::Number.rand(1900..2022),
+      materials: 'Soft cover',
+      quantity: FFaker::Number.rand(2..5) }
+  end
+>>>>>>> 56ef3ac (Featire specs)
   let(:book) { create(:book).decorate }
 
   describe '#show' do
