@@ -112,8 +112,8 @@ RSpec.describe 'Book', type: :feature do
 
   describe 'load_more' do
     before do
-      (BooksController::PAGINATION_PER_PAGE * 2).times do
-        books << create(:book)
+      (Constants::PAGINATION_PER_PAGE * 2).times do
+        books << FactoryBot.create(:book)
       end
     end
 
