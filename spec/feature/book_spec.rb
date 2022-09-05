@@ -104,7 +104,11 @@ RSpec.describe 'Book', type: :feature do
 
   describe 'load_more' do
     before do
+<<<<<<< HEAD
       Constants::PAGINATION_PER_PAGE.next.times do
+=======
+      24.times do
+>>>>>>> 563720e (Featire specs)
         books << create(:book)
       end
     end

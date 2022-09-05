@@ -53,19 +53,10 @@
       .hidden-xs
         %ul.nav.navbar-nav
           %li
-<<<<<<< HEAD
             %a#root_mobile{href: "/"}= t('header.home')
-=======
-<<<<<<< HEAD
-            %a#root_mobile{href: "#"}= t('.home')
-=======
-            %a#root_mobile{href: "/"}= t('header.home')
->>>>>>> 6e35f18 (Featire specs)
->>>>>>> 5c33a07 (Featire specs)
           %li.dropdown
             %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"} Shop
             %ul.dropdown-menu
-<<<<<<< HEAD
               %li
                 %a.collapse-link{href: "/books"}= t('header.all')
               - Category.all.each do |category|
@@ -83,9 +74,8 @@
                       = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
-            - else
-              %li
-                = link_to t('header.log_in'), new_user_session_path
-              %li
-                = link_to t('header.sing_up'), new_user_registration_path
-
+          - else
+            %li
+              = link_to t('header.log_in'), new_user_session_path
+            %li
+              = link_to t('header.sing_up'), new_user_registration_path
