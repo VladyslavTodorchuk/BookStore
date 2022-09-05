@@ -52,7 +52,9 @@ commands:
     steps:
       - run:
           name: rubocop
-          command: bundle exec rubocop
+          command: |
+            sudo apt-get install chromium-chromedriver
+            bundle exec rubocop
 
   run_fasterer:
     description: command to start fasterer
