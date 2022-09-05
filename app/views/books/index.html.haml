@@ -41,11 +41,6 @@
         %div{"data-view-more-target" => "pagination"}
           = will_paginate(@books)
       .text-center
-<<<<<<< HEAD
-        - unless @books.total_pages == @books.current_page
+        - unless @books.last_page?
           %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#next" }
             = t("catalog_page.view_more")
-=======
-        %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#next" }
-          = t("catalog_page.view_more")
->>>>>>> 9656a57 (Add JS and Book Page)

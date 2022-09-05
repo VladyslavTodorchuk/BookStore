@@ -1,6 +1,4 @@
 class BooksController < ApplicationController
-  PAGINATION_PER_PAGE = 12
-
   def index
     @books_count = Book.count
     @categories = Category.all
