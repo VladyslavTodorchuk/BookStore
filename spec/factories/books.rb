@@ -3,9 +3,9 @@ FactoryBot.define do
     title { FFaker::Book.title }
     description { FFaker::Book.description }
     price { FFaker::Number.rand(100) }
-    materials { 'Soft' }
+    materials { FFaker::Book.cover(:format) }
     year_of_publication { FFaker::Number.rand(1900..2022) }
-    dimensions { '30:20:14' }
-    quantity { FFaker::Number.rand(2..10) }
+    dimensions { FFaker::Book.cover(:size) }
+    quantity { FFaker::Number.rand(0..10) }
   end
 end
