@@ -75,6 +75,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fb61c5a (Featire specs)
 =======
 >>>>>>> 0e864a5 (Manifest_cache true)
 =======
@@ -379,7 +382,12 @@
 =======
 =======
 >>>>>>> 1d59aaa (Fix)
+<<<<<<< HEAD
 >>>>>>> 9e081dc (Fix)
+=======
+=======
+>>>>>>> 715fac2 (Featire specs)
+>>>>>>> fb61c5a (Featire specs)
     "line": 90.68
 =======
 >>>>>>> 009401d (Featire specs)
@@ -394,6 +402,7 @@
     "line": 90.68
 =======
 >>>>>>> 6da9530 (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -481,6 +490,8 @@
 =======
 >>>>>>> b832d45 (Featire specs)
 >>>>>>> 86d584a (Manifest_cache true)
+=======
+>>>>>>> 715fac2 (Featire specs)
     "line": 90.68
 =======
 <<<<<<< HEAD
@@ -1153,6 +1164,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bd30d038 (Manifest_cache true)
 =======
@@ -1163,10 +1175,14 @@
 =======
 >>>>>>> b97bb382 (Featire specs)
 =======
+>>>>>>> 73f364d8 (Featire specs)
+=======
 >>>>>>> 551c6ab (Manifest_cache true)
 >>>>>>> 56531f25 (Manifest_cache true)
 =======
 >>>>>>> 973ba8c (Featire specs)
+=======
+>>>>>>> fb61c5a (Featire specs)
 =======
     "line": 99.11
 >>>>>>> 4e81ea2 (Featire specs)
@@ -1253,12 +1269,21 @@
 =======
 >>>>>>> 35d17b9 (Manifest_cache true)
 =======
+<<<<<<< HEAD
 >>>>>>> 86229876 (Manifest_cache true)
+=======
+=======
+    "line": 99.11
+>>>>>>> 4e81ea2 (Featire specs)
+>>>>>>> 715fac2 (Featire specs)
+=======
+>>>>>>> 73f364d8 (Featire specs)
     "line": 90.68
 >>>>>>> aa7b40c (Manifest_cache true)
 =======
     "line": 99.25
 >>>>>>> 1214e1f (Add login registration pages)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1287,6 +1312,8 @@
 =======
 >>>>>>> a2206025 (Featire specs)
 =======
+>>>>>>> 73f364d8 (Featire specs)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 824bb2b (Featire specs)
@@ -1297,6 +1324,8 @@
 =======
 >>>>>>> 416166f (Featire specs)
 >>>>>>> a2206025 (Featire specs)
+=======
+>>>>>>> fb61c5a (Featire specs)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3186,6 +3215,12 @@
     "line": 95.73
 >>>>>>> 7c4ea7f (Fix)
 >>>>>>> 1d59aaa (Fix)
+=======
+=======
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+>>>>>>> 5c33a07 (Featire specs)
+>>>>>>> 715fac2 (Featire specs)
   }
 }
 >>>>>>> 6da9530 (Featire specs)
