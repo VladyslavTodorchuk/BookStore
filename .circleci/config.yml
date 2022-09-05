@@ -18,6 +18,7 @@ executors:
           POSTGRES_USER: postgres
           POSTGRES_DB: bookstore_test
       - image: selenium/standalone-chrome
+
 cashes:
   - &bundle_cache_full v2-codebreaker-{{ checksum "Gemfile.lock" }}
   - &bundle_cache v2-codebreaker
@@ -46,7 +47,13 @@ commands:
           command: |
             bundle exec rake db:create
             bundle exec rake db:schema:load
-
+  install_chrome:
+    steps:
+      - run:
+          name: Setup Chrome
+          command: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install ./google-chrome-stable_current_amd64.deb
   run_rubocop:
     description: command to start rubocop
     steps:
@@ -87,6 +94,7 @@ jobs:
     executor: default
     steps:
       - defaults
+      - install_chrome
       - run_rspec
 
 workflows:
