@@ -94,6 +94,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3e9f99d (Featire specs)
 >>>>>>> 3ee72a90 (Fix)
@@ -151,7 +152,12 @@
 =======
 >>>>>>> 4e0a8d9 (Manifest_cache true)
 =======
+<<<<<<< HEAD
 >>>>>>> 641851aa (Manifest_cache true)
+=======
+>>>>>>> f5da5ac (Featire specs)
+=======
+>>>>>>> b9ed4ec7 (Featire specs)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1008,8 +1014,16 @@
 =======
 =======
 >>>>>>> 4e7b845 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> 4e0a8d9 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> 641851aa (Manifest_cache true)
+=======
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
 {
   "RSpec": {
     "coverage": {
@@ -13961,10 +13975,17 @@
         ]
       },
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/application.rb": {
+=======
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/feature/book_spec.rb": {
+>>>>>>> 752f0c0 (Featire specs)
         "lines": [
           1,
           null,
           1,
+<<<<<<< HEAD
           null,
           null,
           null,
@@ -18058,14 +18079,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 51bc18c (Featire specs)
 =======
 >>>>>>> 11bfd786 (Featire specs)
 =======
+>>>>>>> b9ed4ec7 (Featire specs)
+=======
           5,
           3,
 >>>>>>> 752f0c0 (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21178,10 +21203,13 @@
 >>>>>>> 5b433a6f (Featire specs)
 =======
 >>>>>>> 7d0509fd (Fix)
+=======
+>>>>>>> b9ed4ec7 (Featire specs)
           1,
           4,
           null,
           null,
+<<<<<<< HEAD
           1,
           1,
           null,
@@ -21284,6 +21312,16 @@
           1,
           null,
           null,
+=======
+          null,
+          null,
+          null,
+          null,
+          null,
+          7,
+          null,
+          1,
+>>>>>>> 752f0c0 (Featire specs)
           1,
           1,
           null,
@@ -21297,7 +21335,25 @@
           null,
           1,
           null,
+<<<<<<< HEAD
           1,
+=======
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+>>>>>>> 752f0c0 (Featire specs)
           null,
 <<<<<<< HEAD
 =======
@@ -21308,6 +21364,57 @@
           null,
           2,
           null,
+<<<<<<< HEAD
+=======
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          2,
+>>>>>>> 752f0c0 (Featire specs)
           2,
           null,
           null,
@@ -21318,6 +21425,7 @@
           1,
           1,
           null,
+<<<<<<< HEAD
           1,
           null,
           1,
@@ -21343,10 +21451,14 @@
           4,
           null,
           4,
+=======
+          null,
+>>>>>>> 752f0c0 (Featire specs)
           null,
           null,
           1,
           1,
+<<<<<<< HEAD
           null,
           1,
           null,
@@ -23388,16 +23500,36 @@
 >>>>>>> 866aee4 (Manifest_cache true)
           null,
           1,
+=======
+          3,
+          72,
+          null,
+          null,
+          null,
+          4,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+>>>>>>> 752f0c0 (Featire specs)
           1,
           null,
           null,
           1,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7c4ea7f (Fix)
 =======
 <<<<<<< HEAD
 >>>>>>> 866aee4 (Manifest_cache true)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
           1,
           null,
           1,
@@ -23505,6 +23637,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 563720e (Featire specs)
 =======
@@ -23521,11 +23654,16 @@
 >>>>>>> 0b5b269 (Fix)
 =======
 >>>>>>> d6f7da8 (Featire specs)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
           null,
 =======
 >>>>>>> d0dc1f1 (Featire specs)
 =======
 >>>>>>> 752f0c0 (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -23535,6 +23673,8 @@
 >>>>>>> 93bdda9 (Featire specs)
 =======
 >>>>>>> 563720e (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
 =======
 >>>>>>> 4e81ea2 (Featire specs)
 =======
@@ -23572,11 +23712,17 @@
 =======
 >>>>>>> d0dc1f1 (Featire specs)
 >>>>>>> 9dc109d (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d6f7da8 (Featire specs)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
           5,
           null,
           5,
           null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23632,6 +23778,8 @@
 >>>>>>> 0b5b269 (Fix)
 =======
 =======
+>>>>>>> f5da5ac (Featire specs)
+=======
           null,
 >>>>>>> 7c4ea7f (Fix)
 =======
@@ -23639,7 +23787,17 @@
 =======
 >>>>>>> d0dc1f1 (Featire specs)
 >>>>>>> 9dc109d (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d6f7da8 (Featire specs)
+=======
+=======
+          null,
+=======
+>>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
           5,
           5,
           null,
@@ -23681,6 +23839,7 @@
           null,
           1,
           null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           null,
@@ -23733,13 +23892,22 @@
 =======
 >>>>>>> 02a399d (Manifest_cache true)
 >>>>>>> 866aee4 (Manifest_cache true)
+=======
+=======
+>>>>>>> 02a399d (Manifest_cache true)
+=======
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
           null,
           null
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/author_spec.rb": {
 =======
+=======
+>>>>>>> 864f339 (Featire specs)
 <<<<<<< HEAD
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/feature/cart_spec.rb": {
 >>>>>>> 9dc109d (Featire specs)
@@ -30267,10 +30435,16 @@
         "lines": [
           1,
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/rails_helper.rb": {
+        "lines": [
+          1,
+>>>>>>> 752f0c0 (Featire specs)
           1,
           1,
           1,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
           null,
 >>>>>>> 7c4ea7f (Fix)
@@ -30300,6 +30474,7 @@
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           2,
           2,
           null,
@@ -30310,6 +30485,10 @@
           2,
           2,
 =======
+=======
+=======
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
           1,
           null,
           1,
@@ -30319,6 +30498,7 @@
           1,
 >>>>>>> 7c4ea7f (Fix)
           null,
+<<<<<<< HEAD
           1,
           null,
           null,
@@ -30422,6 +30602,8 @@
           null,
           0,
 =======
+=======
+>>>>>>> 752f0c0 (Featire specs)
           0,
           0,
           null,
@@ -30464,15 +30646,21 @@
           null,
           null,
           null,
+<<<<<<< HEAD
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> 752f0c0 (Featire specs)
           null,
           null,
           null
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/feature/coupon_spec.rb": {
 =======
+=======
+>>>>>>> 752f0c0 (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/boot.rb": {
         "lines": [
           1,
@@ -30725,6 +30913,7 @@
         "lines": [
           1,
           1,
+<<<<<<< HEAD
           3,
           3,
           3,
@@ -30732,6 +30921,15 @@
           3,
           3,
           3,
+=======
+          80,
+          90,
+          80,
+          90,
+          90,
+          90,
+          90,
+>>>>>>> 752f0c0 (Featire specs)
           null,
           null
         ]
@@ -30750,18 +30948,26 @@
         "lines": [
           1,
           1,
+<<<<<<< HEAD
           1,
+=======
+          8,
+>>>>>>> 752f0c0 (Featire specs)
           null,
           null
         ]
       },
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/routes.rb": {
+<<<<<<< HEAD
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> 752f0c0 (Featire specs)
         "lines": [
           1,
           1,
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
           1,
           1,
@@ -30788,6 +30994,8 @@
           null,
           1,
 =======
+=======
+>>>>>>> 752f0c0 (Featire specs)
           null
         ]
       },
@@ -30795,6 +31003,12 @@
         "lines": [
           1,
           1,
+<<<<<<< HEAD
+=======
+          1,
+          null,
+          1,
+>>>>>>> 752f0c0 (Featire specs)
           null
         ]
       },
@@ -30802,7 +31016,10 @@
         "lines": [
           1,
           1,
+<<<<<<< HEAD
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> 752f0c0 (Featire specs)
           1,
           null,
           null,
@@ -30810,17 +31027,24 @@
           1,
           null,
 <<<<<<< HEAD
+<<<<<<< HEAD
           null,
           1,
           1,
           null,
           null,
 =======
+=======
+>>>>>>> 752f0c0 (Featire specs)
           null
         ]
       },
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/support/configs/capybara.rb": {
         "lines": [
+<<<<<<< HEAD
+=======
+          null,
+>>>>>>> 752f0c0 (Featire specs)
           1,
           1,
           1,
@@ -30831,25 +31055,35 @@
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 752f0c0 (Featire specs)
           1,
           1,
           1,
           1,
+<<<<<<< HEAD
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> 752f0c0 (Featire specs)
           null,
           1,
           1,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
           null,
           1,
           null,
           1,
 =======
+=======
+>>>>>>> 752f0c0 (Featire specs)
           1,
           1,
           1,
           1,
+<<<<<<< HEAD
 =======
           0,
           0,
@@ -30870,12 +31104,20 @@
           null,
           null,
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+          null,
+          1,
+          null,
+          null,
+          null,
+>>>>>>> 752f0c0 (Featire specs)
           null,
 >>>>>>> 7c4ea7f (Fix)
           null,
           null
         ]
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30891,6 +31133,8 @@
 >>>>>>> 7c4ea7f (Fix)
 =======
 >>>>>>> 866aee4 (Manifest_cache true)
+=======
+>>>>>>> 864f339 (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/feature/home_spec.rb": {
         "lines": [
           1,
@@ -30950,15 +31194,24 @@
 =======
 =======
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/feature/home_spec.rb": {
+        "lines": [
+          1,
+>>>>>>> 752f0c0 (Featire specs)
           null,
 >>>>>>> 9dc109d (Featire specs)
           1,
           1,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
           1,
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+          1,
+>>>>>>> 752f0c0 (Featire specs)
           null,
           1,
           1,
@@ -35109,6 +35362,7 @@
           1,
           null,
           null,
+<<<<<<< HEAD
 <<<<<<< HEAD
           1,
           1,
@@ -44808,6 +45062,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -44840,7 +45095,12 @@
 =======
 >>>>>>> c006a44 (Featire specs)
 =======
+<<<<<<< HEAD
 >>>>>>> a9a451b2 (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
+=======
+>>>>>>> b9ed4ec7 (Featire specs)
 >>>>>>> 4e81ea2 (Featire specs)
 =======
 >>>>>>> 08edf50 (Featire specs)
@@ -46991,8 +47251,16 @@
 =======
 >>>>>>> d0dc1f1 (Featire specs)
 >>>>>>> 9dc109d (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d6f7da8 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d7e380a5 (Featire specs)
+=======
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           null
         ]
       },
@@ -47148,6 +47416,7 @@
           2,
           2,
           null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51325,6 +51594,8 @@
 =======
 >>>>>>> d7e380a5 (Featire specs)
 =======
+>>>>>>> b9ed4ec7 (Featire specs)
+=======
 >>>>>>> 5506bd0 (Featire specs)
 =======
 >>>>>>> 2ee03d3 (Featire specs)
@@ -51378,6 +51649,8 @@
 >>>>>>> 0b5b269 (Fix)
 =======
 >>>>>>> d6f7da8 (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
 =======
 >>>>>>> 9620751 (Featire specs)
 >>>>>>> 5507b42 (Featire specs)
@@ -51615,9 +51888,12 @@
 =======
 >>>>>>> 9dc109d (Featire specs)
 =======
+>>>>>>> 864f339 (Featire specs)
+=======
           null,
           1,
 >>>>>>> d0dc1f1 (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51635,10 +51911,17 @@
 >>>>>>> 59d75f9 (Featire specs)
 >>>>>>> bcd09ab (Featire specs)
 =======
+=======
+>>>>>>> 59d75f9 (Featire specs)
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+=======
           null,
           1,
 >>>>>>> 752f0c0 (Featire specs)
 >>>>>>> 3ee72a90 (Fix)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51682,6 +51965,8 @@
 >>>>>>> 3ee72a90 (Fix)
 =======
 >>>>>>> af057e3 (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
 =======
 >>>>>>> c4adab0 (Featire specs)
 >>>>>>> 96394f1 (Featire specs)
@@ -52261,8 +52546,16 @@
 =======
 =======
 >>>>>>> 9dc109d (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d6f7da8 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d7e380a5 (Featire specs)
+=======
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           1,
           1,
           2,
@@ -52283,6 +52576,7 @@
 =======
 =======
 >>>>>>> 3ee72a90 (Fix)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52369,6 +52663,8 @@
 >>>>>>> 7d0509fd (Fix)
 =======
 >>>>>>> d7e380a5 (Featire specs)
+=======
+>>>>>>> b9ed4ec7 (Featire specs)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52501,6 +52797,8 @@
 >>>>>>> 0b5b269 (Fix)
 =======
 >>>>>>> d6f7da8 (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/authors_book_spec.rb": {
         "lines": [
           1,
@@ -52673,6 +52971,8 @@
 >>>>>>> 7c4ea7f (Fix)
 =======
 >>>>>>> 9dc109d (Featire specs)
+=======
+>>>>>>> 864f339 (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/authors_book_spec.rb": {
         "lines": [
           1,
@@ -53736,6 +54036,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -53743,6 +54044,8 @@
 >>>>>>> 3ee72a90 (Fix)
 =======
 >>>>>>> bcd09ab (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
 =======
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/author.rb": {
 =======
@@ -53766,7 +54069,11 @@
 =======
 =======
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/author.rb": {
+<<<<<<< HEAD
 >>>>>>> 3e9f99d (Featire specs)
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
         "lines": [
           1,
           1,
@@ -53944,6 +54251,8 @@
 >>>>>>> 3e9f99d (Featire specs)
 =======
 =======
+=======
+>>>>>>> 864f339 (Featire specs)
           1,
           null
         ]
@@ -53957,15 +54266,19 @@
       },
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/authors_book_spec.rb": {
         "lines": [
+<<<<<<< HEAD
 =======
           0,
           null,
           null,
 >>>>>>> 96aecde (Manifest_cache true)
+=======
+>>>>>>> 864f339 (Featire specs)
           1,
           null,
           1,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
           1,
 >>>>>>> 752f0c0 (Featire specs)
@@ -54008,6 +54321,10 @@
           2,
           2,
 >>>>>>> 7c4ea7f (Fix)
+=======
+          1,
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
           2,
           2,
           null,
@@ -54063,6 +54380,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> bcd09ab (Featire specs)
 =======
@@ -54075,6 +54393,8 @@
 =======
 >>>>>>> 0b5b269 (Fix)
 =======
+>>>>>>> f5da5ac (Featire specs)
+=======
 >>>>>>> a5d032d (Fix)
 =======
 >>>>>>> 59d75f9 (Featire specs)
@@ -54084,6 +54404,7 @@
 >>>>>>> c4adab0 (Featire specs)
 =======
 >>>>>>> 7c4ea7f (Fix)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 3e9f99d (Featire specs)
@@ -54110,7 +54431,14 @@
 =======
 =======
 >>>>>>> 0b5b269 (Fix)
+<<<<<<< HEAD
 >>>>>>> 7d0509fd (Fix)
+=======
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           2,
           2,
           2,
@@ -54127,6 +54455,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -54136,6 +54465,8 @@
 >>>>>>> bcd09ab (Featire specs)
 =======
 >>>>>>> 0b5b269 (Fix)
+=======
+>>>>>>> f5da5ac (Featire specs)
 =======
 >>>>>>> 752f0c0 (Featire specs)
 =======
@@ -54161,6 +54492,7 @@
 =======
 >>>>>>> 7c4ea7f (Fix)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 752f0c0 (Featire specs)
@@ -54188,12 +54520,22 @@
 =======
 =======
 >>>>>>> 0b5b269 (Fix)
+<<<<<<< HEAD
 >>>>>>> 7d0509fd (Fix)
+=======
+=======
+=======
+=======
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           null,
           null,
           null
         ]
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54215,6 +54557,8 @@
 >>>>>>> 0b5b269 (Fix)
 >>>>>>> 7d0509fd (Fix)
 =======
+>>>>>>> f5da5ac (Featire specs)
+=======
 >>>>>>> 59d75f9 (Featire specs)
 =======
 >>>>>>> c4adab0 (Featire specs)
@@ -54223,6 +54567,7 @@
 =======
 >>>>>>> 7c4ea7f (Fix)
 =======
+<<<<<<< HEAD
 >>>>>>> 3e9f99d (Featire specs)
 <<<<<<< HEAD
 =======
@@ -54247,7 +54592,13 @@
 =======
 >>>>>>> 7c4ea7f (Fix)
 >>>>>>> 0b5b269 (Fix)
+<<<<<<< HEAD
 >>>>>>> 7d0509fd (Fix)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/billing.rb": {
         "lines": [
           1,
@@ -54397,6 +54748,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -54411,7 +54763,12 @@
 =======
 =======
 >>>>>>> 0b5b269 (Fix)
+<<<<<<< HEAD
 >>>>>>> 7d0509fd (Fix)
+=======
+=======
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
 >>>>>>> c033601 (Rebased)
 =======
 =======
@@ -54470,6 +54827,7 @@
 =======
 >>>>>>> 4552227 (Featire specs)
 >>>>>>> 94841b5 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 6fba6be (Featire specs)
 =======
 >>>>>>> 2ee03d3 (Featire specs)
@@ -54499,6 +54857,11 @@
 >>>>>>> 4552227 (Featire specs)
 >>>>>>> 94841b5 (Featire specs)
 >>>>>>> fefbd35 (Featire specs)
+=======
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/authors_book.rb": {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54530,6 +54893,7 @@
           1,
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54804,6 +55168,8 @@
 >>>>>>> ce045d9c (Featire specs)
 =======
 >>>>>>> 5b433a6f (Featire specs)
+=======
+>>>>>>> b9ed4ec7 (Featire specs)
           1,
 =======
 <<<<<<< HEAD
@@ -54827,6 +55193,8 @@
 >>>>>>> 9ca3b84 (Featire specs)
 =======
 >>>>>>> fefbd35 (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
 >>>>>>> 752f0c0 (Featire specs)
 <<<<<<< HEAD
 >>>>>>> d2e6b3c (Featire specs)
@@ -54915,6 +55283,7 @@
 >>>>>>> 7c4ea7f (Fix)
 =======
 >>>>>>> 752f0c0 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d2e6b3c (Featire specs)
 >>>>>>> 3e9f99d (Featire specs)
 =======
@@ -54962,13 +55331,20 @@
 =======
 >>>>>>> 7c4ea7f (Fix)
 >>>>>>> 0b5b269 (Fix)
+<<<<<<< HEAD
 >>>>>>> 7d0509fd (Fix)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           null
         ]
       },
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/book_spec.rb": {
         "lines": [
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -55013,6 +55389,8 @@
 >>>>>>> 0b5b269 (Fix)
 =======
 >>>>>>> d6f7da8 (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
 =======
 >>>>>>> 9620751 (Featire specs)
 =======
@@ -55086,14 +55464,23 @@
 =======
 >>>>>>> 9dc109d (Featire specs)
 =======
+<<<<<<< HEAD
 >>>>>>> d6f7da8 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d7e380a5 (Featire specs)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/book_spec.rb": {
         "lines": [
           1,
           null,
           1,
 >>>>>>> d0dc1f1 (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -55114,6 +55501,12 @@
 >>>>>>> 59d75f9 (Featire specs)
 >>>>>>> bcd09ab (Featire specs)
 =======
+=======
+>>>>>>> 59d75f9 (Featire specs)
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+=======
           null,
           1,
 >>>>>>> 752f0c0 (Featire specs)
@@ -55122,6 +55515,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f5da5ac (Featire specs)
 =======
 >>>>>>> c4adab0 (Featire specs)
 =======
@@ -55273,8 +55669,16 @@
 =======
 =======
 >>>>>>> 9dc109d (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d6f7da8 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d7e380a5 (Featire specs)
+=======
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           1,
           1,
           2,
@@ -55293,6 +55697,7 @@
           2,
           2,
           null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -55369,7 +55774,12 @@
 =======
 =======
 >>>>>>> d6f7da8 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d7e380a5 (Featire specs)
+=======
+=======
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           2,
           null,
 =======
@@ -61412,12 +61822,19 @@
 =======
 =======
 >>>>>>> 9dc109d (Featire specs)
+<<<<<<< HEAD
 >>>>>>> d6f7da8 (Featire specs)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
           2,
           null,
 =======
 =======
 >>>>>>> 02a399d (Manifest_cache true)
+=======
+>>>>>>> 752f0c0 (Featire specs)
           null,
           null
         ]
@@ -61435,11 +61852,15 @@
           1,
           1,
           1,
+<<<<<<< HEAD
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> 752f0c0 (Featire specs)
           null,
           null
         ]
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/book.rb": {
@@ -61562,6 +61983,7 @@
 =======
 >>>>>>> 94841b5 (Featire specs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/authors_book_spec.rb": {
 =======
@@ -61586,6 +62008,10 @@
 >>>>>>> 8879e8b (Fix book_spec decrease quantity and price)
 =======
 >>>>>>> fefbd35 (Featire specs)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/application_record.rb": {
 >>>>>>> 59d75f9 (Featire specs)
         "lines": [
@@ -65038,6 +65464,13 @@
           null,
           1,
 >>>>>>> d0dc1f1 (Featire specs)
+=======
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/books_category_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+>>>>>>> 752f0c0 (Featire specs)
           1,
           1,
           2,
@@ -85867,6 +86300,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 59d75f9 (Featire specs)
 =======
@@ -85881,9 +86315,12 @@
 =======
 >>>>>>> 94841b5 (Featire specs)
 =======
+>>>>>>> 864f339 (Featire specs)
+=======
 >>>>>>> 02a399d (Manifest_cache true)
 =======
 >>>>>>> 752f0c0 (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -85981,11 +86418,17 @@
 =======
 >>>>>>> 02a399d (Manifest_cache true)
 >>>>>>> 866aee4 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> b64f2548 (Manifest_cache true)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           1,
           null
         ]
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86043,7 +86486,12 @@
 =======
 =======
 >>>>>>> 94841b5 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 5b433a6f (Featire specs)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/author.rb": {
         "lines": [
 =======
@@ -86163,6 +86611,9 @@
       },
 <<<<<<< HEAD
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/order_spec.rb": {
+=======
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/category_spec.rb": {
+>>>>>>> 752f0c0 (Featire specs)
         "lines": [
           1,
           null,
@@ -86171,6 +86622,7 @@
 >>>>>>> 7c4ea7f (Fix)
           1,
           2,
+<<<<<<< HEAD
           2,
           null,
           null,
@@ -86287,7 +86739,12 @@
           2,
           2,
           2,
+<<<<<<< HEAD
 >>>>>>> 7c4ea7f (Fix)
+=======
+=======
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
           null,
           null,
           1,
@@ -86298,12 +86755,14 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/review.rb": {
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/category.rb": {
 >>>>>>> d0dc1f1 (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9620751 (Featire specs)
 =======
@@ -86329,12 +86788,18 @@
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/category.rb": {
 >>>>>>> d0dc1f1 (Featire specs)
 >>>>>>> 9dc109d (Featire specs)
+=======
+=======
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/category.rb": {
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
         "lines": [
           1,
           1,
           1,
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -86370,6 +86835,8 @@
           1,
 =======
 >>>>>>> 9dc109d (Featire specs)
+=======
+>>>>>>> 864f339 (Featire specs)
           null,
           1,
 >>>>>>> c336a21 (Fix book_spec decrease quantity and price)
@@ -86737,10 +87204,40 @@
           2,
           2,
           null,
+=======
+          null
+        ]
+      },
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/controllers/books_controller.rb": {
+        "lines": [
+          1,
+          1,
+          24,
+          24,
+          null,
+          24,
+          null,
+          24,
+          24,
+          24,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          7,
+          null,
+          7,
+>>>>>>> 752f0c0 (Featire specs)
           null,
           null
         ]
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/authors_book_spec.rb": {
         "lines": [
@@ -86821,6 +87318,8 @@
 >>>>>>> 2c640cf (Manifest_cache true)
 =======
 >>>>>>> 7c4ea7f (Fix)
+=======
+>>>>>>> 864f339 (Featire specs)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/queryes/book_query_spec.rb": {
 >>>>>>> c033601 (Rebased)
 =======
@@ -86903,6 +87402,11 @@
           1,
           null,
           null,
+=======
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+>>>>>>> 752f0c0 (Featire specs)
           null
         ]
       },
@@ -87046,6 +87550,7 @@
         "lines": [
           1,
           1,
+<<<<<<< HEAD
           null,
           1,
           25,
@@ -89144,6 +89649,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b9cc4e9 (Manifest_cache true)
 =======
 =======
@@ -90275,6 +90781,9 @@
           1,
           1,
 >>>>>>> 4552227 (Featire specs)
+=======
+=======
+>>>>>>> 864f339 (Featire specs)
           24,
           7,
           7,
@@ -90284,6 +90793,7 @@
           null,
           17,
           null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7a02bbe (Featire specs)
           null,
@@ -90507,6 +91017,9 @@
         "lines": [
           1,
           1,
+=======
+          null,
+>>>>>>> 864f339 (Featire specs)
           null
         ]
       },
@@ -90523,6 +91036,7 @@
           1,
           3,
           null,
+<<<<<<< HEAD
 <<<<<<< HEAD
           1,
           null,
@@ -90691,8 +91205,17 @@
 =======
 =======
 >>>>>>> 866aee4 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> ab67c96 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> b64f2548 (Manifest_cache true)
+=======
+=======
+=======
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
           null
         ]
       }
@@ -91383,6 +91906,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b3f2049 (Featire specs)
 >>>>>>> 0ed7f7c (Featire specs)
 =======
@@ -91650,7 +92174,12 @@
 =======
 >>>>>>> ab67c96 (Manifest_cache true)
 =======
+<<<<<<< HEAD
 >>>>>>> b64f2548 (Manifest_cache true)
+=======
+>>>>>>> f5da5ac (Featire specs)
+=======
+>>>>>>> b9ed4ec7 (Featire specs)
 =======
 >>>>>>> 4a0e3b6 (Manifest_cache true)
 =======
@@ -92508,6 +93037,8 @@
 =======
 =======
 >>>>>>> 866aee4 (Manifest_cache true)
+=======
+>>>>>>> 864f339 (Featire specs)
     "timestamp": 1665139111
 =======
     "timestamp": 1662394890
@@ -93819,6 +94350,7 @@
 >>>>>>> 7375d4b (Manifest_cache true)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6fa625b (Manifest_cache true)
 =======
 =======
@@ -94414,6 +94946,22 @@
 =======
 >>>>>>> 7375d4b (Manifest_cache true)
 >>>>>>> 4e7b845 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> 4e0a8d9 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> 529f394 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> 641851aa (Manifest_cache true)
+=======
+=======
+=======
+=======
+=======
+    "timestamp": 1662394890
+  }
+}
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
+>>>>>>> f5da5ac (Featire specs)
+>>>>>>> a189b79 (Featire specs)
+>>>>>>> b9ed4ec7 (Featire specs)
