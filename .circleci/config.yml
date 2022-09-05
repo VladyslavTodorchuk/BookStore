@@ -1,11 +1,11 @@
 version: 2.1
+orbs:
+  browser-tools: circleci/browser-tools@x.y
 
 executors:
   default:
     working_directory: ~/codebreaker
     description: The official CircleCI Ruby Docker image
-    orbs:
-      browser-tools: circleci/browser-tools@x.y
     docker:
       - image: cimg/ruby:2.6.10
         environment:
