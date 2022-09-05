@@ -97,6 +97,7 @@ jobs:
     executor: default
     steps:
       - defaults
+      - test
       - run_rspec
 
 workflows:
