@@ -19,11 +19,7 @@ class BooksController < ApplicationController
   end
 
   def show
-<<<<<<< HEAD
     book = Book.find_by(id: params[:id])
-=======
-    @book = BookDecorator.decorate(Book.find(params[:id]))
->>>>>>> bd8bda4 (Manifest_cache true)
 
     if book.nil?
       redirect_to books_path
