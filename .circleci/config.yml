@@ -4,6 +4,8 @@ executors:
   default:
     working_directory: ~/codebreaker
     description: The official CircleCI Ruby Docker image
+    orbs:
+      browser-tools: circleci/browser-tools@x.y
     docker:
       - image: cimg/ruby:2.6.10
         environment:
@@ -46,15 +48,24 @@ commands:
           command: |
             bundle exec rake db:create
             bundle exec rake db:schema:load
+  test:
+    docker:
+      - image: cimg/node:13.12-browsers
+    steps:
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
+      - run:
+          command: |
+            google-chrome --version
+            chromedriver --version
+          name: Check install
 
   run_rubocop:
     description: command to start rubocop
     steps:
       - run:
           name: rubocop
-          command: |
-            sudo apt-get install chromium-chromedriver
-            bundle exec rubocop
+          command: bundle exec rubocop
 
   run_fasterer:
     description: command to start fasterer
@@ -95,6 +106,7 @@ workflows:
   build:
     jobs:
       - lintering
+      - test
       - rspec:
           requires:
             - lintering
