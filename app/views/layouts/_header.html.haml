@@ -21,7 +21,8 @@
           %li
             %a#root{href: "/"}= t('header.home')
           %li
-            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
+            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
+              = t('header.shop')
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
@@ -71,20 +72,8 @@
 >>>>>>> adc21e0 (Featire specs)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
->>>>>>> d2e6b3c (Featire specs)
             - else
               %li
                 = link_to t('header.log_in'), new_user_session_path
               %li
                 = link_to t('header.sing_up'), new_user_registration_path
-=======
-          - else
-            %li
-              = link_to t('header.log_in'), new_user_session_path
-            %li
-              = link_to t('header.sing_up'), new_user_registration_path
->>>>>>> 752f0c0 (Featire specs)
