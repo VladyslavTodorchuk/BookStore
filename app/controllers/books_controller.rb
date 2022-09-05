@@ -22,4 +22,3 @@ class BooksController < ApplicationController
     redirect_to books_path if @book.nil?
   end
 end
-

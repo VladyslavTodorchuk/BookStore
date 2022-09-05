@@ -11,4 +11,3 @@ class BookQuery
     end
   end
 end
-

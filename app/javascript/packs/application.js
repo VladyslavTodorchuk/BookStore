@@ -10,7 +10,6 @@ import "channels"
 
 global.jQuery = require('jquery');
 import 'bootstrap'
-import 'popper.js'
 
 import  '../../assets/javascripts/bootstrap.js'
 import  '../../assets/javascripts/jquery.js'
@@ -20,3 +19,5 @@ import '../../assets/stylesheets/application.css'
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import "controllers"

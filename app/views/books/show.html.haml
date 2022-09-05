@@ -1,0 +1,8 @@
+%main.container
+  %a.general-back-link{href: "/books"}
+    %i.fa.fa-long-arrow-left.mr-15
+    = t('book_page.back_to_result')
+
+  = render partial: 'books/show/book'
+
+  = render partial: 'books/show/review'
