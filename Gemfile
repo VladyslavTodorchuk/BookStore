@@ -53,6 +53,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'simplecov', '~> 0.21.2'
   gem 'webdrivers'
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
