@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   devise_for :users, as: 'omniauth', controller: { omniauth_callbacks: 'callbacks' }
 
   root 'home#index'
+<<<<<<< HEAD
   
   resources :orders, only: %i[index] do
     get '/add_to_order', to: 'order_books#add_to_order'
@@ -23,6 +24,9 @@ Rails.application.routes.draw do
 
   get '/coupon_check', to: 'coupons#find'
   
+=======
+
+>>>>>>> 3b03895 (Featire specs)
   resources :users
 
   resources :books, only: %i[show index] do
