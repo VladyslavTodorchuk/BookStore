@@ -17,7 +17,7 @@ executors:
         environment:
           POSTGRES_USER: postgres
           POSTGRES_DB: bookstore_test
-
+      - image: selenium/standalone-chrome
 cashes:
   - &bundle_cache_full v2-codebreaker-{{ checksum "Gemfile.lock" }}
   - &bundle_cache v2-codebreaker
