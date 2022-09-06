@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  browser-tools: circleci/browser-tools@1.1.0
-
 executors:
   default:
     working_directory: ~/codebreaker
@@ -20,7 +17,6 @@ executors:
         environment:
           POSTGRES_USER: postgres
           POSTGRES_DB: bookstore_test
-      - image: cimg/node:15.0.1-browsers
 
 cashes:
   - &bundle_cache_full v2-codebreaker-{{ checksum "Gemfile.lock" }}
@@ -50,16 +46,7 @@ commands:
           command: |
             bundle exec rake db:create
             bundle exec rake db:schema:load
-      - run:
-          command: |
-            - browser-tools/install-chrome
-            - browser-tools/install-chromedriver
-          name: Chrome install
-      - run:
-          command: |
-            - google-chrome --version
-            - chromedriver --version
-          name: Check install
+
   run_rubocop:
     description: command to start rubocop
     steps:
