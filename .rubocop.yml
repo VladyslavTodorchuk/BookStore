@@ -5,6 +5,8 @@ require:
 
 Metrics/LineLength:
   Max: 120
+  Exclude:
+    - 'config/initializers/devise.rb'
 
 Rails/BulkChangeTable:
   Enabled: false
