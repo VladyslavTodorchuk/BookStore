@@ -4161,8 +4161,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 730a8ca (Add login registration pages)
+=======
+>>>>>>> e1f4d17 (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/initializers/devise.rb": {
         "lines": [
           null,
@@ -4479,12 +4482,15 @@
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 08edf50 (Featire specs)
 =======
 >>>>>>> 730a8ca (Add login registration pages)
 =======
 >>>>>>> 7a02bbe (Featire specs)
+=======
+>>>>>>> e1f4d17 (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
@@ -4526,8 +4532,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 730a8ca (Add login registration pages)
+=======
+>>>>>>> e1f4d17 (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/initializers/omniauth.rb": {
         "lines": [
           1,
@@ -4536,12 +4545,15 @@
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 08edf50 (Featire specs)
 =======
 >>>>>>> 730a8ca (Add login registration pages)
 =======
 >>>>>>> 7a02bbe (Featire specs)
+=======
+>>>>>>> e1f4d17 (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
@@ -4760,6 +4772,14 @@
           null
         ]
       },
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/factories/users.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/routes.rb": {
         "lines": [
           1,
@@ -4769,8 +4789,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 730a8ca (Add login registration pages)
+=======
+>>>>>>> e1f4d17 (Add login registration pages)
           null,
           1,
           null
@@ -4793,12 +4816,15 @@
           1,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 08edf50 (Featire specs)
 =======
 >>>>>>> 730a8ca (Add login registration pages)
 =======
 >>>>>>> 7a02bbe (Featire specs)
+=======
+>>>>>>> e1f4d17 (Add login registration pages)
           null
         ]
       },
@@ -6076,6 +6102,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7a02bbe (Featire specs)
@@ -6093,7 +6120,12 @@
 >>>>>>> c336a21 (Fix book_spec decrease quantity and price)
 =======
 >>>>>>> 730a8ca (Add login registration pages)
+<<<<<<< HEAD
 >>>>>>> 8249ff3 (Add login registration pages)
+=======
+=======
+>>>>>>> e1f4d17 (Add login registration pages)
+>>>>>>> e989024 (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/decorators/book_decorator_spec.rb": {
 =======
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/authors_book_spec.rb": {
@@ -6299,12 +6331,13 @@
 <<<<<<< HEAD
 =======
           1,
-          30,
+          31,
           null,
           null,
           1,
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
           1,
 <<<<<<< HEAD
@@ -6695,6 +6728,9 @@
 =======
           89,
 >>>>>>> bf5c79b (Fix book_spec decrease quantity and price)
+=======
+          90,
+>>>>>>> e1f4d17 (Add login registration pages)
           null,
           null,
           1,
@@ -9269,16 +9305,31 @@
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e989024 (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/decorators/paginating_decorator.rb": {
         "lines": [
           1,
+=======
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+>>>>>>> e1f4d17 (Add login registration pages)
           1,
           null
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8249ff3 (Add login registration pages)
 =======
+=======
+>>>>>>> e989024 (Add login registration pages)
 =======
 >>>>>>> 7a02bbe (Featire specs)
 >>>>>>> 34509ee (Featire specs)
@@ -9322,6 +9373,8 @@
 >>>>>>> b832d45 (Featire specs)
 =======
 =======
+=======
+>>>>>>> e1f4d17 (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/decorators/category_decorator.rb": {
         "lines": [
           1,
@@ -9335,16 +9388,16 @@
           1,
           null,
           1,
-          24,
-          24,
-          24,
+          25,
+          25,
+          25,
           null,
           null,
-          24,
+          25,
           null,
-          24,
-          24,
-          24,
+          25,
+          25,
+          25,
           1,
           null,
           null,
@@ -9373,14 +9426,14 @@
           1,
           null,
           1,
-          24,
+          25,
           7,
           7,
           null,
           0,
           null,
           null,
-          17,
+          18,
           null,
           null,
           null
@@ -9458,6 +9511,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9523,8 +9577,16 @@
 =======
 =======
 >>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
 >>>>>>> 65eb296 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
 >>>>>>> 34bfcb2 (Fix book_spec decrease quantity and price)
+=======
+=======
+=======
+>>>>>>> cacbab9 (Add login registration pages)
+>>>>>>> c5efe8e (Add login registration pages)
+>>>>>>> e989024 (Add login registration pages)
     "timestamp": 1665065241
 =======
     "timestamp": 1662394890
@@ -9616,9 +9678,21 @@
 =======
     "timestamp": 1662453475
 >>>>>>> bf5c79b (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
 >>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
 >>>>>>> 65eb296 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
 >>>>>>> 34bfcb2 (Fix book_spec decrease quantity and price)
+=======
+=======
+=======
+=======
+    "timestamp": 1662475187
+>>>>>>> e1f4d17 (Add login registration pages)
+>>>>>>> cacbab9 (Add login registration pages)
+>>>>>>> c5efe8e (Add login registration pages)
+>>>>>>> e989024 (Add login registration pages)
   }
 }
 <<<<<<< HEAD
