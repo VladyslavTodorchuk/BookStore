@@ -153,6 +153,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b3f2049 (Featire specs)
 =======
 <<<<<<< HEAD
@@ -620,6 +621,8 @@
 >>>>>>> 282f108 (Add login registration pages)
 =======
 >>>>>>> 56a05fb (Featire specs)
+=======
+>>>>>>> 23e9df9 (Manifest_cache true)
     "line": 90.68
 =======
 >>>>>>> 3ee72a90 (Fix)
@@ -805,6 +808,8 @@
 >>>>>>> 0005d4a (Add login registration pages)
 =======
 >>>>>>> e54ceb0 (Featire specs)
+=======
+>>>>>>> 1bfc7a6 (Manifest_cache true)
     "line": 95.73
 >>>>>>> 864f339 (Featire specs)
 =======
@@ -1855,6 +1860,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6da9530 (Featire specs)
 <<<<<<< HEAD
 >>>>>>> 0f8241bb (Featire specs)
@@ -1871,6 +1877,8 @@
 >>>>>>> 16ebb0ff (Manifest_cache true)
 =======
 >>>>>>> 3ee72a90 (Fix)
+=======
+>>>>>>> bd9d850f (Manifest_cache true)
 >>>>>>> 5c33a07 (Featire specs)
 =======
 =======
@@ -4007,7 +4015,15 @@
     "line": 99.11
 >>>>>>> 08edf50 (Featire specs)
 >>>>>>> e54ceb0 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 56a05fb (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+>>>>>>> 1bfc7a6 (Manifest_cache true)
+>>>>>>> 23e9df9 (Manifest_cache true)
   }
 }
 >>>>>>> b003e69 (Fix)
