@@ -18,6 +18,7 @@ RSpec.describe BookDecorator do
       create(:category, name: FFaker::Book.genre)
     ]
   end
+
   context 'when decorate' do
     it '#authors_names' do
       expect(book_decorator.authors_names).to eq('Vlad Todorchuk, Stas Todorchuk')
