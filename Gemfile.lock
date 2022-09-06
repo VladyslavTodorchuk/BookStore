@@ -81,6 +81,7 @@ GEM
     ast (2.4.2)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
+<<<<<<< HEAD
     aws-eventstream (1.2.0)
     aws-partitions (1.651.0)
     aws-sdk-core (3.165.1)
@@ -97,6 +98,8 @@ GEM
       aws-sigv4 (~> 1.4)
     aws-sigv4 (1.5.2)
       aws-eventstream (~> 1, >= 1.0.2)
+=======
+>>>>>>> c5efe8e (Add login registration pages)
     bcrypt (3.1.18)
     bindex (0.8.1)
     bootsnap (1.13.0)
@@ -167,9 +170,12 @@ GEM
     hashie (5.0.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
+<<<<<<< HEAD
     image_processing (1.12.2)
       mini_magick (>= 4.9.5, < 5)
       ruby-vips (>= 2.0.17, < 3)
+=======
+>>>>>>> c5efe8e (Add login registration pages)
     inherited_resources (1.13.1)
       actionpack (>= 5.2, < 7.1)
       has_scope (~> 0.6)
@@ -179,7 +185,10 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+<<<<<<< HEAD
     jmespath (1.6.1)
+=======
+>>>>>>> c5efe8e (Add login registration pages)
     jquery-rails (4.5.0)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -213,7 +222,10 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+<<<<<<< HEAD
     mini_magick (4.11.0)
+=======
+>>>>>>> c5efe8e (Add login registration pages)
     mini_mime (1.1.2)
     minitest (5.16.3)
     monetize (1.12.0)
@@ -350,8 +362,11 @@ GEM
     rubocop-rspec (2.15.0)
       rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
+<<<<<<< HEAD
     ruby-vips (2.1.4)
       ffi (~> 1.12)
+=======
+>>>>>>> c5efe8e (Add login registration pages)
     ruby2_keywords (0.0.5)
     ruby_parser (3.19.1)
       sexp_processor (~> 4.16)
@@ -434,7 +449,10 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin (~> 2.13, >= 2.13.1)
+<<<<<<< HEAD
   aws-sdk-s3
+=======
+>>>>>>> c5efe8e (Add login registration pages)
   bootsnap (>= 1.4.4)
   bootstrap-sass (~> 3.4, >= 3.4.1)
   bootstrap-will_paginate (~> 1.0)
@@ -446,7 +464,10 @@ DEPENDENCIES
   fasterer (~> 0.10.0)
   ffaker (~> 2.21)
   haml (~> 5.2, >= 5.2.2)
+<<<<<<< HEAD
   image_processing (~> 1.12, >= 1.12.2)
+=======
+>>>>>>> c5efe8e (Add login registration pages)
   interactor (~> 3.0)
   jbuilder (~> 2.7)
   kaminari (~> 1.2, >= 1.2.2)
