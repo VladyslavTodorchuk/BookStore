@@ -30101,6 +30101,9 @@
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 730a8ca (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/initializers/devise.rb": {
         "lines": [
           null,
@@ -30416,8 +30419,11 @@
           null
         ]
       },
+<<<<<<< HEAD
 =======
 >>>>>>> 08edf50 (Featire specs)
+=======
+>>>>>>> 730a8ca (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
@@ -30457,6 +30463,9 @@
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 730a8ca (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/initializers/omniauth.rb": {
         "lines": [
           1,
@@ -30464,8 +30473,11 @@
           null
         ]
       },
+<<<<<<< HEAD
 =======
 >>>>>>> 08edf50 (Featire specs)
+=======
+>>>>>>> 730a8ca (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
@@ -30639,6 +30651,14 @@
           null
         ]
       },
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/factories/users.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/routes.rb": {
         "lines": [
           1,
@@ -30646,6 +30666,9 @@
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 730a8ca (Add login registration pages)
           null,
           1,
           null
@@ -30667,8 +30690,11 @@
         "lines": [
           1,
           1,
+<<<<<<< HEAD
 =======
 >>>>>>> 08edf50 (Featire specs)
+=======
+>>>>>>> 730a8ca (Add login registration pages)
           null
         ]
       },
@@ -51094,6 +51120,7 @@
         ]
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/models/application_record.rb": {
         "lines": [
@@ -51103,6 +51130,8 @@
         ]
       },
 >>>>>>> c336a21 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 730a8ca (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/decorators/book_decorator_spec.rb": {
         "lines": [
           1,
@@ -51150,13 +51179,13 @@
           1,
           null,
           1,
-          30,
+          31,
           null,
           null,
           1,
           null,
           1,
-          89,
+          90,
           null,
           null,
           1,
@@ -86095,6 +86124,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 3ee72a90 (Fix)
@@ -86102,7 +86132,21 @@
 <<<<<<< HEAD
 =======
 >>>>>>> 845dac1 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> fef77e6c (Manifest_cache true)
+=======
+=======
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+>>>>>>> 57da3ff (Add login registration pages)
+>>>>>>> bc45c6eb (Add login registration pages)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/decorators/category_decorator.rb": {
         "lines": [
           1,
@@ -86181,16 +86225,16 @@
 >>>>>>> 7129a358 (Fix book_spec decrease quantity and price)
           null,
           1,
-          24,
-          24,
-          24,
+          25,
+          25,
+          25,
           null,
           null,
-          24,
+          25,
           null,
-          24,
-          24,
-          24,
+          25,
+          25,
+          25,
           1,
           null,
           null,
@@ -86219,14 +86263,14 @@
           1,
           null,
           1,
-          24,
+          25,
           7,
           7,
           null,
           0,
           null,
           null,
-          17,
+          18,
           null,
           null,
           null
@@ -88191,6 +88235,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b3f2049 (Featire specs)
 >>>>>>> 0ed7f7c (Featire specs)
 =======
@@ -88393,7 +88438,12 @@
 =======
 >>>>>>> 8879e8b (Fix book_spec decrease quantity and price)
 =======
+<<<<<<< HEAD
 >>>>>>> 7129a358 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> af9487a (Add login registration pages)
+=======
+>>>>>>> bc45c6eb (Add login registration pages)
 =======
 >>>>>>> 4a0e3b6 (Manifest_cache true)
 =======
@@ -88494,6 +88544,8 @@
 >>>>>>> 5b6aeb7 (Manifest_cache true)
 =======
 >>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 57da3ff (Add login registration pages)
     "timestamp": 1665071835
 >>>>>>> c4adab0 (Featire specs)
 =======
@@ -88600,6 +88652,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -88686,12 +88739,17 @@
 =======
 =======
 >>>>>>> 03c0867 (Add login registration pages)
+<<<<<<< HEAD
 >>>>>>> 8d4ec55 (Add login registration pages)
 >>>>>>> 73dcd461 (Add login registration pages)
 =======
 =======
 >>>>>>> 03c0867 (Add login registration pages)
 >>>>>>> 3ee72a90 (Fix)
+=======
+=======
+>>>>>>> af9487a (Add login registration pages)
+>>>>>>> bc45c6eb (Add login registration pages)
 >>>>>>> 358c90c (Fix book_spec decrease quantity and price)
 =======
 =======
@@ -89121,13 +89179,17 @@
 >>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8a450ee (Fix book_spec decrease quantity and price)
 =======
+=======
+>>>>>>> af9487a (Add login registration pages)
 =======
 =======
     "timestamp": 1662475187
 >>>>>>> 730a8ca (Add login registration pages)
 >>>>>>> 57da3ff (Add login registration pages)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 551f3c1 (Add login registration pages)
 =======
@@ -89177,6 +89239,8 @@
 >>>>>>> 0fc3bf0 (Add login registration pages)
 =======
 >>>>>>> 8879e8b (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> af9487a (Add login registration pages)
   }
 }
 <<<<<<< HEAD
