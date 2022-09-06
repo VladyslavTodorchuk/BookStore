@@ -5,8 +5,8 @@ RSpec.describe BookDecorator do
 
   let(:book) do
     FactoryBot.create(:book, price_cents: 123, authors: authors, categories: categories,
-                             categories_count: 0,
-                             authors_count: 0)
+                      categories_count: 0,
+                      authors_count: 0)
   end
   let(:authors) do
     [
@@ -36,4 +36,3 @@ RSpec.describe BookDecorator do
     it { expect(decorated_object.price).to eq(1.23.to_money) }
   end
 end
-
