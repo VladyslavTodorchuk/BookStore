@@ -138,6 +138,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> da3a9a3 (Featire specs)
 =======
@@ -174,6 +175,8 @@
 >>>>>>> c0159bf (Manifest_cache true)
 =======
 >>>>>>> 572a8e3 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 385136b (Add login registration pages)
 >>>>>>> b28889f (Fix)
 =======
 >>>>>>> df37394 (Featire specs)
@@ -331,7 +334,12 @@
 =======
 =======
 >>>>>>> 4b921fb (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
 >>>>>>> 572a8e3 (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> ccec311 (Add login registration pages)
+>>>>>>> 385136b (Add login registration pages)
     "line": 90.68
 =======
 >>>>>>> 009401d (Featire specs)
@@ -415,6 +423,8 @@
 >>>>>>> 2c640cf (Manifest_cache true)
 =======
 >>>>>>> f1c3eb0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> a624084 (Add login registration pages)
     "line": 95.79
 >>>>>>> 59d75f9 (Featire specs)
 =======
@@ -2930,8 +2940,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7d58507 (Add login registration pages)
+=======
+>>>>>>> ccec311 (Add login registration pages)
 >>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
 =======
 =======
@@ -3074,7 +3087,15 @@
     "line": 99.2
 >>>>>>> bf5c79b (Fix book_spec decrease quantity and price)
 >>>>>>> f1c3eb0 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
 >>>>>>> 4b921fb (Fix book_spec decrease quantity and price)
+=======
+=======
+=======
+    "line": 99.25
+>>>>>>> e1f4d17 (Add login registration pages)
+>>>>>>> a624084 (Add login registration pages)
+>>>>>>> ccec311 (Add login registration pages)
   }
 }
 >>>>>>> 6da9530 (Featire specs)
