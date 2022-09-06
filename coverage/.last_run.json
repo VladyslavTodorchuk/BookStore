@@ -124,6 +124,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "line": 90.68
 =======
 <<<<<<< HEAD
@@ -369,6 +370,8 @@
 >>>>>>> 94841b5 (Featire specs)
 =======
 >>>>>>> b15044a (Manifest_cache true)
+=======
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
     "line": 95.79
 >>>>>>> 59d75f9 (Featire specs)
 =======
@@ -1201,7 +1204,13 @@
 =======
     "line": 90.68
 >>>>>>> 998f08d (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> b15044a (Manifest_cache true)
+=======
+=======
+    "line": 99.2
+>>>>>>> 066fd0b (Fix book_spec decrease quantity and price)
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
   }
 }
 >>>>>>> a9e66e9 (Featire specs)
