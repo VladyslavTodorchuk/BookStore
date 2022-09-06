@@ -2,6 +2,10 @@ class BookDecorator < Draper::Decorator
   decorates_association :authors
   decorates_association :categories
 
+  def self.collection_decorator_class
+    PaginatingDecorator
+  end
+
   delegate_all
 
   def authors_names
