@@ -19,16 +19,10 @@
           %span{'aria-hidden': "true"} &times;
         %ul.nav.navbar-nav
           %li
-<<<<<<< HEAD
             %a#root{href: "/"}= t('.home')
           %li
             %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
               = t('.shop')
-=======
-            %a#root{href: "/"}= t('header.home')
-          %li
-            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
->>>>>>> c0950c6 (Featire specs)
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
@@ -80,3 +74,4 @@
               = link_to t('header.log_in'), new_user_session_path
             %li
               = link_to t('header.sing_up'), new_user_registration_path
+
