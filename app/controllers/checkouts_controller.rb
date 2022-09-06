@@ -58,42 +58,7 @@ class CheckoutsController < ApplicationController
   end
 
   private
-
-  def update_complete
-    @order.coupon&.update(is_active: false)
-
-    if @order.update(status: :created, total_price: CheckoutService.count_total_price(@order))
-      redirect_to root_path, notice: t('orders.messages.success.order')
-    else
-      redirect_to checkout_path(step: :confirm), alert: t('orders.messages.error.something_went_wrong')
-    end
-  end
-
-  def all_fields_are_required
-    redirect_to checkout_path(step: permitted_params[:step]),
-                alert: t('orders.messages.error.require_fields') unless CheckoutService.check_fields(permitted_params)
-  end
-
-  def allow_step
-    order = Order.find(session[:order_id])
-
-    if order.books.empty?
-      redirect_to books_path
-    elsif %w[confirm complete].include?(permitted_params[:step]) && (order.address.nil? || order.delivery.nil?)
-      redirect_to checkout_path(step: :address)
-    end
-  end
-
-  def permitted_params
-    params.permit(
-      :step, :code,
-      user: %i[password current_password password_confirmation email],
-      billing: %i[first_name last_name address city zip country phone],
-      shipping: %i[first_name last_name address city zip country phone],
-      credit_card: %i[name code cvv expiration_date]
-    )
-  end
-
+  s
   def update_address(permitted_params)
     update_billing(permitted_params[:billing]) unless permitted_params[:billing].nil?
 
