@@ -120,6 +120,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "line": 90.68
 =======
 <<<<<<< HEAD
@@ -357,6 +358,8 @@
 >>>>>>> 3b03895 (Featire specs)
 =======
 >>>>>>> 2c640cf (Manifest_cache true)
+=======
+>>>>>>> f1c3eb0 (Fix book_spec decrease quantity and price)
     "line": 95.79
 >>>>>>> 59d75f9 (Featire specs)
 =======
@@ -885,6 +888,7 @@
     "line": 90.68
 >>>>>>> fd6db03 (Manifest_cache true)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 00f8b58 (Manifest_cache true)
 =======
 =======
@@ -1164,6 +1168,11 @@
     "line": 90.68
 >>>>>>> fd6db03 (Manifest_cache true)
 >>>>>>> 2c640cf (Manifest_cache true)
+=======
+=======
+    "line": 99.2
+>>>>>>> bf5c79b (Fix book_spec decrease quantity and price)
+>>>>>>> f1c3eb0 (Fix book_spec decrease quantity and price)
   }
 }
 >>>>>>> a9e66e9 (Featire specs)
