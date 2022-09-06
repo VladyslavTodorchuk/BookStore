@@ -34,3 +34,4 @@ RSpec.describe BookDecorator do
     it { expect(decorated_object.price).to eq(1.23.to_money) }
   end
 end
+
