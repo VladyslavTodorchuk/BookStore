@@ -58,12 +58,14 @@ commands:
             bundle exec rake db:create
             bundle exec rake db:schema:load
       - run:
-        - browser-tools/install-chrome
-        - browser-tools/install-chromedriver
+          command: |
+            - browser-tools/install-chrome
+            - browser-tools/install-chromedriver
+          name: Chrome install
       - run:
           command: |
-            google-chrome --version
-            chromedriver --version
+            - google-chrome --version
+            - chromedriver --version
           name: Check install
   run_rubocop:
     description: command to start rubocop
