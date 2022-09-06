@@ -8,7 +8,11 @@
 /.bundle
 .idea
 .DS_Store
+<<<<<<< HEAD
 /coverage
+=======
+/coverage/*
+>>>>>>> 9b0673b (Remove Coverage)
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
