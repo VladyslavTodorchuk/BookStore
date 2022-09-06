@@ -93,6 +93,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 3e9f99d (Featire specs)
 >>>>>>> 3ee72a90 (Fix)
@@ -145,7 +146,12 @@
 =======
 >>>>>>> 0b5b269 (Fix)
 =======
+<<<<<<< HEAD
 >>>>>>> 7d0509fd (Fix)
+=======
+>>>>>>> 4e0a8d9 (Manifest_cache true)
+=======
+>>>>>>> 641851aa (Manifest_cache true)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -898,6 +904,7 @@
 =======
 =======
 >>>>>>> 94841b5 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 6fba6be (Featire specs)
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -995,7 +1002,14 @@
 =======
 >>>>>>> 94841b5 (Featire specs)
 >>>>>>> fefbd35 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 5b433a6f (Featire specs)
+=======
+=======
+=======
+>>>>>>> 4e7b845 (Manifest_cache true)
+>>>>>>> 4e0a8d9 (Manifest_cache true)
+>>>>>>> 641851aa (Manifest_cache true)
 {
   "RSpec": {
     "coverage": {
@@ -93777,6 +93791,7 @@
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -93784,6 +93799,9 @@
 =======
 <<<<<<< HEAD
 >>>>>>> d66884b (Manifest_cache true)
+=======
+<<<<<<< HEAD
+>>>>>>> 4e0a8d9 (Manifest_cache true)
 >>>>>>> c033601 (Rebased)
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94170,6 +94188,7 @@
   }
 }
 >>>>>>> 7c4ea7f (Fix)
+<<<<<<< HEAD
 >>>>>>> 1d59aaa (Fix)
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94384,5 +94403,17 @@
 }
 >>>>>>> 7c4ea7f (Fix)
 >>>>>>> 0b5b269 (Fix)
+<<<<<<< HEAD
 >>>>>>> 44e665c (Fix)
+<<<<<<< HEAD
 >>>>>>> 7d0509fd (Fix)
+=======
+=======
+=======
+=======
+=======
+>>>>>>> 7375d4b (Manifest_cache true)
+>>>>>>> 4e7b845 (Manifest_cache true)
+>>>>>>> 4e0a8d9 (Manifest_cache true)
+>>>>>>> 529f394 (Manifest_cache true)
+>>>>>>> 641851aa (Manifest_cache true)
