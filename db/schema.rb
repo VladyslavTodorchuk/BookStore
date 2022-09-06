@@ -150,7 +150,6 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["code"], name: "index_coupons_on_code", unique: true
-<<<<<<< HEAD
   end
 
   create_table "credit_cards", force: :cascade do |t|
@@ -170,8 +169,6 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.string "delivery_day"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-=======
->>>>>>> d5e8f05c (Rebase)
   end
 
   create_table "order_books", force: :cascade do |t|
