@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.2
+  browser-tools: circleci/browser-tools@1.1
 
 executors:
   default:
@@ -28,6 +29,7 @@ cashes:
 commands:
   defaults:
     steps:
+      - browser-tools/install-browser-tools
       - checkout
       - restore_cache:
           keys:
@@ -46,6 +48,7 @@ commands:
           install-yarn: true
           node-version: '16.17'
       - run: node --version
+      - run: google-chrome --version
 
       - run: sudo apt install -y postgresql-client || true
 
