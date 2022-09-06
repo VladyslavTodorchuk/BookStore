@@ -52,11 +52,11 @@ RSpec.describe 'Books', type: :feature do
         find('a', class: 'inc').click
       end
 
-      it 'increase quantity', js: true do
+      it 'increase quantity' do
         expect(page).to have_content("€#{book.price * 2}")
       end
 
-      it 'decrease quantity', js: true do
+      it 'decrease quantity' do
         find('a', class: 'dec').click
         expect(page).to have_content("€#{book.price}")
       end
