@@ -39,6 +39,12 @@ commands:
           name: Install dependencies
           command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs 4 --retry 3
 
+      - run:
+        - node/install:
+            install-yarn: true
+            node-version: '16.17'
+        - run: node --version
+
       - run: sudo apt install -y postgresql-client || true
 
       - run:
