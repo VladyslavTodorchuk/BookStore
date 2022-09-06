@@ -17,6 +17,4 @@
           = book.price
         %span.divider-sm
         %p.lead.small
-          - book.authors.each do |author|
-            = author.first_name
-            = author.last_name
+          - book.authors_names

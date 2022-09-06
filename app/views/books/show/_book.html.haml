@@ -13,9 +13,7 @@
   .col-sm-6
     %h1.mt-res-0= @book.title
     %p.lead.small
-      - @book.authors.each do |author|
-        = author.first_name
-        = author.last_name
+      - @book.authors_names
     %div{"data-controller" => "price"}
       .row
         .col-xs-12.col-md-4
