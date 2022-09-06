@@ -133,6 +133,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> da3a9a3 (Featire specs)
 =======
@@ -159,6 +160,8 @@
 >>>>>>> 8181d13 (Featire specs)
 =======
 >>>>>>> 42e9c2e (Manifest_cache true)
+=======
+>>>>>>> 495b04d (Fix book_spec decrease quantity and price)
 >>>>>>> b28889f (Fix)
 =======
 >>>>>>> df37394 (Featire specs)
@@ -291,7 +294,12 @@
 =======
 =======
 >>>>>>> add330c (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> 42e9c2e (Manifest_cache true)
+=======
+=======
+>>>>>>> 8a450ee (Fix book_spec decrease quantity and price)
+>>>>>>> 495b04d (Fix book_spec decrease quantity and price)
     "line": 90.68
 =======
 >>>>>>> 009401d (Featire specs)
@@ -365,6 +373,8 @@
 >>>>>>> e54deeb (Featire specs)
 =======
 >>>>>>> 5b6aeb7 (Manifest_cache true)
+=======
+>>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
     "line": 95.79
 >>>>>>> 59d75f9 (Featire specs)
 =======
@@ -1340,6 +1350,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1365,6 +1376,7 @@
 >>>>>>> 49df518 (Fix book_spec decrease quantity and price)
 =======
 >>>>>>> 2fef4a0 (Add login registration pages)
+<<<<<<< HEAD
 >>>>>>> f6e20266 (Add login registration pages)
 =======
 >>>>>>> a31f8712 (Fix book_spec decrease quantity and price)
@@ -1383,6 +1395,15 @@
 =======
 >>>>>>> 2fef4a0 (Add login registration pages)
 >>>>>>> 0561be1d (Add login registration pages)
+=======
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8a450ee (Fix book_spec decrease quantity and price)
+>>>>>>> 495b04d (Fix book_spec decrease quantity and price)
+>>>>>>> 0f24a043 (Fix book_spec decrease quantity and price)
 >>>>>>> 358c90c (Fix book_spec decrease quantity and price)
 <<<<<<< HEAD
 >>>>>>> bb5c652 (Fix book_spec decrease quantity and price)
@@ -2958,7 +2979,12 @@
     "line": 90.68
 >>>>>>> 183b6c5 (Manifest_cache true)
 >>>>>>> 5b6aeb7 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> add330c (Manifest_cache true)
+=======
+=======
+>>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
+>>>>>>> 8a450ee (Fix book_spec decrease quantity and price)
   }
 }
 >>>>>>> 6da9530 (Featire specs)
