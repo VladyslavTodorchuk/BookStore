@@ -22,8 +22,8 @@ RSpec.describe BookDecorator do
   context 'when decorate' do
     it '#authors_names' do
       expect(book_decorator.authors_names).to eq('Vlad Todorchuk, Stas Todorchuk')
-    end
-
+      end
+  end
   describe '#categories_names' do
     it { expect(decorated_object.categories_names).to eq("#{categories.first.name}, #{categories.last.name}") }
   end
