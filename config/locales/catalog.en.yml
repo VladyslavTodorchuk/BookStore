@@ -1,0 +1,20 @@
+en:
+  catalog:
+    buy_now: 'Buy Now'
+    next: 'Next'
+    prev: 'Previous'
+    catalog_page:
+      title: 'Catalog'
+      sorting:
+        newer_first: 'Newest first'
+        popular_first: 'Popular first'
+        price:
+          low_to_high: 'Price: Low to High'
+          high_to_low: 'Price: High to Low'
+        title:
+          A-Z: 'Title: A to Z'
+          Z-A: 'Title: Z to A'
+      all: 'All'
+      filter_by_categories: 'Filter by category'
+      sort_by: 'Sort by'
+      view_more: 'View More'
