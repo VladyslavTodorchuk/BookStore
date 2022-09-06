@@ -51,4 +51,8 @@ RSpec/MessageSpies:
   Enabled: false
 
 RSpec/MultipleMemoizedHelpers:
+<<<<<<< HEAD
   Max: 9
+=======
+  Max: 6
+>>>>>>> 6a9fede (Add login registration pages)
