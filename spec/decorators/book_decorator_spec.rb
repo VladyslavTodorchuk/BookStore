@@ -18,7 +18,7 @@ RSpec.describe BookDecorator do
       create(:category, name: FFaker::Book.genre)
     ]
   end
-  
+
   describe '#categories_names' do
     it { expect(decorated_object.categories_names).to eq("#{categories.first.name}, #{categories.last.name}") }
   end
