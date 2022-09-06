@@ -21,5 +21,18 @@
       = alert
 
     = render partial: 'layouts/header'
+<<<<<<< HEAD
+=======
+
+    - unless notice.nil?
+      .container.text-center
+        %p.notice
+          = notice
+    - unless alert.nil?
+      .container.text-center
+        %p.alert
+          = alert
+
+>>>>>>> 16f4569 (Add New_password and reset password)
     = yield
     = render partial: 'layouts/footer'
