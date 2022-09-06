@@ -48,16 +48,11 @@
       .hidden-xs
         %ul.nav.navbar-nav
           %li
-<<<<<<< HEAD
             %a#root_mobile{href: "#"}= t('.home')
-=======
-            %a#root_mobile{href: "/"}= t('header.home')
->>>>>>> 6e35f18 (Featire specs)
           %li.dropdown
             %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
               = t('.shop')
             %ul.dropdown-menu
-<<<<<<< HEAD
               %li
                 %a.collapse-link{href: "/books"}= t('header.all')
               - Category.all.each do |category|
@@ -81,11 +76,3 @@
               = link_to t('header.log_in'), new_user_session_path
             %li
               = link_to t('header.sing_up'), new_user_registration_path
-=======
-              - Category.all.each do |category|
-                %li
-                  %a{href: "#"}= category.name
-              %a{href: "#"}= t('header.log_in')
-          %li
-            %a{href: "#"}= t('header.account')
->>>>>>> 6e35f18 (Featire specs)
