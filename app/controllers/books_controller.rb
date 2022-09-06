@@ -20,6 +20,7 @@ class BooksController < ApplicationController
 
   def show
     book = Book.find_by(id: params[:id])
+
     redirect_to books_path if book.nil?
 
     @book = book.decorate
