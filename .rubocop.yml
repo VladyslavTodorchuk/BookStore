@@ -51,14 +51,7 @@ RSpec/MessageSpies:
   Enabled: false
 
 RSpec/MultipleMemoizedHelpers:
-<<<<<<< HEAD
   Max: 9
-=======
-  Max: 6
-<<<<<<< HEAD
 
 RSpec/ExampleLength:
   Max: 30
-=======
->>>>>>> 730a8ca (Add login registration pages)
->>>>>>> 22ee41c (Add login registration pages)
