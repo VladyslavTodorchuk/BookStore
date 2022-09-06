@@ -125,6 +125,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> da3a9a3 (Featire specs)
 =======
@@ -135,6 +136,8 @@
 >>>>>>> 0c57e4e (Fix)
 =======
 >>>>>>> 5e31aeb (Featire specs)
+=======
+>>>>>>> 3be4d14 (Manifest_cache true)
 >>>>>>> b28889f (Fix)
 =======
 >>>>>>> df37394 (Featire specs)
@@ -165,6 +168,7 @@
 >>>>>>> 872e675 (Fix)
 =======
 >>>>>>> 5507b42 (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> e9f3851 (Manifest_cache true)
@@ -233,6 +237,10 @@
 >>>>>>> 0c57e4e (Fix)
 =======
 >>>>>>> 5e31aeb (Featire specs)
+=======
+=======
+>>>>>>> e9f3851 (Manifest_cache true)
+>>>>>>> 3be4d14 (Manifest_cache true)
     "line": 90.68
 =======
 >>>>>>> 009401d (Featire specs)
@@ -2788,12 +2796,23 @@
 >>>>>>> 872e675 (Fix)
 =======
 =======
+=======
+>>>>>>> 845dac1 (Manifest_cache true)
     "line": 95.79
 =======
     "line": 99.11
 >>>>>>> d0dc1f1 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 9620751 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 5507b42 (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> 02a399d (Manifest_cache true)
+>>>>>>> 845dac1 (Manifest_cache true)
+>>>>>>> e9f3851 (Manifest_cache true)
   }
 }
 >>>>>>> 6da9530 (Featire specs)
