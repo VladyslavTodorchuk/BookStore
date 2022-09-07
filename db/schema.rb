@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_09_13_083320) do
+=======
+ActiveRecord::Schema.define(version: 2022_09_07_085044) do
+>>>>>>> c3cc5e4 (Add Facbook omniauth)
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"

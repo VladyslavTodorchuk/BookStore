@@ -11,9 +11,6 @@ en:
     log_in: 'Log In'
     orders: 'Orders'
     settings: 'Settings'
-<<<<<<< HEAD
     all: 'Books'
     sing_up: 'Sing Up'
-=======
-    all: 'Books'
->>>>>>> 5b0ed47 (Fix merge conflick)
+
