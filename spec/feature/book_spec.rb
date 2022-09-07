@@ -26,14 +26,14 @@ RSpec.describe 'Books', type: :feature do
 
       find('a', class: 'general-back-link').click
 
-      expect(page).to have_content('Catalog')
+      expect(page).to have_content(I18n.t('catalog_page.title'))
     end
 
     context 'when test read more' do
       it 'show read more' do
         visit "books/#{book.id}"
 
-        expect(page).to have_content('Read More')
+        expect(page).to have_content(I18n.t('book_page.read_more'))
       end
 
       it 'clicked read more', js: true do
@@ -41,7 +41,7 @@ RSpec.describe 'Books', type: :feature do
 
         click_link 'Read More'
 
-        expect(page).not_to have_content('Read More')
+        expect(page).not_to have_content(I18n.t('book_page.read_more'))
       end
     end
 
@@ -94,7 +94,7 @@ RSpec.describe 'Books', type: :feature do
 
         visit books_path
 
-        click_on 'All'
+        click_on I18n.t('catalog_page.all')
       end
 
       after do
@@ -155,7 +155,8 @@ RSpec.describe 'Books', type: :feature do
 
         visit books_path
 
-        find('a', class: 'dropdown-toggle lead small', text: 'Newest first', id: 'menu').click
+        find('a', class: 'dropdown-toggle lead small', text: I18n.t('catalog_page.sorting.newer_first'),
+                  id: 'menu').click
 
         within 'ul', class: 'dropdown-menu', id: 'sort' do
           click_link button
@@ -165,35 +166,35 @@ RSpec.describe 'Books', type: :feature do
     end
 
     context 'when sort by title A to Z' do
-      let(:button) { 'Title: A to Z' }
+      let(:button) { I18n.t('catalog_page.sorting.title.A-Z') }
       let(:book_title) { 'Anna' }
 
       include_examples 'sort test'
     end
 
     context 'when sort by title Z to A' do
-      let(:button) { 'Title: Z to A' }
+      let(:button) { I18n.t('catalog_page.sorting.title.Z-A') }
       let(:book_title) { 'Zimbabwe' }
 
       include_examples 'sort test'
     end
 
     context 'when sort by price High to Low' do
-      let(:button) { 'Price: High to Low' }
+      let(:button) { I18n.t('catalog_page.sorting.price.high_to_low') }
       let(:book_title) { 'Zimbabwe' }
 
       include_examples 'sort test'
     end
 
     context 'when sort by price Low to High' do
-      let(:button) { 'Price: Low to High' }
+      let(:button) { I18n.t('catalog_page.sorting.price.low_to_high') }
       let(:book_title) { 'Anna' }
 
       include_examples 'sort test'
     end
 
     context 'when sort by newest' do
-      let(:button) { 'Newest first' }
+      let(:button) { I18n.t('catalog_page.sorting.newer_first') }
       let(:book_title) { 'Zimbabwe' }
 
       include_examples 'sort test'
