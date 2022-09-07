@@ -1,8 +1,7 @@
 %main.container.general-main-wrap
   .text-center
     %h3.general-login-title= t('header.log_in')
-    %a.general-login-icon{href: '#'}
-      %i.fa.fa-facebook-official
+    = link_to "", user_facebook_omniauth_authorize_path, method: :post, class: 'general-login-icon fa fa-facebook-official', style: 'font-size: 30px;'
     %p.general-login-text= t('login.or')
     .general-form
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|

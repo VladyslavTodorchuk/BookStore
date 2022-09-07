@@ -18,6 +18,8 @@ gem 'sass-rails', '>= 6'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 5'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
+gem 'omniauth-facebook', '~> 4.0'
+gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.1'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
