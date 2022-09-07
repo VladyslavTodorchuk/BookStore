@@ -16,6 +16,6 @@
         = f.label :user_password_confirmation, t('login.confirm_password'), class: 'control-label input-label'
         = f.password_field(:password_confirmation,autocomplete: 'password_confirmation',class: 'form-control', required: true, placeholder: t('login.confirm_password'))
       .text-center
-        = f.submit t('header.sing_up'), class: 'btn btn-default mb-20'
+        = f.submit t('header.sing_up'), class: 'btn btn-default mb-20', id: 'sing_up'
   %p.general-sign-text.text-center
     = link_to t('login.have_account'), new_user_session_path, class: 'in-gold-500'
