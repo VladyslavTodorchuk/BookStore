@@ -39,20 +39,20 @@ RSpec.describe 'Home', type: :feature do
         visit root_path
 
         within 'div', class: 'visible-xs' do
-          click_link 'Log In'
+          click_link I18n.t('header.log_in')
         end
 
-        expect(page).to have_content('Log In')
+        expect(page).to have_content(I18n.t('header.log_in'))
       end
 
       it 'on click sing up go to sing up page' do
         visit root_path
 
         within 'div', class: 'visible-xs' do
-          click_link 'Sing Up'
+          click_link I18n.t('header.sing_up')
         end
 
-        expect(page).to have_content('Sing Up')
+        expect(page).to have_content(I18n.t('header.sing_up'))
       end
     end
   end
