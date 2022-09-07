@@ -1,8 +1,6 @@
-require 'rails_helper'
-
 RSpec.describe 'User', type: :feature do
-  let(:user) { FactoryBot.build(:user, email: 'test.rspec@rspec.ua') }
-  let(:user_second) { FactoryBot.create(:user, email: 'test.rspec-test@rspec.ua') }
+  let(:user) { build(:user, email: 'test.rspec@rspec.ua') }
+  let(:user_second) { create(:user, email: 'test.rspec-test@rspec.ua') }
 
   describe '#sing_up' do
     context 'when successfully sing_up' do
