@@ -1,4 +1,4 @@
-RSpec.describe 'Homes', type: :feature do
+RSpec.describe 'Home', type: :feature do
   describe 'Get Started' do
     it 'on click move to catalog page' do
       visit root_path
@@ -32,6 +32,28 @@ RSpec.describe 'Homes', type: :feature do
       end
 
       expect(page).to have_content(books_category.category.books.first.title)
+    end
+
+    context 'when guest' do
+      it 'on click login go to login page' do
+        visit root_path
+
+        within 'div', class: 'visible-xs' do
+          click_link 'Log In'
+        end
+
+        expect(page).to have_content('Log In')
+      end
+
+      it 'on click sing up go to sing up page' do
+        visit root_path
+
+        within 'div', class: 'visible-xs' do
+          click_link 'Sing Up'
+        end
+
+        expect(page).to have_content('Sing Up')
+      end
     end
   end
 end
