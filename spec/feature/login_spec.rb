@@ -5,7 +5,6 @@ RSpec.describe 'Login', type: :feature do
 
   describe '#login' do
     before do
-      user_second.confirm
       visit new_user_session_path
     end
 

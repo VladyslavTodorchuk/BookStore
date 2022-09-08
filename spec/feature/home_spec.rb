@@ -1,4 +1,7 @@
 RSpec.describe 'Home', type: :feature do
+  include_context 'with api request authentication helper methods'
+  include_context 'with api request global before and after hooks'
+
   describe 'Get Started' do
     it 'on click move to catalog page' do
       visit root_path
@@ -53,6 +56,46 @@ RSpec.describe 'Home', type: :feature do
         end
 
         expect(page).to have_content(I18n.t('header.sing_up'))
+      end
+    end
+
+    context 'when user' do
+      let(:user) { FactoryBot.create(:user) }
+
+      before do
+        sign_in(user)
+      end
+
+      it 'on click account show orders' do
+        visit root_path
+
+        within 'div', class: 'visible-xs' do
+          click_link I18n.t('header.account')
+        end
+
+        expect(page).to have_content(I18n.t('header.orders'))
+      end
+
+      it 'on click account show log_out' do
+        visit root_path
+
+        within 'div', class: 'visible-xs' do
+          click_link I18n.t('header.account')
+        end
+
+        expect(page).to have_content(I18n.t('header.log_out'))
+      end
+
+      it 'log_out' do
+        visit root_path
+
+        within 'div', class: 'visible-xs' do
+          click_link I18n.t('header.account')
+        end
+
+        click_on(I18n.t('header.log_out'), match: :first)
+
+        expect(page).to have_content(I18n.t('devise.sessions.signed_out'))
       end
     end
   end
