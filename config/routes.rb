@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  resources :users, only: [:edit]
+
   resources :books, only: %i[show index]
 end

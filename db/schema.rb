@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_09_13_083320) do
-=======
-ActiveRecord::Schema.define(version: 2022_09_07_085044) do
->>>>>>> c3cc5e4 (Add Facbook omniauth)
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -179,6 +175,8 @@ ActiveRecord::Schema.define(version: 2022_09_07_085044) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
+    t.string "first_name", default: "", null: false
+    t.string "last_name", default: "", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -190,3 +188,4 @@ ActiveRecord::Schema.define(version: 2022_09_07_085044) do
   add_foreign_key "books_categories", "categories"
   add_foreign_key "shippings", "users"
 end
+

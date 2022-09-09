@@ -37,7 +37,7 @@
                     %li
                       %a= t('header.orders')
                     %li
-                      %a= t('header.settings')
+                      %a{ href: edit_user_path(current_user.id) }= t('header.settings')
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
           - else
@@ -68,7 +68,7 @@
                     %li
                       %a= t('header.orders')
                     %li
-                      %a= t('header.settings')
+                      = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
           - else
