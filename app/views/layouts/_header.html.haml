@@ -25,10 +25,10 @@
           %span{'aria-hidden': "true"} &times;
         %ul.nav.navbar-nav
           %li
-            %a#root{href: "/"}= t('header.home')
+            %a#root{href: "/"}= t('.home')
           %li
             %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
-              = t('header.shop')
+              = t('.shop')
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
