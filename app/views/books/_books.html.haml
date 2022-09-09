@@ -13,7 +13,7 @@
 >>>>>>> f7152b6 (Add User and Review Decorators and Show Review)
           .thumb-hover
             .general-thumb-link-wrap
-              %a.thumb-hover-link{href: "/books/#{book.id}"}
+              %a.thumb-hover-link{href: book_path(book)}
                 %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
               %a.thumb-hover-link{href: "#"}
                 %i.fa.fa-shopping-cart.thumb-icon
