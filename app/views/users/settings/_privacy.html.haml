@@ -1,35 +1,34 @@
-#privacy.tab-pane.fade{role: "tabpanel"}
-  .row.mb-60
-    .col-sm-5
-      %p.in-gold-500.font-18.mb-25 Email
-      %form.general-form-md
-        .form-group.mb-35
-          %label.control-label.input-label{for: "email"} Enter Email
-          %input#email.form-control{name:"email", type: "email", placeholder: "Enter your email"}
-        .general-text-align
-          %button.btn.btn-default.mb-35 Save
-    .col-sm-5.col-sm-offset-1
-      %p.in-gold-500.font-18.mb-25 Password
-      %form.general-form-md.divider-lg-bottom.pb-25
-        .form-group.mb-30
-          %label.control-label.input-label{for: "oldPassword"} Old Password
-          %input#oldPassword.form-control{name:"password", type: "password", placeholder: "Old Password"}
-        .form-group.mb-30
-          %label.control-label.input-label{for: "password"} New Password
-          %input#password.form-control{name:"password", type: "password", placeholder: "New Password"}
-        .form-group.mb-40
-          %label.control-label.input-label{for: "confirmPassword"} Confirm Password
-          %input#confirmPassword.form-control{name:"password", type: "password", placeholder: "Confirm Password"}
-        .general-text-align
-          %button.btn.disabled.mb-10 Save
-    .col-sm-12
-      %p.in-gold-500.font-18.mb-25 Remove Account
-      %form
-        .general-settings-btn
-          %button.btn.disabled.mb-20 Please Remove My Account
-        .form-group.checkbox.general-settings-checkbox
-          %label.checkbox-label
-            %input.checkbox-input{type: "checkbox", hidden: "true"}
-            %span.checkbox-icon
-              %i.fa.fa-check
-            %span.checkbox-text I understand that all data will be lost
+.col-sm-5
+  %p.in-gold-500.font-18.mb-25= t('settings.email')
+  = form_for(current_user, method: :put) do |f|
+    .form-group.mb-35
+      = f.label :email, t('login.enter_email'), class: 'control-label input-label'
+      = f.email_field(:email,autofocus: true,autocomplete: 'email',id: 'email',class: 'form-control',required: true,placeholder: t('login.enter_email'))
+    .general-text-align
+      = f.submit t('settings.save'), class: 'btn btn-default mb-35', id: 'saveEmail'
+.col-sm-5.col-sm-offset-1
+  %p.in-gold-500.font-18.mb-25= t('login.password')
+  = form_for(current_user, method: :put) do |f|
+    .form-group.mb-30
+      = f.label :current_password, t('settings.old_password'), class: 'control-label input-label'
+      = f.password_field(:current_password,autocomplete: 'current_password',id: 'current_password',class: 'form-control',required: true,placeholder: t('settings.old_password'))
+    .form-group.mb-30
+      = f.label :password, t('login.type_new_password'), class: 'control-label input-label'
+      = f.password_field(:password,autocomplete: 'password',id: 'password',class: 'form-control',required: true,placeholder: t('login.type_new_password'))
+    .form-group.mb-40
+      = f.label :password_confirmation, t('login.confirm_password'), class: 'control-label input-label'
+      = f.password_field(:password_confirmation,autocomplete: 'password_confirmation',id: 'password_confirmation',class: 'form-control',required: true,placeholder: t('login.confirm_password'))
+    .general-text-align
+      = f.submit t('settings.save'), class: 'btn btn-default mb-10', id: 'savePassword'
+
+.col-sm-12{'data-controller': 'understand' }
+  %p.in-gold-500.font-18.mb-25= t('settings.remove')
+  = form_for(current_user, method: :delete) do |f|
+    .general-settings-btn
+      = f.submit t('settings.please_remove'), class: 'btn mb-20', id: 'delete', disabled: true, "data-understand-target": "button"
+    .form-group.checkbox.general-settings-checkbox
+      %label.checkbox-label
+        %input.checkbox-input{type: "checkbox", hidden: "true", id: 'agree', "data-understand-target": "understand_button", 'data-action': "click->understand#understand"}
+        %span.checkbox-icon
+          %i.fa.fa-check
+        %span.checkbox-text= t('settings.understand')
