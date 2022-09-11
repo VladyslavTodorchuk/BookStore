@@ -177,11 +177,11 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.bigint "user_id"
     t.string "first_name", default: "", null: false
     t.string "last_name", default: "", null: false
-    t.string "address", null: false
-    t.string "city", null: false
-    t.integer "zip", null: false
-    t.string "country", null: false
-    t.string "phone", null: false
+    t.string "address"
+    t.string "city"
+    t.integer "zip"
+    t.string "country"
+    t.string "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_shippings_on_user_id"
@@ -209,8 +209,6 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
-    t.string "first_name", default: "", null: false
-    t.string "last_name", default: "", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
