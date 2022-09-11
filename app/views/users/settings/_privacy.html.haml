@@ -20,7 +20,6 @@
       = f.password_field(:password_confirmation, autocomplete: 'password_confirmation', id: 'password_confirmation', class: 'form-control', required: true, placeholder: t('login.confirm_password'))
     .general-text-align
       = f.submit t('settings.save'), class: 'btn btn-default mb-10', id: 'savePassword'
-
 #remove.col-sm-12{'data-controller': 'understand' }
   %p.in-gold-500.font-18.mb-25= t('settings.remove')
   = form_for(current_user, method: :delete) do |f|
