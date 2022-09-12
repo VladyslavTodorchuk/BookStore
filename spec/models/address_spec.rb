@@ -19,7 +19,7 @@ RSpec.describe Address, type: :model do
       it { is_expected.not_to allow_values('1' * Address::VALIDATES_ZIP_LENGTH_MAX.next).for(:zip) }
       it { is_expected.not_to allow_values('A' * Address::VALIDATES_TITLE_LENGTH_MAX.next).for(:address) }
     end
-
+    
     context 'when associations' do
       it { is_expected.to belong_to(:user) }
     end
