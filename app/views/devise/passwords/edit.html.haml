@@ -1,6 +1,6 @@
 %main.container.general-main-wrap.mt-100
   .text-center
-    %p.in-gold-500.font-18.mb-25= t('login.set_new_password')
+  %p.in-gold-500.font-18.mb-25= t('login.set_new_password')
   .general-form
     = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
       = render 'devise/shared/error_messages', resource: resource

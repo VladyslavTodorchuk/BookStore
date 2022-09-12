@@ -40,3 +40,6 @@ RSpec/MessageSpies:
 
 RSpec/MultipleMemoizedHelpers:
   Max: 6
+
+RSpec/ExampleLength:
+  Max: 30

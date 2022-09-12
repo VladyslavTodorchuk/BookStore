@@ -5,16 +5,21 @@ class UserUpdate
     params = context.permitted_params
     user = context.current_user
 
-    return BillingUpdate.call(permitted_params: params, current_user: user) unless params[:billing].nil?
-
-    return ShippingUpdate.call(permitted_params: params, current_user: user) unless params[:shipping].nil?
+    billing_and_shipping_update(params, user)
 
     return if params[:user].nil?
 
-    return user.update(email: params[:email]) if params[:email]
+    return if !params[:user][:email].nil? && user.update(email: params[:user][:email])
 
-    return user.update(password: params[:password]) if params[:password]
+    return if !params[:user][:password].nil? &&
+              user.reset_password(params[:user][:password], params[:user][:password_confirmation])
 
     context.fail!
+  end
+
+  def billing_and_shipping_update(params, user)
+    return if !params[:billing].nil? && BillingUpdate.call(permitted_params: params, current_user: user)
+
+    !params[:shipping].nil? && ShippingUpdate.call(permitted_params: params, current_user: user)
   end
 end

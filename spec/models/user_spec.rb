@@ -1,18 +1,18 @@
 RSpec.describe User, type: :model do
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 4bfeb43 (Add User model spec)
   describe 'author' do
     context 'when validations' do
       it { is_expected.to validate_presence_of(:email) }
       it { is_expected.to validate_presence_of(:password) }
     end
+
+    context 'with associations' do
+      it 'has billing' do
+        expect(user).to respond_to :billing
+      end
+
+      it 'has shipping' do
+        expect(user).to respond_to :shipping
+      end
+    end
   end
-<<<<<<< HEAD
-=======
-  pending "add some examples to (or delete) #{__FILE__}"
->>>>>>> 6b9ca2b (Add User modle)
-=======
->>>>>>> 4bfeb43 (Add User model spec)
 end

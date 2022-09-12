@@ -6,7 +6,7 @@
     %li.tab-item#privacy_tab{role: "presentation"}
       %a.tab-link{href: "#privacy", 'aria-controls': "privacy", role: "tab", 'data-toggle': "tab"}= t('settings.privacy')
   .tab-content
-    .general-main-wrap#address.tab-pane.fade.in.active{role: "tabpanel"}
+    #address.general-main-wrap.tab-pane.fade.in.active{role: "tabpanel"}
       %form
         .hidden-xs.hidden-sm
           .row
@@ -15,14 +15,16 @@
             .col-md-5
               %h3.general-subtitle.mt-0= t('settings.shipping')
       .row
-        .col-md-5.mb-40
-          .visible-xs.visible-sm
-            %h3.general-subtitle.mt-0= t("settings.billing")
-          = render 'users/settings/address', address: @user_billing
-        .col-md-5.mb-40
-          .visible-xs.visible-sm
-            %h3.general-subtitle.mt-0= t("settings.shipping")
-          = render 'users/settings/address', address: @user_shipping
+        #billing
+          .col-md-5.mb-40
+            .visible-xs.visible-sm
+              %h3.general-subtitle.mt-0= t("settings.billing")
+            = render 'users/settings/address', address: @user_billing
+        #shipping
+          .col-md-5.mb-40
+            .visible-xs.visible-sm
+              %h3.general-subtitle.mt-0= t("settings.shipping")
+            = render 'users/settings/address', address: @user_shipping
     #privacy.tab-pane.fade{role: "tabpanel"}
       .row.mb-60
         = render partial: 'users/settings/privacy'

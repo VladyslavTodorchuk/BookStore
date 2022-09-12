@@ -23,10 +23,7 @@ class UsersController < ApplicationController
 
   def permitted_params
     params.permit(
-      :password,
-      :current_password,
-      :password_confirmation,
-      :email,
+      user: %i[password current_password password_confirmation email],
       billing: %i[first_name last_name address city zip country phone],
       shipping: %i[first_name last_name address city zip country phone]
     )
