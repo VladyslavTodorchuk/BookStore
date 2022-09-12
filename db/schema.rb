@@ -141,13 +141,8 @@ ActiveRecord::Schema.define(version: 2022_09_13_083320) do
 
   create_table "shippings", force: :cascade do |t|
     t.bigint "user_id"
-<<<<<<< HEAD
     t.string "first_name"
     t.string "last_name"
-=======
-    t.string "first_name", default: "", null: false
-    t.string "last_name", default: "", null: false
->>>>>>> 57629c9 (Add Edit page with working understand button and remove function)
     t.string "address"
     t.string "city"
     t.integer "zip"

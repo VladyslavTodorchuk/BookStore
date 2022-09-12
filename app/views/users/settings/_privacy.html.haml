@@ -1,6 +1,6 @@
 .col-sm-5
   %p.in-gold-500.font-18.mb-25= t('settings.email')
-  = form_for(current_user, method: :put) do |f|
+  = form_for(current_user, method: :patch) do |f|
     .form-group.mb-35
       = f.label :email, t('login.enter_email'), class: 'control-label input-label'
       = f.email_field(:email,autofocus: true,autocomplete: 'email',id: 'email',class: 'form-control',required: true,placeholder: t('login.enter_email'))
@@ -8,7 +8,7 @@
       = f.submit t('settings.save'), class: 'btn btn-default mb-35', id: 'saveEmail'
 .col-sm-5.col-sm-offset-1
   %p.in-gold-500.font-18.mb-25= t('login.password')
-  = form_for(current_user, method: :put) do |f|
+  = form_for(current_user, method: :patch) do |f|
     .form-group.mb-30
       = f.label :current_password, t('settings.old_password'), class: 'control-label input-label'
       = f.password_field(:current_password,autocomplete: 'current_password',id: 'current_password',class: 'form-control',required: true,placeholder: t('settings.old_password'))
@@ -21,14 +21,14 @@
     .general-text-align
       = f.submit t('settings.save'), class: 'btn btn-default mb-10', id: 'savePassword'
 
-.col-sm-12{'data-controller': 'understand' }
+#remove.col-sm-12{'data-controller': 'understand' }
   %p.in-gold-500.font-18.mb-25= t('settings.remove')
   = form_for(current_user, method: :delete) do |f|
     .general-settings-btn
       = f.submit t('settings.please_remove'), class: 'btn mb-20', id: 'delete', disabled: true, "data-understand-target": "button"
     .form-group.checkbox.general-settings-checkbox
       %label.checkbox-label
-        %input.checkbox-input{type: "checkbox", hidden: "true", id: 'agree', "data-understand-target": "understand_button", 'data-action': "click->understand#understand"}
+        %input.checkbox-input{type: "checkbox", hidden: "false", id: 'agree', "data-understand-target": "understand_button", 'data-action': "click->understand#understand"}
         %span.checkbox-icon
           %i.fa.fa-check
         %span.checkbox-text= t('settings.understand')

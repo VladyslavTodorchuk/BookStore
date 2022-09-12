@@ -17,3 +17,8 @@ en:
     remove: 'Remove'
     please_remove: 'Please Remove'
     understand: 'Understand'
+    message:
+      update: 'Account was updated!'
+    error:
+      error: 'Account was not updated!'
+
