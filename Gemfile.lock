@@ -368,7 +368,7 @@ DEPENDENCIES
   fasterer (~> 0.10.0)
   ffaker (~> 2.21)
   haml (~> 5.2, >= 5.2.2)
-  interactor (~> 3.1, >= 3.1.2)
+  interactor (~> 3.0)
   jbuilder (~> 2.7)
   letter_opener (~> 1.8, >= 1.8.1)
   listen (~> 3.3)
