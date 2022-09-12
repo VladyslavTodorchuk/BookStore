@@ -175,8 +175,8 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
 
   create_table "shippings", force: :cascade do |t|
     t.bigint "user_id"
-    t.string "first_name", default: "", null: false
-    t.string "last_name", default: "", null: false
+    t.string "first_name"
+    t.string "last_name"
     t.string "address"
     t.string "city"
     t.integer "zip"
