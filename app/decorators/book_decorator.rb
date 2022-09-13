@@ -1,6 +1,5 @@
 class BookDecorator < Draper::Decorator
   decorates_association :authors
-  decorates_association :categories
 
   def self.collection_decorator_class
     PaginatingDecorator
@@ -9,10 +8,10 @@ class BookDecorator < Draper::Decorator
   delegate_all
 
   def authors_names
-    authors.map(&:full_name).join(', ')
+    authors.pluck(:full_name).join(', ')
   end
 
   def categories_names
-    categories.map(&:name).join(', ')
+    categories.pluck(:name).join(', ')
   end
 end

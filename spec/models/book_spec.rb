@@ -5,7 +5,7 @@ RSpec.describe Book, type: :model do
     context 'when validations' do
       it { is_expected.to validate_presence_of(:title) }
       it { is_expected.to validate_presence_of(:description) }
-      it { is_expected.to validate_presence_of(:price) }
+      it { is_expected.to validate_presence_of(:price_cents) }
       it { is_expected.to validate_presence_of(:year_of_publication) }
       it { is_expected.to validate_presence_of(:quantity) }
       it { is_expected.to validate_presence_of(:materials) }

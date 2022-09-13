@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe BookDecorator do
-  let(:book_decorator) { described_class.new(book) }
-  let(:book) { FactoryBot.create(:book, authors: authors, categories: categories) }
+  subject(:decorated_object) { described_class.new(book) }
 
+  let(:book) { FactoryBot.create(:book, authors: authors, categories: categories) }
   let(:authors) do
     [
       FactoryBot.create(:author, first_name: 'Vlad', last_name: 'Todorchuk'),
@@ -18,12 +18,14 @@ RSpec.describe BookDecorator do
   end
 
   context 'when decorate' do
-    it '#authors_names' do
-      expect(book_decorator.authors_names).to eq('Vlad Todorchuk, Stas Todorchuk')
-    end
-
     it '#categories_names' do
-      expect(book_decorator.categories_names).to eq('Poetry, Novel')
+      expect(decorated_object.categories_names).to eq("#{categories.first.name}, #{categories.last.name}")
+    end
+  end
+
+  describe '#authors_names' do
+    it do
+      expect(decorated_object.authors_names).to eq("#{authors.first.first_name} #{authors.first.last_name}, #{authors.last.first_name} #{authors.last.last_name}")
     end
   end
 end

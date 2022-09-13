@@ -1,13 +1,11 @@
-require 'rails_helper'
+require_relative '../rails_helper'
 
-RSpec.describe AuthorDecorator do
-  let(:decorator) { described_class.new(author) }
+RSpec.describe AuthorDecorator, type: :decorator do
+  subject(:decorated_object) { described_class.new(author) }
 
-  let(:author) { FactoryBot.create(:author, first_name: 'Vlad', last_name: 'Todorchuk') }
+  let(:author) { FactoryBot.create(:author) }
 
-  context 'when decorate' do
-    it '#full_name' do
-      expect(decorator.full_name).to eq('Vlad Todorchuk')
-    end
+  describe '#full_name' do
+    it { expect(decorated_object.full_name).to eq("#{author.first_name} #{author.last_name}") }
   end
 end

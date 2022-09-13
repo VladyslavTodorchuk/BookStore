@@ -5,8 +5,8 @@
       %h2.h1= t('home.title')
       .mb-res-50
         %p= t('home.desc')
-      %button.btn.btn-default{ href: '/books' }= t('home.get_started')
+      %button.btn.btn-default{ href: '#' }= t('.get_started')
     .mb-35
-      %h3= t('home.best_sellers')
+      %h3= t('.best_sellers')
       .row
-        = render partial: 'home/best_sellers'
+        = render partial: 'best_sellers'

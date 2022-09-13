@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2022_09_05_141200) do
   create_table "books", force: :cascade do |t|
     t.string "title", null: false
     t.string "description", null: false
-    t.float "price", null: false
+    t.integer "price_cents", null: false
     t.string "dimensions", null: false
     t.integer "year_of_publication", null: false
     t.string "materials", null: false
@@ -53,9 +53,10 @@ ActiveRecord::Schema.define(version: 2022_09_05_141200) do
   end
 
   create_table "categories", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["name"], name: "index_categories_on_name", unique: true
   end
 
   add_foreign_key "authors_books", "authors"

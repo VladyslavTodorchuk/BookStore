@@ -5,9 +5,9 @@ class Book < ApplicationRecord
   has_many :books_categories, dependent: :destroy
   has_many :categories, through: :books_categories
 
-  validates :title, presence: true
-  validates :description, presence: true
-  validates :year_of_publication, :materials, :dimensions, presence: true
-  validates :price, :quantity, presence: true,
-                               numericality: { greater_than_or_equal_to: 0.0, less_than_or_equal_to: 100 }
+  validates :title, :description, :year_of_publication, :materials, :dimensions, presence: true
+  validates :price_cents, :quantity, presence: true,
+                                     numericality:
+                                 { greater_than_or_equal_to: Constants::GREATER_THEN_ORT_EQUAL_TO,
+                                   less_than_or_equal_to: Constants::LESS_THEN_OR_EQUAL_TO }
 end
