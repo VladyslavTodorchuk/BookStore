@@ -108,3 +108,4 @@ workflows:
       - rspec:
           requires:
             - lintering
+            
