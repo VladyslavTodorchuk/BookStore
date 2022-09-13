@@ -56,8 +56,22 @@
               - Category.all.each do |category|
                 %li
                   %a{href: "#"}= category.name
+          - if user_signed_in?
             %li
-              %a{href: "#"}= t('header.log_in')
-          %li
-            %a{href: "#"}= t('header.log_out')
+              %li
+                %li.dropdown
+                  %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+                    = t('header.account')
+                  %ul#account.dropdown-menu
+                    %li
+                      %a= t('header.orders')
+                    %li
+                      %a= t('header.settings')
+                    %li
+                      = link_to t('header.log_out'), destroy_user_session_path, method: :delete
+          - else
+            %li
+              = link_to t('header.log_in'), new_user_session_path
+            %li
+              = link_to t('header.sing_up'), new_user_registration_path
 
