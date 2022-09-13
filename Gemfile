@@ -26,6 +26,8 @@ gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 5'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails', '~> 6.2'
