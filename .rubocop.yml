@@ -11,6 +11,8 @@ Rails/BulkChangeTable:
 
 Metrics/MethodLength:
   Max: 16
+  Exclude:
+    - 'db/migrate/*'
 
 Style/Documentation:
   Enabled: false

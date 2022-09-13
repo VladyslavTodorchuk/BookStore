@@ -1,5 +1,9 @@
 {
   "result": {
+<<<<<<< HEAD
     "line": 99.2
+=======
+    "line": 98.3
+>>>>>>> 0b5c4c5 (Fix rubocop)
   }
 }

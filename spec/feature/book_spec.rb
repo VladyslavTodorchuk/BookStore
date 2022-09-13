@@ -137,7 +137,7 @@ RSpec.describe 'Book', type: :feature do
       it 'show loaded books', js: true do
         visit books_path
 
-        find('a', id: 'view_more', class: 'view_more').click
+        find('a', class: 'view_more').click
 
         expect(page).to have_content(books.last.title)
       end
