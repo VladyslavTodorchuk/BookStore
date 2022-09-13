@@ -35,6 +35,9 @@ RSpec/ExampleLength:
 Metrics/AbcSize:
   Max: 30
 
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+
 RSpec/MessageSpies:
   Enabled: false
 

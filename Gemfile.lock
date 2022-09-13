@@ -414,6 +414,7 @@ DEPENDENCIES
   haml (~> 5.2, >= 5.2.2)
   interactor (~> 3.0)
   jbuilder (~> 2.7)
+  kaminari (~> 1.2, >= 1.2.2)
   letter_opener (~> 1.8, >= 1.8.1)
   listen (~> 3.3)
   monetize
