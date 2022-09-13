@@ -14,10 +14,12 @@
     = stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload'
 
   %body
-    %p.notice
-      = notice
-    %p.alert
-      = alert
+    - unless notice.nil?
+      %p.notice
+        = notice
+    - unless alert.nil?
+      %p.alert
+        = alert
 
     = render partial: 'layouts/header'
 
