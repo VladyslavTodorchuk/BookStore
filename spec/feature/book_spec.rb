@@ -43,7 +43,7 @@ RSpec.describe 'Book', type: :feature do
       end
 
       it 'increase quantity' do
-        expect(page).to have_content("€#{book.price * 2}")
+        expect(page).to have_content("€#{book.price_cents * 2}")
       end
 
       it 'decrease quantity' do
