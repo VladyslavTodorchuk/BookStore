@@ -1,3 +1,5 @@
+require 'monetize'
+
 class BookDecorator < Draper::Decorator
   decorates_association :authors
 
@@ -17,5 +19,9 @@ class BookDecorator < Draper::Decorator
 
   def price
     Money.new(price_cents)
+  end
+
+  def price
+    Money.new(price_cents, 'EUR')
   end
 end

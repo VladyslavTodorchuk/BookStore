@@ -28,6 +28,8 @@ Rails/FilePath:
 Metrics/BlockLength:
   Max: 40
   ExcludedMethods: ['describe']
+  Exclude:
+    - 'app/admin/books.rb'
 
 RSpec/ExampleLength:
   Max: 30
