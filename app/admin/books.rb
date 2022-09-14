@@ -8,7 +8,6 @@ ActiveAdmin.register Book do
   filter :categories
   filter :title
   filter :year_of_publication
-
   index do
     selectable_column
 
@@ -33,6 +32,7 @@ ActiveAdmin.register Book do
       row :materials
       row :dimensions
       row :price, &:price
+      row :price_cents, &:price
       row :created_at
       row :updated_at
     end
