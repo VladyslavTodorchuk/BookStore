@@ -31,7 +31,7 @@ ActiveAdmin.register Book do
       row :description
       row :materials
       row :dimensions
-      row :price_cents, &:price
+      row :price, &:price
       row :created_at
       row :updated_at
     end
