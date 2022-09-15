@@ -5,6 +5,7 @@ class CreateReviews < ActiveRecord::Migration[6.1]
       t.references :book, null: false
       t.string :title, null: false
       t.integer :rating, default: 0
+
       t.text :body, null: false
       t.boolean :verified, default: false
 
