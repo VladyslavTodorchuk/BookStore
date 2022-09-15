@@ -1,19 +1,29 @@
-%h3= t('review.write')
-%p.general-info-text Score
-.mb-15
-  %i.fa.fa-star.rate-empty
-  %i.fa.fa-star.rate-empty
-  %i.fa.fa-star.rate-empty
-  %i.fa.fa-star.rate-empty
-  %i.fa.fa-star.rate-empty
-%form.row
-  .col-md-8
-    .mb-40
-      .form-group
-        %label.control-label.input-label.in-grey-600{for: "title"}= t('review.title')
-        %input#title.form-control{name:"title", type: "text"}
-      .form-group
-        %label.control-label.input-label.in-grey-600{for: "review"}= t('review.review')
-        %textarea#review.form-control{name:"review", type: "text"}
-    .text-right
-      %button.btn.disabled.mb-20= t('review.post')
+- if current_user
+  %h3= t('review.write')
+  %p.general-info-text Score
+  %div{ "data-controller": "stars" }
+    .mb-15
+      %i.fa.fa-star.rate-empty#star1{"data-target": "star1", "data-action": "click->stars#get_rating", "data-stars-star-param": 1}
+      %i.fa.fa-star.rate-empty#star2{"data-target": "star2", "data-action": "click->stars#get_rating", "data-stars-star-param": 2}
+      %i.fa.fa-star.rate-empty#star3{"data-target": "star3", "data-action": "click->stars#get_rating", "data-stars-star-param": 3}
+      %i.fa.fa-star.rate-empty#star4{"data-target": "star4", "data-action": "click->stars#get_rating", "data-stars-star-param": 4}
+      %i.fa.fa-star.rate-empty#star5{"data-target": "star5", "data-action": "click->stars#get_rating", "data-stars-star-param": 5}
+    .row
+      = form_with(model: @review, method: :post, url: book_reviews_path(@book.id)) do |f|
+        .col-md-8
+          .mb-40
+            = f.hidden_field :book_id, value: @book.id
+            = f.hidden_field :user_id, value: current_user.id
+            = f.hidden_field :rating, value: 0, id: 'rating'
+            .form-group
+              = f.label :title, t('review.title'), class: 'control-label input-label in-grey-600'
+              = f.text_field :title, class: 'form-control', id: 'title'
+            .form-group
+              = f.label :body, t('review.review'), class: 'control-label input-label in-grey-600'
+              = f.text_area :body, class: 'form-control', id: 'body'
+            - if current_user
+              = f.hidden_field :verified, value: true
+            - else
+              = f.hidden_field :verified,  value: false
+          .text-right
+            = f.submit t('review.post'), class: 'btn mb-20'

@@ -9,5 +9,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :books, only: %i[show index]
+  resources :books, only: %i[show index] do
+    resources :reviews, only: :create
+  end
 end

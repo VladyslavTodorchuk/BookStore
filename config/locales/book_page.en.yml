@@ -12,3 +12,6 @@ en:
       not_verified: 'Not Verified Reviewer'
     read_more: 'Read More'
     read_less: 'Read Less'
+    review:
+      success: 'You have successfully created review'
+      error: 'Something went wrong during this process'
