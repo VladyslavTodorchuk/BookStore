@@ -146,7 +146,7 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.bigint "user_id", null: false
     t.bigint "book_id", null: false
     t.string "title", null: false
-    t.float "rating", default: 0.0
+    t.integer "rating", default: 0
     t.text "body", null: false
     t.boolean "verified", default: false
     t.datetime "created_at", precision: 6, null: false
