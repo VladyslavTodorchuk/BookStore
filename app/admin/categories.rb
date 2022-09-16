@@ -3,5 +3,4 @@ ActiveAdmin.register Category do
 
   filter :books, collection: BookDecorator.decorate_collection(Book.all)
   filter :name
-
 end
