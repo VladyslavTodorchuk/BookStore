@@ -1,18 +1,20 @@
+
+
 require 'rails_helper'
 
-RSpec.describe 'Books', type: :feature do
+RSpec.describe 'Book', type: :feature do
   let(:category_one) { FactoryBot.create(:category) }
   let(:category_two) { FactoryBot.create(:category) }
   let(:params) do
     { title: FFaker::Book.title,
       description: FFaker::Book.description,
-      price: FFaker::Number.rand(1..100),
+      price_cents: FFaker::Number.rand(1..100),
       dimensions: FFaker::Book.cover,
       year_of_publication: FFaker::Number.rand(1900..2022),
       materials: 'Soft cover',
       quantity: FFaker::Number.rand(2..5) }
   end
-  let(:book) { FactoryBot.create(:book) }
+  let(:book) { BookDecorator.new(FactoryBot.create(:book)) }
 
   describe '#show book' do
     it 'show books info' do
@@ -149,14 +151,15 @@ RSpec.describe 'Books', type: :feature do
   describe 'sort' do
     shared_examples 'sort test' do
       it 'sort books' do
-        FactoryBot.create(:book, title: 'Zimbabwe', price: 75,
-                                 created_at: 'Thu, 25 Aug 2022 15:20:38.761014000 UTC +00:00')
-        FactoryBot.create(:book, title: 'Anna', price: 23, created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
+        FactoryBot.create(:book, title: 'Zimbabwe', price_cents: 75,
+                          created_at: 'Thu, 25 Aug 2022 15:20:38.761014000 UTC +00:00')
+        FactoryBot.create(:book, title: 'Anna', price_cents: 23,
+                          created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
 
         visit books_path
 
         find('a', class: 'dropdown-toggle lead small', text: I18n.t('catalog_page.sorting.newer_first'),
-                  id: 'menu').click
+             id: 'menu').click
 
         within 'ul', class: 'dropdown-menu', id: 'sort' do
           click_link button
@@ -166,28 +169,28 @@ RSpec.describe 'Books', type: :feature do
     end
 
     context 'when sort by title A to Z' do
-      let(:button) { I18n.t('catalog_page.sorting.title.A-Z') }
+      let(:button) { I18n.t('catalog_page.sorting.title.asc') }
       let(:book_title) { 'Anna' }
 
       include_examples 'sort test'
     end
 
     context 'when sort by title Z to A' do
-      let(:button) { I18n.t('catalog_page.sorting.title.Z-A') }
+      let(:button) { I18n.t('catalog_page.sorting.title.desc') }
       let(:book_title) { 'Zimbabwe' }
 
       include_examples 'sort test'
     end
 
     context 'when sort by price High to Low' do
-      let(:button) { I18n.t('catalog_page.sorting.price.high_to_low') }
+      let(:button) { I18n.t('catalog_page.sorting.price.desc') }
       let(:book_title) { 'Zimbabwe' }
 
       include_examples 'sort test'
     end
 
     context 'when sort by price Low to High' do
-      let(:button) { I18n.t('catalog_page.sorting.price.low_to_high') }
+      let(:button) { I18n.t('catalog_page.sorting.price.asc') }
       let(:book_title) { 'Anna' }
 
       include_examples 'sort test'

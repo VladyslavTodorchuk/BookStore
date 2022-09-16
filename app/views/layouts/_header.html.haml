@@ -23,7 +23,7 @@
           %li
             %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
               = t('.shop')
-            %ulnav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
+            %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
                   %a.collapse-link{href: "#"}= category.name

@@ -12,13 +12,13 @@
           %li
             = link_to t('catalog_page.sorting.popular_first'), books_path(category: params[:category], sort: 'created_at', id: 'sort_elemt')
           %li
-            = link_to t('catalog_page.sorting.price.low_to_high'), books_path(category: params[:category], sort: 'price', id: 'sort_elemt')
+            = link_to t('catalog_page.sorting.price.asc'), books_path(category: params[:category], sort: 'price_cents', id: 'sort_elemt')
           %li
-            = link_to t('catalog_page.sorting.price.high_to_low'), books_path(category: params[:category], sort: 'price DESC', id: 'sort_elemt')
+            = link_to t('catalog_page.sorting.price.desc'), books_path(category: params[:category], sort: 'price_cents DESC', id: 'sort_elemt')
           %li
-            = link_to t('catalog_page.sorting.title.A-Z'), books_path(category: params[:category], sort: 'title', id: 'sort_elemt')
+            = link_to t('catalog_page.sorting.title.asc'), books_path(category: params[:category], sort: 'title', id: 'sort_elemt')
           %li
-            = link_to t('catalog_page.sorting.title.Z-A'), books_path(category: params[:category], sort: 'title DESC', id: 'sort_elemt')
+            = link_to t('catalog_page.sorting.title.desc'), books_path(category: params[:category], sort: 'title DESC', id: 'sort_elemt')
     %ul#filter.list-inline.pt-10.mb-25.mr-240
       %li.mr-35
         %a.filter-link{href: "/books?sort=title"}

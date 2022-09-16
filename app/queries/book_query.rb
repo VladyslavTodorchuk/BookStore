@@ -1,5 +1,5 @@
 class BookQuery
-  SORT_METHODS = ['created_at', 'created_at DESC', 'price DESC', 'most_popular', 'price', 'title', 'title DESC'].freeze
+  SORT_METHODS = ['created_at', 'created_at DESC', 'price_cents DESC', 'most_popular', 'price_cents', 'title', 'title DESC'].freeze
 
   def self.query(params)
     if SORT_METHODS.include?(params[:sort].to_s)
