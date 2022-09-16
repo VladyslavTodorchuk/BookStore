@@ -17,14 +17,14 @@ RSpec.describe BookDecorator do
     ]
   end
 
-  context 'when decorate' do
-    it '#categories_names' do
-      expect(decorated_object.categories_names).to eq("#{categories.first.name}, #{categories.last.name}")
-    end
+  describe '#categories_names' do
+    it { expect(decorated_object.categories_names).to eq("#{categories.first.name}, #{categories.last.name}") }
+  end
 
-    it '#authors_names' do
+  describe '#authors_names' do
+    it {
       expect(decorated_object.authors_names).to eq("#{authors.first.first_name} #{authors.first.last_name}, " \
-                                                     "#{authors.last.first_name} #{authors.last.last_name}")
-    end
+                                                      "#{authors.last.first_name} #{authors.last.last_name}")
+    }
   end
 end

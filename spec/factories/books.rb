@@ -8,22 +8,22 @@ FactoryBot.define do
     dimensions { FFaker::Book.cover(:size) }
     quantity { FFaker::Number.rand(0..10) }
 
-    factory :book_with_authors do
+    trait :with_authors do
       transient do
         authors_count { 1 }
       end
 
-      posts do
+      authors do
         Array.new(authors_count) { association(:author) }
       end
     end
 
-    factory :book_with_categories do
+    trait :with_categories do
       transient do
         categories_count { 1 }
       end
 
-      posts do
+      categories do
         Array.new(categories_count) { association(:category) }
       end
     end
