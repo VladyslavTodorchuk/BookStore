@@ -1,23 +1,25 @@
 ActiveAdmin.register Book do
   permit_params :title, :description, :price_cents, :dimensions, :year_of_publication, :materials, :quantity,
-                author_ids: [], category_ids: []
+                category_ids: [], author_ids: []
 
   decorate_with BookDecorator
+
+  filter :authors, collection: AuthorDecorator.decorate_collection(Author.all)
+  filter :categories
+  filter :title
+  filter :year_of_publication
 
   index do
     selectable_column
 
     column :title
     column :year_of_publication
-    column :description
     column :materials
     column :dimensions
     column :price_cents, &:price
     column :quantity
     column :authors, &:authors_names
     column :categories, &:categories_names
-    column :created_at
-    column :updated_at
 
     actions
   end
@@ -43,14 +45,14 @@ ActiveAdmin.register Book do
   form do |f|
     f.inputs do
       f.input :title
-      f.input :description
       f.input :year_of_publication
       f.input :price_cents
       f.input :materials
       f.input :dimensions
       f.input :quantity
+      f.input :description, as: :text
 
-      f.input :categories, as: :check_boxes, collection: Category.all
+      f.input :categories, as: :check_boxes
       f.input :authors, as: :check_boxes, collection: AuthorDecorator.decorate_collection(Author.all)
     end
 
