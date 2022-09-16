@@ -49,12 +49,12 @@ ActiveAdmin.register Book do
   form do |f|
     f.inputs do
       f.input :title
-      f.input :description
       f.input :year_of_publication
       f.input :price_cents
       f.input :materials
       f.input :dimensions
       f.input :quantity
+      f.input :description, as: :text
 
       f.input :categories, as: :select, collection: Category.all
       f.input :authors, as: :select, collection: Author.all
