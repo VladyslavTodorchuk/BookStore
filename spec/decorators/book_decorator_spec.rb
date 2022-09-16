@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe BookDecorator do
   subject(:decorated_object) { described_class.new(book) }
 
-  let(:book) { FactoryBot.create(:book, authors: authors, categories: categories) }
+  let(:book) { FactoryBot.create(:book, price_cents: 100, authors: authors, categories: categories) }
   let(:authors) do
     [
       FactoryBot.create(:author, first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name),
@@ -26,5 +26,9 @@ RSpec.describe BookDecorator do
       expect(decorated_object.authors_names).to eq("#{authors.first.first_name} #{authors.first.last_name}, " \
                                                       "#{authors.last.first_name} #{authors.last.last_name}")
     }
+  end
+
+  describe '#price' do
+    it { expect(decorated_object.price.to_s).to eq('1.00') }
   end
 end

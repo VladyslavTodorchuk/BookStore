@@ -14,4 +14,8 @@ class BookDecorator < Draper::Decorator
   def categories_names
     categories.pluck(:name).join(', ')
   end
+
+  def price
+    Money.new(price_cents, 'EUR')
+  end
 end
