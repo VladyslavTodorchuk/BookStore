@@ -1,5 +1,3 @@
-
-
 require 'rails_helper'
 
 RSpec.describe 'Book', type: :feature do
@@ -152,14 +150,14 @@ RSpec.describe 'Book', type: :feature do
     shared_examples 'sort test' do
       it 'sort books' do
         FactoryBot.create(:book, title: 'Zimbabwe', price_cents: 75,
-                          created_at: 'Thu, 25 Aug 2022 15:20:38.761014000 UTC +00:00')
+                                 created_at: 'Thu, 25 Aug 2022 15:20:38.761014000 UTC +00:00')
         FactoryBot.create(:book, title: 'Anna', price_cents: 23,
-                          created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
+                                 created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
 
         visit books_path
 
         find('a', class: 'dropdown-toggle lead small', text: I18n.t('catalog_page.sorting.newer_first'),
-             id: 'menu').click
+                  id: 'menu').click
 
         within 'ul', class: 'dropdown-menu', id: 'sort' do
           click_link button
