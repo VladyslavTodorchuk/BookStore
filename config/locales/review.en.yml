@@ -4,3 +4,8 @@ en:
     title: 'Title'
     review: 'Review'
     post: 'Post'
+    errors:
+      title_error: ' .Please enter title in correct format'
+      body_error: ' .Please enter body in correct format'
+    success: 'You have successfully created review'
+    error: 'Something went wrong during this process'

@@ -16,7 +16,7 @@
                   .general-message-verified= t('book_page.book.verified')
                 - else
                   .general-message-verified= t('book_page.book.not_verified')
-              .general-message-name= review.user.decorate.name_or_email.capitalize
+              .general-message-name= review.user.decorate.name_or_email
             .mb-15
               - review.rating.times do
                 %i.fa.fa-star.rate-star

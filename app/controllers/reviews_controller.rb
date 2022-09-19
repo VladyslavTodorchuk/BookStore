@@ -4,7 +4,7 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
 
-    return redirect_to book_path(@review.book), notice: I18n.t('book_page.review.success') if @review.save
+    return redirect_to book_path(@review.book), notice: I18n.t('review.success') if @review.save
 
     redirect_to book_path(@review.book), alert: @review.errors.full_messages.join(', ')
   end
