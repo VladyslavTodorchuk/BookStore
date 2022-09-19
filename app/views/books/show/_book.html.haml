@@ -2,14 +2,14 @@
   .col-sm-6
     .product-gallery
       .mb-20
-        %img.img-responsive{src: "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a98cf15e-2bde-47dd-8b88-d85b15aab9a4/understanding-privacy-shop-opt.png"}
+        - if @book.images.any?
+          = image_tag(@book.images.first, class: 'img-shadow general-thumbnail-img')
+        - else
+          = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
       .images.clearfix
-        %a.img-link{href: "#"}
-          %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
-        %a.img-link{href: "#"}
-          %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
-        %a.img-link{href: "#"}
-          %img{src: "https://www.smashingmagazine.com/wp-content/uploads/2015/09/smashing-book-5-2-large.jpg"}
+        - @book.images.each do |image|
+          %a.img-link
+            = image_tag(image.variant(resize_to_limit: [100, 100]), class: 'img-responsive')
   .col-sm-6
     %h1.mt-res-0= @book.title
     %p.lead.small

@@ -1,6 +1,6 @@
 ActiveAdmin.register Book do
   permit_params :title, :description, :price_cents, :dimensions, :year_of_publication, :materials, :quantity,
-                category_ids: [], author_ids: []
+                author_ids: [], category_ids: [], images: []
 
   decorate_with BookDecorator
 
@@ -36,6 +36,14 @@ ActiveAdmin.register Book do
       row :created_at
       row :updated_at
     end
+
+    panel :images do
+      table do
+        book.images.each do |image|
+          span image_tag image.variant(resize_to_limit: [100, 100])
+        end
+      end
+    end
   end
 
   form do |f|
@@ -50,8 +58,22 @@ ActiveAdmin.register Book do
 
       f.input :categories, as: :select, collection: Category.all
       f.input :authors, as: :select, collection: AuthorDecorator.decorate_collection(Author.all)
+      f.input :images, as: :file, input_html: { multiple: true }
+    end
+
+    panel :images do
+      f.object.images.each do |image|
+        span image_tag image.variant(resize_to_limit: [100, 100])
+        span link_to('Delete', delete_image_admin_book_path(image.id), method: :delete,
+                                                                       data: { confirm: "Delete #{image.filename}?" })
+      end
     end
 
     f.actions
+  end
+
+  member_action :delete_image, method: :delete do
+    ActiveStorage::Attachment.find(params[:id]).destroy
+    redirect_back(fallback_location: edit_admin_book_path)
   end
 end
