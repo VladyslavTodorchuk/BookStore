@@ -79,4 +79,26 @@ RSpec.describe 'Book' do
       expect(book.reload.images.count).to eq(0)
     end
   end
+
+  context 'when image' do
+    before do
+      click_link('Edit')
+
+      page.attach_file('book[images][]', './app/assets/images/Web-Book-Cover.png')
+
+      click_on 'Update Book'
+    end
+
+    it 'can add images to book' do
+      expect(book.reload.images.count).to eq(1)
+    end
+
+    it 'can delete images from book' do
+      click_link('Edit')
+
+      click_link('Delete')
+
+      expect(book.reload.images.count).to eq(0)
+    end
+  end
 end
