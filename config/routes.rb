@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  resources :order, only: %i[index edit]
+
   resources :users
 
   resources :books, only: %i[show index] do

@@ -9,10 +9,16 @@
       %a.navbar-brand= t('header.name')
       %a.shop-link.pull-right.visible-xs{href: "/"}
         %span.shop-icon
-          %span.shop-quantity 0
-    %a.shop-link.pull-right.hidden-xs{href: "/"}
+          - if current_user
+            %span.shop-quantity= current_user.order.books.count
+          - else
+            %span.shop-quantity 0
+    %a.shop-link.pull-right.hidden-xs{href: order_index_path}
       %span.shop-icon
-        %span.shop-quantity 0
+        - if current_user
+          %span.shop-quantity= current_user.order.books.count
+        - else
+          %span.shop-quantity 0
     #navbar.navbar-collapse.collapse.pl-30{'aria-expanded': "false"}
       .visible-xs
         %button.close{type: "button", 'aria-label': "Close"}

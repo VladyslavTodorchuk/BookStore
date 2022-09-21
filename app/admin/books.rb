@@ -65,7 +65,7 @@ ActiveAdmin.register Book do
       f.object.images.each do |image|
         span image_tag image.variant(resize_to_limit: [100, 100])
         span link_to('Delete', delete_image_admin_book_path(image.id), method: :delete,
-                                                                       data: { confirm: "Delete #{image.filename}?" })
+                                                                  data: { confirm: "Delete #{image.filename}?" })
       end
     end
 
@@ -73,7 +73,7 @@ ActiveAdmin.register Book do
   end
 
   member_action :delete_image, method: :delete do
-    ActiveStorage::Attachment.find(params[:id]).destroy
+    ActiveStorage::Attachment.find(params[:id]).purge_later
     redirect_back(fallback_location: edit_admin_book_path)
   end
 end
