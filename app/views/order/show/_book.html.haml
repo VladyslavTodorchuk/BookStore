@@ -1,0 +1,24 @@
+%tr
+  %td
+    .general-img-wrap-table
+      = image_tag(book.images.first, class: 'order-img-shadow pull-left')
+  %td
+    %p.title= book.title
+  %td
+    %span.font-16.in-gold-500
+      €
+      = book.price
+  %td
+    .input-group
+      %a.input-link{href: "#"}
+        %i.fa.fa-minus.line-heaght-40
+      %input.form-control.quantity-input{type: "text"}
+      %a.input-link{href: "#"}
+        %i.fa.fa-plus.line-heaght-40
+  %td
+    %span.font-16.in-gold-500
+      €
+      = book.price
+  %td
+    %button.close.general-cart-close{type: "button", 'aria-label': "Close"}
+      %span{'aria-hidden': "true"} &times;
