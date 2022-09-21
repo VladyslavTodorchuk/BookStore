@@ -9,7 +9,10 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :order, only: %i[index edit]
+  resources :order, only: %i[index edit] do
+    get '/add_to_cart', to: 'order_book#add_to_order'
+    get '/delete_from_cart', to: 'order_book#delete_product'
+  end
 
   resources :users
 

@@ -1,12 +1,11 @@
 class ApplicationController < ActionController::Base
-  before_action :have_order
+  before_action :user_or_guest_have_order
 
   private
-  def have_order
-    @cart = Order.find_or_create_by(user_id: current_user.id) if current_user
 
-    @cart = Order.find(session[:order_id]) unless session[:order_id].nil?
+  def user_or_guest_have_order
+    session[:order_id] = Order.find_or_create_by(user_id: current_user.id).id if current_user
 
-    @cart = Order.create if session[:order_id].nil?
+    session[:order_id] = Order.create.id if session[:order_id].nil?
   end
 end
