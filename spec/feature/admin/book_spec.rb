@@ -13,8 +13,6 @@ RSpec.describe 'Book' do
   end
 
   it 'can create an book' do
-    visit 'admin/books'
-
     click_link('New Book')
 
     fill_in 'book[title]', with: params[:title]
