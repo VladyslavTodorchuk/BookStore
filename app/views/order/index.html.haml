@@ -14,7 +14,7 @@
           %span.in-grey-600 SubTotal
         %th.col-close
       - @cart.books.each do |book|
-        = render partial: 'cart/show/book', object: book.decorate
+        = render partial: 'order/show/book', object: book.decorate
   .general-order-wrap
     .row
       .col-sm-4

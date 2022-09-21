@@ -11,8 +11,12 @@
             .general-thumb-link-wrap
               %a.thumb-hover-link{href: book_path(book)}
                 %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
-              %a.thumb-hover-link{href: '#' }
-                %i.fa.fa-shopping-cart.thumb-icon
+              %div{ "data-controller": "book" }
+                %a.thumb-hover-link{ "data-action": "click->book#addToCard",
+                "data-book-book-param": book.id,
+                "data-book-order-param": session[:order_id],
+                "data-book-count-param": 1 }
+                  %i.fa.fa-shopping-cart.thumb-icon
       .general-thumb-info
         %p.title= book.title
         %p.font-16.in-gold-500
