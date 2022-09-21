@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   resources :order, only: %i[index edit] do
     get '/add_to_cart', to: 'order_book#add_to_order'
-    get '/delete_from_cart', to: 'order_book#delete_product'
+    delete '/delete_from_cart/:book_id', to: 'order_book#delete_product'
   end
 
   resources :users
