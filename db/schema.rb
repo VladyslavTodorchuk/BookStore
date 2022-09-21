@@ -141,7 +141,7 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name"], name: "index_categories_on_name", unique: true
   end
-
+  
   create_table "coupons", force: :cascade do |t|
     t.string "code", null: false
     t.boolean "is_active", default: true
