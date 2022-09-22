@@ -21,10 +21,19 @@ class OrderBooksController < ApplicationController
   def delete_product
     product = OrderBook.find_by(order_id: params[:order_id], book_id: params[:book_id])
 
-    if product.destroy
-      redirect_to orders_path, notice: I18n.t('order.messages.delete')
-    else
-      redirect_to orders_path, alert: I18n.t('order.errors.error_delete')
+    respond_to do |format|
+      format.html
+      format.json do
+        if product.destroy
+          render json: {
+            notice: 'destroyed!'
+          }
+        else
+          render json: {
+            notice: 'Error!'
+          }
+        end
+      end
     end
   end
 
