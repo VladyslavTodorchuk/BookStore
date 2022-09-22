@@ -9,6 +9,7 @@ export default class extends Controller {
 
         if (counter.value > 1) {
             counter.value--;
+            document.getElementById("add_to_cart").setAttribute("data-book-count-param", counter.value)
             this.calculatePrice(price, counter.value);
         }
     }
@@ -20,6 +21,7 @@ export default class extends Controller {
 
         if (counter.value != quantity) {
             counter.value++;
+            document.getElementById("add_to_cart").setAttribute("data-book-count-param", counter.value)
             this.calculatePrice(price, counter.value);
         }
     }
