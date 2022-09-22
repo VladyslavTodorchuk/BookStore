@@ -13,6 +13,9 @@
         %th.col-total
           %span.in-grey-600= t('order.subtotal_title')
         %th.col-close
+      - @cart.books.each do |book|
+        = render partial: 'cart/show/book', object: book.decorate
+    .general-order-wrap
       - @cart.order_books.each do |order_books|
         %tr
           = render partial: 'orders/show/book', object: order_books.book.decorate
