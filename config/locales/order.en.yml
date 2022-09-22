@@ -5,3 +5,5 @@ en:
       delete: 'Book was delete from cart'
     errors:
       error_delete: 'Could not delete Book'
+    coupon:
+      error: 'This coupon is not working'

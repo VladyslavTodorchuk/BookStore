@@ -1,0 +1,9 @@
+%td
+  .general-img-wrap-table
+    = image_tag(book.images.first, class: 'orders-img-shadow pull-left')
+%td
+  %p.title= book.title
+%td
+  %span.font-16.in-gold-500
+    €
+    = book.price

@@ -4,8 +4,9 @@ class CreateCoupons < ActiveRecord::Migration[6.1]
       t.string :code, null: false
       t.boolean :is_active, default: true
       t.datetime :active_till_date, null: false
-      t.integer :discount, default: 0
+      t.decimal :discount, precision: 10, scale: 2
 
+      t.references :order, null: true
       t.index :code, unique: true
 
       t.timestamps

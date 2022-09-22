@@ -13,16 +13,19 @@
         %th.col-total
           %span.in-grey-600 SubTotal
         %th.col-close
-      - @cart.books.each do |book|
-        = render partial: 'order/show/book', object: book.decorate
-  .general-order-wrap
+      - @cart.order_books.each do |order_books|
+        %tr
+          = render partial: 'orders/show/book', object: order_books.book.decorate
+          = render partial: 'orders/show/order_book', object: order_books.decorate
+  .general-order-wrap{ 'data-controller': 'coupon' }
     .row
       .col-sm-4
         .input-group.general-input-group
           %label.input-label Enter Your Coupon Code
-          %input.form-control.mb-30{type: "text", placeholder: "Enter Your Coupon Code "}
+          %input#input.form-control.mb-30{type: "text", placeholder: "Enter Your Coupon Code "}
+          %span#error.text-danger
           %div
-            %button.btn.btn-primary.mr-5.mb-15 Apply Coupon
+            %button.btn.btn-primary.mr-5.mb-15{"data-action": "click->coupon#checkCoupon"} Apply Coupon
       .col-sm-8
         .res-mr-200.text-center.general-text-right
           %p.in-gold-500.font-18 Order Summary
@@ -31,16 +34,20 @@
               %td
                 %p.font-16 Subtotal:
               %td
-                %p.font-16 €117.69
+                %p.font-16
+                  €
+                  = @cart.order_price
             %tr
               %td
                 %p.font-16 Coupon:
               %td
-                %p.font-16 €0.00
+                %p#coupon_price.font-16 € 0.00
             %tr
               %td
                 %strong.font-18 Order Total:
               %td
-                %strong.font-18 €117.69
+                %strong#total_price.font-18
+                  €
+                  = @cart.order_price
           %button.btn.btn-default.mb-20.visible-xs-inline-block Checkout
   %button.btn.btn-default.mb-20.hidden-xs.center-block Checkout

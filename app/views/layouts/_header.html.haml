@@ -13,7 +13,7 @@
             %span#books_count_mobile.shop-quantity= Order.find(session[:order_id]).books.count
           - else
             %span#books_count_mobile.shop-quantity 0
-    %a.shop-link.pull-right.hidden-xs{href: order_index_path}
+    %a.shop-link.pull-right.hidden-xs{href: orders_path}
       %span.shop-icon
         - if session[:order_id]
           %span#books_count.shop-quantity= Order.find(session[:order_id]).books.count
