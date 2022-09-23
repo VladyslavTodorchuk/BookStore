@@ -35,24 +35,24 @@ RSpec.describe BookQuery do
 
     context 'when sort by price High to Low' do
       let(:books) do
-        FactoryBot.create(:book, price: 75)
-        FactoryBot.create(:book, price: 23)
+        FactoryBot.create(:book, price_cents: 75)
+        FactoryBot.create(:book, price_cents: 23)
       end
 
       let(:result) { 75 }
-      let(:test) { described_class.query({ sort: 'price DESC' }).first.price }
+      let(:test) { described_class.query({ sort: 'price DESC' }).first.price_cents }
 
       include_examples 'sort test'
     end
 
     context 'when sort price Low to High' do
       let(:books) do
-        FactoryBot.create(:book, price: 75)
-        FactoryBot.create(:book, price: 23)
+        FactoryBot.create(:book, price_cents: 75)
+        FactoryBot.create(:book, price_cents: 23)
       end
 
       let(:result) { 23 }
-      let(:test) { described_class.query({ sort: 'price' }).first.price }
+      let(:test) { described_class.query({ sort: 'price' }).first.price_cents }
 
       include_examples 'sort test'
     end
