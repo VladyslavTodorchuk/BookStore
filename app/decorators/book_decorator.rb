@@ -16,6 +16,6 @@ class BookDecorator < Draper::Decorator
   end
 
   def price
-    Money.new(price_cents, 'EUR')
+    Money.new(price_cents)
   end
 end
