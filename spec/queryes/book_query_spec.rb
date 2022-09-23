@@ -40,7 +40,7 @@ RSpec.describe BookQuery do
       end
 
       let(:result) { 75 }
-      let(:test) { described_class.query({ sort: 'price DESC' }).first.price_cents }
+      let(:test) { described_class.query({ sort: 'price_cents DESC' }).first.price_cents }
 
       include_examples 'sort test'
     end
@@ -52,7 +52,7 @@ RSpec.describe BookQuery do
       end
 
       let(:result) { 23 }
-      let(:test) { described_class.query({ sort: 'price' }).first.price_cents }
+      let(:test) { described_class.query({ sort: 'price_cents' }).first.price_cents }
 
       include_examples 'sort test'
     end
