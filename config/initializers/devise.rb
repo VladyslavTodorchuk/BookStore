@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 Devise.setup do |config|
-
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
   require 'devise/orm/active_record'
 
@@ -19,5 +18,4 @@ Devise.setup do |config|
                   Rails.application.credentials.dig(:facebook, :FACEBOOK_ID),
                   Rails.application.credentials.dig(:facebook, :FACEBOOK_SECRET),
                   scope: 'email', info_fields: 'email,name'
-
 end

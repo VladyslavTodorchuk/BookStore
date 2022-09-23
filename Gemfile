@@ -12,6 +12,7 @@ gem 'draper', '~> 4.0', '>= 4.0.2'
 gem 'haml', '~> 5.2', '>= 5.2.2'
 gem 'interactor', '~> 3.0'
 gem 'jbuilder', '~> 2.7'
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
 gem 'monetize'
 gem 'omniauth-facebook', '~> 4.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.1'
@@ -19,16 +20,11 @@ gem 'pagy', '~> 5.10', '>= 5.10.1'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
+gem 'redcarpet', '~> 3.5', '>= 3.5.1'
 gem 'sass-rails', '>= 6'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 5'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
-
-gem 'kaminari', '~> 1.2', '>= 1.2.2'
-
-gem 'monetize'
-
-gem 'redcarpet', '~> 3.5', '>= 3.5.1'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
