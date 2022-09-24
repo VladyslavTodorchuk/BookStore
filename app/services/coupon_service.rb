@@ -7,12 +7,12 @@ class CouponService
 
       {
         error: error_message,
-        total_price: order.decorate.order_price / 100
+        total_price: order.decorate.order_price.to_s
       }
     else
       {
-        total_price: order.decorate.order_price(coupon.discount) / 100,
-        discount: (order.decorate.order_price * coupon.discount) / 100
+        total_price: order.decorate.order_price(coupon.discount).to_s,
+        discount: (order.decorate.order_price * coupon.discount).to_s
       }
     end
   end

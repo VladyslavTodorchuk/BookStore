@@ -1,3 +1,6 @@
+require_relative '../services/coupon_service'
+require_relative '../services/book_service'
+
 class OrderBooksController < ApplicationController
   def add_to_order
     product = OrderBook.new(order_id: params[:order_id], book_id: params[:book_id], quantity: params[:quantity])
@@ -24,12 +27,18 @@ class OrderBooksController < ApplicationController
     end
   end
 
-  def update
-    product = OrderBook.find_by(order_id: session[:order_id], book_id: params[:book_id])
+  def update_quantity
+    product = OrderBook.find_by(order_id: params[:order_id], book_id: params[:book_id])
+    book = Book.find(params[:book_id])
+    order = Order.find(params[:order_id])
+    coupon = Coupon.find_by(code: params[:code])
 
-    product.update(quantity: params[:quantity])
-
-    redirect_to orders_path
+    respond_to do |format|
+      format.html
+      format.json do
+        render json: BookService.quantity_update(params, product, order, book, coupon)
+      end
+    end
   end
 
   private

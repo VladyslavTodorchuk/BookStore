@@ -15,14 +15,13 @@ export default class extends Controller {
                 url: "/coupon_check?code=" + code,
                 dataType: 'json',
                 success(data){
-                    console.log(data)
                     if(data.error){
                         document.getElementById('error').innerText = "  " + data.error
                         document.getElementById('coupon_price').textContent = '€ 0.00'
-                        document.getElementById('total_price').textContent = '€ ' + data.total_price.fractional
+                        document.getElementById('total_price').textContent = '€ ' + data.total_price
                     } else {
-                        document.getElementById('coupon_price').textContent = '€ ' + (data.discount.fractional)
-                        document.getElementById('total_price').textContent = '€ ' + (data.total_price.fractional)
+                        document.getElementById('coupon_price').textContent = '€ ' + data.discount
+                        document.getElementById('total_price').textContent = '€ ' + data.total_price
                     }
                 }
             }
