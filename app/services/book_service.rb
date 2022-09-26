@@ -1,7 +1,7 @@
 class BookService
   def self.quantity_update(params, product, order, book, coupon)
     discount = 0
-    product.update(quantity: params[:quantity]) if params[:quantity].to_i < book.quantity
+    product.update(quantity: params[:quantity]) if params[:quantity].to_i <= book.quantity
     discount = coupon.discount unless coupon.nil?
 
     if product.save
