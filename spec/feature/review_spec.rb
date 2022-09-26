@@ -31,7 +31,7 @@ RSpec.describe 'Review', type: :feature do
     context 'when review posted' do
       let(:rating) { "star#{rand(1..5)}" }
       let(:title_words) { 5 }
-      let(:body_words) { 30 }
+      let(:body_words) { 10 }
       let(:result) { user.name_or_email }
 
       include_examples 'review'
