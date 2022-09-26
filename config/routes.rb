@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   devise_for :users, as: 'omniauth', controller: { omniauth_callbacks: 'callbacks' }
 
   root 'home#index'
-  
+
   resources :orders, only: %i[index] do
     get '/add_to_order', to: 'order_books#add_to_order'
     delete '/delete_from_cart/:book_id', to: 'order_books#delete_product'
