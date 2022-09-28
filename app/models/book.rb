@@ -7,6 +7,8 @@ class Book < ApplicationRecord
 
   has_many :reviews, dependent: :destroy
 
+  has_many_attached :images
+
   validates :title, :description, :year_of_publication, :materials, :dimensions, presence: true
   validates :price_cents, :quantity, presence: true,
                                      numericality:

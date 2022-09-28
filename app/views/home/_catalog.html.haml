@@ -18,7 +18,8 @@
           .col-sm-7
             .mb-60
               %h1= book.title
-              %p.lead= book.description
+              %p.lead
+                = markdown(book.description[0..ApplicationHelper::DESCRIPTION_LENGTH])
               %p.lead.small
                 = book.authors_names
               .general-align

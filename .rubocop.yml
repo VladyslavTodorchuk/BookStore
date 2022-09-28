@@ -22,6 +22,9 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Rails/OutputSafety:
+  Enabled: false
+
 Rails/FilePath:
   Enabled: false
 
