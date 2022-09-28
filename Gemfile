@@ -28,7 +28,6 @@ gem 'sidekiq', '~> 6.5', '>= 6.5.7'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 5'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
-gem 'image_processing', '~> 1.12', '>= 1.12.2'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
