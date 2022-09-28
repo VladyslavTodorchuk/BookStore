@@ -96,6 +96,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.active_job.queue_adapter = :sidekiq
   config.action_mailer.default_url_options = { host: ENV['HOST_DOMAIN'], port: 3000 }
 
   # Inserts middleware to perform automatic connection switching.
