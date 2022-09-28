@@ -8,6 +8,7 @@ ActiveAdmin.register Book do
   filter :categories
   filter :title
   filter :year_of_publication
+
   index do
     selectable_column
 
