@@ -6,7 +6,7 @@ class CreateOrders < ActiveRecord::Migration[6.1]
       t.integer :total_price, default: 0
 
       t.string :status, default: 'initialized'
-      t.datetime :last_action, default: DateTime.now
+      t.datetime :last_action
       t.timestamps
     end
   end

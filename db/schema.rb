@@ -155,7 +155,7 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.bigint "coupon_id"
     t.integer "total_price", default: 0
     t.string "status", default: "initialized"
-    t.datetime "last_action", default: "2022-09-22 08:21:56"
+    t.datetime "last_action"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["coupon_id"], name: "index_orders_on_coupon_id"
