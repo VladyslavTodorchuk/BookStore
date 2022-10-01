@@ -16,12 +16,12 @@ export default class extends Controller {
                 dataType: 'json',
                 success(data){
                     if(params.quantity != 0){
-                        document.getElementById('inc' + params.book).setAttribute('data-quantity-quantity-param', params.quantity - 1)
+                        document.getElementById('dec' + params.book).setAttribute('data-quantity-quantity-param', params.quantity - 1)
                     }
                     if(params.quantity < data.book_quantity) {
-                        document.getElementById('dec' + params.book).setAttribute('data-quantity-quantity-param', params.quantity + 1)
+                        document.getElementById('inc' + params.book).setAttribute('data-quantity-quantity-param', params.quantity + 1)
                     }
-                    document.getElementById('counter' + params.book).value = params.quantity
+                    document.getElementById('counter' + params.book).setAttribute('value', params.quantity)
 
                     document.getElementById('coupon_price').textContent = '€ ' + data.discount
                     document.getElementById('price' + params.book).textContent = '€ ' + data.price

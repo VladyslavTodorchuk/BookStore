@@ -1,11 +1,11 @@
 %td{'data-controller': 'quantity'}
-  .input-group
+  %div.input-group.quantity
     %a.input-link{"data-action": "click->quantity#setBookQuantity",'data-quantity-quantity-param': order_book.quantity - 1,
-      'data-quantity-order-param': session[:order_id], 'data-quantity-book-param': order_book.book.id, id: "inc#{order_book.book.id}"}
+      'data-quantity-order-param': session[:order_id], 'data-quantity-book-param': order_book.book.id, id: "dec#{order_book.book.id}"}
       %i.fa.fa-minus.line-heaght-40
     %input.form-control.quantity-input{ 'value': order_book.quantity, id: "counter#{order_book.book.id}" }
     %a.input-link{"data-action": "click->quantity#setBookQuantity", 'data-quantity-quantity-param': order_book.quantity + 1,
-      'data-quantity-order-param': session[:order_id], 'data-quantity-book-param': order_book.book.id, id: "dec#{order_book.book.id}"}
+      'data-quantity-order-param': session[:order_id], 'data-quantity-book-param': order_book.book.id, id: "inc#{order_book.book.id}"}
       %i.fa.fa-plus.line-heaght-40
 
 %td
