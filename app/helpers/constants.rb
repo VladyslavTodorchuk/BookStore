@@ -9,7 +9,8 @@ module Constants
 
   TEXT_FORMAT = %r{\A[A-Za-z0-9!#$%&'*+-/=?^_`{|}~. ]+\z}.freeze
   NAME_FORMAT = /\A[A-Za-z]+\z/.freeze
-  PHONE_FORMAT = /\A(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\z/.freeze
+  COUNTY_FORMAT = /\A[A-Za-z ]+\z/.freeze
+  PHONE_FORMAT = /\A[\\+]?[(]?[0-9]{3}[)]?[-\s\\.]?[0-9]{3}[-\s\\.]?[0-9]{4,6}\z/.freeze
   ZIP_FORMAT = /\A[0-9]+\z/.freeze
 
   VALIDATES_NAME_LENGTH_MAX = 50
