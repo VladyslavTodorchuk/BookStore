@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if update_user.success?
       redirect_to edit_user_path, notice: I18n.t('settings.message.update')
     else
-      redirect_to edit_user_path, notice: I18n.t('settings.error.error')
+      redirect_to edit_user_path, alert: I18n.t('settings.error.error')
     end
   end
 

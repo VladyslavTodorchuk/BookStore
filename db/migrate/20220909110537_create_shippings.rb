@@ -8,7 +8,7 @@ class CreateShippings < ActiveRecord::Migration[6.1]
 
       t.string :address
       t.string :city
-      t.integer :zip
+      t.string :zip
       t.string :country
       t.string :phone
 
