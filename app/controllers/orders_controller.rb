@@ -3,5 +3,5 @@ class OrdersController < ApplicationController
     @cart = Order.find(session[:order_id]).decorate
   end
 
-  def registration_without_password; end
+  def edit; end
 end
