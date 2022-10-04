@@ -1,8 +1,6 @@
-require 'rails_helper'
-
 RSpec.describe 'Book', type: :feature do
-  let(:category_one) { FactoryBot.create(:category) }
-  let(:category_two) { FactoryBot.create(:category) }
+  let(:category_one) { create(:category) }
+  let(:category_two) { create(:category) }
   let(:params) do
     { title: FFaker::Book.title,
       description: FFaker::Book.description,
@@ -12,7 +10,7 @@ RSpec.describe 'Book', type: :feature do
       materials: 'Soft cover',
       quantity: FFaker::Number.rand(2..5) }
   end
-  let(:book) { BookDecorator.new(FactoryBot.create(:book)) }
+  let(:book) { BookDecorator.new(create(:book)) }
 
   describe '#show book' do
     it 'show books info' do
@@ -115,7 +113,7 @@ RSpec.describe 'Book', type: :feature do
   describe 'load_more' do
     before do
       (BooksController::PAGINATION_PER_PAGE * 2).times do
-        books << FactoryBot.create(:book)
+        books << create(:book)
       end
     end
 
@@ -149,10 +147,10 @@ RSpec.describe 'Book', type: :feature do
   describe 'sort' do
     shared_examples 'sort test' do
       it 'sort books' do
-        FactoryBot.create(:book, title: 'Zimbabwe', price_cents: 75,
-                                 created_at: 'Thu, 25 Aug 2022 15:20:38.761014000 UTC +00:00')
-        FactoryBot.create(:book, title: 'Anna', price_cents: 23,
-                                 created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
+        create(:book, title: 'Zimbabwe', price_cents: 75,
+                      created_at: 'Thu, 25 Aug 2022 15:20:38.761014000 UTC +00:00')
+        create(:book, title: 'Anna', price_cents: 23,
+                      created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
 
         visit books_path
 

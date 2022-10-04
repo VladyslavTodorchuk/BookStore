@@ -5,12 +5,14 @@ class BookQuery
   def self.query(params)
     if SORT_METHODS.include?(params[:sort].to_s)
       if params[:category].nil?
-        Book.all.order(params[:sort])
+        Book.order(params[:sort])
       else
-        Category.find(params[:category]).books.order(params[:sort])
+        Book.joins(:books_categories).where(books_categories: { category_id: params[:category] }).order(params[:sort])
       end
+    elsif params[:category].nil?
+      Book.all
     else
-      params[:category].nil? ? Book.all : Category.find(params[:category]).books
+      Book.joins(:books_categories).where(books_categories: { category_id: params[:category] })
     end
   end
 end

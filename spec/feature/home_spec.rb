@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe 'Homes', type: :feature do
   describe 'Get Started' do
     it 'on click move to catalog page' do
@@ -12,7 +10,7 @@ RSpec.describe 'Homes', type: :feature do
   end
 
   describe 'navbar' do
-    let(:books_category) { FactoryBot.create(:books_category) }
+    let(:books_category) { create(:books_category) }
 
     it 'on click home move to root-path' do
       visit books_path
