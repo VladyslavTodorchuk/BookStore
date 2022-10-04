@@ -7,16 +7,16 @@
           %i.fa.fa-facebook-official
         %p.general-login-text= t('checkout.or')
       .general-form
-        = form_with scope: :user, url: session_path(:user) do |f|
+        = form_with scope: :user, url: session_path(:user), id: 'login' do |f|
           .form-group.mb-30
             = f.label :user_email, t('checkout.enter_email'), class: 'control-label input-label'
-            = f.email_field(:email,autofocus: true,autocomplete: 'email',class: 'form-control',required: true,placeholder: t('checkout.enter_email'))
+            = f.email_field(:email, autofocus: true, autocomplete: 'email', class: 'form-control', required: true, placeholder: t('checkout.enter_email'))
           .form-group.mb-30
             = f.label :user_password, t('checkout.password'), class: 'control-label input-label'
             = f.password_field(:password,autocomplete: 'new password',class: 'form-control',required: true, placeholder: t('checkout.password'))
             = link_to t('login.forgot_password'), new_user_password_path, class: 'help-block in-gold-500'
           .text-center
-            = f.submit t('header.log_in'), class: 'btn btn-default mb-20'
+            = f.submit t('checkout.log_in_with_password'), class: 'btn btn-default mb-20'
 
     .col-md-5.col-md-offset-1.mb-60
       .text-center
@@ -24,7 +24,7 @@
         %a.general-login-icon{href: omniauth_user_facebook_omniauth_authorize_path, method: :post}
           %i.fa.fa-facebook-official
         %p.general-login-text or
-      = form_with scope: :user, url: fast_registration_path, method: :post do |f|
+      = form_with scope: :user, url: checkout_path, method: :post, id: 'fast_reg' do |f|
         .general-form
           .mb-40
             %p.mb-5= t('checkout.quik_registration')

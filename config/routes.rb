@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resource :fast_registration, only: %i[new create]
+  resource :checkout, only: %i[new create]
 
   resources :orders, only: %i[index edit update show] do
     get '/add_to_order', to: 'order_books#add_to_order'

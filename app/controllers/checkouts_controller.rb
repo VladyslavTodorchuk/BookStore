@@ -1,4 +1,4 @@
-class FastRegistrationsController < ApplicationController
+class CheckoutsController < ApplicationController
   def new; end
 
   def create
@@ -10,7 +10,7 @@ class FastRegistrationsController < ApplicationController
       user.send_reset_password_instructions
       redirect_to order_path(session[:order_id])
     else
-      redirect_to new_fast_registration_path, alert: I18n.t('checkout.error_message')
+      redirect_to new_checkout_path, alert: I18n.t('checkout.error_message')
     end
   end
 end
