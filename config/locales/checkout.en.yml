@@ -1,0 +1,13 @@
+en:
+  checkout:
+    returning_customer: 'Returning Customer'
+    log_in_with_password: 'Log In with Password'
+    enter_email: 'Enter Email'
+    password: 'Password'
+    forgot_password: 'Forgot password?'
+    new_customer: 'New Customer'
+    or: 'or'
+    quik_registration: 'Quik Register'
+    message: 'You’ll be able to create password later'
+    continue: 'Continue to Checkout'
+    error_message: 'Something went wrong. User is exits'
