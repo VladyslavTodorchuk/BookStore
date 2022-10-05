@@ -152,6 +152,25 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.index ["code"], name: "index_coupons_on_code", unique: true
   end
 
+  create_table "credit_cards", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "code"
+    t.string "name"
+    t.string "cvv"
+    t.string "expiration_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_credit_cards_on_user_id"
+  end
+
+  create_table "deliveries", force: :cascade do |t|
+    t.integer "price_cents", default: 0
+    t.string "delivery_method"
+    t.string "delivery_day"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "order_books", force: :cascade do |t|
     t.bigint "order_id", null: false
     t.bigint "book_id", null: false
@@ -261,7 +280,9 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
   add_foreign_key "billings", "users"
   add_foreign_key "books_categories", "books"
   add_foreign_key "books_categories", "categories"
+  add_foreign_key "credit_cards", "users"
   add_foreign_key "order_books", "books"
   add_foreign_key "order_books", "orders"
+  add_foreign_key "orders", "deliveries"
   add_foreign_key "orders", "users"
 end

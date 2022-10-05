@@ -4,16 +4,14 @@ class CouponService
 
     if coupon.nil?
       error_message = ' ' if params[:code].eql?('')
+      { error: error_message, total_price: order.decorate.order_price.to_s }
+    elsif !coupon.is_active
+      error_message = ' ' if params[:code].eql?('')
 
-      {
-        error: error_message,
-        total_price: order.decorate.order_price.to_s
-      }
+      { error: error_message, total_price: order.decorate.order_price.to_s }
     else
-      {
-        total_price: order.decorate.order_price(coupon.discount).to_s,
-        discount: (order.decorate.order_price * coupon.discount).to_s
-      }
+      { total_price: order.decorate.order_price(coupon.discount).to_s,
+        discount: (order.decorate.order_price * coupon.discount).to_s }
     end
   end
 end

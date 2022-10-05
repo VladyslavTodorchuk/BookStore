@@ -7,13 +7,13 @@ RSpec.describe 'Checkout', type: :feature, js: true do
 
   let(:user) { create(:user) }
 
-  describe '#logedis user' do
+  describe '#loggedin user' do
     it 'on click checkout render address page' do
       sign_in(user)
       visit root_path
 
       find('a.shop-link.pull-right.hidden-xs').click
-      find('input.btn.btn-default.mb-20.hidden-xs.center-block').click
+      find('a#checkout_button.btn.btn-default.hidden-xs').click
 
       expect(page).to have_content('Checkout')
     end

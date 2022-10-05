@@ -1,3 +1,4 @@
+require_relative '../services/checkout_service'
 class CheckoutsController < ApplicationController
   def new; end
 
@@ -8,9 +9,25 @@ class CheckoutsController < ApplicationController
     if user.save
       sign_in(:user, user)
       user.send_reset_password_instructions
-      redirect_to order_path(session[:order_id])
+      redirect_to checkout_path(step: :address)
     else
       redirect_to new_checkout_path, alert: I18n.t('checkout.error_message')
+    end
+  end
+
+  def show
+    @order = Order.find(session[:order_id]).decorate
+
+    coupon = Coupon.find_by(code: params[:code])
+    coupon&.update(order_id: @order.id)
+
+    step = params[:step]
+
+    if step.nil?
+      render 'checkouts/address'
+    else
+      page = CheckoutService.page_step(step.to_sym)
+      render page
     end
   end
 end

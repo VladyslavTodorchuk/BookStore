@@ -3,4 +3,7 @@ class Order < ApplicationRecord
   has_many :books, through: :order_books
 
   has_one :coupon, dependent: :nullify
+  belongs_to :delivery, optional: true
+
+  # validates :status, inclusion: { in: %i[initialized address delivery payment confirm complete] }
 end

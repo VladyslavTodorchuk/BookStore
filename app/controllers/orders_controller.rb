@@ -1,5 +1,4 @@
 class OrdersController < ApplicationController
-  # skip_before_action :authenticate_user!, only: :edit
   def index
     @cart = Order.find(session[:order_id]).decorate
   end
