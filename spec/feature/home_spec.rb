@@ -60,7 +60,7 @@ RSpec.describe 'Home', type: :feature do
     end
 
     context 'when user' do
-      let(:user) { FactoryBot.create(:user) }
+      let(:user) { create(:user) }
 
       before do
         sign_in(user)
