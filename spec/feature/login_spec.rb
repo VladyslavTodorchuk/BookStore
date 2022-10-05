@@ -1,7 +1,5 @@
-require 'rails_helper'
-
 RSpec.describe 'Login', type: :feature do
-  let(:user_second) { FactoryBot.create(:user, email: 'test.rspec@rspec.ua') }
+  let(:user_second) { create(:user, email: 'test.rspec@rspec.ua') }
 
   describe '#login' do
     before do

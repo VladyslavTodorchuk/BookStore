@@ -1,4 +1,7 @@
 require 'simplecov'
+require 'rails_helper'
+require_relative 'support/shared_context'
+
 SimpleCov.start
 
 RSpec.configure do |config|

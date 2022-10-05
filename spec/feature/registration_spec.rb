@@ -1,7 +1,5 @@
-require_relative '../rails_helper'
-
 RSpec.describe 'Registration', type: :feature do
-  let(:user) { FactoryBot.create(:user, email: 'test.rspec@rspec.ua') }
+  let(:user) { create(:user, email: 'test.rspec@rspec.ua') }
 
   describe '#sing_up' do
     before do
@@ -40,7 +38,7 @@ RSpec.describe 'Registration', type: :feature do
       it 'didn`t sing_up' do
         within 'form', class: 'new_user', id: 'new_user' do
           fill_in 'user_email', with: FFaker::Internet.email
-          fill_in 'user_password', with: 'wrong'
+          fill_in 'user_password', with: 'password'
           fill_in 'user_password_confirmation', with: 'wrong'
 
           click_on I18n.t('header.sing_up')

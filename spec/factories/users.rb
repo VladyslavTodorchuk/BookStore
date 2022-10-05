@@ -1,8 +1,6 @@
 FactoryBot.define do
   factory :user do
-    email do
-      "#{FFaker::Name.first_name.downcase}.#{FFaker::Name.last_name.downcase}@rspec.com"
-    end
+    email { FFaker::Internet.email }
     password { 'password' }
     confirmed_at { Time.zone.now }
   end

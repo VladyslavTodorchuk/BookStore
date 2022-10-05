@@ -10,7 +10,7 @@ RSpec.describe 'Book', type: :feature do
       materials: 'Soft cover',
       quantity: FFaker::Number.rand(2..5) }
   end
-  let(:book) { BookDecorator.new(create(:book)) }
+  let(:book) { create(:book).decorate }
 
   describe '#show book' do
     it 'show books info' do
@@ -112,8 +112,8 @@ RSpec.describe 'Book', type: :feature do
 
   describe 'load_more' do
     before do
-      (Constants::PAGINATION_PER_PAGE * 2).times do
-        books << FactoryBot.create(:book)
+      24.times do
+        books << create(:book)
       end
     end
 
