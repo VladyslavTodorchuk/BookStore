@@ -5,7 +5,7 @@ RSpec.describe 'Billing', type: :feature do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
-  let(:user) { FactoryBot.create(:user) }
+  let(:user) { create(:user) }
 
   describe '#fill_in' do
     it 'fill in billing' do

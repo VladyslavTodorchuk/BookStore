@@ -11,8 +11,8 @@ RSpec.describe BookQuery do
   describe 'all books sort' do
     context 'when sort by title A to Z' do
       let(:books) do
-        FactoryBot.create(:book, title: 'Adam')
-        FactoryBot.create(:book, title: 'Zimbabwe')
+        create(:book, title: 'Adam')
+        create(:book, title: 'Zimbabwe')
       end
 
       let(:result) { 'Zimbabwe' }
@@ -23,8 +23,8 @@ RSpec.describe BookQuery do
 
     context 'when sort title Z to A' do
       let(:books) do
-        FactoryBot.create(:book, title: 'Adam')
-        FactoryBot.create(:book, title: 'Zimbabwe')
+        create(:book, title: 'Adam')
+        create(:book, title: 'Zimbabwe')
       end
 
       let(:result) { 'Adam' }
@@ -35,8 +35,8 @@ RSpec.describe BookQuery do
 
     context 'when sort by price High to Low' do
       let(:books) do
-        FactoryBot.create(:book, price_cents: 75)
-        FactoryBot.create(:book, price_cents: 23)
+        create(:book, price_cents: 75)
+        create(:book, price_cents: 23)
       end
 
       let(:result) { 75 }
@@ -47,8 +47,8 @@ RSpec.describe BookQuery do
 
     context 'when sort price Low to High' do
       let(:books) do
-        FactoryBot.create(:book, price_cents: 75)
-        FactoryBot.create(:book, price_cents: 23)
+        create(:book, price_cents: 75)
+        create(:book, price_cents: 23)
       end
 
       let(:result) { 23 }
@@ -59,8 +59,8 @@ RSpec.describe BookQuery do
 
     context 'when sort by Newest' do
       let(:books) do
-        FactoryBot.create(:book, created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
-        FactoryBot.create(:book, created_at: 'Thu, 25 Aug 2022 15:25:38.761014000 UTC +00:00')
+        create(:book, created_at: 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00')
+        create(:book, created_at: 'Thu, 25 Aug 2022 15:25:38.761014000 UTC +00:00')
       end
 
       let(:result) { 'Thu, 25 Aug 2022 15:25:38.761014000 UTC +00:00' }

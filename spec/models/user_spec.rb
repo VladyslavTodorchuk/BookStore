@@ -6,8 +6,8 @@ RSpec.describe User, type: :model do
     end
 
     context 'with associations' do
-      it { is_expected.to respond_to(:billing) }
-      it { is_expected.to respond_to(:shipping) }
+      it { is_expected.to have_one(:billing) }
+      it { is_expected.to have_one(:shipping) }
     end
   end
 end
