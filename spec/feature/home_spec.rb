@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-require 'rails_helper'
-<<<<<<< HEAD
-require_relative '../support/shared_context'
-
->>>>>>> 4e81ea2 (Featire specs)
 RSpec.describe 'Home', type: :feature do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'

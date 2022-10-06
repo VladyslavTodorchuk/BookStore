@@ -41,10 +41,6 @@
         %div{"data-view-more-target" => "pagination"}
           = will_paginate(@books)
       .text-center
-<<<<<<< HEAD
         - unless @books.total_pages == @books.current_page
-=======
-        - unless @books.last_page?
->>>>>>> 249baa2 (Add decotaro for Author and Book)
           %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#next" }
             = t("catalog_page.view_more")
