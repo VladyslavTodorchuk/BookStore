@@ -64,6 +64,10 @@ RSpec.describe 'Home', type: :feature do
 
       before do
         sign_in(user)
+
+        visit root_path
+
+        find_all('a.dropdown-toggle')[2].click
       end
 
       it 'on click account show settings' do
