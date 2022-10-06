@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.string "zip"
     t.string "country"
     t.string "phone"
+    t.string "type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_addresses_on_user_id"
@@ -43,11 +44,6 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["author_id"], name: "index_authors_books_on_author_id"
     t.index ["book_id"], name: "index_authors_books_on_book_id"
-  end
-
-  create_table "billings", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "books", force: :cascade do |t|
@@ -76,11 +72,6 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name"], name: "index_categories_on_name", unique: true
-  end
-
-  create_table "shippings", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
