@@ -3,4 +3,29 @@ ActiveAdmin.register Category do
 
   filter :books, collection: Book.all
   filter :name
+
+  index do
+    selectable_column
+
+    column :name
+
+    actions
+  end
+
+  show do
+    attributes_table do
+      row :name
+      row :created_at
+      row :updated_at
+    end
+  end
+
+  form do |f|
+    f.inputs do
+      f.input :name
+      f.input :books, as: :select, collection: Book.all
+    end
+
+    f.actions
+  end
 end

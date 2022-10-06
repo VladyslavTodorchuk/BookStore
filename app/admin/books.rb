@@ -25,8 +25,6 @@ ActiveAdmin.register Book do
   end
 
   show do
-    h1 :title
-
     attributes_table do
       row :authors, &:authors_names
       row :categories, &:categories_names
@@ -38,8 +36,6 @@ ActiveAdmin.register Book do
       row :created_at
       row :updated_at
     end
-
-    active_admin_comments
   end
 
   form do |f|
@@ -52,8 +48,8 @@ ActiveAdmin.register Book do
       f.input :quantity
       f.input :description, as: :text
 
-      f.input :categories, as: :check_boxes
-      f.input :authors, as: :check_boxes, collection: AuthorDecorator.decorate_collection(Author.all)
+      f.input :categories, as: :select, collection: Category.all
+      f.input :authors, as: :select, collection: AuthorDecorator.decorate_collection(Author.all)
     end
 
     f.actions
