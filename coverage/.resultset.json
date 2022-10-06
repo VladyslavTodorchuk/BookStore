@@ -43,6 +43,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 49e8a6c (Rebased)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1476,11 +1482,15 @@
 =======
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc6bc8d2 (Rebased)
 =======
 =======
 >>>>>>> b9cc4e9 (Manifest_cache true)
 >>>>>>> 311e9fa (Rebased)
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> a636fda (Featire specs)
 =======
@@ -1489,6 +1499,8 @@
 =======
 =======
 >>>>>>> 11792758 (Rebased)
+=======
+>>>>>>> bc6bc8d2 (Rebased)
 {
   "RSpec": {
     "coverage": {
@@ -1497,6 +1509,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bc6bc8d2 (Rebased)
 >>>>>>> aa3618b (Rebased)
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1508,6 +1523,7 @@
 =======
 >>>>>>> a636fda (Featire specs)
 >>>>>>> 824bb2b (Featire specs)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 84809242 (Featire specs)
@@ -10102,6 +10118,11 @@
 >>>>>>> 11792758 (Rebased)
 =======
 >>>>>>> 84003439 (Featire specs)
+=======
+=======
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
+>>>>>>> bc6bc8d2 (Rebased)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/environment.rb": {
         "lines": [
           null,
@@ -10787,6 +10808,7 @@
           1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           15,
           15,
 =======
@@ -10794,13 +10816,22 @@
           13,
 >>>>>>> 824bb2b (Featire specs)
 =======
+=======
+>>>>>>> 311e9fa (Rebased)
           13,
           13,
 =======
           15,
           15,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
+=======
+=======
+          1,
+          1,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
           null,
           null
         ]
@@ -10809,15 +10840,15 @@
         "lines": [
           1,
           1,
-          5,
-          5,
+          1,
+          1,
           null,
           1,
           1,
           null,
           null,
           1,
-          10,
+          0,
           0,
           0,
           null,
@@ -11066,6 +11097,7 @@
           1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           97,
           111,
           94,
@@ -11076,6 +11108,8 @@
 =======
 =======
 >>>>>>> c8da2e3 (Fix)
+=======
+>>>>>>> 311e9fa (Rebased)
           95,
           109,
           92,
@@ -11095,7 +11129,19 @@
           111,
           111,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
+=======
+=======
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
           null,
           1,
           1,
@@ -11106,6 +11152,7 @@
           null,
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           110,
@@ -11113,11 +11160,19 @@
           108,
 >>>>>>> 824bb2b (Featire specs)
 =======
+=======
+>>>>>>> 311e9fa (Rebased)
           108,
 =======
           110,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
+=======
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
           0,
           0,
           null,
@@ -11127,16 +11182,25 @@
           1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           110,
 =======
           108,
 >>>>>>> 824bb2b (Featire specs)
 =======
+=======
+>>>>>>> 311e9fa (Rebased)
           108,
 =======
           110,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
+=======
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
           0,
           0,
           null,
@@ -11169,6 +11233,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 31d15e66 (Fix)
@@ -11176,12 +11241,18 @@
 =======
 >>>>>>> fdab719f (Fix)
 =======
+>>>>>>> bc6bc8d2 (Rebased)
 =======
+=======
+=======
+>>>>>>> 311e9fa (Rebased)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> b28889f (Fix)
 >>>>>>> c8da2e3 (Fix)
+=======
+>>>>>>> 49e8a6c (Rebased)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11194,6 +11265,7 @@
 >>>>>>> 84003439 (Featire specs)
           12,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
           1,
@@ -11202,6 +11274,11 @@
           12,
 >>>>>>> a5d032d (Fix)
 >>>>>>> b28889f (Fix)
+=======
+=======
+          1,
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
           null,
           null
         ]
@@ -11339,9 +11416,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 11792758 (Rebased)
 =======
 >>>>>>> 31d15e66 (Fix)
+=======
+>>>>>>> bc6bc8d2 (Rebased)
           1,
           1,
           1,
@@ -11368,7 +11448,15 @@
           20,
           20,
 >>>>>>> 160fb15 (Fix)
+<<<<<<< HEAD
 >>>>>>> 31d15e66 (Fix)
+=======
+=======
+          1,
+          1,
+          1,
+>>>>>>> 311e9fa (Rebased)
+>>>>>>> bc6bc8d2 (Rebased)
           null,
           null
         ]
@@ -11555,6 +11643,7 @@
         "lines": [
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           null,
           1,
 <<<<<<< HEAD
@@ -11607,11 +11696,21 @@
 =======
 <<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
+=======
+          null,
+          1,
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 311e9fa (Rebased)
           12,
 =======
           1,
           13,
 >>>>>>> b28889f (Fix)
+=======
+          1,
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
           null
         ]
@@ -11791,6 +11890,7 @@
           1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -11799,12 +11899,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
+=======
+=======
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
 >>>>>>> 08edf50 (Featire specs)
 >>>>>>> 5c33a07 (Featire specs)
 =======
 >>>>>>> 824bb2b (Featire specs)
           3,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -11814,30 +11920,35 @@
           3,
 >>>>>>> a5d032d (Fix)
 >>>>>>> b28889f (Fix)
+=======
+=======
+          0,
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
           null,
-          3,
-          3,
+          0,
+          0,
           null,
-          3,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null,
+          0,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
-          2,
           null,
           null,
-          2,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
           null,
           null
         ]
@@ -11859,6 +11970,8 @@
           1,
           null,
           1,
+          1,
+          null,
           1,
           null,
           1,
@@ -11917,21 +12030,24 @@
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           4,
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          4,
+          0,
           null,
           null,
           1,
+<<<<<<< HEAD
           3,
           3,
           3,
@@ -11975,10 +12091,31 @@
           null,
           null,
 >>>>>>> b28889f (Fix)
+=======
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+>>>>>>> 49e8a6c (Rebased)
           null,
           null,
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
           2,
           2,
@@ -11988,11 +12125,23 @@
           2,
           2,
           2,
+=======
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
-          2,
-          2,
+          0,
+          0,
+          0,
           null,
           null,
+<<<<<<< HEAD
           2,
 =======
           6,
@@ -12013,10 +12162,17 @@
           6,
           1,
           1,
+=======
+          0,
+          0,
+          0,
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
           null,
           null,
           null,
+<<<<<<< HEAD
           6,
           null,
           null,
@@ -12024,6 +12180,14 @@
           1,
           1,
 >>>>>>> b28889f (Fix)
+=======
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
           null
         ]
@@ -12037,24 +12201,33 @@
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           56,
 =======
           58,
 >>>>>>> b28889f (Fix)
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
           null,
           1,
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           101,
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
           null,
           1,
-          8,
+          0,
           null,
           null,
           1,
+<<<<<<< HEAD
           121,
 =======
           105,
@@ -12067,6 +12240,9 @@
           1,
           125,
 >>>>>>> b28889f (Fix)
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
           null
         ]
@@ -12077,7 +12253,7 @@
           1,
           null,
           1,
-          3,
+          0,
           null,
           null
         ]
@@ -12091,28 +12267,28 @@
           1,
           null,
           1,
-          4,
+          0,
           null,
-          4,
+          0,
           null,
-          4,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null,
+          0,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
-          2,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
           null,
           null
         ]
@@ -12133,10 +12309,14 @@
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           31,
 =======
           39,
 >>>>>>> b28889f (Fix)
+=======
+          1,
+>>>>>>> 49e8a6c (Rebased)
           null,
           1,
           0,
@@ -12656,6 +12836,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 31d15e66 (Fix)
@@ -12663,6 +12844,8 @@
 >>>>>>> 84003439 (Featire specs)
 =======
 >>>>>>> fdab719f (Fix)
+=======
+>>>>>>> bc6bc8d2 (Rebased)
           1,
           1,
           1,
@@ -12683,10 +12866,14 @@
 >>>>>>> 824bb2b (Featire specs)
 =======
 =======
+>>>>>>> 311e9fa (Rebased)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> b28889f (Fix)
 >>>>>>> c8da2e3 (Fix)
+=======
+>>>>>>> 49e8a6c (Rebased)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -19234,12 +19421,19 @@
 >>>>>>> 563720e (Featire specs)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 86d584a (Manifest_cache true)
+=======
+>>>>>>> fd6db03 (Manifest_cache true)
+=======
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
           0,
           0,
           0,
           0,
           null,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7a02bbe (Featire specs)
@@ -19283,6 +19477,8 @@
 >>>>>>> 563720e (Featire specs)
 =======
           null,
+=======
+>>>>>>> 49e8a6c (Rebased)
           0,
           0,
           0,
@@ -19292,6 +19488,7 @@
           0,
           null,
           0,
+<<<<<<< HEAD
 >>>>>>> 86d584a (Manifest_cache true)
 =======
           1,
@@ -30290,6 +30487,29 @@
 >>>>>>> a5d032d (Fix)
 =======
 >>>>>>> 824bb2b (Featire specs)
+<<<<<<< HEAD
+=======
+=======
+=======
+          1,
+=======
+>>>>>>> 49e8a6c (Rebased)
+          null,
+          null,
+          null,
+          null,
+          null,
+<<<<<<< HEAD
+>>>>>>> a5d032d (Fix)
+<<<<<<< HEAD
+>>>>>>> c8da2e3 (Fix)
+=======
+=======
+<<<<<<< HEAD
+          null,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
+>>>>>>> bc6bc8d2 (Rebased)
           1,
           1,
           1,
@@ -48739,9 +48959,24 @@
 =======
 >>>>>>> 7a02bbe (Featire specs)
 >>>>>>> 9c0d812 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> e5752db (Featire specs)
+<<<<<<< HEAD
 >>>>>>> ed32b84 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 4d4cf6b4 (Featire specs)
+=======
+=======
+=======
+=======
+=======
+>>>>>>> fd6db03 (Manifest_cache true)
+>>>>>>> 00f8b58 (Manifest_cache true)
+=======
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
+>>>>>>> bc6bc8d2 (Rebased)
           null
         ]
       }
@@ -48932,6 +49167,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> e5752db (Featire specs)
 =======
 <<<<<<< HEAD
@@ -48939,6 +49175,9 @@
 =======
 <<<<<<< HEAD
 >>>>>>> 7d58507 (Add login registration pages)
+=======
+<<<<<<< HEAD
+>>>>>>> 49e8a6c (Rebased)
 =======
 =======
 >>>>>>> 4a0e3b6 (Manifest_cache true)
@@ -50361,6 +50600,7 @@
 >>>>>>> 7a02bbe (Featire specs)
 >>>>>>> 9c0d812 (Featire specs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "timestamp": 1665070429
 =======
@@ -50407,5 +50647,18 @@
 =======
 =======
 >>>>>>> e5752db (Featire specs)
+<<<<<<< HEAD
 >>>>>>> ed32b84 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 4d4cf6b4 (Featire specs)
+=======
+=======
+=======
+=======
+    "timestamp": 1665070429
+  }
+}
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> 311e9fa (Rebased)
+>>>>>>> bc6bc8d2 (Rebased)
