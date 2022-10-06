@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1043,6 +1044,7 @@
 >>>>>>> 78717cc (Manifest_cache true)
 =======
 =======
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b9cc4e9 (Manifest_cache true)
@@ -1054,10 +1056,13 @@
 >>>>>>> b9cc4e9 (Manifest_cache true)
 >>>>>>> 0d6dd12 (Manifest_cache true)
 =======
+=======
+>>>>>>> 11792758 (Rebased)
 {
   "RSpec": {
     "coverage": {
 >>>>>>> bf554f4 (Rebased)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9657,6 +9662,9 @@
   "RSpec": {
     "coverage": {
 >>>>>>> c7a726c5 (Rebased)
+=======
+>>>>>>> aa3618b (Rebased)
+>>>>>>> 11792758 (Rebased)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/environment.rb": {
         "lines": [
           null,
@@ -10131,8 +10139,8 @@
         "lines": [
           1,
           1,
-          13,
-          13,
+          1,
+          1,
           null,
           null
         ]
@@ -10141,15 +10149,15 @@
         "lines": [
           1,
           1,
-          5,
-          5,
+          1,
+          1,
           null,
           1,
           1,
           null,
           null,
           1,
-          10,
+          0,
           0,
           0,
           null,
@@ -10354,13 +10362,13 @@
         "lines": [
           1,
           1,
-          95,
-          109,
-          92,
-          109,
-          109,
-          109,
-          109,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
@@ -10371,15 +10379,15 @@
           null,
           null,
           1,
-          108,
           0,
           0,
+          0,
           null,
           null,
           null,
           null,
           1,
-          108,
+          0,
           0,
           0,
           null,
@@ -10410,6 +10418,25 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+          12,
+          null,
+          null
+        ]
+      },
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/factories/reviews.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+=======
+=======
+>>>>>>> 9a49b7b (Rebased)
+=======
+>>>>>>> aa3618b (Rebased)
+>>>>>>> 11792758 (Rebased)
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10418,6 +10445,43 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bb5c652 (Fix book_spec decrease quantity and price)
+=======
+=======
+          12,
+=======
+          1,
+>>>>>>> bf554f4 (Rebased)
+          null,
+          null
+        ]
+      },
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/factories/reviews.rb": {
+        "lines": [
+>>>>>>> 9a49b7b (Rebased)
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/spec/factories/shippings.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+>>>>>>> c033601 (Rebased)
+          1,
+          1,
+          1,
+>>>>>>> 11792758 (Rebased)
 <<<<<<< HEAD
 >>>>>>> 0d6dd12 (Manifest_cache true)
 =======
@@ -10471,12 +10535,30 @@
         "lines": [
           1,
           1,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 11792758 (Rebased)
           1,
           1,
           1,
           1,
           1,
           1,
+<<<<<<< HEAD
+=======
+=======
+          13,
+          20,
+          20,
+>>>>>>> 9a49b7b (Rebased)
+=======
+          1,
+          1,
+          1,
+>>>>>>> aa3618b (Rebased)
+>>>>>>> 11792758 (Rebased)
           null,
           null
         ]
@@ -10609,8 +10691,10 @@
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null,
           1,
-          12,
+          1,
+          0,
           null,
           null
         ]
@@ -10743,6 +10827,32 @@
           1,
           null,
           1,
+<<<<<<< HEAD
+=======
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/admin/authors.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 11792758 (Rebased)
 >>>>>>> 08edf50 (Featire specs)
 =======
 >>>>>>> 183b6c5 (Manifest_cache true)
@@ -10779,30 +10889,33 @@
           null,
           1,
           3,
+=======
+          0,
+>>>>>>> bf554f4 (Rebased)
           null,
-          3,
-          3,
+          0,
+          0,
           null,
-          3,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null,
+          0,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
-          2,
           null,
           null,
-          2,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
           null,
           null
         ]
@@ -10824,6 +10937,8 @@
           1,
           null,
           1,
+          1,
+          null,
           1,
           null,
           1,
@@ -10881,49 +10996,69 @@
           1,
           null,
           1,
-          4,
+          0,
           null,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          4,
+          0,
           null,
           null,
           1,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
           null,
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          2,
-          2,
+          0,
+          0,
+          0,
           null,
           null,
-          2,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
           null,
           null
         ]
@@ -10936,21 +11071,21 @@
           1,
           null,
           1,
-          56,
+          0,
           null,
           null,
           1,
           null,
           1,
-          101,
+          0,
           null,
           null,
           1,
-          8,
+          0,
           null,
           null,
           1,
-          121,
+          0,
           null,
           null
         ]
@@ -10961,7 +11096,7 @@
           1,
           null,
           1,
-          3,
+          0,
           null,
           null
         ]
@@ -10975,28 +11110,28 @@
           1,
           null,
           1,
-          4,
+          0,
           null,
-          4,
+          0,
           null,
-          4,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null,
+          0,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
-          2,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
           null,
           null
         ]
@@ -11016,7 +11151,7 @@
           null,
           null,
           1,
-          31,
+          1,
           null,
           1,
           0,
@@ -11148,6 +11283,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+          1,
+          1,
+          1,
+          1,
+=======
+=======
+>>>>>>> 9a49b7b (Rebased)
+=======
+>>>>>>> aa3618b (Rebased)
+>>>>>>> 11792758 (Rebased)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -18611,6 +18758,7 @@
 >>>>>>> bf554f4 (Rebased)
 >>>>>>> aa3618b (Rebased)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 75fa7e1b (Rebased)
 =======
 =======
@@ -18632,10 +18780,13 @@
 >>>>>>> aa7b40c (Manifest_cache true)
 >>>>>>> 7bc7f9f (Manifest_cache true)
 >>>>>>> c59d1a99 (Manifest_cache true)
+=======
+>>>>>>> 11792758 (Rebased)
           0,
           0,
           0,
           0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -18646,6 +18797,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> 11792758 (Rebased)
 =======
 =======
 >>>>>>> 7a02bbe (Featire specs)
@@ -24721,6 +24874,13 @@
           1,
           null,
           null,
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> fd6db03 (Manifest_cache true)
+=======
+>>>>>>> aa3618b (Rebased)
+>>>>>>> 11792758 (Rebased)
           null,
           1,
           1,
@@ -24733,11 +24893,10 @@
           1,
           null,
           null,
-          1,
-          null,
-          1,
           null,
           null,
+          null,
+<<<<<<< HEAD
           null,
           1,
           1,
@@ -36280,7 +36439,16 @@
 =======
 >>>>>>> 7a02bbe (Featire specs)
 >>>>>>> 9c0d812 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 37e48018 (Featire specs)
+=======
+=======
+=======
+>>>>>>> fd6db03 (Manifest_cache true)
+>>>>>>> 00f8b58 (Manifest_cache true)
+=======
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 11792758 (Rebased)
           null
         ]
       }
@@ -36294,6 +36462,7 @@
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37585,5 +37754,16 @@
 }
 >>>>>>> 7a02bbe (Featire specs)
 >>>>>>> 9c0d812 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 4d90e3d (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 37e48018 (Featire specs)
+=======
+=======
+=======
+    "timestamp": 1665070429
+  }
+}
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> aa3618b (Rebased)
+>>>>>>> 11792758 (Rebased)
