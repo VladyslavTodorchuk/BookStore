@@ -258,7 +258,6 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
-
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
@@ -270,6 +269,7 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
   add_foreign_key "addresses", "users"
   add_foreign_key "authors_books", "authors"
   add_foreign_key "authors_books", "books"
+  add_foreign_key "billings", "users"
   add_foreign_key "books_categories", "books"
   add_foreign_key "books_categories", "categories"
   add_foreign_key "credit_cards", "users"
