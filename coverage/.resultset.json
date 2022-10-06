@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -448,7 +449,15 @@
 =======
 =======
 >>>>>>> b9cc4e9 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> 78717cc (Manifest_cache true)
+=======
+=======
+{
+  "RSpec": {
+    "coverage": {
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> aa3618b (Rebased)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/environment.rb": {
         "lines": [
           null,
@@ -982,8 +991,8 @@
         "lines": [
           1,
           1,
-          13,
-          13,
+          1,
+          1,
           null,
           null
         ]
@@ -992,15 +1001,15 @@
         "lines": [
           1,
           1,
-          5,
-          5,
+          1,
+          1,
           null,
           1,
           1,
           null,
           null,
           1,
-          10,
+          0,
           0,
           0,
           null,
@@ -1120,13 +1129,13 @@
         "lines": [
           1,
           1,
-          95,
-          109,
-          92,
-          109,
-          109,
-          109,
-          109,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
@@ -1137,15 +1146,15 @@
           null,
           null,
           1,
-          108,
           0,
           0,
+          0,
           null,
           null,
           null,
           null,
           1,
-          108,
+          0,
           0,
           0,
           null,
@@ -1171,6 +1180,7 @@
           1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           12,
           null,
           null
@@ -1185,6 +1195,8 @@
 =======
 =======
 >>>>>>> 9a49b7b (Rebased)
+=======
+>>>>>>> aa3618b (Rebased)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1201,6 +1213,9 @@
 =======
 =======
           12,
+=======
+          1,
+>>>>>>> bf554f4 (Rebased)
           null,
           null
         ]
@@ -1263,6 +1278,7 @@
           1,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           1,
           1,
           1,
@@ -1274,6 +1290,11 @@
           20,
           20,
 >>>>>>> 9a49b7b (Rebased)
+=======
+          1,
+          1,
+          1,
+>>>>>>> aa3618b (Rebased)
           null,
           null
         ]
@@ -1362,8 +1383,10 @@
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null,
           1,
-          12,
+          1,
+          0,
           null,
           null
         ]
@@ -1813,6 +1836,7 @@
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 08edf50 (Featire specs)
 >>>>>>> 5c33a07 (Featire specs)
 <<<<<<< HEAD
@@ -1820,30 +1844,33 @@
 =======
 =======
           3,
+=======
+          0,
+>>>>>>> bf554f4 (Rebased)
           null,
-          3,
-          3,
+          0,
+          0,
           null,
-          3,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null,
+          0,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
-          2,
           null,
           null,
-          2,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
           null,
           null
         ]
@@ -1865,6 +1892,8 @@
           1,
           null,
           1,
+          1,
+          null,
           1,
           null,
           1,
@@ -1922,49 +1951,69 @@
           1,
           null,
           1,
-          4,
+          0,
           null,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          4,
+          0,
           null,
           null,
           1,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
           null,
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          2,
-          2,
+          0,
+          0,
+          0,
           null,
           null,
-          2,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
           null,
           null
         ]
@@ -1977,21 +2026,21 @@
           1,
           null,
           1,
-          56,
+          0,
           null,
           null,
           1,
           null,
           1,
-          101,
+          0,
           null,
           null,
           1,
-          8,
+          0,
           null,
           null,
           1,
-          121,
+          0,
           null,
           null
         ]
@@ -2002,7 +2051,7 @@
           1,
           null,
           1,
-          3,
+          0,
           null,
           null
         ]
@@ -2016,28 +2065,28 @@
           1,
           null,
           1,
-          4,
+          0,
           null,
-          4,
+          0,
           null,
-          4,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null,
+          0,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
-          2,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
           null,
           null
         ]
@@ -2057,7 +2106,7 @@
           null,
           null,
           1,
-          31,
+          1,
           null,
           1,
           0,
@@ -2146,6 +2195,7 @@
           1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           1,
           1,
           1,
@@ -2153,6 +2203,8 @@
 =======
 =======
 >>>>>>> 9a49b7b (Rebased)
+=======
+>>>>>>> aa3618b (Rebased)
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -5635,11 +5687,17 @@
 =======
 =======
 >>>>>>> fd6db03 (Manifest_cache true)
+<<<<<<< HEAD
 >>>>>>> 450f4e3 (Manifest_cache true)
+=======
+=======
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> aa3618b (Rebased)
           0,
           0,
           0,
           0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6141,6 +6199,8 @@
           null,
 =======
 >>>>>>> fd6db03 (Manifest_cache true)
+=======
+>>>>>>> aa3618b (Rebased)
           null,
           0,
           0,
@@ -6153,11 +6213,10 @@
           0,
           null,
           null,
-          1,
-          null,
-          1,
           null,
           null,
+          null,
+<<<<<<< HEAD
           null,
           1,
           1,
@@ -9787,10 +9846,13 @@
 =======
 >>>>>>> fd6db03 (Manifest_cache true)
 >>>>>>> 00f8b58 (Manifest_cache true)
+=======
+>>>>>>> bf554f4 (Rebased)
           null
         ]
       }
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10106,4 +10168,12 @@
 }
 >>>>>>> 7a02bbe (Featire specs)
 >>>>>>> 9c0d812 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 4d90e3d (Featire specs)
+=======
+=======
+    "timestamp": 1665070429
+  }
+}
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> aa3618b (Rebased)
