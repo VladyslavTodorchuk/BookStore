@@ -155,15 +155,18 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
-  create_table "reviews", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "book_id", null: false
-    t.string "title", null: false
-    t.integer "rating", default: 0
-    t.text "body", null: false
-    t.boolean "verified", default: false
+  create_table "shippings", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "address", null: false
+    t.string "city", null: false
+    t.integer "zip", null: false
+    t.string "country", null: false
+    t.string "phone", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+<<<<<<< HEAD
     t.index ["book_id"], name: "index_reviews_on_book_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
@@ -180,6 +183,9 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
 
     t.index ["book_id"], name: "index_reviews_on_book_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
+=======
+    t.index ["user_id"], name: "index_shippings_on_user_id"
+>>>>>>> b28889f (Fix)
   end
 
   create_table "users", force: :cascade do |t|
@@ -205,7 +211,6 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
-
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

@@ -29,7 +29,7 @@ RSpec.describe 'Book', type: :feature do
       it 'clicked read more', js: true do
         visit "books/#{book.id}"
 
-        click_link 'Read More'
+        click_link I18n.t('book_page.read_more')
 
         expect(page).not_to have_content(I18n.t('book_page.read_more'))
       end
