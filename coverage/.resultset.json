@@ -11,9 +11,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b5ac3004 (Featire specs)
+=======
+>>>>>>> bdc24a1a (Rebased)
 =======
 =======
 <<<<<<< HEAD
@@ -115,12 +118,17 @@
 <<<<<<< HEAD
 >>>>>>> 307f31f (Manifest_cache true)
 =======
+>>>>>>> e055dd0 (Rebased)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 49e8a6c (Rebased)
+<<<<<<< HEAD
 =======
 >>>>>>> da3a9a3 (Featire specs)
+=======
+>>>>>>> e055dd0 (Rebased)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1909,6 +1917,7 @@
 >>>>>>> a636fda (Featire specs)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 70fcacc (Featire specs)
 =======
 =======
@@ -1937,16 +1946,25 @@
 >>>>>>> 0d6dd12 (Manifest_cache true)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 11792758 (Rebased)
 =======
 >>>>>>> bc6bc8d2 (Rebased)
 =======
 >>>>>>> f7852d17 (Manifest_cache true)
+=======
+=======
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> e055dd0 (Rebased)
+=======
+>>>>>>> bdc24a1a (Rebased)
 {
   "RSpec": {
     "coverage": {
 >>>>>>> bf554f4 (Rebased)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1960,6 +1978,8 @@
 >>>>>>> d52f9efe (Featire specs)
 =======
 >>>>>>> f7852d17 (Manifest_cache true)
+=======
+>>>>>>> bdc24a1a (Rebased)
 >>>>>>> aa3618b (Rebased)
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2117,7 +2137,13 @@
 =======
 >>>>>>> a636fda (Featire specs)
 >>>>>>> 6da9530 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> 0f8241bb (Featire specs)
+=======
+=======
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
       "/Users/vladtodorchuk/Desktop/RubyGarage/Tasks/Task 6/BookStore/config/environment.rb": {
         "lines": [
           null,
@@ -3499,9 +3525,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           15,
           15,
 =======
+=======
+>>>>>>> e055dd0 (Rebased)
           13,
           13,
 >>>>>>> 824bb2b (Featire specs)
@@ -3522,12 +3551,16 @@
 >>>>>>> b28889f (Fix)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
 =======
+=======
+>>>>>>> e055dd0 (Rebased)
 =======
           1,
           1,
 >>>>>>> 49e8a6c (Rebased)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 311e9fa (Rebased)
 =======
@@ -3546,6 +3579,8 @@
 >>>>>>> 6da9530 (Featire specs)
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
           null,
           null
         ]
@@ -3554,15 +3589,15 @@
         "lines": [
           1,
           1,
-          5,
-          5,
+          1,
+          1,
           null,
           1,
           1,
           null,
           null,
           1,
-          10,
+          0,
           0,
           0,
           null,
@@ -3766,6 +3801,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f7852d17 (Manifest_cache true)
 =======
@@ -3774,6 +3810,17 @@
 >>>>>>> 0f8241bb (Featire specs)
 =======
 >>>>>>> 99dad91f (Fix)
+=======
+=======
+          95,
+          109,
+          92,
+          109,
+          109,
+          109,
+          109,
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
 =======
 >>>>>>> 0d6dd12 (Manifest_cache true)
           97,
@@ -3824,8 +3871,11 @@
 <<<<<<< HEAD
 >>>>>>> b28889f (Fix)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
 =======
+=======
+>>>>>>> e055dd0 (Rebased)
 =======
           1,
           1,
@@ -3835,6 +3885,7 @@
           1,
           1,
 >>>>>>> 49e8a6c (Rebased)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 311e9fa (Rebased)
 =======
@@ -3871,7 +3922,12 @@
 =======
 >>>>>>> b28889f (Fix)
 >>>>>>> e18eb87 (Fix)
+<<<<<<< HEAD
 >>>>>>> 99dad91f (Fix)
+=======
+=======
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
           null,
           1,
           1,
@@ -3882,6 +3938,7 @@
           null,
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3900,6 +3957,8 @@
 >>>>>>> 0f8241bb (Featire specs)
 =======
 >>>>>>> 99dad91f (Fix)
+=======
+>>>>>>> bdc24a1a (Rebased)
           110,
 =======
           108,
@@ -3909,10 +3968,13 @@
 >>>>>>> 311e9fa (Rebased)
 =======
 >>>>>>> 557c1b8 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
           108,
 =======
           110,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
 =======
@@ -3954,7 +4016,15 @@
           110,
 >>>>>>> b28889f (Fix)
 >>>>>>> e18eb87 (Fix)
+<<<<<<< HEAD
 >>>>>>> 99dad91f (Fix)
+=======
+=======
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
           0,
           0,
           null,
@@ -3962,6 +4032,7 @@
           null,
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3980,6 +4051,8 @@
 >>>>>>> 0f8241bb (Featire specs)
 =======
 >>>>>>> 99dad91f (Fix)
+=======
+>>>>>>> bdc24a1a (Rebased)
           110,
 =======
           108,
@@ -3989,10 +4062,13 @@
 >>>>>>> 311e9fa (Rebased)
 =======
 >>>>>>> 557c1b8 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
           108,
 =======
           110,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
 =======
@@ -4034,7 +4110,15 @@
           110,
 >>>>>>> b28889f (Fix)
 >>>>>>> e18eb87 (Fix)
+<<<<<<< HEAD
 >>>>>>> 99dad91f (Fix)
+=======
+=======
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
           0,
           0,
           null,
@@ -4073,6 +4157,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 75fa7e1b (Rebased)
 =======
 >>>>>>> 67ab5299 (Fix)
@@ -4092,6 +4177,8 @@
 =======
 >>>>>>> 99dad91f (Fix)
 =======
+>>>>>>> bdc24a1a (Rebased)
+=======
 =======
 =======
 >>>>>>> 311e9fa (Rebased)
@@ -4099,6 +4186,8 @@
 >>>>>>> 557c1b8 (Fix)
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4115,6 +4204,8 @@
 >>>>>>> 6da9530 (Featire specs)
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> 49e8a6c (Rebased)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4161,7 +4252,15 @@
           12,
 >>>>>>> a5d032d (Fix)
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> e18eb87 (Fix)
+=======
+=======
+=======
+          1,
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
           null,
           null
         ]
@@ -4455,6 +4554,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 75fa7e1b (Rebased)
 =======
 >>>>>>> 67ab5299 (Fix)
@@ -4466,6 +4566,8 @@
 >>>>>>> d9d85ca6 (Fix)
 =======
 >>>>>>> ef483b6d (Fix)
+=======
+>>>>>>> bdc24a1a (Rebased)
           1,
           1,
           1,
@@ -4520,9 +4622,17 @@
           24,
 >>>>>>> 5b7749a (Fix)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d9d85ca6 (Fix)
 =======
 >>>>>>> ef483b6d (Fix)
+=======
+=======
+          1,
+          1,
+          1,
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
           null,
           null
         ]
@@ -4807,8 +4917,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e055dd0 (Rebased)
           null,
           1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -4823,12 +4937,21 @@
           1,
           17,
 =======
+=======
+>>>>>>> e055dd0 (Rebased)
           12,
 =======
           1,
           13,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> e18eb87 (Fix)
+=======
+=======
+          1,
+          0,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
           null,
           null
         ]
@@ -5094,6 +5217,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -5101,9 +5225,12 @@
 =======
 >>>>>>> e18eb87 (Fix)
 =======
+>>>>>>> e055dd0 (Rebased)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c8da2e3 (Fix)
@@ -5142,13 +5269,20 @@
 =======
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+=======
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
 >>>>>>> 08edf50 (Featire specs)
 >>>>>>> 5c33a07 (Featire specs)
 =======
           3,
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6da9530 (Featire specs)
 =======
+=======
+>>>>>>> e055dd0 (Rebased)
 <<<<<<< HEAD
 =======
 =======
@@ -5158,31 +5292,39 @@
           3,
 >>>>>>> a5d032d (Fix)
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> e18eb87 (Fix)
+=======
+=======
+=======
+          0,
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
           null,
-          3,
-          3,
+          0,
+          0,
           null,
-          3,
+          0,
           null,
           null,
           1,
-          3,
-          3,
-          3,
-          3,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
           null,
-          2,
+          0,
           null,
           null,
-          2,
+          0,
           null,
           null
         ]
@@ -5210,10 +5352,15 @@
           null,
           1,
 <<<<<<< HEAD
+<<<<<<< HEAD
           null,
           1,
 =======
 >>>>>>> 6da9530 (Featire specs)
+=======
+          null,
+          1,
+>>>>>>> e055dd0 (Rebased)
           1,
           null,
           null,
@@ -5271,6 +5418,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           4,
 =======
           0,
@@ -5295,22 +5443,29 @@
 =======
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
           4,
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
-          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
-          4,
+          0,
           null,
           null,
           1,
+<<<<<<< HEAD
 >>>>>>> 6da9530 (Featire specs)
+=======
+<<<<<<< HEAD
+>>>>>>> e055dd0 (Rebased)
           3,
           3,
           3,
@@ -5368,6 +5523,9 @@
           null,
 >>>>>>> b28889f (Fix)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e055dd0 (Rebased)
 =======
           0,
           0,
@@ -5379,6 +5537,7 @@
           0,
           0,
           0,
+<<<<<<< HEAD
 =======
 >>>>>>> 872e675 (Fix)
           null,
@@ -5394,6 +5553,17 @@
 >>>>>>> 6da9530 (Featire specs)
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
           null,
           null,
           null,
@@ -5403,10 +5573,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6da9530 (Featire specs)
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
           2,
           2,
           2,
@@ -5416,6 +5589,9 @@
           2,
           2,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e055dd0 (Rebased)
 =======
           0,
           0,
@@ -5426,6 +5602,7 @@
           0,
           0,
 >>>>>>> 49e8a6c (Rebased)
+<<<<<<< HEAD
 =======
           6,
           6,
@@ -5505,11 +5682,15 @@
           1,
 >>>>>>> 872e675 (Fix)
 =======
+=======
+>>>>>>> e055dd0 (Rebased)
           null,
-          2,
-          2,
+          0,
+          0,
+          0,
           null,
           null,
+<<<<<<< HEAD
           2,
 <<<<<<< HEAD
 >>>>>>> 6da9530 (Featire specs)
@@ -5533,10 +5714,17 @@
           6,
           1,
           1,
+=======
+          0,
+          0,
+          0,
+          0,
+>>>>>>> 49e8a6c (Rebased)
           null,
           null,
           null,
           null,
+<<<<<<< HEAD
           6,
           null,
           null,
@@ -5544,7 +5732,18 @@
           1,
           1,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 >>>>>>> e18eb87 (Fix)
+=======
+=======
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
           null,
           null
         ]
@@ -5562,12 +5761,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
           56,
 =======
           58,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           0,
@@ -5580,6 +5783,11 @@
 >>>>>>> 6da9530 (Featire specs)
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+=======
+          0,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
           null,
           null,
           1,
@@ -5590,6 +5798,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e055dd0 (Rebased)
           101,
 =======
           0,
@@ -5617,6 +5828,7 @@
 =======
           0,
 >>>>>>> 49e8a6c (Rebased)
+<<<<<<< HEAD
 =======
           105,
           null,
@@ -5655,6 +5867,8 @@
           125,
 >>>>>>> b28889f (Fix)
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
           null,
           null
         ]
@@ -5665,7 +5879,7 @@
           1,
           null,
           1,
-          3,
+          0,
           null,
           null
         ]
@@ -5679,28 +5893,28 @@
           1,
           null,
           1,
-          4,
+          0,
           null,
-          4,
+          0,
           null,
-          4,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null,
+          0,
           null,
           null,
           1,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
-          2,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
           null,
           null
         ]
@@ -5725,12 +5939,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> e055dd0 (Rebased)
           31,
 =======
           39,
 >>>>>>> b28889f (Fix)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           1,
@@ -5743,6 +5961,11 @@
 >>>>>>> 6da9530 (Featire specs)
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+=======
+          1,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
           null,
           1,
           0,
@@ -14470,6 +14693,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 31d15e66 (Fix)
@@ -14487,6 +14711,8 @@
 >>>>>>> 0f8241bb (Featire specs)
 =======
 >>>>>>> 99dad91f (Fix)
+=======
+>>>>>>> bdc24a1a (Rebased)
           1,
           1,
           1,
@@ -14513,6 +14739,8 @@
 =======
 >>>>>>> e18eb87 (Fix)
 =======
+>>>>>>> e055dd0 (Rebased)
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> b28889f (Fix)
@@ -14528,6 +14756,8 @@
 >>>>>>> 6da9530 (Featire specs)
 =======
 >>>>>>> e18eb87 (Fix)
+=======
+>>>>>>> 49e8a6c (Rebased)
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -26638,12 +26868,19 @@
 >>>>>>> 563720e (Featire specs)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 86d584a (Manifest_cache true)
+=======
+>>>>>>> fd6db03 (Manifest_cache true)
+=======
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
           0,
           0,
           0,
           0,
           null,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7a02bbe (Featire specs)
@@ -26687,6 +26924,8 @@
 >>>>>>> 563720e (Featire specs)
 =======
           null,
+=======
+>>>>>>> 49e8a6c (Rebased)
           0,
           0,
           0,
@@ -26696,6 +26935,7 @@
           0,
           null,
           0,
+<<<<<<< HEAD
 >>>>>>> 86d584a (Manifest_cache true)
 =======
           1,
@@ -39439,17 +39679,27 @@
 =======
 =======
           1,
-          null,
-          null,
-          1,
-          null,
-          1,
+=======
+>>>>>>> 49e8a6c (Rebased)
           null,
           null,
           null,
+          null,
+          null,
+<<<<<<< HEAD
 >>>>>>> a5d032d (Fix)
+<<<<<<< HEAD
 >>>>>>> e18eb87 (Fix)
+<<<<<<< HEAD
 >>>>>>> 99dad91f (Fix)
+=======
+=======
+=======
+<<<<<<< HEAD
+          null,
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
           1,
           1,
           1,
@@ -68139,9 +68389,24 @@
 =======
 >>>>>>> 7a02bbe (Featire specs)
 >>>>>>> 9c0d812 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> e5752db (Featire specs)
+<<<<<<< HEAD
 >>>>>>> da3a9a3 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> b5ac3004 (Featire specs)
+=======
+=======
+=======
+=======
+=======
+>>>>>>> fd6db03 (Manifest_cache true)
+>>>>>>> 00f8b58 (Manifest_cache true)
+=======
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
           null
         ]
       }
@@ -68790,6 +69055,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> e5752db (Featire specs)
 =======
 <<<<<<< HEAD
@@ -68797,6 +69063,9 @@
 =======
 <<<<<<< HEAD
 >>>>>>> 7d58507 (Add login registration pages)
+=======
+<<<<<<< HEAD
+>>>>>>> 49e8a6c (Rebased)
 =======
 =======
 >>>>>>> 4a0e3b6 (Manifest_cache true)
@@ -70552,6 +70821,7 @@
 >>>>>>> 7a02bbe (Featire specs)
 >>>>>>> 9c0d812 (Featire specs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "timestamp": 1665070429
 =======
@@ -70598,5 +70868,18 @@
 =======
 =======
 >>>>>>> e5752db (Featire specs)
+<<<<<<< HEAD
 >>>>>>> da3a9a3 (Featire specs)
+<<<<<<< HEAD
 >>>>>>> b5ac3004 (Featire specs)
+=======
+=======
+=======
+=======
+    "timestamp": 1665070429
+  }
+}
+>>>>>>> bf554f4 (Rebased)
+>>>>>>> 49e8a6c (Rebased)
+>>>>>>> e055dd0 (Rebased)
+>>>>>>> bdc24a1a (Rebased)
