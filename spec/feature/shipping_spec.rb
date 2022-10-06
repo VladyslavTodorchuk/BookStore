@@ -11,27 +11,27 @@ RSpec.describe 'Shipping', type: :feature do
 
       visit edit_user_path(user.id)
 
-      within('div', id: 'shipping') do
+      within('div#shipping.col-md-5.mb-40') do
         find_all('div', class: 'form-group')[0] do
-          fill_in :first_name, with: shipping_attributes[:first_name]
+          fill_in :first_name, with: attributes_for[:first_name]
         end
         find_all('div', class: 'form-group')[1] do
-          fill_in :last_name, with: shipping_attributes[:last_name]
+          fill_in :last_name, with: attributes_for[:last_name]
         end
         find_all('div', class: 'form-group')[2] do
-          fill_in :address, with: shipping_attributes[:address]
+          fill_in :address, with: attributes_for[:address]
         end
         find_all('div', class: 'form-group')[3] do
-          fill_in :city, with: shipping_attributes[:city]
+          fill_in :city, with: attributes_for[:city]
         end
         find_all('div', class: 'form-group')[4] do
-          fill_in :zip, with: shipping_attributes[:zip]
+          fill_in :zip, with: attributes_for[:zip]
         end
         find_all('div', class: 'form-group')[5] do
-          fill_in :country, with: shipping_attributes[:country]
+          fill_in :country, with: attributes_for[:country]
         end
         find_all('div', class: 'form-group')[6] do
-          fill_in :phone, with: shipping_attributes[:phone]
+          fill_in :phone, with: attributes_for[:phone]
         end
         click_on I18n.t('settings.save')
       end
