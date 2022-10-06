@@ -5,7 +5,7 @@ RSpec.describe 'Shipping', type: :feature do
   let(:user) { create(:user) }
   let(:shipping_attributes) { attributes_for(:shipping) }
 
-  describe '#fill_in' do
+  describe '#fill_in', js: true do
     it 'fill in shipping' do
       sign_in(user)
 

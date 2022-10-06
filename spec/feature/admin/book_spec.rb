@@ -1,4 +1,4 @@
-RSpec.describe 'Admin_Book' do
+RSpec.describe 'Book' do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
@@ -14,7 +14,7 @@ RSpec.describe 'Admin_Book' do
   end
 
   before do
-    sign_in(create(:admin_user))
+    sign_in(create(:admin_user), :admin_user)
 
     book
 

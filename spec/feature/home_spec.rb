@@ -59,27 +59,35 @@ RSpec.describe 'Home', type: :feature do
       end
     end
 
-    context 'when user' do
+    context 'when user', js: true do
       let(:user) { create(:user) }
 
       before do
         sign_in(user)
-
-        visit root_path
-
-        find_all('a.dropdown-toggle')[2].click
       end
 
-      it 'on click account show orders' do
-        expect(page).to have_content(I18n.t('header.orders'))
+      it 'on click account show settings' do
+        visit root_path
+
+        click_on I18n.t('header.account')
+
+        expect(page).to have_content(I18n.t('header.settings'))
       end
 
       it 'on click account show log_out' do
+        visit root_path
+
+        click_on I18n.t('header.account')
+
         expect(page).to have_content(I18n.t('header.log_out'))
       end
 
       it 'log_out' do
-        click_on(I18n.t('header.log_out'))
+        visit root_path
+
+        click_on I18n.t('header.account')
+
+        click_on(I18n.t('header.log_out'), match: :first)
 
         expect(page).to have_content(I18n.t('devise.sessions.signed_out'))
       end

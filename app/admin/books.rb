@@ -25,7 +25,7 @@ ActiveAdmin.register Book do
   end
 
   show do
-    h1 book.title
+    h1 :title
 
     attributes_table do
       row :authors, &:authors_names

@@ -15,16 +15,14 @@
             .col-md-5
               %h3.general-subtitle.mt-0= t('settings.shipping')
       .row
-        #billing
-          .col-md-5.mb-40
-            .visible-xs.visible-sm
-              %h3.general-subtitle.mt-0= t("settings.billing")
-            = render 'users/settings/address', address: @user_billing
-        #shipping
-          .col-md-5.mb-40
-            .visible-xs.visible-sm
-              %h3.general-subtitle.mt-0= t("settings.shipping")
-            = render 'users/settings/address', address: @user_shipping
+        .col-md-5.mb-40#billing
+          .visible-xs.visible-sm
+            %h3.general-subtitle.mt-0= t("settings.billing")
+          = render 'users/settings/address', address: @user_billing
+        .col-md-5.mb-40#shipping
+          .visible-xs.visible-sm
+            %h3.general-subtitle.mt-0= t("settings.shipping")
+          = render 'users/settings/address', address: @user_shipping
     #privacy.tab-pane.fade{role: "tabpanel"}
       .row.mb-60
         = render partial: 'users/settings/privacy'
