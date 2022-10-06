@@ -27,8 +27,12 @@
           %li
             %a#root{href: "/"}= t('.home')
           %li
+<<<<<<< HEAD
             %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
               = t('.shop')
+=======
+            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
+>>>>>>> 67ab5299 (Fix)
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
