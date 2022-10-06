@@ -10,7 +10,11 @@
           = image_tag('user_profile.png', class: 'img-circle logo-size inlide-block pull-left')
           .ml-70
             %div
+<<<<<<< HEAD
               .general-message-date.hidden-xs= review.decorate.posted_at
+=======
+              .general-message-date.hidden-xs= review.decorate.date_time
+>>>>>>> aca90e3 (Rebased)
               .max-240
                 - if review.verified
                   .general-message-verified= t('book_page.book.verified')
