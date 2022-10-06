@@ -33,6 +33,7 @@ RSpec.describe 'Category' do
     category
 
     visit 'admin/categories'
+
     click_link('View')
 
     expect(page).to have_content(category.name)
@@ -42,6 +43,7 @@ RSpec.describe 'Category' do
     category
 
     visit 'admin/categories'
+
     click_link('Edit')
 
     fill_in 'category[name]', with: new_name
