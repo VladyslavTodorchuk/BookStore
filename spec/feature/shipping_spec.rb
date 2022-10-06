@@ -2,7 +2,7 @@ RSpec.describe 'Shipping', type: :feature do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
-  let(:user) { FactoryBot.create(:user) }
+  let(:user) { create(:user) }
   let(:shipping_attributes) { attributes_for(:shipping) }
 
   describe '#fill_in' do

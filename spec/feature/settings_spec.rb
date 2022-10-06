@@ -1,13 +1,15 @@
-RSpec.describe 'Settings', type: :feature do
+RSpec.describe 'Settings', type: :feature, js: true do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
-  let(:user) { FactoryBot.create(:user) }
+  let(:user) { create(:user) }
 
   before do
     sign_in(user)
 
     visit edit_user_path(user.id)
+
+    click_link I18n.t('settings.privacy')
   end
 
   describe '#email_change' do

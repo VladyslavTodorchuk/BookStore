@@ -11,7 +11,7 @@ RSpec.describe 'Billing', type: :feature do
 
       visit edit_user_path(user.id)
 
-      within('div', id: 'billing') do
+      within('div#billing') do
         find_all('div', class: 'form-group')[0] do
           fill_in :first_name, with: billing_attributes[:first_name]
         end

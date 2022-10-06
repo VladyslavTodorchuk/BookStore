@@ -64,36 +64,22 @@ RSpec.describe 'Home', type: :feature do
 
       before do
         sign_in(user)
+
+        visit root_path
+
+        find_all('a.dropdown-toggle')[2].click
       end
 
       it 'on click account show orders' do
-        visit root_path
-
-        within 'div', class: 'visible-xs' do
-          click_link I18n.t('header.account')
-        end
-
         expect(page).to have_content(I18n.t('header.orders'))
       end
 
       it 'on click account show log_out' do
-        visit root_path
-
-        within 'div', class: 'visible-xs' do
-          click_link I18n.t('header.account')
-        end
-
         expect(page).to have_content(I18n.t('header.log_out'))
       end
 
       it 'log_out' do
-        visit root_path
-
-        within 'div', class: 'visible-xs' do
-          click_link I18n.t('header.account')
-        end
-
-        click_on(I18n.t('header.log_out'), match: :first)
+        click_on(I18n.t('header.log_out'))
 
         expect(page).to have_content(I18n.t('devise.sessions.signed_out'))
       end
