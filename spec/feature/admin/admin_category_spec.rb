@@ -1,16 +1,13 @@
-require_relative '../../rails_helper'
-require_relative '../../support/shared_context'
-
 RSpec.describe 'Admin_Category' do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
   let(:category_name) { FFaker::Book.genre }
 
-  let(:category) { FactoryBot.create(:category) }
+  let(:category) { create(:category) }
 
   before do
-    sign_in(FactoryBot.create(:admin_user), :admin_user)
+    sign_in(create(:admin_user))
 
     category
 

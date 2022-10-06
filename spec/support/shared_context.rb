@@ -9,8 +9,8 @@ RSpec.shared_context 'with api request global before and after hooks' do
 end
 
 RSpec.shared_context 'with api request authentication helper methods' do
-  def sign_in(user, user_type = :user)
-    login_as(user, scope: user_type)
+  def sign_in(user)
+    login_as(user)
   end
 
   def sign_out

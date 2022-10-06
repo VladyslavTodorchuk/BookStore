@@ -1,11 +1,8 @@
-require 'rails_helper'
-require 'support/shared_context'
-
 RSpec.describe 'Admin_Book' do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
-  let(:book) { FactoryBot.create(:book) }
+  let(:book) { create(:book) }
   let(:params) do
     { title: FFaker::Book.title,
       description: FFaker::Book.description,
@@ -17,7 +14,7 @@ RSpec.describe 'Admin_Book' do
   end
 
   before do
-    sign_in(FactoryBot.create(:admin_user), :admin_user)
+    sign_in(create(:admin_user))
 
     book
 
