@@ -177,5 +177,4 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
   add_foreign_key "authors_books", "books"
   add_foreign_key "books_categories", "books"
   add_foreign_key "books_categories", "categories"
-  add_foreign_key "shippings", "users"
 end
