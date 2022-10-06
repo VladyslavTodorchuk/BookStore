@@ -1,3 +1,2 @@
 class Shipping < UserInformation
-
 end
