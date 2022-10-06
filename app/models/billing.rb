@@ -1,2 +1,2 @@
-class Billing < UserInformation
+class Billing < Address
 end

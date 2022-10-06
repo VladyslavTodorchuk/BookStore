@@ -1,13 +1,11 @@
-require 'rails_helper'
-
 RSpec.describe Billing, type: :model do
   describe 'billing' do
     context 'when validations' do
       it { is_expected.to allow_values(FFaker::Name.first_name).for(:first_name) }
       it { is_expected.to allow_values(FFaker::Name.first_name).for(:last_name) }
       it { is_expected.to allow_values('+919367788755', '8989829304', '+16308520397', '786-307-3615').for(:phone) }
-      it { is_expected.to allow_values(FFaker::Address.country).for(:country) }
-      it { is_expected.to allow_values(FFaker::Address.city).for(:city) }
+      it { is_expected.to allow_values(FFaker::AddressUK.country).for(:country) }
+      it { is_expected.to allow_values(FFaker::AddressUK.city).for(:city) }
       it { is_expected.to allow_values(FFaker::AddressUA.zip_code).for(:zip) }
       it { is_expected.to allow_values(FFaker::Address.street_address).for(:address) }
     end

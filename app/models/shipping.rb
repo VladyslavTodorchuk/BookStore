@@ -1,2 +1,2 @@
-class Shipping < UserInformation
+class Shipping < Address
 end

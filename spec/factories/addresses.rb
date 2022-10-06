@@ -1,4 +1,4 @@
 FactoryBot.define do
-  factory :user_information do
+  factory :address do
   end
 end
