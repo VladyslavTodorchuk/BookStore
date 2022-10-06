@@ -140,6 +140,7 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.index ["order_id"], name: "index_coupons_on_order_id"
   end
 
+<<<<<<< HEAD
   create_table "credit_cards", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "code"
@@ -157,6 +158,20 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.string "delivery_day"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+=======
+  create_table "shippings", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "address", null: false
+    t.string "city", null: false
+    t.integer "zip", null: false
+    t.string "country", null: false
+    t.string "phone", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_shippings_on_user_id"
+>>>>>>> b28889f (Fix)
   end
 
   create_table "order_books", force: :cascade do |t|
