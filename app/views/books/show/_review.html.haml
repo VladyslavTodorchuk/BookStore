@@ -4,7 +4,7 @@
     %h3.in-gold-500.mb-25
       = t('book_page.book.reviews')
       = @book.reviews.count
-    - @reviews.each do |review|
+    - @book.reviews.each do |review|
       .general-message-wrap.divider-lg
         .clearfix
           = image_tag('user_profile.png', class: 'img-circle logo-size inlide-block pull-left')
