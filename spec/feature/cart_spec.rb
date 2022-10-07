@@ -43,7 +43,7 @@ RSpec.describe 'Cart', type: :feature, js: true do
   end
 
   describe '#remove_book_from_cart' do
-    it 'book quantity change' do
+    it 'remove book from cart' do
       visit orders_path
 
       find('button.close.general-cart-close').click
