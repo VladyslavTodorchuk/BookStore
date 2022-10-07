@@ -60,12 +60,6 @@ GEM
     activerecord (6.1.7)
       activemodel (= 6.1.7)
       activesupport (= 6.1.7)
-    activerecord-session_store (2.0.0)
-      actionpack (>= 5.2.4.1)
-      activerecord (>= 5.2.4.1)
-      multi_json (~> 1.11, >= 1.11.2)
-      rack (>= 2.0.8, < 3)
-      railties (>= 5.2.4.1)
     activestorage (6.1.7)
       actionpack (= 6.1.7)
       activejob (= 6.1.7)
@@ -228,7 +222,6 @@ GEM
     money (6.16.0)
       i18n (>= 0.6.4, <= 2)
     msgpack (1.5.6)
-    multi_json (1.15.0)
     multi_xml (0.6.0)
     nio4r (2.5.8)
     nokogiri (1.13.8)
@@ -443,7 +436,6 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin (~> 2.13, >= 2.13.1)
-  activerecord-session_store (~> 2.0)
   aws-sdk-s3
   bootsnap (>= 1.4.4)
   bootstrap-sass (~> 3.4, >= 3.4.1)
@@ -463,7 +455,6 @@ DEPENDENCIES
   letter_opener (~> 1.8, >= 1.8.1)
   listen (~> 3.3)
   monetize
-  omniauth (~> 2.1)
   omniauth-facebook (~> 4.0)
   omniauth-rails_csrf_protection (~> 1.0, >= 1.0.1)
   pagy (~> 5.10, >= 5.10.1)
