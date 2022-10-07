@@ -52,19 +52,9 @@
                 %strong#total_price.font-18
                   €
                   = @cart.order_price
-          - if current_user.nil?
-            = button_to t('order.checkout'), new_checkout_path,
+          = button_to t('order.checkout'), order_path(session[:order_id]),
               class: 'btn btn-default mb-20 visible-xs-inline-block',
               method: :get
-          - else
-            = button_to t('order.checkout'), order_path(session[:order_id]),
-              class: 'btn btn-default mb-20 visible-xs-inline-block',
-              method: :get
-  - if current_user.nil?
-    = button_to t('order.checkout'), new_checkout_path,
-      class: 'btn btn-default mb-20 hidden-xs center-block',
-      method: :get
-  - else
-    = button_to t('order.checkout'), order_path(session[:order_id]),
+  = button_to t('order.checkout'), order_path(session[:order_id]),
       class: 'btn btn-default mb-20 hidden-xs center-block',
       method: :get
