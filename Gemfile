@@ -35,7 +35,6 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 6.2'
   gem 'fasterer', '~> 0.10.0'
   gem 'ffaker', '~> 2.21'
-  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
   gem 'rubocop', '~> 1.35', '>= 1.35.1'
   gem 'rubocop-performance', '~> 1.14', '>= 1.14.3'
   gem 'rubocop-rails', '~> 2.15', '>= 2.15.2'
@@ -52,6 +51,8 @@ end
 
 group :test do
   gem 'capybara', '>= 3.26'
+  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
+  gem 'rspec-sidekiq', '~> 3.1'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 5.0'
   gem 'simplecov', '~> 0.21.2'
