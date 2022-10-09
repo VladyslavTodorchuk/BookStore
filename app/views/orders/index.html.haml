@@ -7,17 +7,12 @@
       %i.fa.fa-angle-down.dropdown-icon.pull-right
     %ul.dropdown-menu
       %li
-<<<<<<< HEAD
         %a{href: orders_path}= t('orders.all')
-=======
-        %a{href: orders_path} All
->>>>>>> 54875449 (Add sort orders)
       %li
         %a{href: orders_path(status: params[:status],sort: 'total_price')}= t('orders.sorting.price.acs')
       %li
         %a{href: orders_path(status: params[:status], sort: 'total_price DESC')}= t('orders.sorting.price.desc')
       %li
-<<<<<<< HEAD
         %a{href: orders_path(status: 'confirmed', sort: params[:sort])}= t('orders.sorting.status.confirm')
       %li
         %a{href: orders_path(status: 'canceled', sort: params[:sort])}= t('orders.sorting.status.canceled')
@@ -27,13 +22,6 @@
         %a{href: orders_path(status: 'delivered', sort: params[:sort])}= t('orders.sorting.status.delivered')
       %li
         %a{href: orders_path(status: 'in delivery', sort: params[:sort])}= t('orders.sorting.status.in_delivery')
-=======
-        %a{href: orders_path(status: 'confirmed', sort: params[:sort])} Status: Confirmed
-      %li
-        %a{href: orders_path(status: 'canceled', sort: params[:sort])} Status: Canceled
-      %li
-        %a{href: orders_path(status: 'delivered', sort: params[:sort])} Status: Delivered
->>>>>>> 54875449 (Add sort orders)
   .visible-xs
     - @orders.each do |order|
       .general-cart-item.divider-lg-bottom.pt-0
@@ -69,33 +57,68 @@
 
   .hidden-xs.mb-res-50
     %table.table.table-hover
-      %thead
+      %tr.no-hover
+        %th.col-pic.pl-0
+          %span.in-grey-600= t('order.product')
+        %th.col-title
+        %th.col-price
+          %span.in-grey-600= t('order.price')
+        %th.col-quantity
+          %span.in-grey-600= t('order.quantity')
+        %th.col-total
+          %span.in-grey-600= t('order.subtotal_title')
+        %th.col-close
+      - @cart.order_books.each do |order_books|
         %tr
-          %th
-            %span.in-grey-600= t('orders.number')
-          %th
-            %span.in-grey-600= t('orders.completed_at')
-          %th
-            %span.in-grey-600= t('orders.status')
-          %th
-            %span.in-grey-600= t('orders.total')
-      %tbody
-        - @orders.each do |order|
-          %tr
-            %td
-              %span.general-order-number= order.id
-            %td
-              %span.in-grey-900.font-16.fw-300= order.decorate.last_action_str
-            %td
-              - if order.status.eql?('delivered')
-                %span.font-16.fw-300.text-success= order.status.capitalize
-              - elsif order.status.eql?('confirmed')
-                %span.font-16.fw-300= order.status.capitalize
-              - elsif order.status.eql?('in delivery')
-                %span.font-16.fw-300.text-warning= order.status.capitalize
-              - else
-                %span.font-16.fw-300.text-danger= order.status.capitalize
-            %td
-              %strong.font-16
-                €
-                = order.decorate.price
+          = render partial: 'orders/show/book', object: order_books.book.decorate
+          = render partial: 'orders/show/order_book', object: order_books.decorate
+  .general-order-wrap{ 'data-controller': 'coupon' }
+    .row
+      .col-sm-4
+        .input-group.general-input-group
+          %label.input-label= t('order.enter_the_coupon')
+          %input#input.form-control.mb-30{type: "text", placeholder: "Enter Your Coupon Code "}
+          %span#error.text-danger
+          %div
+            %button.btn.btn-primary.mr-5.mb-15{"data-action": "click->coupon#checkCoupon"}= t('order.apply')
+      .col-sm-8
+        .res-mr-200.text-center.general-text-right
+          %p.in-gold-500.font-18= t('order.order_summery')
+          %table.general-summary-table.general-summary-table-right.general-text-right
+            %tr
+              %td
+                %p.font-16= t('order.subtotal')
+              %td
+                %p#sub_price.font-16
+                  €
+                  = @cart.order_price
+            %tr
+              %td
+                %p.font-16= t('order.coupon_text')
+              %td
+                %p#coupon_price.font-16 € 0.00
+            %tr
+              %td
+                %strong.font-18= t('order.order_total')
+              %td
+                %strong#total_price.font-18
+                  €
+                  = @cart.order_price
+          .text-center
+            - if current_user.nil?
+              = button_to t('order.checkout'), new_checkout_path,
+                class: 'btn btn-default mb-20 visible-xs-inline-block',
+                method: :get
+            - else
+              = link_to t('order.checkout'), checkout_path(step: :address),
+                class: 'btn btn-default visible-xs-inline-block',
+                method: :get, id: 'checkout_button'
+  .text-center
+    - if current_user.nil?
+      = button_to t('order.checkout'), new_checkout_path,
+        class: 'btn btn-default mb-20 hidden-xs center-block',
+        method: :get
+    - else
+      = link_to t('order.checkout'), checkout_path(step: :address),
+        class: 'btn btn-default hidden-xs ',
+        method: :get, id: 'checkout_button'

@@ -15,9 +15,7 @@
 
   %body
     = render partial: 'layouts/header'
-
-    = session[:order_id]
-
+<
     - unless notice.nil?
       %div.alert.alert-warning.text-center{ role: "alert" }
         = notice
