@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_06_102140) do
+ActiveRecord::Schema.define(version: 2022_10_12_083908) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -100,20 +100,6 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.index ["book_id"], name: "index_authors_books_on_book_id"
   end
 
-  create_table "billings", force: :cascade do |t|
-    t.bigint "user_id"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "address", null: false
-    t.string "city", null: false
-    t.integer "zip", null: false
-    t.string "country", null: false
-    t.string "phone", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_billings_on_user_id"
-  end
-
   create_table "books", force: :cascade do |t|
     t.string "title", null: false
     t.string "description", null: false
@@ -188,6 +174,14 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.datetime "last_action"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+<<<<<<< HEAD
+=======
+    t.bigint "delivery_id"
+    t.bigint "address_id"
+    t.index ["address_id"], name: "index_orders_on_address_id"
+    t.index ["coupon_id"], name: "index_orders_on_coupon_id"
+    t.index ["delivery_id"], name: "index_orders_on_delivery_id"
+>>>>>>> 081d138 (Checkout Add CreditCard Address Delivery method)
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -277,12 +271,12 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
   add_foreign_key "addresses", "users"
   add_foreign_key "authors_books", "authors"
   add_foreign_key "authors_books", "books"
-  add_foreign_key "billings", "users"
   add_foreign_key "books_categories", "books"
   add_foreign_key "books_categories", "categories"
   add_foreign_key "credit_cards", "users"
   add_foreign_key "order_books", "books"
   add_foreign_key "order_books", "orders"
+  add_foreign_key "orders", "addresses"
   add_foreign_key "orders", "deliveries"
   add_foreign_key "orders", "users"
 end

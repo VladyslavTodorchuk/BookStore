@@ -1,157 +1,118 @@
 %main.container.general-main-wrap
-  %h1.general-title-margin Checkout
-  %ul.steps.list-inline
-    %li.step.active
-      %span.step-number 1
-      %span.step-text.hidden-xs Address
-    %li.step-divider
-    %li.step
-      %span.step-number 2
-      %span.step-text.hidden-xs Delivery
-    %li.step-divider
-    %li.step
-      %span.step-number 3
-      %span.step-text.hidden-xs Payment
-    %li.step-divider
-    %li.step
-      %span.step-number 4
-      %span.step-text.hidden-xs Confirm
-    %li.step-divider
-    %li.step
-      %span.step-number 5
-      %span.step-text.hidden-xs Complete
+  = render 'progress'
   .row.mb-20
     .col-sm-3
-      %h3.general-subtitle Shipping Address
+      %h3.general-subtitle= t('checkout.address_page.shipping')
       %p.general-address
-        John Doe
-        %span.general-edit edit
+        = @user_shipping.decorate.full_name
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :address), class: 'general-edit'
         %br
-        44 Fifth Ave v231
+        = @user_shipping.address
         %br
-        New York NY 1001
+        = @user_shipping.city
+        = @user_shipping.zip
         %br
-        United States
+        = @user_shipping.country
         %br
-        Phone +16507599755
+        = t('checkout.confirm_page.phone')
+        = @user_shipping.phone
     .col-sm-3
-      %h3.general-subtitle Billing Address
+      %h3.general-subtitle= t('checkout.address_page.billing')
       %p.general-address
-        John Doe
-        %span.general-edit edit
+        = @user_billing.decorate.full_name
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :address), class: 'general-edit'
         %br
-        44 Fifth Ave v231
+        = @user_billing.address
         %br
-        New York NY 1001
+        = @user_billing.city
+        = @user_billing.zip
         %br
-        United States
+        = @user_billing.country
         %br
-        Phone +16507599755
+        = t('checkout.confirm_page.phone')
+        = @user_billing.phone
     .col-sm-3
       %h3.general-subtitle Shipments
       %p.general-address
-        Delivery Next Day!
-        %span.general-edit edit
+        = @order.delivery.delivery_method
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :delivery), class: 'general-edit'
         %br
-        By train
+        = @order.delivery.delivery_day
+        Days
     .col-sm-3
       %h3.general-subtitle Payment Information
       %p.general-address
-        ** ** ** 8756
-        %span.general-edit edit
+        **** **** ****
+        = @credit_card.code.last(4)
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :payment), class: 'general-edit'
         %br
-        12/2018
+        = @credit_card.expiration_date
   .visible-xs
-    .general-cart-item.divider-lg
-      .general-img-wrap-table
-        %img.cart-img-shadow{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-      %p.title Android Programming for Beginners
-      %P.in-grey-600.fw-300 A recipe-based book to help you efficiently create amazing PHP-based applications with Laravel 5.x
-      %table.table
-        %tr
-          %td
-            %span.in-grey-600 Price
-          %td
-            %span.font-16.in-gold-500 €28.50
-        %tr
-          %td.vertical-middle
-            %span.in-grey-600 Quantity
-          %td
-            %span 1
-        %tr
-          %td
-            %span.in-grey-600 SubTotal
-          %td
-            %span.font-16.in-gold-500 €32.90
-    .general-cart-item.divider-lg.mb-55
-      .general-img-wrap-table
-        %img.cart-img-shadow{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-      %p.title Android Programming for Beginners
-      %table.table
-        %tr
-          %td
-            %span.in-grey-600 Price
-          %td
-            %span.font-16.in-gold-500 €28.50
-        %tr
-          %td.vertical-middle
-            %span.in-grey-600 Quantity
-          %td
-            .input-group
-              %a.input-link{href: "#"}
-                %i.fa.fa-minus.line-heaght-40
-              %input.form-control.quantity-input{type: "text"}
-              %a.input-link{href: "#"}
-                %i.fa.fa-plus.line-heaght-40
-        %tr
-          %td
-            %span.in-grey-600 SubTotal
-          %td
-            %span.font-16.in-gold-500 €32.90
+    - @order.order_books.each do |order_book|
+      .general-cart-item.divider-lg
+        .general-img-wrap-table
+          - if order_book.book.images.any?
+            = image_tag(order_book.book.images.first, class: 'img-shadow general-thumbnail-img')
+          - else
+            = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
+        %p.title= order_book.book.title
+        %P.in-grey-600.fw-300= order_book.book.description
+        %table.table
+          %tr
+            %td
+              %span.in-grey-600= t('checkout.price')
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.book.decorate.price
+          %tr
+            %td.vertical-middle
+              %span.in-grey-600= t('checkout.quantity')
+            %td
+              %span= order_book.quantity
+          %tr
+            %td
+              %span.in-grey-600= t('checkout.subtotal')
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.decorate.total_price
   .hidden-xs.divider-lg.pt-20
     %table.table.table-hover
       %thead
         %tr
           %th
-            %span.in-grey-600 Book
+            %span.in-grey-600= t('checkout.book')
           %th.col-method
           %th
-            %span.in-grey-600 Price
+            %span.in-grey-600= t('checkout.price')
           %th
-            %span.in-grey-600 Quantity
+            %span.in-grey-600= t('checkout.quantity')
           %th
-            %span.in-grey-600 Total
+            %span.in-grey-600= t('checkout.total')
       %tbody
-        %tr
-          %td
-            .general-img-wrap-table
-              %img.cart-img-shadow.pull-left{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-          %td
-            %p.title Android Programming for Beginners
-            %p.in-grey-600.fw-300 Maximize the potential of Bootstrap with a collection of real-world site projects for better, faster, more responsive web applications
-          %td
-            %span.font-16.in-gold-500 €28.50
-          %td
-            %span.ml-30 1
-          %td
-            %span.font-16.in-gold-500 €32.90
+        - @order.order_books.each do |order_book|
+          %tr
+            %td
+              .general-img-wrap-table
+                - if order_book.book.images.any?
+                  = image_tag(order_book.book.images.first, class: 'img-shadow general-thumbnail-img')
+                - else
+                  = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
+            %td
+              %p.title= order_book.book.title
+              %p.in-grey-600.fw-300= order_book.book.description
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.book.decorate.price
+            %td
+              %span.ml-30= order_book.quantity
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.decorate.total_price
   .text-center.general-text-right
-    %p.in-gold-500.font-18 Order Summary
-    %table.general-summary-table.general-summary-table-right.general-text-right
-      %tr
-        %td
-          %p.font-16 Subtotal:
-        %td
-          %p.font-16 €117.69
-      %tr
-        %td
-          %p.font-16 Coupon:
-        %td
-          %p.font-16 €0.00
-      %tr
-        %td
-          %strong.font-18 Order Total:
-        %td
-          %strong.font-18 €117.69
+    = render 'summary'
   .text-center
-    %button.btn.btn-default.mb-20 Place Order
+    %button.btn.btn-default.mb-20= t('checkout.confirm_page.place')

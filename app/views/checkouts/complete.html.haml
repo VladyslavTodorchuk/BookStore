@@ -1,37 +1,21 @@
 %main.container.general-main-wrap
-  %h1.general-title-margin Checkout
-  %ul.steps.list-inline
-    %li.step.done
-      %span.step-number
-        %i.fa.fa-check.step-icon
-      %span.step-text.hidden-xs Address
-    %li.step-divider
-    %li.step
-      %span.step-number 2
-      %span.step-text.hidden-xs Delivery
-    %li.step-divider
-    %li.step
-      %span.step-number 3
-      %span.step-text.hidden-xs Payment
-    %li.step-divider
-    %li.step
-      %span.step-number 4
-      %span.step-text.hidden-xs Confirm
-    %li.step-divider
-    %li.step.active
-      %span.step-number 5
-      %span.step-text.hidden-xs Complete
+  = render 'progress'
   .text-center.mb-40
-    %h3.general-subtitle Thank You for your Order!
-    %p.fw-300 An order confirmation has been has been sent to John Doe0411@gmail.com
+    %h3.general-subtitle= t('checkout.complete_page.message_thank')
+    %p.fw-300
+      = t('checkout.complete_page.message')
+      = current_user.email
   .row.mb-20
     .col-sm-6
       .visible-xs
-        %p.general-order-number.mb-0 Order #R25314582
-        %p.general-address.mb-30 October 29, 2016
+        %p.general-order-number.mb-0
+          = t('checkout.complete_page.order')
+          = @order.id
+        %p.general-address.mb-30
+          = @order.created_at
       %p.general-address
         John Doe
-        %span.general-edit edit
+        %span.general-edit= t('checkout.confirm_page.edit')
         %br
         44 Fifth Ave v231
         %br
@@ -39,96 +23,80 @@
         %br
         United States
         %br
-        Phone +16507599755
+        = t('checkout.confirm_page.phone')
+        +16507599755
     .col-sm-6.hidden-xs.text-right
-      %p.general-order-number.mb-0 Order #R25314582
-      %p.general-address.mb-30 October 29, 2016
+      %p.general-order-number.mb-0
+        = t('checkout.complete_page.order')
+        = @order.id
+        %p.general-address.mb-30
+          = @order.created_at
   .visible-xs
-    .general-cart-item.divider-lg
-      .general-img-wrap-table
-        %img.cart-img-shadow{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-      %p.title Android Programming for Beginners
-      %P.in-grey-600.fw-300 A recipe-based book to help you efficiently create amazing PHP-based applications with Laravel 5.x
-      %table.table
-        %tr
-          %td
-            %span.in-grey-600 Price
-          %td
-            %span.font-16.in-gold-500 €28.50
-        %tr
-          %td.vertical-middle
-            %span.in-grey-600 Quantity
-          %td
-            %span 1
-        %tr
-          %td
-            %span.in-grey-600 SubTotal
-          %td
-            %span.font-16.in-gold-500 €32.90
-    .general-cart-item.divider-lg.mb-55
-      .general-img-wrap-table
-        %img.cart-img-shadow{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-      %p.title Android Programming for Beginners
-      %table.table
-        %tr
-          %td
-            %span.in-grey-600 Price
-          %td
-            %span.font-16.in-gold-500 €28.50
-        %tr
-          %td.vertical-middle
-            %span.in-grey-600 Quantity
-          %td
-            %span 1
-        %tr
-          %td
-            %span.in-grey-600 SubTotal
-          %td
-            %span.font-16.in-gold-500 €32.90
+    - @order.order_books.each do |order_book|
+      .general-cart-item.divider-lg
+        .general-img-wrap-table
+          - if order_book.book.images.any?
+            = image_tag(order_book.book.images.first, class: 'img-shadow general-thumbnail-img')
+          - else
+            = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
+        %p.title= order_book.book.title
+        %P.in-grey-600.fw-300= order_book.book.description
+        %table.table
+          %tr
+            %td
+              %span.in-grey-600= t('checkout.price')
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.book.decorate.price
+          %tr
+            %td.vertical-middle
+              %span.in-grey-600= t('checkout.quantity')
+            %td
+              %span= order_book.quantity
+          %tr
+            %td
+              %span.in-grey-600= t('checkout.subtotal')
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.decorate.total_price
   .hidden-xs.divider-lg.pt-20
     %table.table.table-hover
       %thead
         %tr
           %th
-            %span.in-grey-600 Book
+            %span.in-grey-600= t('checkout.book')
           %th.col-method
           %th
-            %span.in-grey-600 Price
+            %span.in-grey-600= t('checkout.price')
           %th
-            %span.in-grey-600 Quantity
+            %span.in-grey-600= t('checkout.quantity')
           %th
-            %span.in-grey-600 Total
+            %span.in-grey-600= t('checkout.total')
       %tbody
-        %tr
-          %td
-            .general-img-wrap-table
-              %img.cart-img-shadow.pull-left{src: "http://jonathantweedy.com/resources/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-book"}
-          %td
-            %p.title Android Programming for Beginners
-            %p.in-grey-600.fw-300 Maximize the potential of Bootstrap with a collection of real-world site projects for better, faster, more responsive web applications
-          %td
-            %span.font-16.in-gold-500 €28.50
-          %td
-            %span.ml-30 1
-          %td
-            %span.font-16.in-gold-500 €32.90
+        - @order.order_books.each do |order_book|
+          %tr
+            %td
+              .general-img-wrap-table
+                - if order_book.book.images.any?
+                  = image_tag(order_book.book.images.first, class: 'img-shadow general-thumbnail-img')
+                - else
+                  = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
+            %td
+              %p.title= order_book.book.title
+              %p.in-grey-600.fw-300= order_book.book.description
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.book.decorate.price
+            %td
+              %span.ml-30= order_book.quantity
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.decorate.total_price
   .text-center.general-text-right
-    %p.in-gold-500.font-18 Order Summary
-    %table.general-summary-table.general-summary-table-right.general-text-right
-      %tr
-        %td
-          %p.font-16 Subtotal:
-        %td
-          %p.font-16 €117.69
-      %tr
-        %td
-          %p.font-16 Coupon:
-        %td
-          %p.font-16 €0.00
-      %tr
-        %td
-          %strong.font-18 Order Total:
-        %td
-          %strong.font-18 €117.69
+    = render 'summary'
   .text-center
-    %button.btn.btn-default.mb-20 Back to Store
+    %button.btn.btn-default.mb-20= t('checkout.complete_page.back')

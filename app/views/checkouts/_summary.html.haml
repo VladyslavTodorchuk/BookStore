@@ -1,0 +1,21 @@
+%table.general-summary-table
+    %tr
+        %td
+            %p.in-gold-500.font-18= t('checkout.summary.order')
+    %tr
+        %td
+            %p.font-168= t('checkout.summary.items')
+        %td
+            %p.font-16
+                €
+                = @order.order_price
+    %tr
+        %td
+            %p.font-168= t('checkout.summary.order_total')
+        %td
+            %p.font-16
+                €
+                - if @order.coupon.nil?
+                    = @order.order_price
+                - else
+                    = @order.order_price(@order.coupon.discount)

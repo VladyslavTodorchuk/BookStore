@@ -2,6 +2,7 @@ FactoryBot.define do
   factory :order do
 <<<<<<< HEAD
     status { 'initialized' }
+    delivery
 
     transient do
       books_count { 1 }

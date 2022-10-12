@@ -10,4 +10,8 @@ class OrderDecorator < Draper::Decorator
     end
     Money.new(total_price - (total_price * coupon))
   end
+
+  def date_time
+    created_at.strftime('%m %d, %Y')
+  end
 end

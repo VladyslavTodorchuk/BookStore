@@ -19,6 +19,7 @@ ActiveAdmin.register Order do
       row :coupon
       row :total_price
       row :status
+      row :delivery_id
       row :last_action
     end
   end
@@ -30,6 +31,7 @@ ActiveAdmin.register Order do
       f.input :total_price
       f.input :status
       f.input :last_action
+      f.input :delivery_id
       f.input :books
     end
 

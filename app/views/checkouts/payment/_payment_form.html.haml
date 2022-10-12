@@ -1,0 +1,21 @@
+ = form_for(modle: credit_card, url: checkout_path(step: :payment), method: :put) do |f|
+    .form-group
+      %label.control-label.input-label{for: "cardNumber"} Card Number
+      = f.text_field :code, type: "text", placeholder: "Card Number", class: 'form-control'
+    .row
+      .col-sm-6
+        .form-group
+          %label.control-label.input-label{for: "cardName"} Name on Card
+          = f.text_field :name, type: "text", placeholder: "Name on Card", class: 'form-control'
+      .col-sm-3
+        .form-group
+          %label.control-label.input-label{for: "firstName"} MM / YY
+          = f.text_field :expiration_date, type: "text", placeholder: "MM / YY", class: 'form-control'
+      .col-sm-3
+        .form-group.relative
+          %label.control-label.input-label{for: "firstName"} CVV
+          = f.text_field :cvv, type: "text", placeholder: "CVV", class: 'form-control'
+          %i.fa.fa-question-circle.general-form-help
+      .col-sm-3   
+        .text-center
+            = f.submit 'Save', class: 'btn btn-default mb-80'

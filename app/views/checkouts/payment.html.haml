@@ -1,62 +1,25 @@
 %main.container.mb-res-50
-  %h1.general-title-margin Checkout
-  %ul.steps.list-inline
-    %li.step.active
-      %span.step-number 1
-      %span.step-text.hidden-xs Address
-    %li.step-divider
-    %li.step
-      %span.step-number 2
-      %span.step-text.hidden-xs Delivery
-    %li.step-divider
-    %li.step
-      %span.step-number 3
-      %span.step-text.hidden-xs Payment
-    %li.step-divider
-    %li.step
-      %span.step-number 4
-      %span.step-text.hidden-xs Confirm
-    %li.step-divider
-    %li.step
-      %span.step-number 5
-      %span.step-text.hidden-xs Complete
-  %h3.general-subtitle Credit Card
-  %form.max-600.mb-80
-    .form-group.has-error
-      %label.control-label.input-label{for: "cardNumber"} Card Number
-      %input#cardNumber.form-control{type: "number", name: "cardnumber", placeholder: "Card Number"}
-      %span.help-block Please enter a valid credit card number
+  = render 'progress'
+  %h3.general-subtitle= t('checkout.payment_page.payment')
+  = form_for(@credit_card, url: checkout_path(step: :payment), method: :put) do |f|
+    .form-group
+      %label.control-label.input-label{for: "cardNumber"}= t('checkout.payment_page.card_number')
+      = f.text_field :code, type: "text", placeholder: "Card Number", class: 'form-control'
     .row
       .col-sm-6
         .form-group
-          %label.control-label.input-label{for: "cardName"} Name on Card
-          %input#cardName.form-control{type: "text", name: "ccname", placeholder: "Name on Card"}
+          %label.control-label.input-label{for: "cardName"}= t('checkout.payment_page.name')
+          = f.text_field :name, type: "text", placeholder: "Name on Card", class: 'form-control'
       .col-sm-3
         .form-group
-          %label.control-label.input-label{for: "firstName"} MM / YY
-          %input#firstName.form-control{name: "exp-date", type: "text", placeholder: "MM / YY"}
+          %label.control-label.input-label{for: "firstName"}= t('checkout.payment_page.date')
+          = f.text_field :expiration_date, type: "text", placeholder: "MM / YY", class: 'form-control'
       .col-sm-3
         .form-group.relative
-          %label.control-label.input-label{for: "firstName"} CVV
-          %input#firstName.form-control{name: "cvc", type: "number", placeholder: "CVV"}
+          %label.control-label.input-label{for: "firstName"}= t('checkout.payment_page.cvv')
+          = f.text_field :cvv, type: "text", placeholder: "CVV", class: 'form-control'
           %i.fa.fa-question-circle.general-form-help
-  .general-text-align
-    %p.in-gold-500.font-18 Order Summary
-    %table.general-summary-table
-      %tr
-        %td
-          %p.font-16 Subtotal:
-        %td
-          %p.font-16 €117.69
-      %tr
-        %td
-          %p.font-16 Coupon:
-        %td
-          %p.font-16 €0.00
-      %tr
-        %td
-          %strong.font-18 Order Total:
-        %td
-          %strong.font-18 €117.69
-  .text-center
-    %button.btn.btn-default.mb-80 Save and Continue
+    .general-text-align
+      = render 'summary'
+    .text-center 
+      = f.submit 'Continue', class: 'btn btn-default mb-80'
