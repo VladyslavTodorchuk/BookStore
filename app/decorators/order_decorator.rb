@@ -22,4 +22,8 @@ class OrderDecorator < Draper::Decorator
   def last_action_str
     updated_at.strftime('%F')
   end
+
+  def date_time
+    created_at.strftime('%m %d, %Y')
+  end
 end

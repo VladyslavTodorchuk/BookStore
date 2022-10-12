@@ -176,6 +176,10 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.bigint "delivery_id"
     t.bigint "address_id"
     t.index ["address_id"], name: "index_orders_on_address_id"
+<<<<<<< HEAD
+=======
+    t.index ["coupon_id"], name: "index_orders_on_coupon_id"
+>>>>>>> 081d138 (Checkout Add CreditCard Address Delivery method)
     t.index ["delivery_id"], name: "index_orders_on_delivery_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
@@ -268,7 +272,6 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
   add_foreign_key "addresses", "users"
   add_foreign_key "authors_books", "authors"
   add_foreign_key "authors_books", "books"
-  add_foreign_key "billings", "users"
   add_foreign_key "books_categories", "books"
   add_foreign_key "books_categories", "categories"
   add_foreign_key "credit_cards", "users"
