@@ -45,17 +45,20 @@ class CheckoutsController < ApplicationController
 
     result = CheckoutService.update_step(step.to_sym,
                                          { permitted_params: permitted_params,
-                                           user: current_user })
+                                           user: current_user, credit_card: @credit_card })
 
     if result.success?
-      redirect_to checkout_path(step: next_step[step.to_sym])
+      filed_check_result = CheckoutService.all_fields_are_required(step.to_sym, permitted_params)
+
+      redirect_to checkout_path(step: next_step[step.to_sym]) if filed_check_result
+
+      redirect_to checkout_path(step: step), alert: 'All fields should not be empty!!!' unless filed_check_result
     else
-      redirect_to checkout_path(step: step), notice: 'Something went wrong!'
+      redirect_to checkout_path(step: step)
     end
   end
 
   private
-
   def permitted_params
     params.permit(
       :step,

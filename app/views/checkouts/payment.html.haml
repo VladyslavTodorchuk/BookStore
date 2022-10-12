@@ -1,3 +1,8 @@
+- unless @credit_card.errors.messages.nil?
+  - @credit_card.errors.messages.each do |message|
+    %div.alert.alert-warning.text-center{ role: "alert" }
+      = message
+
 %main.container.mb-res-50
   = render 'progress'
   %h3.general-subtitle= t('checkout.payment_page.payment')
