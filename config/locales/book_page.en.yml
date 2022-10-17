@@ -1,0 +1,11 @@
+en:
+  book_page:
+    back_to_result: 'Back to results'
+    add_to_card: 'Add to Cart'
+    book:
+      description: 'Description'
+      year_of_publication: 'Year of publication'
+      dimensions: 'Dimensions'
+      materials: 'Materials'
+    read_more: 'Read More'
+    read_less: 'Read Less'

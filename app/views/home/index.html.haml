@@ -1,0 +1,12 @@
+%main.container
+  = render partial: 'catalog'
+  .container
+    .jumbotron.text-center.mb-0
+      %h2.h1= t('home.title')
+      .mb-res-50
+        %p= t('home.desc')
+      %a.btn.btn-default{ href: books_path }= t('.get_started')
+    .mb-35
+      %h3= t('.best_sellers')
+      .row
+        = render partial: 'best_sellers'
