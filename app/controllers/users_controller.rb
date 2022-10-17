@@ -9,15 +9,9 @@ class UsersController < ApplicationController
   def update
     update_user = UserUpdate.call(permitted_params: permitted_params, current_user: current_user)
 
-    if session[:previous_path].eql?('/checkout')
-      redirect_to checkout_path(step: 'address'), notice: I18n.t('settings.message.update') if updated? update_user
+    redirect_to edit_user_path, notice: I18n.t('settings.message.update') if updated? update_user
 
-      redirect_to checkout_path(step: 'address'), alert: I18n.t('settings.erorr.error') unless updated? update_user
-    else
-      redirect_to edit_user_path, notice: I18n.t('settings.message.update') if updated? update_user
-
-      redirect_to edit_user_path, notice: I18n.t('settings.error.error') unless updated? update_user
-    end
+    redirect_to edit_user_path, notice: I18n.t('settings.error.error') unless updated? update_user
   end
 
   def destroy

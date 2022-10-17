@@ -55,7 +55,7 @@
                 class: 'btn btn-default mb-20 visible-xs-inline-block',
                 method: :get
             - else
-              = link_to t('order.checkout'), "/checkout?step=address&code=",
+              = link_to t('order.checkout'), checkout_path(step: :address),
                 class: 'btn btn-default visible-xs-inline-block',
                 method: :get, id: 'checkout_button'
   .text-center
@@ -64,6 +64,6 @@
         class: 'btn btn-default mb-20 hidden-xs center-block',
         method: :get
     - else
-      = link_to t('order.checkout'), "/checkout?step=address&code=",
+      = link_to t('order.checkout'), checkout_path(step: :address),
         class: 'btn btn-default hidden-xs ',
         method: :get, id: 'checkout_button'

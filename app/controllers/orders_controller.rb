@@ -29,7 +29,11 @@ class OrdersController < ApplicationController
     redirect_to checkout_path(step: :delivery), alert: 'No method found!' if order.nil? && method.nil?
 
     if order.update(delivery_id: method.id)
-      redirect_to checkout_path(step: :payment)
+      if session[:save_prev_url].split('=').last.eql?('confirm')
+        redirect_to checkout_path(step: :confirm)
+      else
+        redirect_to checkout_path(step: :payment)
+      end
     else
       redirect_to checkout_path(step: :delivery)
     end

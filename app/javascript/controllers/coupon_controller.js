@@ -22,9 +22,6 @@ export default class extends Controller {
                     } else {
                         document.getElementById('coupon_price').textContent = '€ ' + data.discount
                         document.getElementById('total_price').textContent = '€ ' + data.total_price
-
-                        document.getElementsByClassName('btn btn-default')[0].href += code
-                        document.getElementsByClassName('btn btn-default')[1].href += code
                     }
                 }
             }
