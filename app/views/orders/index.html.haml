@@ -7,12 +7,17 @@
       %i.fa.fa-angle-down.dropdown-icon.pull-right
     %ul.dropdown-menu
       %li
+<<<<<<< HEAD
         %a{href: orders_path}= t('orders.all')
+=======
+        %a{href: orders_path} All
+>>>>>>> 31a97ab8 (Add sort orders)
       %li
         %a{href: orders_path(status: params[:status],sort: 'total_price')}= t('orders.sorting.price.acs')
       %li
         %a{href: orders_path(status: params[:status], sort: 'total_price DESC')}= t('orders.sorting.price.desc')
       %li
+<<<<<<< HEAD
         %a{href: orders_path(status: 'confirmed', sort: params[:sort])}= t('orders.sorting.status.confirm')
       %li
         %a{href: orders_path(status: 'canceled', sort: params[:sort])}= t('orders.sorting.status.canceled')
@@ -22,6 +27,13 @@
         %a{href: orders_path(status: 'delivered', sort: params[:sort])}= t('orders.sorting.status.delivered')
       %li
         %a{href: orders_path(status: 'in delivery', sort: params[:sort])}= t('orders.sorting.status.in_delivery')
+=======
+        %a{href: orders_path(status: 'confirmed', sort: params[:sort])} Status: Confirmed
+      %li
+        %a{href: orders_path(status: 'canceled', sort: params[:sort])} Status: Canceled
+      %li
+        %a{href: orders_path(status: 'delivered', sort: params[:sort])} Status: Delivered
+>>>>>>> 31a97ab8 (Add sort orders)
   .visible-xs
     - @orders.each do |order|
       .general-cart-item.divider-lg-bottom.pt-0
@@ -57,18 +69,7 @@
 
   .hidden-xs.mb-res-50
     %table.table.table-hover
-      %tr.no-hover
-        %th.col-pic.pl-0
-          %span.in-grey-600= t('order.product')
-        %th.col-title
-        %th.col-price
-          %span.in-grey-600= t('order.price')
-        %th.col-quantity
-          %span.in-grey-600= t('order.quantity')
-        %th.col-total
-          %span.in-grey-600= t('order.subtotal_title')
-        %th.col-close
-      - @cart.order_books.each do |order_books|
+      %thead
         %tr
           = render partial: 'orders/show/book', object: order_books.book.decorate
           = render partial: 'orders/show/order_book', object: order_books.decorate
@@ -87,38 +88,38 @@
           %table.general-summary-table.general-summary-table-right.general-text-right
             %tr
               %td
-                %p.font-16= t('order.subtotal')
+                %p.font-16= t('orders.subtotal')
               %td
                 %p#sub_price.font-16
                   €
                   = @cart.order_price
             %tr
               %td
-                %p.font-16= t('order.coupon_text')
+                %p.font-16= t('orders.coupon_text')
               %td
                 %p#coupon_price.font-16 € 0.00
             %tr
               %td
-                %strong.font-18= t('order.order_total')
+                %strong.font-18= t('orders.order_total')
               %td
                 %strong#total_price.font-18
                   €
                   = @cart.order_price
           .text-center
             - if current_user.nil?
-              = button_to t('order.checkout'), new_checkout_path,
+              = button_to t('orders.checkout'), new_checkout_path,
                 class: 'btn btn-default mb-20 visible-xs-inline-block',
                 method: :get
             - else
-              = link_to t('order.checkout'), checkout_path(step: :address),
+              = link_to t('orders.checkout'), checkout_path(step: :address),
                 class: 'btn btn-default visible-xs-inline-block',
                 method: :get, id: 'checkout_button'
   .text-center
     - if current_user.nil?
-      = button_to t('order.checkout'), new_checkout_path,
+      = button_to t('orders.checkout'), new_checkout_path,
         class: 'btn btn-default mb-20 hidden-xs center-block',
         method: :get
     - else
-      = link_to t('order.checkout'), checkout_path(step: :address),
+      = link_to t('orders.checkout'), checkout_path(step: :address),
         class: 'btn btn-default hidden-xs ',
         method: :get, id: 'checkout_button'
