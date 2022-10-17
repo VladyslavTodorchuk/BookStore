@@ -18,4 +18,4 @@
                 - if @order.coupon.nil?
                     = @order.order_price
                 - else
-                    = @order.order_price(@order.coupon.discount)
+                    = @order.order_price(@order.coupon.discount, @order.delivery.price_cents)

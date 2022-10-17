@@ -1,6 +1,3 @@
-require 'rails_helper'
-require_relative '../support/shared_context'
-
 RSpec.describe 'Checkout', type: :feature, js: true do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'

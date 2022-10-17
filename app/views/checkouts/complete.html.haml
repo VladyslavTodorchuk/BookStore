@@ -99,4 +99,5 @@
   .text-center.general-text-right
     = render 'summary'
   .text-center
-    %button.btn.btn-default.mb-20= t('checkout.complete_page.back')
+    = form_with url: checkout_path(step: :confirm), method: :put do |f|
+      = f.submit t('checkout.complete_page.back'), class: 'btn btn-default mb-20'

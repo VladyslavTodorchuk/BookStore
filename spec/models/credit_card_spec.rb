@@ -1,9 +1,7 @@
-require 'rails_helper'
-
 RSpec.describe CreditCard, type: :model do
   context 'when validations' do
     it { is_expected.to allow_values('a' * Constants::CARD_NAME_MAX_LENGTH).for(:name) }
-    it { is_expected.to allow_values('6771-8921-2291-6236', '4448-8934-1277-7195').for(:code) }
+    it { is_expected.to allow_values('4149499809038407', '4149499115747899').for(:code) }
     it { is_expected.to allow_values('342', '123', '423', '093').for(:cvv) }
     it { is_expected.to allow_values('12/42', '01/23', '07/22', '08/99').for(:expiration_date) }
   end

@@ -9,9 +9,13 @@ class CheckoutsController < ApplicationController
                     password: Devise.friendly_token.first(Devise.password_length.first))
     user.skip_confirmation!
 
+    order = Order.find(session[:order_id])
+
     if user.save
       sign_in(:user, user)
       user.send_reset_password_instructions
+      order.update(user_id: user.id)
+
       redirect_to checkout_path(step: :address)
     else
       redirect_to new_checkout_path, alert: I18n.t('checkout.error_message')
@@ -25,47 +29,97 @@ class CheckoutsController < ApplicationController
     @user_shipping = Shipping.find_or_create_by(user_id: current_user.id)
     @credit_card = CreditCard.find_or_create_by(user_id: current_user.id)
 
-    coupon = Coupon.find_by(code: permitted_params[:code])
-    coupon&.update(order_id: @order.id)
-
     step = permitted_params[:step]
 
-    if step.nil?
-      render 'checkouts/address'
+    case step
+    when 'initialize' then render 'checkouts/new'
+    when 'delivery' then render 'checkouts/delivery'
+    when 'address' then render 'checkouts/address'
+    when 'payment' then render 'checkouts/payment'
+    when 'confirm' then render 'checkouts/confirm'
+    when 'complete' then render 'checkouts/complete'
     else
-      render CheckoutService.page_step(step.to_sym)
+      render 'checkouts/address'
     end
   end
 
   def update
-    next_step = { address: :delivery, delivery: :payment, payment: :confirm, confirm: :complete }
-    step = params[:step]
+    @order = Order.find(session[:order_id]).decorate
 
-    redirect_to checkout_path if step.nil?
+    @user_billing = Billing.find_or_create_by(user_id: current_user.id)
+    @user_shipping = Shipping.find_or_create_by(user_id: current_user.id)
+    @credit_card = CreditCard.find_or_create_by(user_id: current_user.id)
 
-    result = CheckoutService.update_step(step.to_sym,
-                                         { permitted_params: permitted_params,
-                                           user: current_user, credit_card: @credit_card })
-
-    if result.success?
-      filed_check_result = CheckoutService.all_fields_are_required(step.to_sym, permitted_params)
-
-      redirect_to checkout_path(step: next_step[step.to_sym]) if filed_check_result
-
-      redirect_to checkout_path(step: step), alert: 'All fields should not be empty!!!' unless filed_check_result
-    else
-      redirect_to checkout_path(step: step)
+    case permitted_params[:step]
+    when 'address' then update_address(permitted_params)
+    when 'payment' then update_payment(permitted_params)
+    when 'confirm' then update_confirm
     end
   end
 
   private
+
   def permitted_params
     params.permit(
-      :step,
+      :step, :code,
       user: %i[password current_password password_confirmation email],
       billing: %i[first_name last_name address city zip country phone],
       shipping: %i[first_name last_name address city zip country phone],
       credit_card: %i[name code cvv expiration_date]
     )
+  end
+
+  def update_address(permitted_params)
+    if permitted_params[:shipping].nil?
+      update_billing(permitted_params[:billing])
+    else
+      update_shipping(permitted_params[:shipping])
+    end
+  end
+
+  def update_shipping(params)
+    if @user_shipping.update(params)
+      redirect_to checkout_path(step: :address), notice: 'Shipping was updated'
+    else
+      redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_shipping.errors.messages)
+    end
+  end
+
+  def update_billing(params)
+    if @user_billing.update(params)
+      redirect_to checkout_path(step: :address), notice: 'Billing was updated'
+    else
+      redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_billing.errors.messages)
+    end
+  end
+
+  def update_payment(permitted_params)
+    if @credit_card.update(permitted_params[:credit_card])
+      redirect_to checkout_path(step: :confirm)
+    else
+      redirect_to checkout_path(step: :payment), alert: CheckoutService.to_errors(@credit_card.errors.messages)
+    end
+  end
+
+  def update_confirm
+    @order.coupon&.update(is_active: false)
+
+    if @order.update(status: :created, total_price: count_total_price)
+      redirect_to root_path, notice: 'Order was created!'
+    else
+      redirect_to checkout_path(step: :confirm), alert: 'Something went wrong'
+    end
+  end
+
+  def count_total_price
+    product = OrderBook.where(order_id: @order.id)
+
+    total_price = product.map do |order|
+      order.book.price_cents * order.quantity
+    end.sum
+
+    total_price *= @order.coupon.discount unless @order.coupon.nil?
+
+    total_price + @order.delivery.price_cents
   end
 end

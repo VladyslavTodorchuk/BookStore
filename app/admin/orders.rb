@@ -1,5 +1,5 @@
 ActiveAdmin.register Order do
-  permit_params :user_id, :coupon_id, :total_price, :status, :last_action
+  permit_params :user_id, :coupon_id, :address_id, :total_price, :status, :last_action
 
   index do
     selectable_column
@@ -8,7 +8,7 @@ ActiveAdmin.register Order do
     column :coupon
     column :total_price
     column :status
-    column :last_action
+    column :updated_at
 
     actions
   end
@@ -20,7 +20,7 @@ ActiveAdmin.register Order do
       row :total_price
       row :status
       row :delivery_id
-      row :last_action
+      row :updated_at
     end
   end
 
@@ -29,8 +29,7 @@ ActiveAdmin.register Order do
       f.input :user_id
       f.input :coupon_id
       f.input :total_price
-      f.input :status
-      f.input :last_action
+      f.input :status, as: :select, collection: %i[confirmed delivered canceled]
       f.input :delivery_id
       f.input :books
     end

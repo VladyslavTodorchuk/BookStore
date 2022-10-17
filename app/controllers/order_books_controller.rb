@@ -22,9 +22,9 @@ class OrderBooksController < ApplicationController
     product = OrderBook.find_by(order_id: params[:order_id], book_id: params[:book_id])
 
     if product.destroy
-      redirect_to orders_path, notice: I18n.t('order.messages.delete')
+      redirect_to order_path(session[:order_id]), notice: I18n.t('order.messages.delete')
     else
-      redirect_to orders_path, alert: I18n.t('order.errors.error_delete')
+      redirect_to order_path(session[:order_id]), alert: I18n.t('order.errors.error_delete')
     end
   end
 
@@ -57,6 +57,6 @@ class OrderBooksController < ApplicationController
   end
 
   def update_order_last_action
-    Order.find(session[:order_id]).update(last_action: DateTime.now)
+    Order.find(session[:order_id]).update(updated_at: DateTime.now)
   end
 end

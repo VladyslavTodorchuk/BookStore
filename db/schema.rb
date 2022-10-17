@@ -171,7 +171,6 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.bigint "user_id"
     t.integer "total_price", default: 0
     t.string "status", default: "initialized"
-    t.datetime "last_action"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
 <<<<<<< HEAD

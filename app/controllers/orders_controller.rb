@@ -1,16 +1,12 @@
+require_relative '../queries/order_query'
 class OrdersController < ApplicationController
-  after_action :update_order_last_action, only: [:update]
-  def index
+  before_action :authenticate_user!, only: %i[update index]
+  def show
     @cart = Order.find(session[:order_id]).decorate
   end
 
-  def show
-    if current_user
-      @order = Order.find_by(id: session[:order_id], user_id: current_user.id).decorate
-      render 'orders/show'
-    else
-      redirect_to new_checkout_path
-    end
+  def index
+    @orders = OrderQuery.query(params, current_user)
   end
 
   def update
@@ -18,17 +14,14 @@ class OrdersController < ApplicationController
 
     if params[:order][:delivery_id]
       update_delivery_method(params[:order][:delivery_id], order)
-    else
-      params[:order][:address_id]
+    elsif params[:order][:address_id]
       update_address(params[:order][:address_id], order)
+    elsif params[:order][:billing] || params[:order][:shipping]
+      update_user_address(params[:order])
     end
   end
 
   private
-
-  def update_order_last_action
-    Order.find(session[:order_id]).update(last_action: DateTime.now)
-  end
 
   def update_delivery_method(delivery_id, order)
     method = Delivery.find(delivery_id)
@@ -52,5 +45,15 @@ class OrdersController < ApplicationController
     else
       redirect_to checkout_path(step: :address)
     end
+  end
+
+  def update_user_address(permitted_params)
+    if permitted_params[:shipping].nil?
+      current_user.billing.update(permitted_params[:billing])
+    else
+      current_user.shipping.update(permitted_params[:shipping])
+    end
+
+    redirect_to checkout_path(step: :address)
   end
 end

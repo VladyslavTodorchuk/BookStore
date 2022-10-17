@@ -12,7 +12,7 @@
               %td.col-half
                 .form-group.radio.mt-0.mb-0
                   %label.radio-label
-                    %input.radio-input{type: "radio", hidden: "true"}
+                    = f.radio_button :delivery_id, delivery.id, class: 'radio-input', hidden: "true"
                     %span.radio-icon
                     %span.radio-text
                       = delivery.delivery_method

@@ -7,13 +7,13 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand= t('header.name')
-      %a.shop-link.pull-right.visible-xs{href: "/"}
+      %a.shop-link.pull-right.visible-xs{href: order_path(session[:order_id])}
         %span.shop-icon
           - if session[:order_id]
             %span#books_count_mobile.shop-quantity= Order.find(session[:order_id]).books.count
           - else
             %span#books_count_mobile.shop-quantity 0
-    %a.shop-link.pull-right.hidden-xs{href: orders_path}
+    %a.shop-link.pull-right.hidden-xs{href: order_path(session[:order_id])}
       %span.shop-icon
         - if session[:order_id]
           %span#books_count.shop-quantity= Order.find(session[:order_id]).books.count
@@ -41,9 +41,9 @@
                     = t('header.account')
                   %ul#account.dropdown-menu
                     %li
-                      %a= t('header.orders')
+                      = link_to t('header.orders'), orders_path
                     %li
-                      %a{ href: edit_user_path(current_user.id) }= t('header.settings')
+                      = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
           - else
@@ -70,7 +70,7 @@
                     = t('header.account')
                   %ul.dropdown-menu
                     %li
-                      %a= t('header.orders')
+                      = link_to t('header.orders'), orders_path
                     %li
                       = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li

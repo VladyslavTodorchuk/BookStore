@@ -12,7 +12,7 @@ RSpec.describe 'Coupon', type: :feature, js: true do
     sign_in(user)
     order
     order_book
-    visit orders_path
+    visit order_path(order.id)
   end
 
   describe '#valid coupon' do
