@@ -1,0 +1,47 @@
+%main.container
+  %h1.general-title-margin= t('catalog_page.title')
+  .hidden-xs.clearfix
+    .dropdowns.pull-right
+      .dropdown.width-240
+        %a#menu.dropdown-toggle.lead.small{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+          = t('catalog_page.sorting.newer_first')
+          %i.fa.fa-angle-down.dropdown-icon.pull-right
+        %ul#sort.dropdown-menu
+          %li
+            = link_to t('catalog_page.sorting.newer_first'), books_path(category: params[:category], sort: 'created_at DESC', id: 'sort_elemt')
+          %li
+            = link_to t('catalog_page.sorting.popular_first'), books_path(category: params[:category], sort: 'created_at', id: 'sort_elemt')
+          %li
+            = link_to t('catalog_page.sorting.price.asc'), books_path(category: params[:category], sort: 'price_cents', id: 'sort_elemt')
+          %li
+            = link_to t('catalog_page.sorting.price.desc'), books_path(category: params[:category], sort: 'price_cents DESC', id: 'sort_elemt')
+          %li
+            = link_to t('catalog_page.sorting.title.asc'), books_path(category: params[:category], sort: 'title', id: 'sort_elemt')
+          %li
+            = link_to t('catalog_page.sorting.title.desc'), books_path(category: params[:category], sort: 'title DESC', id: 'sort_elemt')
+    %ul#filter.list-inline.pt-10.mb-25.mr-240
+      %li.mr-35
+        %a.filter-link{href: "/books?sort=title"}
+          = t('catalog_page.all')
+          %span.badge.general-badge= @books_count
+      %a.filter-link{href: "#"}
+      - @categories.each do |category|
+        %li.mr-35
+          .filter-link
+            = link_to category.name, books_path(category: category.id, sort: params[:sort]), class: 'collapse-link'
+            %span.badge.general-badge= category.books.count
+    .dropdowns.mb-25.visible-xs
+      = render partial: 'books/index/mobile_filters'
+      = render partial: 'books/index/mobile_sort'
+  .mb-120
+    %div{"data-controller" => "view-more"}
+      %div{"data-view-more-target" => "entries"}
+        = render partial: 'books', formats: [:html]
+      .text-center.hidden
+        %div{"data-view-more-target" => "pagination"}
+          = will_paginate(@books)
+      - unless @books.total_pages == @books.current_page
+        .text-center
+          %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button",
+                                                 "data-action" => "click->view-more#next" }
+            = t("catalog_page.view_more")
