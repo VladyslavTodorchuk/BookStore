@@ -1,4 +1,3 @@
-
 %html
   %head
     %title BookStoreFJ1
@@ -16,5 +15,15 @@
 
   %body
     = render partial: 'layouts/header'
+
+    - unless notice.nil?
+      .container.text-center
+        %p.notice
+          = notice
+    - unless alert.nil?
+      .container.text-center
+        %p.alert
+          = alert
     = yield
+
     = render partial: 'layouts/footer'

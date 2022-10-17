@@ -6,8 +6,13 @@ require:
 Metrics/LineLength:
   Max: 120
 
+Rails/BulkChangeTable:
+  Enabled: false
+
 Metrics/MethodLength:
   Max: 16
+  Exclude:
+    - 'db/migrate/*'
 
 Style/Documentation:
   Enabled: false

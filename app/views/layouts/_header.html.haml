@@ -9,10 +9,10 @@
       %a.navbar-brand= t('.name')
       %a.shop-link.pull-right.visible-xs{href: "/"}
         %span.shop-icon
-          %span.shop-quantity 3
+          %span.shop-quantity 0
     %a.shop-link.pull-right.hidden-xs{href: "/"}
       %span.shop-icon
-        %span.shop-quantity 3
+        %span.shop-quantity 0
     #navbar.navbar-collapse.collapse.pl-30{'aria-expanded': "false"}
       .visible-xs
         %button.close{type: "button", 'aria-label': "Close"}
@@ -26,9 +26,25 @@
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
-                  %a.collapse-link{href: "#"}= category.name
-          %li
-            %a{href: "#"}= t('.account')
+                  %a.collapse-link{href: "/books?category=#{category.id}"}= category.name
+          - if user_signed_in?
+            %li
+              %li
+                %li.dropdown
+                  %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+                    = t('header.account')
+                  %ul#account.dropdown-menu
+                    %li
+                      %a= t('header.orders')
+                    %li
+                      %a= t('header.settings')
+                    %li
+                      = link_to t('header.log_out'), destroy_user_session_path, method: :delete
+          - else
+            %li
+              = link_to t('header.log_in'), new_user_session_path
+            %li
+              = link_to t('header.sing_up'), new_user_registration_path
       .hidden-xs
         %ul.nav.navbar-nav
           %li
@@ -40,6 +56,22 @@
               - Category.all.each do |category|
                 %li
                   %a{href: "#"}= category.name
-              %a{href: "#"}= t('header.log_in')
-          %li
-            %a{href: "#"}= t('.account')
+          - if user_signed_in?
+            %li
+              %li
+                %li.dropdown
+                  %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
+                    = t('header.account')
+                  %ul#account.dropdown-menu
+                    %li
+                      %a= t('header.orders')
+                    %li
+                      %a= t('header.settings')
+                    %li
+                      = link_to t('header.log_out'), destroy_user_session_path, method: :delete
+          - else
+            %li
+              = link_to t('header.log_in'), new_user_session_path
+            %li
+              = link_to t('header.sing_up'), new_user_registration_path
+

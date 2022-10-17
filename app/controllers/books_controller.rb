@@ -1,11 +1,9 @@
 class BooksController < ApplicationController
-  PAGINATION_PER_PAGE = 12
-
   def index
     @books_count = Book.count
     @categories = Category.all
     sorted_books = BookQuery.query(params).paginate(page: params[:page],
-                                                    per_page: PAGINATION_PER_PAGE)
+                                                    per_page: Constants::PAGINATION_PER_PAGE)
 
     @books = BookDecorator.decorate_collection(sorted_books)
 

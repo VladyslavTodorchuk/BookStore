@@ -10,7 +10,7 @@ RSpec.describe 'Book', type: :feature do
       materials: 'Soft cover',
       quantity: FFaker::Number.rand(2..5) }
   end
-  let(:book) { BookDecorator.new(create(:book)) }
+  let(:book) { create(:book).decorate }
 
   describe '#show' do
     it 'show books info' do
@@ -112,7 +112,7 @@ RSpec.describe 'Book', type: :feature do
 
   describe 'load_more' do
     before do
-      (BooksController::PAGINATION_PER_PAGE * 2).times do
+      Constants::PAGINATION_PER_PAGE.next.times do
         books << create(:book)
       end
     end
@@ -137,7 +137,7 @@ RSpec.describe 'Book', type: :feature do
       it 'show loaded books', js: true do
         visit books_path
 
-        find('a', id: 'view_more', class: 'view_more').click
+        find('a', class: 'view_more').click
 
         expect(page).to have_content(books.last.title)
       end
