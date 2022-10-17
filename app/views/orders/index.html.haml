@@ -7,12 +7,17 @@
       %i.fa.fa-angle-down.dropdown-icon.pull-right
     %ul.dropdown-menu
       %li
+<<<<<<< HEAD
         %a{href: orders_path}= t('orders.all')
+=======
+        %a{href: orders_path} All
+>>>>>>> 54875449 (Add sort orders)
       %li
         %a{href: orders_path(status: params[:status],sort: 'total_price')}= t('orders.sorting.price.acs')
       %li
         %a{href: orders_path(status: params[:status], sort: 'total_price DESC')}= t('orders.sorting.price.desc')
       %li
+<<<<<<< HEAD
         %a{href: orders_path(status: 'confirmed', sort: params[:sort])}= t('orders.sorting.status.confirm')
       %li
         %a{href: orders_path(status: 'canceled', sort: params[:sort])}= t('orders.sorting.status.canceled')
@@ -22,6 +27,13 @@
         %a{href: orders_path(status: 'delivered', sort: params[:sort])}= t('orders.sorting.status.delivered')
       %li
         %a{href: orders_path(status: 'in delivery', sort: params[:sort])}= t('orders.sorting.status.in_delivery')
+=======
+        %a{href: orders_path(status: 'confirmed', sort: params[:sort])} Status: Confirmed
+      %li
+        %a{href: orders_path(status: 'canceled', sort: params[:sort])} Status: Canceled
+      %li
+        %a{href: orders_path(status: 'delivered', sort: params[:sort])} Status: Delivered
+>>>>>>> 54875449 (Add sort orders)
   .visible-xs
     - @orders.each do |order|
       .general-cart-item.divider-lg-bottom.pt-0

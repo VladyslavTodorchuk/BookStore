@@ -1,0 +1,2837 @@
+{
+  "result": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "line": 90.68
+=======
+=======
+=======
+>>>>>>> d780a52 (Rebased)
+=======
+>>>>>>> 83979de (Featire specs)
+=======
+>>>>>>> d0f5c14 (Manifest_cache true)
+=======
+>>>>>>> b3f2049 (Featire specs)
+=======
+>>>>>>> e031bce (Manifest_cache true)
+=======
+>>>>>>> 12bcf81 (Featire specs)
+=======
+>>>>>>> 02ba384 (Manifest_cache true)
+=======
+>>>>>>> 264ef06 (Add login registration pages)
+=======
+>>>>>>> fd3e35e (Featire specs)
+=======
+>>>>>>> 926dfe5 (Manifest_cache true)
+=======
+>>>>>>> c54769d (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> a1a8477 (Add login registration pages)
+=======
+>>>>>>> 1677b1a (Featire specs)
+=======
+>>>>>>> 1830ff1 (Manifest_cache true)
+=======
+>>>>>>> c346782 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 551615f (Add login registration pages)
+=======
+>>>>>>> b28889f (Fix)
+=======
+>>>>>>> 872e675 (Fix)
+=======
+>>>>>>> 5507b42 (Featire specs)
+=======
+>>>>>>> e9f3851 (Manifest_cache true)
+=======
+>>>>>>> af057e3 (Featire specs)
+=======
+>>>>>>> d782a28 (Manifest_cache true)
+=======
+>>>>>>> 96394f1 (Featire specs)
+=======
+>>>>>>> 35d17b9 (Manifest_cache true)
+=======
+>>>>>>> 852864e (Add login registration pages)
+=======
+>>>>>>> ee5242b (Featire specs)
+=======
+>>>>>>> add330c (Manifest_cache true)
+=======
+>>>>>>> 8a450ee (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 551f3c1 (Add login registration pages)
+=======
+>>>>>>> a9e66e9 (Featire specs)
+=======
+>>>>>>> 15bff2e (Manifest_cache true)
+=======
+>>>>>>> 4b921fb (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> ccec311 (Add login registration pages)
+=======
+>>>>>>> 6fba6be (Featire specs)
+=======
+>>>>>>> 6c71f00 (Manifest_cache true)
+=======
+>>>>>>> bc08537 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 8c3e531 (Add login registration pages)
+=======
+>>>>>>> 1d59aaa (Fix)
+=======
+>>>>>>> 0b5b269 (Fix)
+=======
+>>>>>>> d6f7da8 (Featire specs)
+=======
+>>>>>>> ab67c96 (Manifest_cache true)
+=======
+>>>>>>> f5da5ac (Featire specs)
+=======
+>>>>>>> 036bb32 (Manifest_cache true)
+=======
+>>>>>>> 5f79779 (Featire specs)
+=======
+>>>>>>> 3e8974a (Manifest_cache true)
+=======
+>>>>>>> 282f108 (Add login registration pages)
+=======
+>>>>>>> 56a05fb (Featire specs)
+=======
+>>>>>>> 23e9df9 (Manifest_cache true)
+=======
+>>>>>>> da83d1a (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> db0e854 (Add login registration pages)
+=======
+>>>>>>> 6d21330 (Featire specs)
+=======
+>>>>>>> 9617beb (Manifest_cache true)
+=======
+>>>>>>> a2a431e (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 2cdd6f4 (Add login registration pages)
+=======
+>>>>>>> 27e3351 (Featire specs)
+=======
+>>>>>>> b40a04e (Manifest_cache true)
+=======
+>>>>>>> e733663 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 3a43955 (Add login registration pages)
+=======
+>>>>>>> 1ac6be1 (Fix)
+=======
+>>>>>>> 49e3b70 (Fix)
+=======
+>>>>>>> 78d0719 (Featire specs)
+=======
+>>>>>>> 6edce20 (Manifest_cache true)
+=======
+>>>>>>> f861b82 (Featire specs)
+=======
+>>>>>>> d8298a1 (Manifest_cache true)
+=======
+>>>>>>> 2fd2048 (Featire specs)
+=======
+>>>>>>> bdea3aa (Manifest_cache true)
+=======
+>>>>>>> 591c3b2 (Add login registration pages)
+=======
+>>>>>>> bc0ff2c (Featire specs)
+=======
+>>>>>>> 07682bd (Manifest_cache true)
+=======
+>>>>>>> 45f6de0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 055b00f (Add login registration pages)
+=======
+>>>>>>> 9bf2aae (Featire specs)
+=======
+>>>>>>> e2d040a (Manifest_cache true)
+=======
+>>>>>>> 7718476 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> e7ec208 (Add login registration pages)
+=======
+>>>>>>> 5ce1a6d (Featire specs)
+=======
+>>>>>>> 307ac6e (Manifest_cache true)
+=======
+>>>>>>> cea736b (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 61908af (Add login registration pages)
+=======
+>>>>>>> 20094c5 (After billing and shipping change redirect to prev path)
+=======
+>>>>>>> 081d138 (Checkout Add CreditCard Address Delivery method)
+=======
+>>>>>>> aa4fb26 (Add sort orders)
+    "line": 90.68
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4a0e3b6 (Manifest_cache true)
+=======
+>>>>>>> 9ec6862 (Add login registration pages)
+=======
+>>>>>>> 3723aad (Featire specs)
+=======
+>>>>>>> 24b58e6 (Manifest_cache true)
+=======
+>>>>>>> 44dc97c (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 57a2e05 (Add login registration pages)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> cacbab9 (Add login registration pages)
+    "line": 95.7
+=======
+=======
+>>>>>>> 96aecde (Manifest_cache true)
+=======
+>>>>>>> c4adab0 (Featire specs)
+=======
+>>>>>>> 2722d07 (Manifest_cache true)
+=======
+>>>>>>> f182ac7 (Add login registration pages)
+=======
+>>>>>>> e54deeb (Featire specs)
+=======
+>>>>>>> 5b6aeb7 (Manifest_cache true)
+=======
+>>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 57da3ff (Add login registration pages)
+=======
+>>>>>>> 3b03895 (Featire specs)
+=======
+>>>>>>> 2c640cf (Manifest_cache true)
+=======
+>>>>>>> f1c3eb0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> a624084 (Add login registration pages)
+=======
+>>>>>>> 94841b5 (Featire specs)
+=======
+>>>>>>> b15044a (Manifest_cache true)
+=======
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 6a9fede (Add login registration pages)
+    "line": 95.79
+>>>>>>> 59d75f9 (Featire specs)
+=======
+=======
+>>>>>>> b5f64c6 (Manifest_cache true)
+=======
+>>>>>>> a2de409 (Featire specs)
+=======
+>>>>>>> 8c7bad7 (Manifest_cache true)
+=======
+>>>>>>> 0005d4a (Add login registration pages)
+=======
+>>>>>>> e54ceb0 (Featire specs)
+=======
+>>>>>>> 1bfc7a6 (Manifest_cache true)
+=======
+>>>>>>> 3c67c09 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 58d403b (Add login registration pages)
+=======
+>>>>>>> 95ebdc2 (Featire specs)
+=======
+>>>>>>> 3b839af (Manifest_cache true)
+=======
+>>>>>>> 2b89c06 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b575a28 (Add login registration pages)
+=======
+>>>>>>> 5a0bcc7 (Featire specs)
+=======
+>>>>>>> 0832698 (Manifest_cache true)
+=======
+>>>>>>> 574967f (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 5caffae (Add login registration pages)
+    "line": 95.73
+>>>>>>> 864f339 (Featire specs)
+=======
+=======
+>>>>>>> 3c386ca (Manifest_cache true)
+=======
+>>>>>>> 1cb2e82 (Featire specs)
+=======
+>>>>>>> fe7e312 (Manifest_cache true)
+=======
+>>>>>>> fb10fe4 (Add login registration pages)
+=======
+>>>>>>> 8577deb (Featire specs)
+=======
+>>>>>>> 94d9078 (Manifest_cache true)
+=======
+>>>>>>> 7b112c2 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 69eb97e (Add login registration pages)
+=======
+>>>>>>> ebe5361 (Featire specs)
+=======
+>>>>>>> 2956182 (Manifest_cache true)
+=======
+>>>>>>> a455e8a (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 089f8cf (Add login registration pages)
+=======
+>>>>>>> d3d58e0 (Featire specs)
+=======
+>>>>>>> 9d9ff14 (Manifest_cache true)
+=======
+>>>>>>> 59078f6 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 0edd9b7 (Add login registration pages)
+    "line": 93.06
+>>>>>>> c1749d5 (Featire specs)
+=======
+    "line": 99.11
+>>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> b832d45 (Featire specs)
+    "line": 90.68
+=======
+>>>>>>> d96cf3b (Featire specs)
+=======
+=======
+>>>>>>> ee78f39 (Rebased)
+=======
+>>>>>>> 93bdda9 (Featire specs)
+=======
+>>>>>>> 7945032 (Manifest_cache true)
+=======
+>>>>>>> 563720e (Featire specs)
+=======
+>>>>>>> b00b319 (Manifest_cache true)
+=======
+>>>>>>> a9bf83f (Featire specs)
+=======
+>>>>>>> 86d584a (Manifest_cache true)
+=======
+>>>>>>> cb74525 (Add login registration pages)
+=======
+>>>>>>> 904663c (Featire specs)
+=======
+>>>>>>> b459807 (Manifest_cache true)
+=======
+>>>>>>> 5d70f0e (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 8be9029 (Add login registration pages)
+=======
+>>>>>>> e5752db (Featire specs)
+=======
+>>>>>>> 2ba25f7 (Manifest_cache true)
+=======
+>>>>>>> 4a43728 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 7d58507 (Add login registration pages)
+=======
+>>>>>>> d15fe1d (Fix)
+=======
+>>>>>>> b4763a2 (Featire specs)
+=======
+>>>>>>> dcf74e1 (Manifest_cache true)
+=======
+>>>>>>> bcd09ab (Featire specs)
+=======
+>>>>>>> 022e63e (Manifest_cache true)
+=======
+>>>>>>> c006a44 (Featire specs)
+=======
+>>>>>>> 10bdfea (Manifest_cache true)
+=======
+>>>>>>> 0fc3bf0 (Add login registration pages)
+=======
+>>>>>>> 848bfa2 (Featire specs)
+=======
+>>>>>>> d70f030 (Manifest_cache true)
+=======
+>>>>>>> 8879e8b (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> af9487a (Add login registration pages)
+=======
+>>>>>>> 9ca3b84 (Featire specs)
+=======
+>>>>>>> cae047f (Manifest_cache true)
+=======
+>>>>>>> 1173b70 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 140c987 (Add login registration pages)
+=======
+>>>>>>> fefbd35 (Featire specs)
+=======
+>>>>>>> a9e654b (Manifest_cache true)
+=======
+>>>>>>> 1726bb7 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 0c3a150 (Add login registration pages)
+=======
+>>>>>>> 1a9aba9 (Fix)
+=======
+>>>>>>> dacfb20 (Featire specs)
+=======
+>>>>>>> 459d812 (Manifest_cache true)
+=======
+>>>>>>> 93db8b1 (Featire specs)
+=======
+>>>>>>> b746b60 (Manifest_cache true)
+=======
+>>>>>>> 5f76842 (Featire specs)
+=======
+>>>>>>> e965665 (Manifest_cache true)
+=======
+>>>>>>> 01d9256 (Add login registration pages)
+=======
+>>>>>>> ea0650c (Featire specs)
+=======
+>>>>>>> 10b6c72 (Manifest_cache true)
+=======
+>>>>>>> b90c395 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b26425c (Add login registration pages)
+=======
+>>>>>>> a038b16 (Featire specs)
+=======
+>>>>>>> a77cc8a (Manifest_cache true)
+=======
+>>>>>>> 4eeb340 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 845289f (Add login registration pages)
+=======
+>>>>>>> d7fadcd (Featire specs)
+=======
+>>>>>>> 39467b5 (Manifest_cache true)
+=======
+>>>>>>> 1e11288 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 569a007 (Add login registration pages)
+    "line": 90.68
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4a0e3b6 (Manifest_cache true)
+=======
+>>>>>>> 9ec6862 (Add login registration pages)
+=======
+>>>>>>> 3723aad (Featire specs)
+=======
+>>>>>>> 24b58e6 (Manifest_cache true)
+=======
+>>>>>>> 44dc97c (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 57a2e05 (Add login registration pages)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> cacbab9 (Add login registration pages)
+    "line": 95.7
+=======
+=======
+>>>>>>> 96aecde (Manifest_cache true)
+=======
+>>>>>>> c4adab0 (Featire specs)
+=======
+>>>>>>> 2722d07 (Manifest_cache true)
+=======
+>>>>>>> f182ac7 (Add login registration pages)
+=======
+>>>>>>> e54deeb (Featire specs)
+=======
+>>>>>>> 5b6aeb7 (Manifest_cache true)
+=======
+>>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 57da3ff (Add login registration pages)
+=======
+>>>>>>> 3b03895 (Featire specs)
+=======
+>>>>>>> 2c640cf (Manifest_cache true)
+=======
+>>>>>>> f1c3eb0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> a624084 (Add login registration pages)
+=======
+>>>>>>> 94841b5 (Featire specs)
+=======
+>>>>>>> b15044a (Manifest_cache true)
+=======
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 6a9fede (Add login registration pages)
+    "line": 95.79
+>>>>>>> 59d75f9 (Featire specs)
+=======
+=======
+>>>>>>> b5f64c6 (Manifest_cache true)
+=======
+>>>>>>> a2de409 (Featire specs)
+=======
+>>>>>>> 8c7bad7 (Manifest_cache true)
+=======
+>>>>>>> 0005d4a (Add login registration pages)
+=======
+>>>>>>> e54ceb0 (Featire specs)
+=======
+>>>>>>> 1bfc7a6 (Manifest_cache true)
+=======
+>>>>>>> 3c67c09 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 58d403b (Add login registration pages)
+=======
+>>>>>>> 95ebdc2 (Featire specs)
+=======
+>>>>>>> 3b839af (Manifest_cache true)
+=======
+>>>>>>> 2b89c06 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b575a28 (Add login registration pages)
+=======
+>>>>>>> 5a0bcc7 (Featire specs)
+=======
+>>>>>>> 0832698 (Manifest_cache true)
+=======
+>>>>>>> 574967f (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 5caffae (Add login registration pages)
+    "line": 95.73
+>>>>>>> 864f339 (Featire specs)
+=======
+    "line": 99.11
+>>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> b832d45 (Featire specs)
+    "line": 90.68
+=======
+>>>>>>> df37394 (Featire specs)
+=======
+=======
+>>>>>>> 836a973 (Rebased)
+=======
+>>>>>>> 2a25e4c (Featire specs)
+=======
+>>>>>>> 9bebee5 (Manifest_cache true)
+=======
+>>>>>>> 3e9f99d (Featire specs)
+=======
+>>>>>>> 394c6f3 (Manifest_cache true)
+=======
+>>>>>>> 5be567f (Featire specs)
+=======
+>>>>>>> 0b43b18 (Manifest_cache true)
+=======
+>>>>>>> 039806b (Add login registration pages)
+=======
+>>>>>>> 2ee03d3 (Featire specs)
+=======
+>>>>>>> caaaa41 (Manifest_cache true)
+=======
+>>>>>>> 4d210c0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 45f9f35 (Add login registration pages)
+=======
+>>>>>>> 5506bd0 (Featire specs)
+=======
+>>>>>>> 8874887 (Manifest_cache true)
+=======
+>>>>>>> d755be3 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 697ad44 (Add login registration pages)
+=======
+>>>>>>> eaef86a (Fix)
+=======
+>>>>>>> b35d1f8 (Featire specs)
+=======
+>>>>>>> 5518ff0 (Manifest_cache true)
+=======
+>>>>>>> a1fe6da (Featire specs)
+=======
+>>>>>>> 027f794 (Manifest_cache true)
+=======
+>>>>>>> 28fed3c (Featire specs)
+=======
+>>>>>>> e2bfd89 (Manifest_cache true)
+=======
+>>>>>>> aeec696 (Add login registration pages)
+=======
+>>>>>>> ed6aebd (Featire specs)
+=======
+>>>>>>> d1bae53 (Manifest_cache true)
+=======
+>>>>>>> 6e55652 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b5affcb (Add login registration pages)
+=======
+>>>>>>> 64d4167 (Featire specs)
+=======
+>>>>>>> 35d9b13 (Manifest_cache true)
+=======
+>>>>>>> 128e4ae (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 4f7c979 (Add login registration pages)
+=======
+>>>>>>> 13fd74f (Featire specs)
+=======
+>>>>>>> f7f7abc (Manifest_cache true)
+=======
+>>>>>>> 05602ed (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 60943cc (Add login registration pages)
+    "line": 90.68
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4a0e3b6 (Manifest_cache true)
+=======
+>>>>>>> 9ec6862 (Add login registration pages)
+=======
+>>>>>>> 3723aad (Featire specs)
+=======
+>>>>>>> 24b58e6 (Manifest_cache true)
+=======
+>>>>>>> 44dc97c (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 57a2e05 (Add login registration pages)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> cacbab9 (Add login registration pages)
+    "line": 95.7
+=======
+=======
+>>>>>>> 96aecde (Manifest_cache true)
+=======
+>>>>>>> c4adab0 (Featire specs)
+=======
+>>>>>>> 2722d07 (Manifest_cache true)
+=======
+>>>>>>> f182ac7 (Add login registration pages)
+=======
+>>>>>>> e54deeb (Featire specs)
+=======
+>>>>>>> 5b6aeb7 (Manifest_cache true)
+=======
+>>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 57da3ff (Add login registration pages)
+=======
+>>>>>>> 3b03895 (Featire specs)
+=======
+>>>>>>> 2c640cf (Manifest_cache true)
+=======
+>>>>>>> f1c3eb0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> a624084 (Add login registration pages)
+=======
+>>>>>>> 94841b5 (Featire specs)
+=======
+>>>>>>> b15044a (Manifest_cache true)
+=======
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 6a9fede (Add login registration pages)
+    "line": 95.79
+>>>>>>> 59d75f9 (Featire specs)
+=======
+    "line": 99.11
+>>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> b832d45 (Featire specs)
+    "line": 90.68
+=======
+>>>>>>> 715fac2 (Featire specs)
+=======
+=======
+>>>>>>> 1577aeb (Rebased)
+=======
+>>>>>>> 8c32a77 (Featire specs)
+=======
+>>>>>>> 902b803 (Manifest_cache true)
+=======
+>>>>>>> 56ef3ac (Featire specs)
+=======
+>>>>>>> b763f5b (Manifest_cache true)
+=======
+>>>>>>> 113da87 (Featire specs)
+=======
+>>>>>>> be2f578 (Manifest_cache true)
+=======
+>>>>>>> 2471c87 (Add login registration pages)
+=======
+>>>>>>> 8b420cf (Featire specs)
+=======
+>>>>>>> ed97c39 (Manifest_cache true)
+=======
+>>>>>>> 08e2d9c (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 65459e8 (Add login registration pages)
+=======
+>>>>>>> 20256f8 (Featire specs)
+=======
+>>>>>>> 587ce47 (Manifest_cache true)
+=======
+>>>>>>> 57b2b6b (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> cb955a0 (Add login registration pages)
+    "line": 90.68
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4a0e3b6 (Manifest_cache true)
+=======
+>>>>>>> 9ec6862 (Add login registration pages)
+=======
+>>>>>>> 3723aad (Featire specs)
+=======
+>>>>>>> 24b58e6 (Manifest_cache true)
+=======
+>>>>>>> 44dc97c (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 57a2e05 (Add login registration pages)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> cacbab9 (Add login registration pages)
+    "line": 95.7
+=======
+    "line": 99.11
+>>>>>>> d0dc1f1 (Featire specs)
+=======
+>>>>>>> b832d45 (Featire specs)
+    "line": 90.68
+=======
+>>>>>>> 3dc272d (Featire specs)
+    "line": 99.11
+>>>>>>> 752f0c0 (Featire specs)
+=======
+    "line": 90.68
+>>>>>>> bd8bda4 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 022e63e (Manifest_cache true)
+=======
+>>>>>>> c006a44 (Featire specs)
+=======
+>>>>>>> 036bb32 (Manifest_cache true)
+=======
+>>>>>>> 5f79779 (Featire specs)
+=======
+>>>>>>> 027f794 (Manifest_cache true)
+=======
+>>>>>>> 28fed3c (Featire specs)
+=======
+>>>>>>> b746b60 (Manifest_cache true)
+=======
+>>>>>>> 5f76842 (Featire specs)
+=======
+>>>>>>> d8298a1 (Manifest_cache true)
+=======
+>>>>>>> 2fd2048 (Featire specs)
+=======
+    "line": 99.11
+>>>>>>> 4e81ea2 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> df37394 (Featire specs)
+=======
+>>>>>>> a9bf83f (Featire specs)
+=======
+>>>>>>> 86d584a (Manifest_cache true)
+=======
+>>>>>>> 35d17b9 (Manifest_cache true)
+=======
+=======
+    "line": 99.11
+>>>>>>> 4e81ea2 (Featire specs)
+>>>>>>> 715fac2 (Featire specs)
+=======
+>>>>>>> 5be567f (Featire specs)
+=======
+>>>>>>> 0b43b18 (Manifest_cache true)
+=======
+>>>>>>> 10bdfea (Manifest_cache true)
+=======
+>>>>>>> 3e8974a (Manifest_cache true)
+=======
+=======
+    "line": 99.11
+>>>>>>> 4e81ea2 (Featire specs)
+>>>>>>> 3dc272d (Featire specs)
+=======
+>>>>>>> 113da87 (Featire specs)
+=======
+>>>>>>> be2f578 (Manifest_cache true)
+=======
+>>>>>>> e2bfd89 (Manifest_cache true)
+=======
+>>>>>>> e965665 (Manifest_cache true)
+=======
+>>>>>>> bdea3aa (Manifest_cache true)
+=======
+    "line": 90.68
+>>>>>>> aa7b40c (Manifest_cache true)
+=======
+    "line": 99.25
+>>>>>>> 1214e1f (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cb74525 (Add login registration pages)
+=======
+>>>>>>> 904663c (Featire specs)
+=======
+>>>>>>> 852864e (Add login registration pages)
+=======
+>>>>>>> ee5242b (Featire specs)
+=======
+>>>>>>> 039806b (Add login registration pages)
+=======
+>>>>>>> 2ee03d3 (Featire specs)
+=======
+>>>>>>> 0fc3bf0 (Add login registration pages)
+=======
+>>>>>>> 848bfa2 (Featire specs)
+=======
+>>>>>>> 282f108 (Add login registration pages)
+=======
+>>>>>>> 56a05fb (Featire specs)
+=======
+>>>>>>> 2471c87 (Add login registration pages)
+=======
+>>>>>>> 8b420cf (Featire specs)
+=======
+>>>>>>> aeec696 (Add login registration pages)
+=======
+>>>>>>> ed6aebd (Featire specs)
+=======
+>>>>>>> 01d9256 (Add login registration pages)
+=======
+>>>>>>> ea0650c (Featire specs)
+=======
+>>>>>>> 591c3b2 (Add login registration pages)
+=======
+>>>>>>> bc0ff2c (Featire specs)
+=======
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+=======
+    "line": 99.2
+>>>>>>> c336a21 (Fix book_spec decrease quantity and price)
+=======
+    "line": 95.7
+>>>>>>> aca90e3 (Rebased)
+=======
+>>>>>>> 5c33a07 (Featire specs)
+>>>>>>> d96cf3b (Featire specs)
+=======
+=======
+>>>>>>> 926dfe5 (Manifest_cache true)
+=======
+>>>>>>> b459807 (Manifest_cache true)
+=======
+>>>>>>> add330c (Manifest_cache true)
+=======
+>>>>>>> caaaa41 (Manifest_cache true)
+=======
+>>>>>>> d70f030 (Manifest_cache true)
+=======
+>>>>>>> 23e9df9 (Manifest_cache true)
+=======
+>>>>>>> ed97c39 (Manifest_cache true)
+=======
+>>>>>>> d1bae53 (Manifest_cache true)
+=======
+>>>>>>> 10b6c72 (Manifest_cache true)
+=======
+>>>>>>> 07682bd (Manifest_cache true)
+>>>>>>> 5c33a07 (Featire specs)
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+=======
+    "line": 99.2
+>>>>>>> c336a21 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5d70f0e (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 8be9029 (Add login registration pages)
+=======
+>>>>>>> 8a450ee (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 551f3c1 (Add login registration pages)
+=======
+>>>>>>> 4d210c0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 45f9f35 (Add login registration pages)
+=======
+>>>>>>> 8879e8b (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> af9487a (Add login registration pages)
+=======
+>>>>>>> da83d1a (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> db0e854 (Add login registration pages)
+=======
+>>>>>>> 08e2d9c (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 65459e8 (Add login registration pages)
+=======
+>>>>>>> 6e55652 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b5affcb (Add login registration pages)
+=======
+>>>>>>> b90c395 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b26425c (Add login registration pages)
+=======
+>>>>>>> 45f6de0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 055b00f (Add login registration pages)
+>>>>>>> 358c90c (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+>>>>>>> f764a87 (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> 358c90c (Fix book_spec decrease quantity and price)
+>>>>>>> e50f73e (Add login registration pages)
+=======
+>>>>>>> 358c90c (Fix book_spec decrease quantity and price)
+>>>>>>> 03c0867 (Add login registration pages)
+=======
+>>>>>>> 358c90c (Fix book_spec decrease quantity and price)
+>>>>>>> 27ceb6f (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> 730a8ca (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5752db (Featire specs)
+=======
+>>>>>>> a9e66e9 (Featire specs)
+=======
+>>>>>>> 5506bd0 (Featire specs)
+=======
+>>>>>>> 9ca3b84 (Featire specs)
+=======
+>>>>>>> 6d21330 (Featire specs)
+=======
+>>>>>>> 20256f8 (Featire specs)
+=======
+>>>>>>> 64d4167 (Featire specs)
+=======
+>>>>>>> a038b16 (Featire specs)
+=======
+>>>>>>> 9bf2aae (Featire specs)
+>>>>>>> 22ee41c (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> b6a32ab (Add login registration pages)
+=======
+=======
+    "line": 95.7
+>>>>>>> c033601 (Rebased)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d780a52 (Rebased)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+=======
+>>>>>>> d2e6b3c (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c8cdb08 (Manifest_cache true)
+=======
+=======
+>>>>>>> 93bdda9 (Featire specs)
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 7945032 (Manifest_cache true)
+=======
+>>>>>>> 563720e (Featire specs)
+=======
+=======
+>>>>>>> c8cdb08 (Manifest_cache true)
+>>>>>>> b00b319 (Manifest_cache true)
+=======
+=======
+>>>>>>> 2a25e4c (Featire specs)
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 9bebee5 (Manifest_cache true)
+=======
+>>>>>>> 3e9f99d (Featire specs)
+=======
+=======
+>>>>>>> c8cdb08 (Manifest_cache true)
+>>>>>>> 394c6f3 (Manifest_cache true)
+=======
+=======
+>>>>>>> 8c32a77 (Featire specs)
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 902b803 (Manifest_cache true)
+=======
+>>>>>>> 56ef3ac (Featire specs)
+=======
+=======
+>>>>>>> c8cdb08 (Manifest_cache true)
+>>>>>>> b763f5b (Manifest_cache true)
+    "line": 95.7
+=======
+    "line": 99.11
+>>>>>>> d0dc1f1 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a636fda (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 83979de (Featire specs)
+=======
+=======
+>>>>>>> a636fda (Featire specs)
+>>>>>>> 7945032 (Manifest_cache true)
+=======
+>>>>>>> a636fda (Featire specs)
+>>>>>>> 9bebee5 (Manifest_cache true)
+=======
+>>>>>>> a636fda (Featire specs)
+>>>>>>> 902b803 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> 02a399d (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> af057e3 (Featire specs)
+=======
+>>>>>>> bcd09ab (Featire specs)
+=======
+>>>>>>> f5da5ac (Featire specs)
+=======
+>>>>>>> a1fe6da (Featire specs)
+=======
+>>>>>>> 93db8b1 (Featire specs)
+=======
+>>>>>>> f861b82 (Featire specs)
+>>>>>>> b9cc4e9 (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> d0f5c14 (Manifest_cache true)
+=======
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 563720e (Featire specs)
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 3e9f99d (Featire specs)
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 56ef3ac (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 752f0c0 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d2e6b3c (Featire specs)
+<<<<<<< HEAD
+>>>>>>> b3f2049 (Featire specs)
+=======
+=======
+>>>>>>> d2e6b3c (Featire specs)
+>>>>>>> b00b319 (Manifest_cache true)
+=======
+>>>>>>> d2e6b3c (Featire specs)
+>>>>>>> 394c6f3 (Manifest_cache true)
+=======
+>>>>>>> d2e6b3c (Featire specs)
+>>>>>>> b763f5b (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> bd8bda4 (Manifest_cache true)
+>>>>>>> c8cdb08 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e031bce (Manifest_cache true)
+=======
+=======
+>>>>>>> b832d45 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 12bcf81 (Featire specs)
+=======
+=======
+>>>>>>> 86d584a (Manifest_cache true)
+=======
+>>>>>>> 0b43b18 (Manifest_cache true)
+=======
+>>>>>>> be2f578 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> aa7b40c (Manifest_cache true)
+>>>>>>> 4a0e3b6 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 02ba384 (Manifest_cache true)
+=======
+=======
+>>>>>>> 9ec6862 (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 264ef06 (Add login registration pages)
+=======
+=======
+>>>>>>> 904663c (Featire specs)
+=======
+>>>>>>> 2ee03d3 (Featire specs)
+=======
+>>>>>>> 8b420cf (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+>>>>>>> 3723aad (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> fd3e35e (Featire specs)
+=======
+=======
+>>>>>>> b459807 (Manifest_cache true)
+=======
+>>>>>>> caaaa41 (Manifest_cache true)
+=======
+>>>>>>> ed97c39 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+>>>>>>> 24b58e6 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 926dfe5 (Manifest_cache true)
+=======
+=======
+>>>>>>> 44dc97c (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c54769d (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> 8be9029 (Add login registration pages)
+=======
+>>>>>>> 45f9f35 (Add login registration pages)
+=======
+>>>>>>> 65459e8 (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> 730a8ca (Add login registration pages)
+>>>>>>> 57a2e05 (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a1a8477 (Add login registration pages)
+=======
+=======
+>>>>>>> e5752db (Featire specs)
+=======
+>>>>>>> 5506bd0 (Featire specs)
+=======
+>>>>>>> 20256f8 (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 7a02bbe (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15bff2e (Manifest_cache true)
+=======
+>>>>>>> cae047f (Manifest_cache true)
+=======
+>>>>>>> 9617beb (Manifest_cache true)
+=======
+>>>>>>> 35d9b13 (Manifest_cache true)
+=======
+>>>>>>> a77cc8a (Manifest_cache true)
+=======
+>>>>>>> e2d040a (Manifest_cache true)
+>>>>>>> 9c0d812 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 1677b1a (Featire specs)
+=======
+=======
+>>>>>>> 9c0d812 (Featire specs)
+>>>>>>> 2ba25f7 (Manifest_cache true)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+>>>>>>> 8874887 (Manifest_cache true)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+>>>>>>> 587ce47 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> fd6db03 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4b921fb (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 1173b70 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> a2a431e (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 128e4ae (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 4eeb340 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 7718476 (Fix book_spec decrease quantity and price)
+>>>>>>> 00f8b58 (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> 1830ff1 (Manifest_cache true)
+=======
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+>>>>>>> 4a43728 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+>>>>>>> d755be3 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+>>>>>>> 57b2b6b (Fix book_spec decrease quantity and price)
+=======
+=======
+    "line": 99.2
+>>>>>>> bf5c79b (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ccec311 (Add login registration pages)
+=======
+>>>>>>> 140c987 (Add login registration pages)
+=======
+>>>>>>> 2cdd6f4 (Add login registration pages)
+=======
+>>>>>>> 4f7c979 (Add login registration pages)
+=======
+>>>>>>> 845289f (Add login registration pages)
+=======
+>>>>>>> e7ec208 (Add login registration pages)
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+>>>>>>> c346782 (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+>>>>>>> 7d58507 (Add login registration pages)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+>>>>>>> 697ad44 (Add login registration pages)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+>>>>>>> cb955a0 (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> e1f4d17 (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fefbd35 (Featire specs)
+=======
+>>>>>>> 27e3351 (Featire specs)
+=======
+>>>>>>> 13fd74f (Featire specs)
+=======
+>>>>>>> d7fadcd (Featire specs)
+=======
+>>>>>>> 5ce1a6d (Featire specs)
+>>>>>>> cacbab9 (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 551615f (Add login registration pages)
+=======
+=======
+    "line": 95.79
+>>>>>>> a5d032d (Fix)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> b28889f (Fix)
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 5c33a07 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> df37394 (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+=======
+    "line": 99.2
+>>>>>>> c336a21 (Fix book_spec decrease quantity and price)
+>>>>>>> 358c90c (Fix book_spec decrease quantity and price)
+>>>>>>> 82f97ce (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 22ee41c (Add login registration pages)
+>>>>>>> e50f73e (Add login registration pages)
+=======
+=======
+    "line": 95.7
+>>>>>>> c033601 (Rebased)
+>>>>>>> ee78f39 (Rebased)
+=======
+>>>>>>> a636fda (Featire specs)
+>>>>>>> 93bdda9 (Featire specs)
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 7945032 (Manifest_cache true)
+=======
+>>>>>>> d2e6b3c (Featire specs)
+>>>>>>> 563720e (Featire specs)
+=======
+>>>>>>> b00b319 (Manifest_cache true)
+=======
+=======
+>>>>>>> b832d45 (Featire specs)
+>>>>>>> a9bf83f (Featire specs)
+=======
+>>>>>>> 86d584a (Manifest_cache true)
+=======
+=======
+>>>>>>> 9ec6862 (Add login registration pages)
+>>>>>>> cb74525 (Add login registration pages)
+=======
+>>>>>>> 904663c (Featire specs)
+=======
+>>>>>>> b459807 (Manifest_cache true)
+=======
+=======
+>>>>>>> 44dc97c (Fix book_spec decrease quantity and price)
+>>>>>>> 5d70f0e (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 8be9029 (Add login registration pages)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+>>>>>>> e5752db (Featire specs)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+>>>>>>> 2ba25f7 (Manifest_cache true)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+>>>>>>> 4a43728 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 7d58507 (Add login registration pages)
+=======
+=======
+    "line": 95.79
+>>>>>>> a5d032d (Fix)
+>>>>>>> 872e675 (Fix)
+=======
+=======
+=======
+>>>>>>> 845dac1 (Manifest_cache true)
+=======
+=======
+>>>>>>> b4763a2 (Featire specs)
+=======
+>>>>>>> 845dac1 (Manifest_cache true)
+>>>>>>> dcf74e1 (Manifest_cache true)
+=======
+=======
+>>>>>>> b35d1f8 (Featire specs)
+=======
+>>>>>>> 845dac1 (Manifest_cache true)
+>>>>>>> 5518ff0 (Manifest_cache true)
+    "line": 95.79
+=======
+    "line": 99.11
+>>>>>>> d0dc1f1 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9620751 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 5507b42 (Featire specs)
+=======
+=======
+>>>>>>> 9620751 (Featire specs)
+>>>>>>> dcf74e1 (Manifest_cache true)
+=======
+>>>>>>> 9620751 (Featire specs)
+>>>>>>> 5518ff0 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> 02a399d (Manifest_cache true)
+>>>>>>> 845dac1 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e9f3851 (Manifest_cache true)
+=======
+=======
+>>>>>>> bcd09ab (Featire specs)
+=======
+>>>>>>> a1fe6da (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 59d75f9 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> af057e3 (Featire specs)
+=======
+=======
+>>>>>>> 96aecde (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d782a28 (Manifest_cache true)
+=======
+=======
+>>>>>>> c006a44 (Featire specs)
+=======
+>>>>>>> 28fed3c (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 4e81ea2 (Featire specs)
+>>>>>>> c4adab0 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 96394f1 (Featire specs)
+=======
+=======
+>>>>>>> 10bdfea (Manifest_cache true)
+=======
+>>>>>>> e2bfd89 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> aa7b40c (Manifest_cache true)
+>>>>>>> 2722d07 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 35d17b9 (Manifest_cache true)
+=======
+=======
+>>>>>>> f182ac7 (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 852864e (Add login registration pages)
+=======
+=======
+>>>>>>> 848bfa2 (Featire specs)
+=======
+>>>>>>> ed6aebd (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+>>>>>>> e54deeb (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ee5242b (Featire specs)
+=======
+=======
+>>>>>>> d70f030 (Manifest_cache true)
+=======
+>>>>>>> d1bae53 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+>>>>>>> 5b6aeb7 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> add330c (Manifest_cache true)
+=======
+=======
+>>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8a450ee (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> af9487a (Add login registration pages)
+=======
+>>>>>>> b5affcb (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> 730a8ca (Add login registration pages)
+>>>>>>> 57da3ff (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 551f3c1 (Add login registration pages)
+=======
+=======
+>>>>>>> 9ca3b84 (Featire specs)
+=======
+>>>>>>> 64d4167 (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 7a02bbe (Featire specs)
+>>>>>>> 3b03895 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a9e66e9 (Featire specs)
+=======
+=======
+>>>>>>> cae047f (Manifest_cache true)
+=======
+>>>>>>> 35d9b13 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> fd6db03 (Manifest_cache true)
+>>>>>>> 2c640cf (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 15bff2e (Manifest_cache true)
+=======
+=======
+>>>>>>> 1173b70 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 128e4ae (Fix book_spec decrease quantity and price)
+=======
+=======
+    "line": 99.2
+>>>>>>> bf5c79b (Fix book_spec decrease quantity and price)
+>>>>>>> f1c3eb0 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 4b921fb (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> 140c987 (Add login registration pages)
+=======
+>>>>>>> 4f7c979 (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> e1f4d17 (Add login registration pages)
+>>>>>>> a624084 (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ccec311 (Add login registration pages)
+=======
+=======
+>>>>>>> fefbd35 (Featire specs)
+=======
+>>>>>>> 13fd74f (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 4552227 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b40a04e (Manifest_cache true)
+=======
+>>>>>>> 39467b5 (Manifest_cache true)
+=======
+>>>>>>> 307ac6e (Manifest_cache true)
+>>>>>>> 94841b5 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 6fba6be (Featire specs)
+=======
+=======
+>>>>>>> 94841b5 (Featire specs)
+>>>>>>> a9e654b (Manifest_cache true)
+=======
+>>>>>>> 94841b5 (Featire specs)
+>>>>>>> f7f7abc (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> 998f08d (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e733663 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 1e11288 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> cea736b (Fix book_spec decrease quantity and price)
+>>>>>>> b15044a (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> 6c71f00 (Manifest_cache true)
+=======
+=======
+>>>>>>> b15044a (Manifest_cache true)
+>>>>>>> 1726bb7 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b15044a (Manifest_cache true)
+>>>>>>> 05602ed (Fix book_spec decrease quantity and price)
+=======
+=======
+    "line": 99.2
+>>>>>>> 066fd0b (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3a43955 (Add login registration pages)
+=======
+>>>>>>> 569a007 (Add login registration pages)
+=======
+>>>>>>> 61908af (Add login registration pages)
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+>>>>>>> bc08537 (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
+>>>>>>> 0c3a150 (Add login registration pages)
+=======
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
+>>>>>>> 60943cc (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> 26b462d (Add login registration pages)
+>>>>>>> 6a9fede (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8c3e531 (Add login registration pages)
+=======
+=======
+    "line": 95.73
+>>>>>>> 7c4ea7f (Fix)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 1d59aaa (Fix)
+=======
+=======
+<<<<<<< HEAD
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 5c33a07 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 715fac2 (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+=======
+    "line": 99.2
+>>>>>>> c336a21 (Fix book_spec decrease quantity and price)
+>>>>>>> 358c90c (Fix book_spec decrease quantity and price)
+>>>>>>> aaa8a19 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 22ee41c (Add login registration pages)
+>>>>>>> 03c0867 (Add login registration pages)
+=======
+=======
+    "line": 95.7
+>>>>>>> c033601 (Rebased)
+>>>>>>> 836a973 (Rebased)
+=======
+>>>>>>> a636fda (Featire specs)
+>>>>>>> 2a25e4c (Featire specs)
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 9bebee5 (Manifest_cache true)
+=======
+>>>>>>> d2e6b3c (Featire specs)
+>>>>>>> 3e9f99d (Featire specs)
+=======
+>>>>>>> 394c6f3 (Manifest_cache true)
+=======
+=======
+>>>>>>> b832d45 (Featire specs)
+>>>>>>> 5be567f (Featire specs)
+=======
+>>>>>>> 0b43b18 (Manifest_cache true)
+=======
+=======
+>>>>>>> 9ec6862 (Add login registration pages)
+>>>>>>> 039806b (Add login registration pages)
+=======
+>>>>>>> 2ee03d3 (Featire specs)
+=======
+>>>>>>> caaaa41 (Manifest_cache true)
+=======
+=======
+>>>>>>> 44dc97c (Fix book_spec decrease quantity and price)
+>>>>>>> 4d210c0 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 45f9f35 (Add login registration pages)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+>>>>>>> 5506bd0 (Featire specs)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+>>>>>>> 8874887 (Manifest_cache true)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+>>>>>>> d755be3 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> cacbab9 (Add login registration pages)
+>>>>>>> 697ad44 (Add login registration pages)
+=======
+=======
+    "line": 95.79
+>>>>>>> a5d032d (Fix)
+>>>>>>> d15fe1d (Fix)
+=======
+>>>>>>> 9620751 (Featire specs)
+>>>>>>> b4763a2 (Featire specs)
+=======
+>>>>>>> dcf74e1 (Manifest_cache true)
+=======
+>>>>>>> bcd09ab (Featire specs)
+=======
+=======
+>>>>>>> 96aecde (Manifest_cache true)
+>>>>>>> 022e63e (Manifest_cache true)
+=======
+>>>>>>> c006a44 (Featire specs)
+=======
+>>>>>>> 10bdfea (Manifest_cache true)
+=======
+=======
+>>>>>>> f182ac7 (Add login registration pages)
+>>>>>>> 0fc3bf0 (Add login registration pages)
+=======
+>>>>>>> 848bfa2 (Featire specs)
+=======
+>>>>>>> d70f030 (Manifest_cache true)
+=======
+=======
+>>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
+>>>>>>> 8879e8b (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> af9487a (Add login registration pages)
+=======
+>>>>>>> 9ca3b84 (Featire specs)
+=======
+>>>>>>> cae047f (Manifest_cache true)
+=======
+>>>>>>> 1173b70 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 140c987 (Add login registration pages)
+=======
+>>>>>>> 94841b5 (Featire specs)
+>>>>>>> fefbd35 (Featire specs)
+=======
+>>>>>>> b15044a (Manifest_cache true)
+>>>>>>> a9e654b (Manifest_cache true)
+=======
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
+>>>>>>> 1726bb7 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 0c3a150 (Add login registration pages)
+=======
+=======
+    "line": 95.73
+>>>>>>> 7c4ea7f (Fix)
+>>>>>>> 0b5b269 (Fix)
+=======
+=======
+=======
+>>>>>>> 866aee4 (Manifest_cache true)
+=======
+=======
+>>>>>>> dacfb20 (Featire specs)
+=======
+>>>>>>> 866aee4 (Manifest_cache true)
+>>>>>>> 459d812 (Manifest_cache true)
+    "line": 95.73
+=======
+    "line": 99.11
+>>>>>>> d0dc1f1 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9dc109d (Featire specs)
+<<<<<<< HEAD
+>>>>>>> d6f7da8 (Featire specs)
+=======
+=======
+>>>>>>> 9dc109d (Featire specs)
+>>>>>>> 459d812 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> 02a399d (Manifest_cache true)
+>>>>>>> 866aee4 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ab67c96 (Manifest_cache true)
+=======
+=======
+>>>>>>> 93db8b1 (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> 864f339 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5da5ac (Featire specs)
+=======
+=======
+>>>>>>> b5f64c6 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 036bb32 (Manifest_cache true)
+=======
+=======
+>>>>>>> 5f76842 (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 4e81ea2 (Featire specs)
+>>>>>>> a2de409 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5f79779 (Featire specs)
+=======
+=======
+>>>>>>> e965665 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> aa7b40c (Manifest_cache true)
+>>>>>>> 8c7bad7 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3e8974a (Manifest_cache true)
+=======
+=======
+>>>>>>> 0005d4a (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 282f108 (Add login registration pages)
+=======
+=======
+>>>>>>> ea0650c (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+>>>>>>> e54ceb0 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 56a05fb (Featire specs)
+=======
+=======
+>>>>>>> 10b6c72 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+>>>>>>> 1bfc7a6 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 23e9df9 (Manifest_cache true)
+=======
+=======
+>>>>>>> 3c67c09 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> da83d1a (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> b26425c (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> 730a8ca (Add login registration pages)
+>>>>>>> 58d403b (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> db0e854 (Add login registration pages)
+=======
+=======
+>>>>>>> a038b16 (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 7a02bbe (Featire specs)
+>>>>>>> 95ebdc2 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6d21330 (Featire specs)
+=======
+=======
+>>>>>>> a77cc8a (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> fd6db03 (Manifest_cache true)
+>>>>>>> 3b839af (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9617beb (Manifest_cache true)
+=======
+=======
+>>>>>>> 4eeb340 (Fix book_spec decrease quantity and price)
+=======
+=======
+    "line": 99.2
+>>>>>>> bf5c79b (Fix book_spec decrease quantity and price)
+>>>>>>> 2b89c06 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a2a431e (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> 845289f (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> e1f4d17 (Add login registration pages)
+>>>>>>> b575a28 (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2cdd6f4 (Add login registration pages)
+=======
+=======
+>>>>>>> d7fadcd (Featire specs)
+=======
+=======
+    "line": 99.11
+>>>>>>> 4552227 (Featire specs)
+>>>>>>> 5a0bcc7 (Featire specs)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 27e3351 (Featire specs)
+=======
+=======
+>>>>>>> 39467b5 (Manifest_cache true)
+=======
+=======
+    "line": 90.68
+>>>>>>> 998f08d (Manifest_cache true)
+>>>>>>> 0832698 (Manifest_cache true)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> b40a04e (Manifest_cache true)
+=======
+=======
+>>>>>>> 1e11288 (Fix book_spec decrease quantity and price)
+=======
+=======
+    "line": 99.2
+>>>>>>> 066fd0b (Fix book_spec decrease quantity and price)
+>>>>>>> 574967f (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e733663 (Fix book_spec decrease quantity and price)
+=======
+=======
+>>>>>>> 569a007 (Add login registration pages)
+=======
+=======
+    "line": 99.25
+>>>>>>> 26b462d (Add login registration pages)
+>>>>>>> 5caffae (Add login registration pages)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3a43955 (Add login registration pages)
+=======
+=======
+    "line": 93.06
+>>>>>>> 8f1bc14 (Fix)
+<<<<<<< HEAD
+>>>>>>> 1ac6be1 (Fix)
+=======
+    "line": 90.68
+>>>>>>> cde4834 (Manifest_cache true)
+=======
+=======
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 5c33a07 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 3dc272d (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+=======
+    "line": 99.2
+>>>>>>> c336a21 (Fix book_spec decrease quantity and price)
+>>>>>>> 358c90c (Fix book_spec decrease quantity and price)
+>>>>>>> d59dfbb (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 22ee41c (Add login registration pages)
+>>>>>>> 27ceb6f (Add login registration pages)
+=======
+=======
+    "line": 95.7
+>>>>>>> c033601 (Rebased)
+>>>>>>> 1577aeb (Rebased)
+=======
+>>>>>>> a636fda (Featire specs)
+>>>>>>> 8c32a77 (Featire specs)
+=======
+>>>>>>> b9cc4e9 (Manifest_cache true)
+>>>>>>> 902b803 (Manifest_cache true)
+=======
+>>>>>>> d2e6b3c (Featire specs)
+>>>>>>> 56ef3ac (Featire specs)
+=======
+>>>>>>> b763f5b (Manifest_cache true)
+=======
+=======
+>>>>>>> b832d45 (Featire specs)
+>>>>>>> 113da87 (Featire specs)
+=======
+>>>>>>> be2f578 (Manifest_cache true)
+=======
+=======
+>>>>>>> 9ec6862 (Add login registration pages)
+>>>>>>> 2471c87 (Add login registration pages)
+=======
+>>>>>>> 8b420cf (Featire specs)
+=======
+>>>>>>> ed97c39 (Manifest_cache true)
+=======
+=======
+>>>>>>> 44dc97c (Fix book_spec decrease quantity and price)
+>>>>>>> 08e2d9c (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 65459e8 (Add login registration pages)
+=======
+>>>>>>> 9c0d812 (Featire specs)
+>>>>>>> 20256f8 (Featire specs)
+=======
+>>>>>>> 00f8b58 (Manifest_cache true)
+>>>>>>> 587ce47 (Manifest_cache true)
+=======
+>>>>>>> c2e2926 (Fix book_spec decrease quantity and price)
+>>>>>>> 57b2b6b (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> cacbab9 (Add login registration pages)
+>>>>>>> cb955a0 (Add login registration pages)
+=======
+=======
+    "line": 95.79
+>>>>>>> a5d032d (Fix)
+>>>>>>> eaef86a (Fix)
+=======
+>>>>>>> 9620751 (Featire specs)
+>>>>>>> b35d1f8 (Featire specs)
+=======
+>>>>>>> 5518ff0 (Manifest_cache true)
+=======
+>>>>>>> a1fe6da (Featire specs)
+=======
+=======
+>>>>>>> 96aecde (Manifest_cache true)
+>>>>>>> 027f794 (Manifest_cache true)
+=======
+>>>>>>> 28fed3c (Featire specs)
+=======
+>>>>>>> e2bfd89 (Manifest_cache true)
+=======
+=======
+>>>>>>> f182ac7 (Add login registration pages)
+>>>>>>> aeec696 (Add login registration pages)
+=======
+>>>>>>> ed6aebd (Featire specs)
+=======
+>>>>>>> d1bae53 (Manifest_cache true)
+=======
+=======
+>>>>>>> 2d71369 (Fix book_spec decrease quantity and price)
+>>>>>>> 6e55652 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b5affcb (Add login registration pages)
+=======
+>>>>>>> 64d4167 (Featire specs)
+=======
+>>>>>>> 35d9b13 (Manifest_cache true)
+=======
+>>>>>>> 128e4ae (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 4f7c979 (Add login registration pages)
+=======
+>>>>>>> 94841b5 (Featire specs)
+>>>>>>> 13fd74f (Featire specs)
+=======
+>>>>>>> b15044a (Manifest_cache true)
+>>>>>>> f7f7abc (Manifest_cache true)
+=======
+>>>>>>> 1ee9375 (Fix book_spec decrease quantity and price)
+>>>>>>> 05602ed (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 60943cc (Add login registration pages)
+=======
+=======
+    "line": 95.73
+>>>>>>> 7c4ea7f (Fix)
+>>>>>>> 1a9aba9 (Fix)
+=======
+>>>>>>> 9dc109d (Featire specs)
+>>>>>>> dacfb20 (Featire specs)
+=======
+>>>>>>> 459d812 (Manifest_cache true)
+=======
+>>>>>>> 93db8b1 (Featire specs)
+=======
+=======
+>>>>>>> b5f64c6 (Manifest_cache true)
+>>>>>>> b746b60 (Manifest_cache true)
+=======
+>>>>>>> 5f76842 (Featire specs)
+=======
+>>>>>>> e965665 (Manifest_cache true)
+=======
+=======
+>>>>>>> 0005d4a (Add login registration pages)
+>>>>>>> 01d9256 (Add login registration pages)
+=======
+>>>>>>> ea0650c (Featire specs)
+=======
+>>>>>>> 10b6c72 (Manifest_cache true)
+=======
+=======
+>>>>>>> 3c67c09 (Fix book_spec decrease quantity and price)
+>>>>>>> b90c395 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> b26425c (Add login registration pages)
+=======
+>>>>>>> a038b16 (Featire specs)
+=======
+>>>>>>> a77cc8a (Manifest_cache true)
+=======
+>>>>>>> 4eeb340 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 845289f (Add login registration pages)
+=======
+>>>>>>> d7fadcd (Featire specs)
+=======
+>>>>>>> 39467b5 (Manifest_cache true)
+=======
+>>>>>>> 1e11288 (Fix book_spec decrease quantity and price)
+=======
+>>>>>>> 569a007 (Add login registration pages)
+=======
+=======
+    "line": 93.06
+>>>>>>> 8f1bc14 (Fix)
+>>>>>>> 49e3b70 (Fix)
+=======
+=======
+=======
+>>>>>>> e991554 (Manifest_cache true)
+    "line": 93.06
+=======
+    "line": 99.11
+>>>>>>> d0dc1f1 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 65f3409 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 78d0719 (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> 02a399d (Manifest_cache true)
+>>>>>>> e991554 (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> 6edce20 (Manifest_cache true)
+=======
+=======
+=======
+    "line": 99.11
+>>>>>>> 752f0c0 (Featire specs)
+>>>>>>> c1749d5 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> f861b82 (Featire specs)
+=======
+=======
+>>>>>>> 3c386ca (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> d8298a1 (Manifest_cache true)
+=======
+=======
+=======
+    "line": 99.11
+>>>>>>> 4e81ea2 (Featire specs)
+>>>>>>> 1cb2e82 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 2fd2048 (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> aa7b40c (Manifest_cache true)
+>>>>>>> fe7e312 (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> bdea3aa (Manifest_cache true)
+=======
+=======
+>>>>>>> fb10fe4 (Add login registration pages)
+<<<<<<< HEAD
+>>>>>>> 591c3b2 (Add login registration pages)
+=======
+=======
+=======
+    "line": 99.11
+>>>>>>> 08edf50 (Featire specs)
+>>>>>>> 8577deb (Featire specs)
+<<<<<<< HEAD
+>>>>>>> bc0ff2c (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> 183b6c5 (Manifest_cache true)
+>>>>>>> 94d9078 (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> 07682bd (Manifest_cache true)
+=======
+=======
+>>>>>>> 7b112c2 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+>>>>>>> 45f6de0 (Fix book_spec decrease quantity and price)
+=======
+=======
+=======
+    "line": 99.25
+>>>>>>> 730a8ca (Add login registration pages)
+>>>>>>> 69eb97e (Add login registration pages)
+<<<<<<< HEAD
+>>>>>>> 055b00f (Add login registration pages)
+=======
+=======
+=======
+    "line": 99.11
+>>>>>>> 7a02bbe (Featire specs)
+>>>>>>> ebe5361 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 9bf2aae (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> fd6db03 (Manifest_cache true)
+>>>>>>> 2956182 (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> e2d040a (Manifest_cache true)
+=======
+=======
+=======
+    "line": 99.2
+>>>>>>> bf5c79b (Fix book_spec decrease quantity and price)
+>>>>>>> a455e8a (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+>>>>>>> 7718476 (Fix book_spec decrease quantity and price)
+=======
+=======
+=======
+    "line": 99.25
+>>>>>>> e1f4d17 (Add login registration pages)
+>>>>>>> 089f8cf (Add login registration pages)
+<<<<<<< HEAD
+>>>>>>> e7ec208 (Add login registration pages)
+=======
+=======
+=======
+    "line": 99.11
+>>>>>>> 4552227 (Featire specs)
+>>>>>>> d3d58e0 (Featire specs)
+<<<<<<< HEAD
+>>>>>>> 5ce1a6d (Featire specs)
+=======
+=======
+=======
+    "line": 90.68
+>>>>>>> 998f08d (Manifest_cache true)
+>>>>>>> 9d9ff14 (Manifest_cache true)
+<<<<<<< HEAD
+>>>>>>> 307ac6e (Manifest_cache true)
+=======
+=======
+=======
+    "line": 99.2
+>>>>>>> 066fd0b (Fix book_spec decrease quantity and price)
+>>>>>>> 59078f6 (Fix book_spec decrease quantity and price)
+<<<<<<< HEAD
+>>>>>>> cea736b (Fix book_spec decrease quantity and price)
+=======
+=======
+=======
+    "line": 99.25
+>>>>>>> 26b462d (Add login registration pages)
+>>>>>>> 0edd9b7 (Add login registration pages)
+<<<<<<< HEAD
+>>>>>>> 61908af (Add login registration pages)
+=======
+=======
+    "line": 92.44
+>>>>>>> 3bdfaec (After billing and shipping change redirect to prev path)
+<<<<<<< HEAD
+>>>>>>> 20094c5 (After billing and shipping change redirect to prev path)
+=======
+=======
+    "line": 89.69
+>>>>>>> 708d0c9 (Checkout Add CreditCard Address Delivery method)
+<<<<<<< HEAD
+>>>>>>> 081d138 (Checkout Add CreditCard Address Delivery method)
+=======
+=======
+    "line": 88.25
+>>>>>>> 25f3c50 (Add sort orders)
+>>>>>>> aa4fb26 (Add sort orders)
+  }
+}
