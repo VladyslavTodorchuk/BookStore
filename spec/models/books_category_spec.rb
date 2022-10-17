@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe BooksCategory, type: :model do
   describe 'books_categories' do
     context 'when validations' do

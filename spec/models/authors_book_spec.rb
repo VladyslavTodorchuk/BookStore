@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe AuthorsBook, type: :model do
   describe 'authors_book' do
     context 'when validations' do

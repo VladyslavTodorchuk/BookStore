@@ -1,23 +1,21 @@
-require 'rails_helper'
-
 RSpec.describe BookDecorator do
   subject(:decorated_object) { described_class.new(book) }
 
   let(:book) do
-    FactoryBot.create(:book, price_cents: 123, authors: authors, categories: categories,
-                             categories_count: 0,
-                             authors_count: 0)
+    create(:book, price_cents: 123, authors: authors, categories: categories,
+                  categories_count: 0,
+                  authors_count: 0)
   end
   let(:authors) do
     [
-      FactoryBot.create(:author, first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name),
-      FactoryBot.create(:author, first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
+      create(:author, first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name),
+      create(:author, first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
     ]
   end
   let(:categories) do
     [
-      FactoryBot.create(:category, name: FFaker::Book.genre),
-      FactoryBot.create(:category, name: FFaker::Book.genre)
+      create(:category, name: FFaker::Book.genre),
+      create(:category, name: FFaker::Book.genre)
     ]
   end
 

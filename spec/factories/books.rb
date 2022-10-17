@@ -6,7 +6,7 @@ FactoryBot.define do
     materials { FFaker::Book.cover(:format) }
     year_of_publication { FFaker::Number.rand(1900..2022) }
     dimensions { FFaker::Book.cover(:size) }
-    quantity { FFaker::Number.rand(0..10) }
+    quantity { FFaker::Number.rand(2..10) }
 
     transient do
       categories_count { 1 }
