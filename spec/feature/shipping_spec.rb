@@ -3,7 +3,7 @@ RSpec.describe 'Shipping', type: :feature do
   include_context 'with api request global before and after hooks'
 
   let(:user) { FactoryBot.create(:user) }
-  let(:attributes_for) { attributes_for(:shipping) }
+  let(:shipping_attributes) { attributes_for(:shipping) }
 
   describe '#fill_in' do
     it 'fill in shipping' do
@@ -13,25 +13,25 @@ RSpec.describe 'Shipping', type: :feature do
 
       within('div', id: 'shipping') do
         find_all('div', class: 'form-group')[0] do
-          fill_in :first_name, with: attributes_for[:first_name]
+          fill_in :first_name, with: shipping_attributes[:first_name]
         end
         find_all('div', class: 'form-group')[1] do
-          fill_in :last_name, with: attributes_for[:last_name]
+          fill_in :last_name, with: shipping_attributes[:last_name]
         end
         find_all('div', class: 'form-group')[2] do
-          fill_in :address, with: attributes_for[:address]
+          fill_in :address, with: shipping_attributes[:address]
         end
         find_all('div', class: 'form-group')[3] do
-          fill_in :city, with: attributes_for[:city]
+          fill_in :city, with: shipping_attributes[:city]
         end
         find_all('div', class: 'form-group')[4] do
-          fill_in :zip, with: attributes_for[:zip]
+          fill_in :zip, with: shipping_attributes[:zip]
         end
         find_all('div', class: 'form-group')[5] do
-          fill_in :country, with: attributes_for[:country]
+          fill_in :country, with: shipping_attributes[:country]
         end
         find_all('div', class: 'form-group')[6] do
-          fill_in :phone, with: attributes_for[:phone]
+          fill_in :phone, with: shipping_attributes[:phone]
         end
         click_on I18n.t('settings.save')
       end

@@ -1,5 +1,5 @@
-RSpec.describe Billing, type: :model do
-  describe 'billing' do
+RSpec.describe Address, type: :model do
+  describe 'address' do
     context 'when validations' do
       it { is_expected.to allow_values(FFaker::Name.first_name).for(:first_name) }
       it { is_expected.to allow_values(FFaker::Name.first_name).for(:last_name) }
