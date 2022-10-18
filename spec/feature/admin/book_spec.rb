@@ -13,15 +13,16 @@ RSpec.describe 'Book' do
       quantity: FFaker::Number.rand(2..5) }
   end
 
+  let(:old_title) { book.title }
+  let(:new_title) { FFaker::Book.title }
+
   before do
     sign_in(create(:admin_user), :admin_user)
-
-    book
-
-    visit 'admin/books'
   end
 
-  it 'can create an category' do
+  it 'can create an book' do
+    visit 'admin/books'
+
     click_link('New Book')
 
     fill_in 'book[title]', with: params[:title]
@@ -32,30 +33,32 @@ RSpec.describe 'Book' do
     fill_in 'book[dimensions]', with: params[:dimensions]
     fill_in 'book[quantity]', with: params[:quantity]
 
-    click_button('Create Book')
-
-    expect(page).to have_content(params[:title])
+    expect { click_button('Create Book') }.to change(Book, :count).from(0).to(1)
   end
 
   it 'can delete an book' do
-    click_link('Delete')
+    book
+    visit 'admin/books'
 
-    expect(page).not_to have_content(book.title)
+    expect { click_link('Delete') }.to change(Book, :count).from(1).to(0)
   end
 
   it 'can view an book' do
+    book
+    visit 'admin/books'
+
     click_link('View')
 
     expect(page).to have_content(book.title)
   end
 
   it 'can edit an book' do
+    book
+    visit 'admin/books'
+
     click_link('Edit')
+    fill_in 'book[title]', with: new_title
 
-    fill_in 'book[title]', with: 'New title'
-
-    click_button('Update Book')
-
-    expect(page).to have_content('New title')
+    expect { click_button('Update Book') }.to change { book.reload.title }.from(old_title).to(new_title)
   end
 end

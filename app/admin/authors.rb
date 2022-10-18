@@ -26,8 +26,6 @@ ActiveAdmin.register Author do
     f.inputs do
       f.input :first_name
       f.input :last_name
-
-      f.input :books, as: :select, collection: Book.all
     end
 
     f.actions

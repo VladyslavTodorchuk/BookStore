@@ -1,6 +1,6 @@
 RSpec.describe 'User', type: :feature do
-  let(:user) { build(:user, email: 'test.rspec@rspec.ua') }
-  let(:user_second) { create(:user, email: 'test.rspec-test@rspec.ua') }
+  let(:user) { build(:user) }
+  let(:user_second) { create(:user) }
 
   describe '#sing_up' do
     context 'when successfully sing_up' do
@@ -27,7 +27,7 @@ RSpec.describe 'User', type: :feature do
 
         within 'form', class: 'new_user', id: 'new_user' do
           fill_in 'user_email', with: FFaker::Internet.email
-          fill_in 'user_password', with: 'wrong'
+          fill_in 'user_password', with: user.password
           fill_in 'user_password_confirmation', with: 'wrong'
 
           click_on I18n.t('header.sing_up')
