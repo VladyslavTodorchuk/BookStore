@@ -16,8 +16,6 @@ class OrdersController < ApplicationController
       update_delivery_method(params[:order][:delivery_id], order)
     elsif params[:order][:address_id]
       update_address(params[:order][:address_id], order)
-    elsif params[:order][:billing] || params[:order][:shipping]
-      update_user_address(params[:order])
     end
   end
 

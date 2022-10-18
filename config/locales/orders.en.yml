@@ -7,8 +7,14 @@ en:
       price:
         acs: 'Price: Low to High'
         desc: 'Price: High to Low'
+      status:
+        confirm: 'Status: Confirmed'
+        canceled: 'Status: Canceled'
+        delivered: 'Status: Delivered'
+        in_delivery: 'Status: In Delivery'
     number: 'Number'
     completed_at: 'Completed at'
     status: 'Status'
     total: 'Total'
+
 

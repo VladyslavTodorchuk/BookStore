@@ -14,10 +14,11 @@
         %p.general-address.mb-30
           = @order.created_at
       %p.general-address
+        %h3.general-subtitle= t('checkout.header.address')
         = @order.address.decorate.full_name
-        %span.general-edit= t('checkout.confirm_page.edit')
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :address), class: 'general-edit'
         %br
-        = @order.address.street
+        = @order.address.address
         %br
         = @order.address.city
         = @order.address.zip

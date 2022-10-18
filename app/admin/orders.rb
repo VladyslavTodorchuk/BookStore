@@ -29,7 +29,7 @@ ActiveAdmin.register Order do
       f.input :user_id
       f.input :coupon_id
       f.input :total_price
-      f.input :status, as: :select, collection: %i[confirmed delivered canceled]
+      f.input :status, as: :select, collection: [:confirmed, :delivered, :canceled, 'in delivery']
       f.input :delivery_id
       f.input :books
     end

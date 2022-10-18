@@ -13,11 +13,13 @@
       %li
         %a{href: orders_path(status: params[:status], sort: 'total_price DESC')}= t('orders.sorting.price.desc')
       %li
-        %a{href: orders_path(status: 'confirmed', sort: params[:sort])} Status: Confirmed
+        %a{href: orders_path(status: 'confirmed', sort: params[:sort])}= t('orders.sorting.status.confirm')
       %li
-        %a{href: orders_path(status: 'canceled', sort: params[:sort])} Status: Canceled
+        %a{href: orders_path(status: 'canceled', sort: params[:sort])}= t('orders.sorting.status.canceled')
       %li
-        %a{href: orders_path(status: 'delivered', sort: params[:sort])} Status: Delivered
+        %a{href: orders_path(status: 'delivered', sort: params[:sort])}= t('orders.sorting.status.delivered')
+      %li
+        %a{href: orders_path(status: 'in delivery', sort: params[:sort])}= t('orders.sorting.status.in_delivery')
   .visible-xs
     - @orders.each do |order|
       .general-cart-item.divider-lg-bottom.pt-0
@@ -40,6 +42,8 @@
                 %span.font-16.fw-300.text-success= order.status.capitalize
               - elsif order.status.eql?('confirmed')
                 %span.font-16.fw-300= order.status.capitalize
+              - elsif order.status.eql?('in delivery')
+                %span.font-16.fw-300.text-warning= order.status.capitalize
               - else
                 %span.font-16.fw-300.text-danger= order.status.capitalize
           %tr
@@ -73,6 +77,8 @@
                 %span.font-16.fw-300.text-success= order.status.capitalize
               - elsif order.status.eql?('confirmed')
                 %span.font-16.fw-300= order.status.capitalize
+              - elsif order.status.eql?('in delivery')
+                %span.font-16.fw-300.text-warning= order.status.capitalize
               - else
                 %span.font-16.fw-300.text-danger= order.status.capitalize
             %td

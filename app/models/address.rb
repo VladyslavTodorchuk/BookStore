@@ -11,6 +11,7 @@ class Address < ApplicationRecord
   VALIDATES_ZIP_LENGTH_MAX = 10
 
   belongs_to :user
+  has_many :orders, dependent: :nullify
 
   validates :first_name, :last_name,
             length: { maximum: VALIDATES_NAME_LENGTH_MAX },

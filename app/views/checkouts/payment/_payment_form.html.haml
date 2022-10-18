@@ -1,24 +1,20 @@
 = form_for(modle: credit_card, url: checkout_path(step: :payment), method: :put) do |f|
   .form-group
     %label.control-label.input-label{for: "cardNumber"}= t('credit_card.code')
-    = f.text_field :code, type: "text", placeholder: "Card Number", class: 'form-control',
-      input_html: { 'data-mask': Constants::CARD_CODE_FORMAT }, include_blank: false
+    = f.text_field :code, type: "text", placeholder: "Card Number", class: 'form-control', include_blank: false
   .row
     .col-sm-6
       .form-group
         %label.control-label.input-label{for: "cardName"}= t('credit_card.name')
-        = f.text_field :name, type: "text", placeholder: "Name on Card", class: 'form-control',
-      input_html: { 'data-mask': Constants::CARD_NAME_FORMAT }, include_blank: false
+        = f.text_field :name, type: "text", placeholder: "Name on Card", class: 'form-control', include_blank: false
     .col-sm-3
       .form-group
         %label.control-label.input-label{for: "firstName"}= t('credit_card.date')
-        = f.text_field :expiration_date, type: "text", placeholder: "MM / YY", class: 'form-control',
-      input_html: { 'data-mask': Constants::CARD_DATE_FORMAT }, include_blank: false
+        = f.text_field :expiration_date, type: "text", placeholder: "MM / YY", class: 'form-control', include_blank: false
     .col-sm-3
       .form-group.relative
         %label.control-label.input-label{for: "firstName"}= t('credit_card.cvv')
-        = f.text_field :cvv, type: "text", placeholder: "CVV", class: 'form-control',
-      input_html: { 'data-mask': Constants::CARD_CVV_FORMAT }, include_blank: false
+        = f.text_field :cvv, type: "text", placeholder: "CVV", class: 'form-control', include_blank: false
         %i.fa.fa-question-circle.general-form-help
     .col-sm-3
       .text-center
