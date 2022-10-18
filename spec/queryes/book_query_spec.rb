@@ -57,7 +57,6 @@ RSpec.describe BookQuery do
 
     context 'when sort by Newest' do
       let(:book1) { create(:book, created_at: date1) }
-
       let(:book2) { create(:book, created_at: date2) }
 
       let(:result) { date1 }

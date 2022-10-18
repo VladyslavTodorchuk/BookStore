@@ -12,7 +12,7 @@ RSpec.describe 'Book', type: :feature do
   end
   let(:book) { create(:book).decorate }
 
-  describe '#show book' do
+  describe '#show' do
     it 'show books info' do
       visit "books/#{book.id}"
 
@@ -61,7 +61,7 @@ RSpec.describe 'Book', type: :feature do
     end
   end
 
-  describe '#catalog' do
+  describe '#index' do
     describe 'filter by category' do
       before do
         category_one.books.create(params)
