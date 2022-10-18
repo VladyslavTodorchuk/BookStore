@@ -14,17 +14,18 @@
         %p.general-address.mb-30
           = @order.created_at
       %p.general-address
-        John Doe
+        = @order.address.decorate.full_name
         %span.general-edit= t('checkout.confirm_page.edit')
         %br
-        44 Fifth Ave v231
+        = @order.address.street
         %br
-        New York NY 1001
+        = @order.address.city
+        = @order.address.zip
         %br
-        United States
+        = @order.address.country
         %br
         = t('checkout.confirm_page.phone')
-        +16507599755
+        = @order.address.phone
     .col-sm-6.hidden-xs.text-right
       %p.general-order-number.mb-0
         = t('checkout.complete_page.order')

@@ -17,14 +17,17 @@
           .visible-xs.visible-sm
             %h3.general-subtitle.mt-0= t("settings.shipping")
           = render 'checkouts/address/address_form', address: @user_shipping
-          .form-group.checkbox
-            = form_for @order, url: order_path(@order.id), method: :put do |f|
+    %div.container
+      = form_for @order, url: order_path(@order.id), method: :put do |f|
+        .row
+          .col-md-5.mb-40
+            .form-group.checkbox
               %label.checkbox-label
                 = f.check_box :address_id, { class: 'checkbox-input', hidden: true }, @user_billing.id, @user_shipping.id
                 %span.checkbox-icon
                   %i.fa.fa-check
                 %span.checkbox-text= t('checkout.address_page.user_billing')
-      .general-text-align.mb-60
-        = render partial: 'summary'
-      .text-center
-        = button_to t('checkout.save_continue'), class: 'btn btn-default center-block mb-20'
+        .general-text-align.mb-60
+          = render partial: 'summary'
+        .text-center
+          = f.submit t('checkout.save_continue'), class: 'btn btn-default center-block mb-20'
