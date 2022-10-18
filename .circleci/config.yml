@@ -85,7 +85,6 @@ commands:
           path: ~/codebreaker/coverage
           destination: coverage
 
-
 jobs:
   lintering:
     executor: default

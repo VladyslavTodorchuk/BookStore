@@ -15,5 +15,4 @@ export default class extends Controller {
             this.buttonTarget.disabled = true
         }
     }
-
 }
