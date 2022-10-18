@@ -100,6 +100,20 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.index ["book_id"], name: "index_authors_books_on_book_id"
   end
 
+  create_table "billings", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "address", null: false
+    t.string "city", null: false
+    t.integer "zip", null: false
+    t.string "country", null: false
+    t.string "phone", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_billings_on_user_id"
+  end
+
   create_table "books", force: :cascade do |t|
     t.string "title", null: false
     t.string "description", null: false
