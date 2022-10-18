@@ -11,13 +11,13 @@ RSpec.describe Address, type: :model do
     end
 
     context 'when not validations' do
-      it { is_expected.not_to allow_values('A' * Constants::VALIDATES_NAME_LENGTH_MAX.next).for(:first_name) }
-      it { is_expected.not_to allow_values('A' * Constants::VALIDATES_NAME_LENGTH_MAX.next).for(:last_name) }
+      it { is_expected.not_to allow_values('A' * Address::VALIDATES_NAME_LENGTH_MAX.next).for(:first_name) }
+      it { is_expected.not_to allow_values('A' * Address::VALIDATES_NAME_LENGTH_MAX.next).for(:last_name) }
       it { is_expected.not_to allow_values('789', '123765', '1-1-1', '+982').for(:phone) }
-      it { is_expected.not_to allow_values('A' * Constants::VALIDATES_TITLE_LENGTH_MAX.next).for(:country) }
-      it { is_expected.not_to allow_values('A' * Constants::VALIDATES_TITLE_LENGTH_MAX.next).for(:city) }
-      it { is_expected.not_to allow_values('1' * Constants::VALIDATES_ZIP_LENGTH_MAX.next).for(:zip) }
-      it { is_expected.not_to allow_values('A' * Constants::VALIDATES_TITLE_LENGTH_MAX.next).for(:address) }
+      it { is_expected.not_to allow_values('A' * Address::VALIDATES_TITLE_LENGTH_MAX.next).for(:country) }
+      it { is_expected.not_to allow_values('A' * Address::VALIDATES_TITLE_LENGTH_MAX.next).for(:city) }
+      it { is_expected.not_to allow_values('1' * Address::VALIDATES_ZIP_LENGTH_MAX.next).for(:zip) }
+      it { is_expected.not_to allow_values('A' * Address::VALIDATES_TITLE_LENGTH_MAX.next).for(:address) }
     end
 
     context 'when associations' do
