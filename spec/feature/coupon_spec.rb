@@ -1,6 +1,3 @@
-require 'rails_helper'
-require_relative '../support/shared_context'
-
 RSpec.describe 'Coupon', type: :feature, js: true do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
@@ -9,7 +6,7 @@ RSpec.describe 'Coupon', type: :feature, js: true do
   let(:coupon) { FactoryBot.create(:coupon, discount: 0.15) }
   let(:order) { FactoryBot.create(:order, user_id: user.id, books_count: 0) }
   let(:book) { FactoryBot.create(:book, price_cents: 1234) }
-  let(:order_book) { FactoryBot.create(:order_book, order: order, book: book) }
+  let(:order_book) { FactoryBot.create(:order_book, order_id: order.id, book_id: book.id) }
 
   before do
     sign_in(user)

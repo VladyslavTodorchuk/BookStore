@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :order do
-    status { 'created' }
+    status { 'initialized' }
 
     transient do
       books_count { 1 }
