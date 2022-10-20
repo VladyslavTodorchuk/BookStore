@@ -57,6 +57,9 @@ RSpec.describe 'Book' do
 
   context 'when image' do
     before do
+      book
+      visit 'admin/books'
+
       click_link('Edit')
 
       page.attach_file('book[images][]', './app/assets/images/Web-Book-Cover.png')
