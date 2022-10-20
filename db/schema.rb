@@ -161,7 +161,7 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.index ["coupon_id"], name: "index_orders_on_coupon_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
-
+  
   create_table "coupons", force: :cascade do |t|
     t.string "code", null: false
     t.boolean "is_active", default: true
