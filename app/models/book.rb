@@ -14,6 +14,6 @@ class Book < ApplicationRecord
   validates :title, :description, :year_of_publication, :materials, :dimensions, presence: true
   validates :price_cents, :quantity, presence: true,
                                      numericality:
-                                 { greater_than_or_equal_to: Constants::MIN_PRICE_IN_CENTS,
-                                   less_than_or_equal_to: Constants::MAX_PRICE_IN_CENTS }
+              { greater_than_or_equal_to: Constants::MIN_PRICE_IN_CENTS,
+                less_than_or_equal_to: Constants::MAX_PRICE_IN_CENTS }
 end
