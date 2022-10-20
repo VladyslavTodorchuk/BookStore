@@ -1,4 +1,4 @@
-RSpec.describe 'Book' do
+RSpec.describe Book do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 

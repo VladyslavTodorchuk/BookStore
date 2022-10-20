@@ -12,7 +12,9 @@ class OrdersController < ApplicationController
   def update
     order = Order.find(params[:id])
 
-    if params[:order][:delivery_id]
+    if params[:order].nil?
+      redirect_to checkout_path(step: :delivery), alert: t('orders.messages.error.pick')
+    elsif params[:order][:delivery_id]
       update_delivery_method(params[:order][:delivery_id], order)
     elsif params[:order][:address_id]
       update_address(params[:order][:address_id], order)
@@ -24,13 +26,13 @@ class OrdersController < ApplicationController
   def update_delivery_method(delivery_id, order)
     method = Delivery.find(delivery_id)
 
-    redirect_to checkout_path(step: :delivery), alert: 'No method found!' if order.nil? && method.nil?
+    redirect_to checkout_path(step: :delivery), alert: t('orders.messages.error.no_method') if order.nil? && method.nil?
 
     if order.update(delivery_id: method.id)
       if session[:save_prev_url].split('=').last.eql?('confirm')
-        redirect_to checkout_path(step: :confirm)
+        redirect_to checkout_path(step: :confirm), notice: t('orders.messages.success.method')
       else
-        redirect_to checkout_path(step: :payment)
+        redirect_to checkout_path(step: :payment), notice: t('orders.messages.success.method')
       end
     else
       redirect_to checkout_path(step: :delivery)
@@ -43,9 +45,9 @@ class OrdersController < ApplicationController
     redirect_to checkout_path(step: :address), alert: 'No address found!' if order.nil? && address.nil?
 
     if order.update(address_id: address.id)
-      redirect_to checkout_path(step: :delivery)
+      redirect_to checkout_path(step: :delivery), notice: "#{address.type.capitalize} was picked"
     else
-      redirect_to checkout_path(step: :address)
+      redirect_to checkout_path(step: :address), notice: "#{address.type.capitalize} was picked"
     end
   end
 

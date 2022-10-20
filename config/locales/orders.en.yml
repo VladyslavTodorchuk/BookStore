@@ -10,11 +10,24 @@ en:
       status:
         confirm: 'Status: Confirmed'
         canceled: 'Status: Canceled'
+        created: 'Status: Created'
         delivered: 'Status: Delivered'
         in_delivery: 'Status: In Delivery'
     number: 'Number'
     completed_at: 'Completed at'
     status: 'Status'
     total: 'Total'
+    messages:
+      error:
+        require_fields: 'All Fields Should Be Required'
+        something_went_wrong: 'Something went wrong'
+        pick: 'Pick a delivery method!'
+        no_method: 'No method found!'
+      success:
+        order: 'Order was created!'
+        credit_card: 'Credit Card was updated'
+        billing: 'Billing was updated'
+        shipping: 'Shipping was updated'
+        method: 'Method was picked'
 
 

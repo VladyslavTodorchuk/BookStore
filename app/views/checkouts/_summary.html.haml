@@ -17,5 +17,7 @@
                 €
                 - if @order.coupon.nil?
                     = @order.order_price
+                - elsif @order.delivery.nil?
+                    = @order.order_price(@order.coupon.discount)
                 - else
                     = @order.order_price(@order.coupon.discount, @order.delivery.price_cents)

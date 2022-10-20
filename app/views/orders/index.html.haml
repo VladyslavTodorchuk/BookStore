@@ -17,6 +17,8 @@
       %li
         %a{href: orders_path(status: 'canceled', sort: params[:sort])}= t('orders.sorting.status.canceled')
       %li
+        %a{href: orders_path(status: 'created', sort: params[:sort])}= t('orders.sorting.status.created')
+      %li
         %a{href: orders_path(status: 'delivered', sort: params[:sort])}= t('orders.sorting.status.delivered')
       %li
         %a{href: orders_path(status: 'in delivery', sort: params[:sort])}= t('orders.sorting.status.in_delivery')

@@ -4,8 +4,8 @@ ActiveAdmin.register Order do
   index do
     selectable_column
 
-    column :user
-    column :coupon
+    column :user_id
+    column :coupon_code
     column :total_price
     column :status
     column :updated_at
@@ -15,8 +15,8 @@ ActiveAdmin.register Order do
 
   show do
     attributes_table do
-      row :user
-      row :coupon
+      row :user_id
+      row :coupon_code
       row :total_price
       row :status
       row :delivery_id
@@ -26,12 +26,9 @@ ActiveAdmin.register Order do
 
   form do |f|
     f.inputs do
-      f.input :user_id
-      f.input :coupon_id
-      f.input :total_price
-      f.input :status, as: :select, collection: [:confirmed, :delivered, :canceled, 'in delivery']
       f.input :delivery_id
-      f.input :books
+      f.input :total_price
+      f.input :status, as: :select, collection: ['confirmed', 'delivered', 'canceled', 'in delivery']
     end
 
     f.actions

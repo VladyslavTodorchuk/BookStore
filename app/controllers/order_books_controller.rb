@@ -7,13 +7,10 @@ class OrderBooksController < ApplicationController
     product = OrderBook.new(order_id: params[:order_id], book_id: params[:book_id], quantity: params[:quantity])
 
     respond_to do |format|
-      format.html
       format.json do
-        if product.save
-          render json: { notice: 'Added!' }
-        else
-          render json: { notice: 'Error!' }
-        end
+        product.save if OrderBook.where(order_id: params[:order_id], book_id: params[:book_id]).empty?
+
+        render json: { count: OrderBook.where(order_id: product.order.id).count }
       end
     end
   end

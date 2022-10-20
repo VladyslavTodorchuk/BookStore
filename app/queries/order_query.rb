@@ -1,7 +1,7 @@
 class OrderQuery
   SORT_METHODS = ['created_at', 'created_at DESC', 'total_price DESC', 'total_price',
                   'status', 'status DESC'].freeze
-  ORDER_STATUS = ['delivered', 'confirmed', 'created', 'canceled' ,'in delivery'].freeze
+  ORDER_STATUS = ['delivered', 'confirmed', 'created', 'canceled', 'in delivery'].freeze
 
   def self.query(params, current_user)
     if SORT_METHODS.include?(params[:sort])

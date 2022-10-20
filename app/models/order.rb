@@ -4,6 +4,7 @@ class Order < ApplicationRecord
 
   has_one :coupon, dependent: :nullify
 
+  belongs_to :user, optional: true
   belongs_to :address, optional: true
   belongs_to :delivery, optional: true
 end
