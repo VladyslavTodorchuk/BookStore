@@ -133,11 +133,9 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.boolean "is_active", default: true
     t.datetime "active_till_date", null: false
     t.decimal "discount", precision: 10, scale: 2
-    t.bigint "order_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["code"], name: "index_coupons_on_code", unique: true
-    t.index ["order_id"], name: "index_coupons_on_order_id"
   end
 
   create_table "order_books", force: :cascade do |t|
@@ -254,4 +252,5 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
   add_foreign_key "order_books", "books"
   add_foreign_key "order_books", "orders"
   add_foreign_key "orders", "users"
+  add_foreign_key "shippings", "users"
 end
