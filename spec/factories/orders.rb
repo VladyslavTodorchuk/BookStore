@@ -1,7 +1,9 @@
 FactoryBot.define do
   factory :order do
+    user
     status { 'initialized' }
     delivery
+    address
 
     transient do
       books_count { 1 }
