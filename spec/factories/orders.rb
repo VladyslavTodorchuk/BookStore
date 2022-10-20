@@ -1,6 +1,5 @@
 FactoryBot.define do
   factory :order do
-<<<<<<< HEAD
     status { 'initialized' }
 
     transient do
@@ -14,10 +13,5 @@ FactoryBot.define do
         end
       end
     end
-=======
-    coupon
-    status { 'created' }
-    user
->>>>>>> a46d772 (Add Modle Order, OrderBook, Coupon)
   end
 end
