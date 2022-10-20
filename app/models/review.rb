@@ -1,5 +1,4 @@
 class Review < ApplicationRecord
-
   VALIDATES_TEXT_LENGTH_MAX = 500
   VALIDATES_TITLE_LENGTH_MAX = 80
 
