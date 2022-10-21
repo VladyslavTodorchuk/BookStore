@@ -24,7 +24,6 @@ RSpec.describe 'Checkout', type: :feature, js: true do
   describe 'address' do
     before do
       visit checkout_path(step: :address)
-
     end
 
     it 'didn\'t update billing' do
