@@ -25,14 +25,14 @@ RSpec.describe Book do
     fill_in 'book[dimensions]', with: params[:dimensions]
     fill_in 'book[quantity]', with: params[:quantity]
 
-    expect { click_button('Create Book') }.to change(Book, :count).from(0).to(1)
+    expect { click_button('Create Book') }.to change(described_class, :count).from(0).to(1)
   end
 
   it 'can delete an book' do
     book
     visit 'admin/books'
 
-    expect { click_link('Delete') }.to change(Book, :count).from(1).to(0)
+    expect { click_link('Delete') }.to change(described_class, :count).from(1).to(0)
   end
 
   it 'can view an book' do

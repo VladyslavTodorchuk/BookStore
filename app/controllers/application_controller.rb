@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :user_or_guest_have_order
-  after_action :save_prev_url
+  after_action :save_previous_path
 
   private
 

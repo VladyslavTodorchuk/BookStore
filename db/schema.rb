@@ -133,9 +133,10 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.boolean "is_active", default: true
     t.datetime "active_till_date", null: false
     t.decimal "discount", precision: 10, scale: 2
+    t.bigint "order_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["code"], name: "index_coupons_on_code", unique: true
+    t.index ["order_id"], name: "index_coupons_on_order_id"
   end
 
   create_table "credit_cards", force: :cascade do |t|

@@ -29,7 +29,7 @@ class OrdersController < ApplicationController
     redirect_to checkout_path(step: :delivery), alert: t('orders.messages.error.no_method') if order.nil? && method.nil?
 
     if order.update(delivery_id: method.id)
-      if session[:save_prev_url].split('=').last.eql?('confirm')
+      if session[:previous_path].split('=').last.eql?('confirm')
         redirect_to checkout_path(step: :confirm), notice: t('orders.messages.success.method')
       else
         redirect_to checkout_path(step: :payment), notice: t('orders.messages.success.method')
