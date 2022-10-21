@@ -10,6 +10,8 @@ class CouponService
 
       { error: error_message, total_price: order.decorate.order_price.to_s }
     else
+      coupon&.update(order_id: order.id)
+
       { total_price: order.decorate.order_price(coupon.discount).to_s,
         discount: (order.decorate.order_price * coupon.discount).to_s }
     end

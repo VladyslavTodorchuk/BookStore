@@ -18,7 +18,6 @@ ActiveAdmin.register Coupon do
       row :is_active
       row :active_till_date
       row :discount
-      row :order
     end
   end
 
@@ -28,7 +27,6 @@ ActiveAdmin.register Coupon do
       f.input :is_active
       f.input :active_till_date
       f.input :discount
-      f.input :order
     end
 
     f.actions

@@ -3,6 +3,5 @@ FactoryBot.define do
     email { FFaker::Internet.email }
     password { FFaker::Internet.password }
     confirmed_at { Time.zone.now }
-    confirmation_sent_at { Time.zone.now }
   end
 end

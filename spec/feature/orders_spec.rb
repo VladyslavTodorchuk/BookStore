@@ -3,10 +3,16 @@ RSpec.describe 'Orders', type: :feature, js: true do
   include_context 'with api request global before and after hooks'
 
   let(:user) { create(:user) }
+  let(:order) { create(:order, user: user) }
+  let(:book) { create(:book) }
+  let(:order_books) { create(:order_book, order_id: order.id, book_id: book.id) }
 
   describe '#loggedin user' do
     it 'on click checkout render address page' do
       sign_in(user)
+      order
+      order_books
+
       visit root_path
 
       find('a.shop-link.pull-right.hidden-xs').click
@@ -18,7 +24,12 @@ RSpec.describe 'Orders', type: :feature, js: true do
 
   describe '#guest' do
     before do
-      visit root_path
+      book
+
+      visit book_path(book.id)
+
+      click_button I18n.t('book_page.add_to_card')
+
       find('a.shop-link.pull-right.hidden-xs').click
       find('input.btn.btn-default.mb-20.hidden-xs.center-block').click
     end
