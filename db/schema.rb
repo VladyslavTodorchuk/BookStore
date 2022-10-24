@@ -174,13 +174,6 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.string "status", default: "initialized"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-<<<<<<< HEAD
-=======
-    t.bigint "delivery_id"
-    t.bigint "address_id"
-    t.index ["address_id"], name: "index_orders_on_address_id"
-    t.index ["delivery_id"], name: "index_orders_on_delivery_id"
->>>>>>> 081d138 (Checkout Add CreditCard Address Delivery method)
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 

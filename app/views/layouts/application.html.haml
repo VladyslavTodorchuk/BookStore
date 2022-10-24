@@ -16,8 +16,6 @@
   %body
     = render partial: 'layouts/header'
 
-    = session[:order_id]
-
     - unless notice.nil?
       %div.alert.alert-warning.text-center{ role: "alert" }
         = notice
@@ -28,3 +26,7 @@
     = yield
 
     = render partial: 'layouts/footer'
+  :javascript
+     $('.fa.fa-question-circle.general-form-help.cvv_info').click( function() {
+        $('.cvv_item').show();
+     });

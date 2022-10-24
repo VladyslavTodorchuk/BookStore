@@ -28,24 +28,13 @@ RSpec.describe 'Checkout', type: :feature, js: true do
 
     it 'didn\'t update billing' do
       within('div#billing') do
-        find_all('div', class: 'form-group')[1] do
-          fill_in :last_name, with: address_attributes[:last_name]
-        end
-        find_all('div', class: 'form-group')[2] do
-          fill_in :address, with: address_attributes[:address]
-        end
-        find_all('div', class: 'form-group')[3] do
-          fill_in :city, with: address_attributes[:city]
-        end
-        find_all('div', class: 'form-group')[4] do
-          fill_in :zip, with: address_attributes[:zip]
-        end
-        find_all('div', class: 'form-group')[5] do
-          fill_in :country, with: address_attributes[:country]
-        end
-        find_all('div', class: 'form-group')[6] do
-          fill_in :phone, with: address_attributes[:phone]
-        end
+        fill_in :billing_last_name, with: address_attributes[:last_name]
+        fill_in :billing_address, with: address_attributes[:address]
+        fill_in :billing_city, with: address_attributes[:city]
+        fill_in :billing_zip, with: address_attributes[:zip]
+        fill_in :billing_country, with: address_attributes[:country]
+        fill_in :billing_phone, with: address_attributes[:phone]
+
         click_on I18n.t('settings.save')
       end
 
@@ -54,27 +43,14 @@ RSpec.describe 'Checkout', type: :feature, js: true do
 
     it 'update billing' do
       within('div#billing') do
-        find_all('div', class: 'form-group')[0] do
-          fill_in :first_name, with: address_attributes[:first_name]
-        end
-        find_all('div', class: 'form-group')[1] do
-          fill_in :last_name, with: address_attributes[:last_name]
-        end
-        find_all('div', class: 'form-group')[2] do
-          fill_in :address, with: address_attributes[:address]
-        end
-        find_all('div', class: 'form-group')[3] do
-          fill_in :city, with: address_attributes[:city]
-        end
-        find_all('div', class: 'form-group')[4] do
-          fill_in :zip, with: address_attributes[:zip]
-        end
-        find_all('div', class: 'form-group')[5] do
-          fill_in :country, with: address_attributes[:country]
-        end
-        find_all('div', class: 'form-group')[6] do
-          fill_in :phone, with: address_attributes[:phone]
-        end
+        fill_in :billing_first_name, with: address_attributes[:first_name]
+        fill_in :billing_last_name, with: address_attributes[:last_name]
+        fill_in :billing_address, with: address_attributes[:address]
+        fill_in :billing_city, with: address_attributes[:city]
+        fill_in :billing_zip, with: address_attributes[:zip]
+        fill_in :billing_country, with: address_attributes[:country]
+        fill_in :billing_phone, with: address_attributes[:phone]
+
         click_on I18n.t('settings.save')
       end
 
@@ -83,24 +59,13 @@ RSpec.describe 'Checkout', type: :feature, js: true do
 
     it 'didn\'t update shipping' do
       within('div#shipping') do
-        find_all('div', class: 'form-group')[0] do
-          fill_in :first_name, with: address_attributes[:first_name]
-        end
-        find_all('div', class: 'form-group')[2] do
-          fill_in :address, with: address_attributes[:address]
-        end
-        find_all('div', class: 'form-group')[3] do
-          fill_in :city, with: address_attributes[:city]
-        end
-        find_all('div', class: 'form-group')[4] do
-          fill_in :zip, with: address_attributes[:zip]
-        end
-        find_all('div', class: 'form-group')[5] do
-          fill_in :country, with: address_attributes[:country]
-        end
-        find_all('div', class: 'form-group')[6] do
-          fill_in :phone, with: address_attributes[:phone]
-        end
+        fill_in :shipping_first_name, with: address_attributes[:first_name]
+        fill_in :shipping_address, with: address_attributes[:address]
+        fill_in :shipping_city, with: address_attributes[:city]
+        fill_in :shipping_zip, with: address_attributes[:zip]
+        fill_in :shipping_country, with: address_attributes[:country]
+        fill_in :shipping_phone, with: address_attributes[:phone]
+
         click_on I18n.t('settings.save')
       end
 
@@ -109,27 +74,14 @@ RSpec.describe 'Checkout', type: :feature, js: true do
 
     it 'update shipping' do
       within('div#shipping') do
-        find_all('div', class: 'form-group')[0] do
-          fill_in :first_name, with: address_attributes[:first_name]
-        end
-        find_all('div', class: 'form-group')[1] do
-          fill_in :last_name, with: address_attributes[:last_name]
-        end
-        find_all('div', class: 'form-group')[2] do
-          fill_in :address, with: address_attributes[:address]
-        end
-        find_all('div', class: 'form-group')[3] do
-          fill_in :city, with: address_attributes[:city]
-        end
-        find_all('div', class: 'form-group')[4] do
-          fill_in :zip, with: address_attributes[:zip]
-        end
-        find_all('div', class: 'form-group')[5] do
-          fill_in :country, with: address_attributes[:country]
-        end
-        find_all('div', class: 'form-group')[6] do
-          fill_in :phone, with: address_attributes[:phone]
-        end
+        fill_in :shipping_first_name, with: address_attributes[:first_name]
+        fill_in :shipping_last_name, with: address_attributes[:last_name]
+        fill_in :shipping_address, with: address_attributes[:address]
+        fill_in :shipping_city, with: address_attributes[:city]
+        fill_in :shipping_zip, with: address_attributes[:zip]
+        fill_in :shipping_country, with: address_attributes[:country]
+        fill_in :shipping_phone, with: address_attributes[:phone]
+
         click_on I18n.t('settings.save')
       end
 
@@ -179,6 +131,14 @@ RSpec.describe 'Checkout', type: :feature, js: true do
       find('input.btn.btn-default.mb-80').click
 
       expect(page).to have_content('Credit Card was updated')
+    end
+
+    it 'show hint' do
+      visit checkout_path(step: :payment)
+
+      find('i.fa.fa-question-circle.general-form-help.cvv_info').click
+
+      expect(page).to have_content(I18n.t('orders.messages.cvv_message'))
     end
   end
 

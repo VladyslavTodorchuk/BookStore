@@ -3,8 +3,7 @@ RSpec.describe Book do
   include_context 'with api request global before and after hooks'
 
   let(:book) { create(:book) }
-  let(:params) { attributes_for(:book) }
-
+  let(:book_attributes) { attributes_for(:book) }
   let(:old_title) { book.title }
   let(:new_title) { FFaker::Book.title }
 
@@ -17,13 +16,13 @@ RSpec.describe Book do
 
     click_link('New Book')
 
-    fill_in 'book[title]', with: params[:title]
-    fill_in 'book[description]', with: params[:description]
-    fill_in 'book[year_of_publication]', with: params[:year_of_publication]
-    fill_in 'book[price_cents]', with: params[:price_cents]
-    fill_in 'book[materials]', with: params[:materials]
-    fill_in 'book[dimensions]', with: params[:dimensions]
-    fill_in 'book[quantity]', with: params[:quantity]
+    fill_in 'book[title]', with: book_attributes[:title]
+    fill_in 'book[description]', with: book_attributes[:description]
+    fill_in 'book[year_of_publication]', with: book_attributes[:year_of_publication]
+    fill_in 'book[price_cents]', with: book_attributes[:price_cents]
+    fill_in 'book[materials]', with: book_attributes[:materials]
+    fill_in 'book[dimensions]', with: book_attributes[:dimensions]
+    fill_in 'book[quantity]', with: book_attributes[:quantity]
 
     expect { click_button('Create Book') }.to change(described_class, :count).from(0).to(1)
   end

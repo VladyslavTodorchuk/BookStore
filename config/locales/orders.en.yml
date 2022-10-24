@@ -29,5 +29,6 @@ en:
         billing: 'Billing was updated'
         shipping: 'Shipping was updated'
         method: 'Method was picked'
+      cvv_message: '3-digit security code, usually found on the back of your card. American Express cards has 4-digit code, located on the front'
 
 

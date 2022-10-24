@@ -13,3 +13,10 @@
  *= require_self
  *= require style
  */
+
+.cvv_item {
+    margin-top: 5px;
+    display: none;
+    color: black;
+    padding: 5px;
+}
