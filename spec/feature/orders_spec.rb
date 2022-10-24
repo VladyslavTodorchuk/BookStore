@@ -67,4 +67,60 @@ RSpec.describe 'Orders', type: :feature, js: true do
       end
     end
   end
+
+  describe '#index' do
+    shared_examples 'sort test' do
+      it 'sort orders' do
+        sign_in(user)
+
+        create(:order, user: user, status: result_status)
+        create(:order, user: user, status: 'created')
+
+        visit orders_path
+
+        find('a.dropdown-toggle.lead.small').click
+
+        within('ul.dropdown-menu') do
+          click_link sort
+        end
+
+        expect(page).to have_content(result_status.capitalize)
+      end
+    end
+
+    context 'when sort by created status' do
+      let(:sort) { I18n.t('orders.sorting.status.created') }
+      let(:result_status) { 'created' }
+
+      include_examples 'sort test'
+    end
+
+    context 'when sort by confirmed status' do
+      let(:sort) { I18n.t('orders.sorting.status.confirm') }
+      let(:result_status) { 'confirmed' }
+
+      include_examples 'sort test'
+    end
+
+    context 'when sort by in delivery status' do
+      let(:sort) { I18n.t('orders.sorting.status.in_delivery') }
+      let(:result_status) { 'in delivery' }
+
+      include_examples 'sort test'
+    end
+
+    context 'when sort by delivered status' do
+      let(:sort) { I18n.t('orders.sorting.status.delivered') }
+      let(:result_status) { 'delivered' }
+
+      include_examples 'sort test'
+    end
+
+    context 'when sort by canceled status' do
+      let(:sort) { I18n.t('orders.sorting.status.canceled') }
+      let(:result_status) { 'canceled' }
+
+      include_examples 'sort test'
+    end
+  end
 end

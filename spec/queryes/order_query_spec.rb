@@ -11,17 +11,17 @@ RSpec.describe OrderQuery do
   let(:user) { create(:user) }
 
   describe 'all order' do
-    context 'all' do
+    context 'when all' do
       let(:order1) { create(:order, user: user, status: 'created') }
       let(:order2) { create(:order, user: user, status: 'created') }
 
       let(:result) { order1.id }
-      let(:test) { described_class.query({ }, user).first.id }
+      let(:test) { described_class.query({}, user).first.id }
 
       include_examples 'sort test'
     end
 
-    context 'sort by price HIGH to LOW' do
+    context 'when sort by price HIGH to LOW' do
       let(:order1) { create(:order, user: user, status: 'created', total_price: 1234) }
       let(:order2) { create(:order, user: user, status: 'created', total_price: 1000) }
 
@@ -31,7 +31,7 @@ RSpec.describe OrderQuery do
       include_examples 'sort test'
     end
 
-    context 'sort by price LOW to HIGH' do
+    context 'when sort by price LOW to HIGH' do
       let(:order1) { create(:order, user: user, status: 'created', total_price: 1234) }
       let(:order2) { create(:order, user: user, status: 'created', total_price: 1000) }
 
@@ -43,7 +43,7 @@ RSpec.describe OrderQuery do
   end
 
   describe 'sort by status' do
-    context 'status' do
+    context 'when status' do
       let(:order1) { create(:order, user: user, status: 'created') }
       let(:order2) { create(:order, user: user, status: 'delivered') }
 
@@ -53,7 +53,7 @@ RSpec.describe OrderQuery do
       include_examples 'sort test'
     end
 
-    context 'sort by price HIGH to LOW' do
+    context 'when sort by price HIGH to LOW' do
       let(:order1) { create(:order, user: user, status: 'delivered', total_price: 1234) }
       let(:order2) { create(:order, user: user, status: 'delivered', total_price: 1000) }
 
@@ -63,7 +63,7 @@ RSpec.describe OrderQuery do
       include_examples 'sort test'
     end
 
-    context 'sort by price LOW to HIGH' do
+    context 'when sort by price LOW to HIGH' do
       let(:order1) { create(:order, user: user, status: 'delivered', total_price: 1234) }
       let(:order2) { create(:order, user: user, status: 'delivered', total_price: 1000) }
 
