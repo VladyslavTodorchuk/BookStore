@@ -1,5 +1,6 @@
 module Constants
   PAGINATION_PER_PAGE = 12
+  BESTSELLERS_LIMIT = 4
 
   STAR_MIN = 0
   STAR_MAX = 5
