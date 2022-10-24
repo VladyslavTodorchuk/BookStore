@@ -49,7 +49,8 @@ class CheckoutsController < ApplicationController
     @credit_card = CreditCard.find_or_create_by(user_id: current_user.id)
 
     case permitted_params[:step]
-    when 'address' then update_address(permitted_params)
+    when 'billing' then update_billing(permitted_params)
+    when 'shipping' then update_shipping(permitted_params)
     when 'payment' then update_payment(permitted_params)
     when 'complete' then update_complete
     end
@@ -57,22 +58,20 @@ class CheckoutsController < ApplicationController
 
   private
 
-  def update_address(permitted_params)
-    update_billing(permitted_params[:billing]) unless permitted_params[:billing].nil?
+  def update_shipping(permitted_params)
+    return if permitted_params[:shipping].nil?
 
-    update_shipping(permitted_params[:shipping]) unless permitted_params[:shipping].nil?
-  end
-
-  def update_shipping(params)
-    if @user_shipping.update(params)
+    if @user_shipping.update(permitted_params[:shipping])
       redirect_to checkout_path(step: :address), notice: 'Shipping was updated'
     else
       redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_shipping.errors.messages)
     end
   end
 
-  def update_billing(params)
-    if @user_billing.update(params)
+  def update_billing(permitted_params)
+    return if permitted_params[:billing].nil?
+
+    if @user_billing.update(permitted_params[:billing])
       redirect_to checkout_path(step: :address), notice: 'Billing was updated'
     else
       redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_billing.errors.messages)

@@ -11,12 +11,12 @@
         .col-md-5.mb-40
           .visible-xs.visible-sm
             %h3.general-subtitle.mt-0= t("settings.billing")
-          = render 'checkouts/address/address_form', address: @user_billing
+          = render 'checkouts/address/address_form', address: @user_billing, step: :billing
       #shipping
         .col-md-5.mb-40
           .visible-xs.visible-sm
             %h3.general-subtitle.mt-0= t("settings.shipping")
-          = render 'checkouts/address/address_form', address: @user_shipping
+          = render 'checkouts/address/address_form', address: @user_shipping, step: :shipping
     %div.container
       = form_for @order, url: order_path(@order.id), method: :put do |f|
         .row

@@ -1,7 +1,7 @@
 class Address < ApplicationRecord
-  TEXT_FORMAT = %r{\A[A-Za-z0-9!#$%&'*+-/=?^_`{|}~. ]+\z}.freeze
-  NAME_FORMAT = /\A[A-Za-z]+\z/.freeze
-  COUNTY_FORMAT = /\A[A-Za-z ]+\z/.freeze
+  TEXT_FORMAT = %r{\A[A-Za-zа-яА-я0-9!#$%&'*+-/=?^_`{|}~. ]+\z}.freeze
+  NAME_FORMAT = /\A[A-Za-zа-яА-я]+\z/.freeze
+  COUNTY_FORMAT = /\A[A-Za-zа-яА-я ]+\z/.freeze
   PHONE_FORMAT = /\A[\\+]?[(]?[0-9]{3}[)]?[-\s\\.]?[0-9]{3}[-\s\\.]?[0-9]{4,6}\z/.freeze
   ZIP_FORMAT = /\A[0-9]+\z/.freeze
 

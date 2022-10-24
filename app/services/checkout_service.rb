@@ -27,9 +27,9 @@ class CheckoutService
 
   def self.check_fields(permitted_params)
     case permitted_params[:step]
-    when 'address'
+    when 'shipping'
       check(permitted_params[:shipping]) unless permitted_params[:shipping].nil?
-
+    when 'billing'
       check(permitted_params[:billing]) unless permitted_params[:billing].nil?
     when 'payment'
       check(permitted_params[:credit_card]) unless permitted_params[:credit_card].nil?
