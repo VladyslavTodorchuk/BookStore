@@ -133,9 +133,11 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.boolean "is_active", default: true
     t.datetime "active_till_date", null: false
     t.decimal "discount", precision: 10, scale: 2
+    t.bigint "order_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["code"], name: "index_coupons_on_code", unique: true
+    t.index ["order_id"], name: "index_coupons_on_order_id"
   end
 
   create_table "order_books", force: :cascade do |t|
@@ -150,13 +152,11 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
 
   create_table "orders", force: :cascade do |t|
     t.bigint "user_id"
-    t.bigint "coupon_id"
     t.integer "total_price", default: 0
     t.string "status", default: "initialized"
     t.datetime "last_action", default: "2022-09-22 08:21:56"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["coupon_id"], name: "index_orders_on_coupon_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -295,11 +295,9 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
   add_foreign_key "addresses", "users"
   add_foreign_key "authors_books", "authors"
   add_foreign_key "authors_books", "books"
-  add_foreign_key "billings", "users"
   add_foreign_key "books_categories", "books"
   add_foreign_key "books_categories", "categories"
   add_foreign_key "order_books", "books"
   add_foreign_key "order_books", "orders"
   add_foreign_key "orders", "users"
-  add_foreign_key "shippings", "users"
 end

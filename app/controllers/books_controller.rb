@@ -23,6 +23,11 @@ class BooksController < ApplicationController
     redirect_to books_path if book.nil?
 
     @book = book.decorate
+<<<<<<< HEAD
     @reviews = @book.reviews.where(verified: true).order(created_at: :desc)
+=======
+    @reviews = ReviewDecorator.decorate_collection(Review.where(book_id: book.id,
+                                                                verified: true).order(created_at: :desc))
+>>>>>>> 0b8c75a (Rebase)
   end
 end
