@@ -1,12 +1,9 @@
-require_relative '../rails_helper'
-require_relative '../support/shared_context'
-
 RSpec.describe 'Review', type: :feature do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
-  let(:user) { FactoryBot.create(:user).decorate }
-  let(:book) { FactoryBot.create(:book).decorate }
+  let(:user) { create(:user).decorate }
+  let(:book) { create(:book).decorate }
 
   before do
     sign_in(user)
@@ -21,7 +18,7 @@ RSpec.describe 'Review', type: :feature do
       fill_in :title, with: FFaker::Lorem.sentence(title_words)
       fill_in :body, with: FFaker::Lorem.sentence(body_words)
 
-      click_on I18n.t('review.post')
+      click_on I18n.t('reviews.post')
 
       expect(page).to have_content(result)
     end
@@ -32,7 +29,7 @@ RSpec.describe 'Review', type: :feature do
       let(:rating) { "star#{rand(1..5)}" }
       let(:title_words) { 5 }
       let(:body_words) { 10 }
-      let(:result) { user.name_or_email }
+      let(:result) { I18n.t('reviews.success') }
 
       include_examples 'review'
     end

@@ -24,5 +24,6 @@ class BooksController < ApplicationController
     redirect_to books_path if book.nil?
 
     @book = book.decorate
+    @reviews = Review.where(book_id: @book.id, verified: true)
   end
 end

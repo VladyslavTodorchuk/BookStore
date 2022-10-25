@@ -21,9 +21,6 @@
             .form-group
               = f.label :body, t('review.review'), class: 'control-label input-label in-grey-600'
               = f.text_area :body, class: 'form-control', id: 'body'
-            - if current_user
-              = f.hidden_field :verified, value: true
-            - else
-              = f.hidden_field :verified,  value: false
+            = f.hidden_field :verified, value: false
           .text-right
             = f.submit t('review.post'), class: 'btn mb-20'

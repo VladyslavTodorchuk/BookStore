@@ -1,0 +1,11 @@
+en:
+  reviews:
+    write: 'Write a Review'
+    title: 'Title'
+    review: 'Review'
+    post: 'Post'
+    errors:
+      title: ' .Please enter title in correct format'
+      body: ' .Please enter body in correct format'
+    success: 'You have successfully created review. Your review will be verified by Admin soon.'
+    error: 'Something went wrong during this process'
