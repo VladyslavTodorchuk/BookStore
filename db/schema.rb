@@ -211,11 +211,9 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
   add_foreign_key "addresses", "users"
   add_foreign_key "authors_books", "authors"
   add_foreign_key "authors_books", "books"
-  add_foreign_key "billings", "users"
   add_foreign_key "books_categories", "books"
   add_foreign_key "books_categories", "categories"
   add_foreign_key "order_books", "books"
   add_foreign_key "order_books", "orders"
   add_foreign_key "orders", "users"
-  add_foreign_key "shippings", "users"
 end
