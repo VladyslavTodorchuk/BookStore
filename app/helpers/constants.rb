@@ -3,7 +3,7 @@ module Constants
 
   STAR_MIN = 0
   STAR_MAX = 5
-  
+
   CATALOG_BOOK_COUNT = 3
   BEST_SELLER_COUNT = 4
   DESCRIPTION_LENGTH = 25
