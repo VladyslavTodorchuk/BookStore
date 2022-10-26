@@ -1,2 +1,3 @@
-web: bundle exec thin start -p $PORT
-worker: bundle exec sidekiq -c 5 -v
+web: bundle exec puma -C config/puma.rb
+worker: bundle exec sidekiq -e production -C config/sidekiq.yml
+release: bundle exec rake db:migrate
