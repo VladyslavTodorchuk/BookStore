@@ -5,6 +5,8 @@ require:
 
 Metrics/LineLength:
   Max: 120
+  Exclude:
+    - 'config/initializers/devise.rb'
 
 Rails/BulkChangeTable:
   Enabled: false
@@ -28,7 +30,7 @@ Metrics/BlockLength:
   ExcludedMethods: ['describe']
 
 RSpec/ExampleLength:
-  Max: 25
+  Max: 30
 
 Metrics/AbcSize:
   Max: 30
@@ -37,4 +39,5 @@ RSpec/MessageSpies:
   Enabled: false
 
 RSpec/MultipleMemoizedHelpers:
-  Max: 6
+  Max: 9
+

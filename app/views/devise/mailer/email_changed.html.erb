@@ -1,0 +1,7 @@
+<p><% t('devise.mailer.confirmation_instructions.hello') %> <%= @email %>!</p>
+
+<% if @resource.try(:unconfirmed_email?) %>
+  <p><% t('devise.mailer.confirmation_instructions.is_being') %> <%= @resource.unconfirmed_email %>.</p>
+<% else %>
+  <p><% t('devise.mailer.confirmation_instructions.has_been') %> <%= @resource.email %>.</p>
+<% end %>

@@ -14,3 +14,5 @@ en:
     send_it: "We'll email you instructions on how to reset it"
     send_instructions: 'Send instructions'
     change: 'Change'
+    message_for_inst: "Didn't receive confirmation instructions?"
+    sing_up_with: 'Sign in with #{provider}'

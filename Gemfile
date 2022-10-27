@@ -9,6 +9,7 @@ gem 'bootstrap-will_paginate', '~> 1.0'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'draper', '~> 4.0', '>= 4.0.2'
 gem 'haml', '~> 5.2', '>= 5.2.2'
+gem 'interactor', '~> 3.1', '>= 3.1.2'
 gem 'jbuilder', '~> 2.7'
 gem 'monetize'
 gem 'omniauth-facebook', '~> 4.0'
@@ -35,6 +36,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'letter_opener', '~> 1.8', '>= 1.8.1'
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'spring'

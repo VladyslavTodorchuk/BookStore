@@ -7,7 +7,7 @@ RSpec.describe 'Registration', type: :feature do
     end
 
     context 'when successfully sing_up' do
-      it 'sing_up user' do
+      it 'sing_up users' do
         within 'form', class: 'new_user', id: 'new_user' do
           fill_in 'user_email', with: 'email-test@rspec.com'
           fill_in 'user_password', with: user.password
@@ -20,8 +20,8 @@ RSpec.describe 'Registration', type: :feature do
       end
     end
 
-    context 'when user is already exits' do
-      it 'sing_up user' do
+    context 'when users is already exits' do
+      it 'sing_up users' do
         within 'form', class: 'new_user', id: 'new_user' do
           fill_in 'user_email', with: user.email
           fill_in 'user_password', with: user.password

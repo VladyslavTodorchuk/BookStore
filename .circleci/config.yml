@@ -85,7 +85,6 @@ commands:
           path: ~/codebreaker/coverage
           destination: coverage
 
-
 jobs:
   lintering:
     executor: default
@@ -108,4 +107,3 @@ workflows:
       - rspec:
           requires:
             - lintering
-            

@@ -37,7 +37,7 @@
                     %li
                       %a= t('header.orders')
                     %li
-                      %a= t('header.settings')
+                      = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
           - else
@@ -53,6 +53,8 @@
             %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
               = t('.shop')
             %ul.dropdown-menu
+              %li
+                %a.collapse-link{href: "/books"}= t('header.all')
               - Category.all.each do |category|
                 %li
                   %a{href: "#"}= category.name
@@ -66,7 +68,7 @@
                     %li
                       %a= t('header.orders')
                     %li
-                      %a= t('header.settings')
+                      = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
           - else
@@ -74,4 +76,3 @@
               = link_to t('header.log_in'), new_user_session_path
             %li
               = link_to t('header.sing_up'), new_user_registration_path
-
