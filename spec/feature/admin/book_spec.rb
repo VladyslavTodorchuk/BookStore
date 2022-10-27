@@ -3,15 +3,7 @@ RSpec.describe 'Book' do
   include_context 'with api request global before and after hooks'
 
   let(:book) { create(:book) }
-  let(:params) do
-    { title: FFaker::Book.title,
-      description: FFaker::Book.description,
-      price_cents: FFaker::Number.rand(1..100),
-      dimensions: FFaker::Book.cover,
-      year_of_publication: FFaker::Number.rand(1900..2022),
-      materials: 'Soft cover',
-      quantity: FFaker::Number.rand(2..5) }
-  end
+  let(:params) { attributes_for(:book) }
 
   let(:old_title) { book.title }
   let(:new_title) { FFaker::Book.title }
