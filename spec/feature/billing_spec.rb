@@ -5,13 +5,13 @@ RSpec.describe 'Billing', type: :feature do
   let(:user) { create(:user) }
   let(:billing_attributes) { attributes_for(:billing) }
 
-  describe '#fill_in' do
+  describe '#fill_in', js: true do
     it 'fill in billing' do
       sign_in(user)
 
       visit edit_user_path(user.id)
 
-      within('div', id: 'billing') do
+      within('div#billing.col-md-5.mb-40') do
         find_all('div', class: 'form-group')[0] do
           fill_in :first_name, with: billing_attributes[:first_name]
         end

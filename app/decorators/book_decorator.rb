@@ -1,3 +1,5 @@
+require 'monetize'
+
 class BookDecorator < Draper::Decorator
   decorates_association :authors
 

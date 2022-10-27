@@ -59,29 +59,25 @@ RSpec.describe 'Home', type: :feature do
       end
     end
 
-    context 'when user' do
+    context 'when user', js: true do
       let(:user) { create(:user) }
 
       before do
         sign_in(user)
       end
 
-      it 'on click account show orders' do
+      it 'on click account show settings' do
         visit root_path
 
-        within 'div', class: 'visible-xs' do
-          click_link I18n.t('header.account')
-        end
+        click_on I18n.t('header.account')
 
-        expect(page).to have_content(I18n.t('header.orders'))
+        expect(page).to have_content(I18n.t('header.settings'))
       end
 
       it 'on click account show log_out' do
         visit root_path
 
-        within 'div', class: 'visible-xs' do
-          click_link I18n.t('header.account')
-        end
+        click_on I18n.t('header.account')
 
         expect(page).to have_content(I18n.t('header.log_out'))
       end
@@ -89,9 +85,7 @@ RSpec.describe 'Home', type: :feature do
       it 'log_out' do
         visit root_path
 
-        within 'div', class: 'visible-xs' do
-          click_link I18n.t('header.account')
-        end
+        click_on I18n.t('header.account')
 
         click_on(I18n.t('header.log_out'), match: :first)
 

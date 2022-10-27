@@ -28,6 +28,8 @@ Rails/FilePath:
 Metrics/BlockLength:
   Max: 40
   ExcludedMethods: ['describe']
+  Exclude:
+    - 'app/admin/books.rb'
 
 RSpec/ExampleLength:
   Max: 30
@@ -35,9 +37,11 @@ RSpec/ExampleLength:
 Metrics/AbcSize:
   Max: 30
 
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+
 RSpec/MessageSpies:
   Enabled: false
 
 RSpec/MultipleMemoizedHelpers:
   Max: 9
-
