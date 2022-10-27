@@ -11,8 +11,8 @@ RSpec.describe BookQuery do
   let(:title1) { 'Adam' }
   let(:title2) { 'Zimbabwe' }
 
-  let(:date1) { 'Thu, 25 Aug 2022 15:25:38.761014000 UTC +00:00' }
-  let(:date2) { 'Thu, 25 Aug 2022 14:20:38.761014000 UTC +00:00' }
+  let(:date1) { Date.new(2022, 8, 26).to_s }
+  let(:date2) { Date.new(2022, 8, 25).to_s }
 
   describe 'all books sort' do
     context 'when sort by title A to Z' do
