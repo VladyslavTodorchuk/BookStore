@@ -40,7 +40,8 @@
       .text-center.hidden
         %div{"data-view-more-target" => "pagination"}
           = will_paginate(@books)
-      .text-center
-        - unless @books.total_pages == @books.current_page
-          %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button", "data-action" => "click->view-more#next" }
+      - unless @books.total_pages == @books.current_page
+        .text-center
+          %a.btn.btn-primary.view_more#view_more{"data-view-more-target" => "button",
+                                                 "data-action" => "click->view-more#next" }
             = t("catalog_page.view_more")
