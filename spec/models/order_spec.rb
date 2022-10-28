@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe Order, type: :model do
   describe 'order' do
     context 'when associations' do

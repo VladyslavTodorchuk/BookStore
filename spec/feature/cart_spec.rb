@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe 'Cart', type: :feature, js: true do
   let(:book) { FactoryBot.create(:book) }
 
