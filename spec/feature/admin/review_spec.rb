@@ -4,8 +4,6 @@ RSpec.describe 'Review' do
 
   let(:review) { create(:review, verified: false) }
 
-  let(:old_verified) { review.verified }
-
   before do
     sign_in(create(:admin_user), :admin_user)
   end
@@ -36,6 +34,6 @@ RSpec.describe 'Review' do
 
     find('input#review_verified').click
 
-    expect { click_button('Update Review') }.to change { review.reload.verified }.from(old_verified).to(true)
+    expect { click_button('Update Review') }.to change { review.reload.verified }.from(false).to(true)
   end
 end

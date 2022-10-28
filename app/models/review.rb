@@ -1,4 +1,6 @@
 class Review < ApplicationRecord
+  STAR_MIN = 0
+  STAR_MAX = 5
   VALIDATES_TEXT_LENGTH_MAX = 500
   VALIDATES_TITLE_LENGTH_MAX = 80
 
@@ -12,7 +14,7 @@ class Review < ApplicationRecord
 
   validates :rating,
             numericality: {
-              greater_than_or_equal_to: Constants::STAR_MIN,
-              less_than_or_equal_to: Constants::STAR_MAX
+              greater_than_or_equal_to: STAR_MIN,
+              less_than_or_equal_to: STAR_MAX
             }, presence: true
 end

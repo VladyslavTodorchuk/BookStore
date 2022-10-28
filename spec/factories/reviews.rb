@@ -2,9 +2,9 @@ FactoryBot.define do
   factory :review do
     user
     book
-    title { FFaker::Lorem.words(5).join(' ') }
-    rating { FFaker::Number.rand(0..5) }
-    body { FFaker::Lorem.words(10).join(' ') }
+    title { FFaker::Lorem.sentence(3) }
+    rating { FFaker::Number.rand(Review::STAR_MIN..Review::STAR_MAX) }
+    body { FFaker::Lorem.sentence(5) }
     verified { true }
   end
 end

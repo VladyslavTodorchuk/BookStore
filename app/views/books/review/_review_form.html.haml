@@ -1,13 +1,10 @@
 - if current_user
-  %h3= t('review.write')
+  %h3= t('reviews.write')
   %p.general-info-text= t('reviews.score')
   %div{ "data-controller": "stars" }
     .mb-15
-      %i.fa.fa-star.rate-empty#star1{"data-target": "star1", "data-action": "click->stars#get_rating", "data-stars-star-param": 1}
-      %i.fa.fa-star.rate-empty#star2{"data-target": "star2", "data-action": "click->stars#get_rating", "data-stars-star-param": 2}
-      %i.fa.fa-star.rate-empty#star3{"data-target": "star3", "data-action": "click->stars#get_rating", "data-stars-star-param": 3}
-      %i.fa.fa-star.rate-empty#star4{"data-target": "star4", "data-action": "click->stars#get_rating", "data-stars-star-param": 4}
-      %i.fa.fa-star.rate-empty#star5{"data-target": "star5", "data-action": "click->stars#get_rating", "data-stars-star-param": 5}
+      - Review::STAR_MAX.times do |star_count|
+        %i.fa.fa-star.rate-empty{id: "star#{star_count + 1}","data-target": "star#{star_count + 1}", "data-action": "click->stars#get_rating", "data-stars-star-param": star_count + 1}
     .row
       = form_with(model: @review, method: :post, url: book_reviews_path(@book.id)) do |f|
         .col-md-8
@@ -16,11 +13,11 @@
             = f.hidden_field :user_id, value: current_user.id
             = f.hidden_field :rating, value: 0, id: 'rating'
             .form-group
-              = f.label :title, t('review.title'), class: 'control-label input-label in-grey-600'
+              = f.label :title, t('reviews.title'), class: 'control-label input-label in-grey-600'
               = f.text_field :title, class: 'form-control', id: 'title'
             .form-group
-              = f.label :body, t('review.review'), class: 'control-label input-label in-grey-600'
+              = f.label :body, t('reviews.review'), class: 'control-label input-label in-grey-600'
               = f.text_area :body, class: 'form-control', id: 'body'
             = f.hidden_field :verified, value: false
           .text-right
-            = f.submit t('review.post'), class: 'btn mb-20'
+            = f.submit t('reviews.post'), class: 'btn mb-20'
