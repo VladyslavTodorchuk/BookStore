@@ -1,5 +1,5 @@
 RSpec.describe 'Registration', type: :feature do
-  let(:user) { create(:user, email: 'test.rspec@rspec.ua') }
+  let(:user) { create(:user, email: FFaker::Internet.email) }
 
   describe '#sing_up' do
     before do
@@ -9,7 +9,7 @@ RSpec.describe 'Registration', type: :feature do
     context 'when successfully sing_up' do
       it 'sing_up users' do
         within 'form', class: 'new_user', id: 'new_user' do
-          fill_in 'user_email', with: 'email-test@rspec.com'
+          fill_in 'user_email', with: FFaker::Internet.email
           fill_in 'user_password', with: user.password
           fill_in 'user_password_confirmation', with: user.password
 

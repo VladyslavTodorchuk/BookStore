@@ -1,5 +1,5 @@
 RSpec.describe 'Login', type: :feature do
-  let(:user_second) { create(:user, email: 'test.rspec@rspec.ua') }
+  let(:user_second) { create(:user, email: FFaker::Internet.email) }
 
   describe '#login' do
     before do
