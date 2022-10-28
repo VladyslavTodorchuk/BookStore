@@ -27,7 +27,8 @@
           %li
             %a#root{href: "/"}= t('header.home')
           %li
-            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
+            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
+              = t('header.shop')
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
@@ -43,8 +44,6 @@
                       %a= t('header.orders')
                     %li
                       %a{ href: edit_user_path(current_user.id) }= t('header.settings')
-<<<<<<< HEAD
-=======
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
           - else
@@ -74,7 +73,6 @@
                       %a= t('header.orders')
                     %li
                       = link_to t('header.settings'), edit_user_path(current_user.id)
->>>>>>> adc21e0 (Featire specs)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
 
