@@ -24,6 +24,6 @@ class BooksController < ApplicationController
     redirect_to books_path if book.nil?
 
     @book = book.decorate
-    @reviews = @book.reviews.filter(&:verified?).sort_by(&:created_at).reverse
+    @reviews = @book.reviews.where(verified: true).order(created_at: :desc)
   end
 end
