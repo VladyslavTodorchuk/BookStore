@@ -1,6 +1,6 @@
 - if current_user
   %h3= t('review.write')
-  %p.general-info-text Score
+  %p.general-info-text= t('reviews.score')
   %div{ "data-controller": "stars" }
     .mb-15
       %i.fa.fa-star.rate-empty#star1{"data-target": "star1", "data-action": "click->stars#get_rating", "data-stars-star-param": 1}
