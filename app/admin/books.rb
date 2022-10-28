@@ -4,7 +4,7 @@ ActiveAdmin.register Book do
 
   decorate_with BookDecorator
 
-  filter :authors, collection: AuthorDecorator.decorate_collection(Author.all)
+  filter :authors, collection: Author.all
   filter :categories
   filter :title
   filter :year_of_publication
@@ -57,7 +57,7 @@ ActiveAdmin.register Book do
       f.input :quantity
 
       f.input :categories, as: :select, collection: Category.all
-      f.input :authors, as: :select, collection: AuthorDecorator.decorate_collection(Author.all)
+      f.input :authors, as: :select, collection: Author.all
       f.input :images, as: :file, input_html: { multiple: true }
     end
 
