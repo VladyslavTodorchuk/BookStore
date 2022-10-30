@@ -154,56 +154,9 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.bigint "user_id"
     t.integer "total_price", default: 0
     t.string "status", default: "initialized"
-    t.datetime "last_action", default: "2022-09-22 08:21:56"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_orders_on_user_id"
-  end
-
-  create_table "reviews", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "book_id", null: false
-    t.string "title", null: false
-    t.integer "rating", default: 0
-    t.text "body", null: false
-    t.boolean "verified", default: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["book_id"], name: "index_reviews_on_book_id"
-    t.index ["user_id"], name: "index_reviews_on_user_id"
-  end
-
-  create_table "coupons", force: :cascade do |t|
-    t.string "code", null: false
-    t.boolean "is_active", default: true
-    t.datetime "active_till_date", null: false
-    t.decimal "discount", precision: 10, scale: 2
-    t.bigint "order_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["code"], name: "index_coupons_on_code", unique: true
-    t.index ["order_id"], name: "index_coupons_on_order_id"
-  end
-
-  create_table "order_books", force: :cascade do |t|
-    t.bigint "order_id", null: false
-    t.bigint "book_id", null: false
-    t.integer "quantity", default: 1
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["book_id"], name: "index_order_books_on_book_id"
-    t.index ["order_id"], name: "index_order_books_on_order_id"
-  end
-
-  create_table "orders", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "coupon_id"
-    t.integer "total_price", default: 0
-    t.string "status", default: "initialized"
     t.datetime "last_action"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["coupon_id"], name: "index_orders_on_coupon_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
   
@@ -256,7 +209,6 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.boolean "verified", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-
     t.index ["book_id"], name: "index_reviews_on_book_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
