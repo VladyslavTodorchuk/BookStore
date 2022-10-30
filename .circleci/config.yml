@@ -21,6 +21,7 @@ executors:
         environment:
           POSTGRES_USER: postgres
           POSTGRES_DB: bookstore_test
+      - image: cimg/redis:6.2.6
 
 cashes:
   - &bundle_cache_full v2-codebreaker-{{ checksum "Gemfile.lock" }}
