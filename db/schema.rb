@@ -136,6 +136,7 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.bigint "order_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["code"], name: "index_coupons_on_code", unique: true
     t.index ["order_id"], name: "index_coupons_on_order_id"
   end
 
@@ -174,6 +175,10 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.string "status", default: "initialized"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "delivery_id"
+    t.bigint "address_id"
+    t.index ["address_id"], name: "index_orders_on_address_id"
+    t.index ["delivery_id"], name: "index_orders_on_delivery_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -253,11 +258,12 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
-
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "addresses", "users"

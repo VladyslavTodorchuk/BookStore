@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   end
 
   get '/coupon_check', to: 'coupons#find'
-  
+
   resources :users
 
   resources :books, only: %i[show index] do
