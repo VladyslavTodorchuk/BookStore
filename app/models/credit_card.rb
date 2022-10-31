@@ -1,6 +1,6 @@
 class CreditCard < ApplicationRecord
   CARD_NAME_MAX_LENGTH = 50
-  CARD_NAME_FORMAT = /\A[a-zA-Z ']*\z/.freeze
+  CARD_NAME_FORMAT = /\A[a-zA-Z' ]*\z/.freeze
   CARD_CVV_FORMAT = /\A[0-9]{3}\z/.freeze
   CARD_DATE_FORMAT = %r{\A(0[1-9]|1[0-2])/?([0-9]{4}|[0-9]{2})\z}.freeze
   CARD_CODE_FORMAT = /\A[0-9]{16}\z/.freeze
