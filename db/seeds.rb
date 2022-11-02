@@ -12,7 +12,7 @@ if Rails.env.development?
   category = Category.create!(name: FFaker::Book.genre)
   author = Author.create!(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
 
-  4.times do
+  16.times do
     book = Book.create!(title: FFaker::Book.title,
                         description: FFaker::Book.description,
                         price_cents: FFaker::Number.rand(10_000),

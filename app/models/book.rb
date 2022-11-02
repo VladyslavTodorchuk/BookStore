@@ -1,4 +1,7 @@
 class Book < ApplicationRecord
+  MIN_PRICE_IN_CENTS = 0
+  MAX_PRICE_IN_CENTS = 50_000
+
   has_many :authors_books, dependent: :destroy
   has_many :authors, through: :authors_books
 
@@ -10,6 +13,6 @@ class Book < ApplicationRecord
   validates :title, :description, :year_of_publication, :materials, :dimensions, presence: true
   validates :price_cents, :quantity, presence: true,
                                      numericality:
-              { greater_than_or_equal_to: Constants::MIN_PRICE_IN_CENTS,
-                less_than_or_equal_to: Constants::MAX_PRICE_IN_CENTS }
+              { greater_than_or_equal_to: MIN_PRICE_IN_CENTS,
+                less_than_or_equal_to: MAX_PRICE_IN_CENTS }
 end

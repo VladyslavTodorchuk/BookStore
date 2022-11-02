@@ -127,7 +127,7 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["name"], name: "index_categories_on_name", unique: true
   end
-  
+
   create_table "coupons", force: :cascade do |t|
     t.string "code", null: false
     t.boolean "is_active", default: true
@@ -136,6 +136,7 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.bigint "order_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["code"], name: "index_coupons_on_code", unique: true
     t.index ["order_id"], name: "index_coupons_on_order_id"
   end
 
@@ -257,7 +258,6 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
-
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
@@ -277,5 +277,4 @@ ActiveRecord::Schema.define(version: 2022_10_12_083908) do
   add_foreign_key "orders", "addresses"
   add_foreign_key "orders", "deliveries"
   add_foreign_key "orders", "users"
-  add_foreign_key "shippings", "users"
 end

@@ -50,8 +50,8 @@ class CheckoutsController < ApplicationController
     @credit_card = CreditCard.find_or_create_by(user_id: current_user.id)
 
     case permitted_params[:step]
-    when 'billing' then update_billing(permitted_params)
-    when 'shipping' then update_shipping(permitted_params)
+    when 'billing' then update_billing(permitted_params[:billing])
+    when 'shipping' then update_shipping(permitted_params[:shipping])
     when 'payment' then update_payment(permitted_params)
     when 'complete' then update_complete
     end
@@ -81,73 +81,8 @@ class CheckoutsController < ApplicationController
     end
   end
 
-  def update_payment(permitted_params)
-    if @credit_card.update(permitted_params[:credit_card])
-      redirect_to checkout_path(step: :confirm), notice: 'Credit Card was updated'
-    else
-      redirect_to checkout_path(step: :payment), alert: CheckoutService.to_errors(@credit_card.errors.messages)
-    end
-  end
-
-  def update_complete
-    @order.coupon&.update(is_active: false)
-
-    if @order.update(status: :created, total_price: CheckoutService.count_total_price(@order))
-      redirect_to root_path, notice: t('orders.messages.success.order')
-    else
-      redirect_to checkout_path(step: :confirm), alert: t('orders.messages.error.something_went_wrong')
-    end
-  end
-
-  def all_fields_are_required
-    redirect_to checkout_path(step: permitted_params[:step]),
-                alert: t('orders.messages.error.require_fields') unless CheckoutService.check_fields(permitted_params)
-  end
-
-  def allow_step
-    order = Order.find(session[:order_id])
-
-    if order.books.empty?
-      redirect_to books_path
-    elsif %w[confirm complete].include?(permitted_params[:step]) && (order.address.nil? || order.delivery.nil?)
-      redirect_to checkout_path(step: :address)
-    end
-  end
-
-  def permitted_params
-    params.permit(
-      :step, :code,
-      user: %i[password current_password password_confirmation email],
-      billing: %i[first_name last_name address city zip country phone],
-      shipping: %i[first_name last_name address city zip country phone],
-      credit_card: %i[name code cvv expiration_date]
-    )
-  end
-
-  def update_address(permitted_params)
-    update_billing(permitted_params[:billing]) unless permitted_params[:billing].nil?
-
-    update_shipping(permitted_params[:shipping]) unless permitted_params[:shipping].nil?
-  end
-
-  def update_shipping(params)
-    if @user_shipping.update(params)
-      redirect_to checkout_path(step: :address), notice: 'Shipping was updated'
-    else
-      redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_shipping.errors.messages)
-    end
-  end
-
-  def update_billing(params)
-    if @user_billing.update(params)
-      redirect_to checkout_path(step: :address), notice: 'Billing was updated'
-    else
-      redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_billing.errors.messages)
-    end
-  end
-
-  def update_payment(permitted_params)
-    if @credit_card.update(permitted_params[:credit_card])
+  def update_payment(update_params)
+    if @credit_card.update(update_params[:credit_card])
       redirect_to checkout_path(step: :confirm), notice: 'Credit Card was updated'
     else
       redirect_to checkout_path(step: :payment), alert: CheckoutService.to_errors(@credit_card.errors.messages)
