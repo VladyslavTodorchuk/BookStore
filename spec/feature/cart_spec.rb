@@ -44,7 +44,7 @@ RSpec.describe 'Cart', type: :feature, js: true do
     it 'remove book from cart' do
       find('button.close.general-cart-close').click
 
-      expect(page).to have_content(I18n.t('order.messages.delete'))
+      expect(page).to have_content(I18n.t('orders.messages.error.delete'))
     end
   end
 end

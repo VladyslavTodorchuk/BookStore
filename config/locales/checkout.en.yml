@@ -13,6 +13,8 @@ en:
     continue: 'Continue to Checkout'
     error_message: 'Something went wrong. User is exits'
     save_continue: 'Save and Continue'
+    shipment: 'Shipment'
+    information: 'Payment Information'
     header:
       address: 'Address'
       delivery: 'Delivery'
@@ -26,7 +28,7 @@ en:
     delivery_page:
       delivey: 'Delivey'
       method: 'Method'
-      day: 'Day'
+      day: 'Days'
       price: 'Price'
     payment_page:
       payment: 'Credit Card'

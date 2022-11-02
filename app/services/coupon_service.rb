@@ -1,6 +1,6 @@
 class CouponService
   def self.find_coupon(params, order, coupon)
-    error_message = I18n.t('order.coupon.error')
+    error_message = I18n.t('orders.messages.error.error_coupon')
 
     if coupon.nil?
       error_message = ' ' if params[:code].eql?('')

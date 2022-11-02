@@ -32,15 +32,15 @@
         = t('checkout.confirm_page.phone')
         = @user_billing.phone
     .col-sm-3
-      %h3.general-subtitle Shipments
+      %h3.general-subtitle= t('checkout.shipment')
       %p.general-address
         = @order.delivery.delivery_method
         = link_to t('checkout.confirm_page.edit'), checkout_path(step: :delivery), class: 'general-edit'
         %br
         = @order.delivery.delivery_day
-        Days
+        = t('checkout.delivery_page.day')
     .col-sm-3
-      %h3.general-subtitle Payment Information
+      %h3.general-subtitle= t('checkout.information')
       %p.general-address
         **** **** ****
         = @credit_card.code.last(4)

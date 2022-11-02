@@ -19,9 +19,9 @@ class OrderBooksController < ApplicationController
     product = OrderBook.find_by(order_id: params[:order_id], book_id: params[:book_id])
 
     if product.destroy
-      redirect_to order_path(session[:order_id]), notice: I18n.t('order.messages.delete')
+      redirect_to order_path(session[:order_id]), notice: I18n.t('orders.messages.error.delete')
     else
-      redirect_to order_path(session[:order_id]), alert: I18n.t('order.errors.error_delete')
+      redirect_to order_path(session[:order_id]), alert: I18n.t('orders.messages.error.error_delete')
     end
   end
 
