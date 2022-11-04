@@ -12,11 +12,17 @@
               %a.thumb-hover-link{href: book_path(book)}
                 %i.fa.fa-eye.thumb-icon{'aria-hidden': "true"}
               %div{ "data-controller": "book" }
-                %a.thumb-hover-link{ "data-action": "click->book#addToCart",
-                "data-book-book-param": book.id,
-                "data-book-order-param": session[:order_id],
-                "data-book-count-param": 1 }
-                  %i.fa.fa-shopping-cart.thumb-icon
+                - if book.quantity == 0
+                  %a#add_to_cart.thumb-hover-link{ "data-action": "click->book#addToCart",
+                                                    "data-book-book-param": book.id,
+                                                    "data-book-order-param": session[:order_id],
+                                                    "data-book-count-param": 1 }
+                - else
+                  %a#add_to_cart.thumb-hover-link.disabled{ "data-action": "click->book#addToCart",
+                                                            "data-book-book-param": book.id,
+                                                            "data-book-order-param": session[:order_id],
+                                                            "data-book-count-param": 1 }
+                    %i.fa.fa-shopping-cart.thumb-icon
       .mb-35
         .clearfix
           %p.pull-right.font-16.in-gold-500

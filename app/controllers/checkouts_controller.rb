@@ -93,6 +93,8 @@ class CheckoutsController < ApplicationController
     @order.coupon&.update(is_active: false)
 
     if @order.update(status: :created, total_price: CheckoutService.count_total_price(@order))
+      CheckoutService.quantity_update(@order.id)
+
       redirect_to root_path, notice: t('orders.messages.success.order')
     else
       redirect_to checkout_path(step: :confirm), alert: t('orders.messages.error.something_went_wrong')

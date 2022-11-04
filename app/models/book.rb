@@ -1,7 +1,7 @@
 class Book < ApplicationRecord
   MIN_PRICE_IN_CENTS = 0
   MAX_PRICE_IN_CENTS = 50_000
-
+  # H:6.4\" x W: 0.9\" x D: 5.0
   has_many :authors_books, dependent: :destroy
   has_many :authors, through: :authors_books
 

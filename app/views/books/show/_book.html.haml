@@ -24,12 +24,21 @@
           .input-group.general-position
             %a.input-link.dec#dec{"data-target": "price.decrement", "data-action": "click->price#decrementValue", "value_price": @book.price }
               %i.fa.fa-minus.line-height-40
-            %input#counter.form-control.quantity-input{ value: 1 }
+            - if @book.quantity == 0
+              %input#counter.form-control.quantity-input{ value: 0 }
+            - else
+              %input#counter.form-control.quantity-input{ value: 1 }
             %a.input-link.inc#inc{"data-target": "price.increment", "data-action": "click->price#incrementValue", "value_price": @book.price, "value_books": @book.quantity }
               %i.fa.fa-plus.line-height-40
         .col-xs-7.col-md-5
           %div{ "data-controller": "book" }
-            %button#add_to_cart.btn.btn-default.pull-right.general-position{ "data-action": "click->book#addToCart",
+            - if @book.quantity == 0
+              %button#add_to_cart.btn.btn-default.pull-right.general-position.disabled{ "data-action": "click->book#addToCart",
+                "data-book-book-param": @book.id,
+                "data-book-order-param": session[:order_id],
+                "data-book-count-param": 1 }= t('book_page.add_to_card')
+            - else
+              %button#add_to_cart.btn.btn-default.pull-right.general-position{ "data-action": "click->book#addToCart",
                 "data-book-book-param": @book.id,
                 "data-book-order-param": session[:order_id],
                 "data-book-count-param": 1 }= t('book_page.add_to_card')
