@@ -11,11 +11,11 @@ amazon_prod:
   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
   region: 'us-west-2'
-  bucket: <%= Rails.application.credentials.dig(:aws, :prod, :bucket) %>
+  bucket: 'bookstore-ruby-prod'
 
 amazon_dev:
   service: S3
   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
   region: 'us-west-2'
-  bucket: <%= Rails.application.credentials.dig(:aws, :dev, :bucket) %>
+  bucket: 'bookstore-ruby-dev'
