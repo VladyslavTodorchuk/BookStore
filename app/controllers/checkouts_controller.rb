@@ -94,8 +94,9 @@ class CheckoutsController < ApplicationController
 
     if @order.update(status: :created, total_price: CheckoutService.count_total_price(@order))
       CheckoutService.quantity_update(@order.id)
-
       redirect_to root_path, notice: t('orders.messages.success.order')
+
+      OrderCompleteMailer.with(user: current_user).order_confirmation.deliver_now
     else
       redirect_to checkout_path(step: :confirm), alert: t('orders.messages.error.something_went_wrong')
     end

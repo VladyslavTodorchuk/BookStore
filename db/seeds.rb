@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 if Rails.env.development?
   AdminUser.create(email: 'admin@example.com', password: 'password',
-                    password_confirmation: 'password')
+                   password_confirmation: 'password')
 
   category = Category.create!(name: FFaker::Book.genre)
   author = Author.create!(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
