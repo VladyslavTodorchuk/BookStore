@@ -15,7 +15,7 @@ ActiveAdmin.register Review do
 
   show do
     attributes_table do
-      column :title
+      row :title
       row :user_id
       row :book_id
       row :rating
