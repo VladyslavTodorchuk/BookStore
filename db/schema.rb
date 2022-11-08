@@ -128,6 +128,40 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.index ["name"], name: "index_categories_on_name", unique: true
   end
 
+  create_table "coupons", force: :cascade do |t|
+    t.string "code", null: false
+    t.boolean "is_active", default: true
+    t.datetime "active_till_date", null: false
+    t.decimal "discount", precision: 10, scale: 2
+    t.bigint "order_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["code"], name: "index_coupons_on_code", unique: true
+    t.index ["order_id"], name: "index_coupons_on_order_id"
+  end
+
+  create_table "order_books", force: :cascade do |t|
+    t.bigint "order_id", null: false
+    t.bigint "book_id", null: false
+    t.integer "quantity", default: 1
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["book_id"], name: "index_order_books_on_book_id"
+    t.index ["order_id"], name: "index_order_books_on_order_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "coupon_id"
+    t.integer "total_price", default: 0
+    t.string "status", default: "initialized"
+    t.datetime "last_action"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["coupon_id"], name: "index_orders_on_coupon_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
   create_table "reviews", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "book_id", null: false
@@ -177,4 +211,7 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
   add_foreign_key "authors_books", "books"
   add_foreign_key "books_categories", "books"
   add_foreign_key "books_categories", "categories"
+  add_foreign_key "order_books", "books"
+  add_foreign_key "order_books", "orders"
+  add_foreign_key "orders", "users"
 end

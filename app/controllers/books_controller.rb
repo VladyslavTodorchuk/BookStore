@@ -11,7 +11,7 @@ class BooksController < ApplicationController
       format.html
       format.json do
         render json: {
-          entries: render_to_string(partial: 'books', formats: [:html]),
+          entries: render_to_string(partial: 'books/index/books', formats: [:html]),
           pagination: view_context.will_paginate(@books)
         }
       end

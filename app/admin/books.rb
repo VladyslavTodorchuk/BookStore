@@ -73,7 +73,7 @@ ActiveAdmin.register Book do
   end
 
   member_action :delete_image, method: :delete do
-    ActiveStorage::Attachment.find(params[:id]).destroy
+    ActiveStorage::Attachment.find(params[:id]).purge_later
     redirect_back(fallback_location: edit_admin_book_path)
   end
 end

@@ -1,0 +1,12 @@
+%td
+  .general-img-wrap-table
+    - if book.images.any?
+      = image_tag(book.images.first, class: 'img-shadow general-thumbnail-img')
+    - else
+      = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
+%td
+  %p.title= book.title
+%td
+  %span.font-16.in-gold-500
+    €
+    = book.price

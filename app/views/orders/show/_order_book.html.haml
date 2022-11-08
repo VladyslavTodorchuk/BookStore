@@ -1,0 +1,17 @@
+%td{'data-controller': 'quantity'}
+  %div.input-group.quantity
+    %a.input-link{"data-action": "click->quantity#setBookQuantity",'data-quantity-quantity-param': order_book.quantity - 1,
+      'data-quantity-order-param': session[:order_id], 'data-quantity-book-param': order_book.book.id, id: "dec#{order_book.book.id}"}
+      %i.fa.fa-minus.line-heaght-40
+    %input.form-control.quantity-input{ 'value': order_book.quantity, id: "counter#{order_book.book.id}" }
+    %a.input-link{"data-action": "click->quantity#setBookQuantity", 'data-quantity-quantity-param': order_book.quantity + 1,
+      'data-quantity-order-param': session[:order_id], 'data-quantity-book-param': order_book.book.id, id: "inc#{order_book.book.id}"}
+      %i.fa.fa-plus.line-heaght-40
+
+%td
+  %span.font-16.in-gold-500{ id: "price#{order_book.book.id}" }
+    €
+    = order_book.total_price
+%td
+  = button_to "/orders/#{session[:order_id]}/delete_from_cart/#{order_book.book.id}", method: :delete, class: 'close general-cart-close', type: "button", 'aria-label': "Close" do
+    %span{'aria-hidden': "true"} &times;

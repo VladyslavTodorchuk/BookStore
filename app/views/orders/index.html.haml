@@ -1,0 +1,53 @@
+%main.container.general-main-wrap
+  %h1.general-title-margin= t('order.cart')
+  .hidden-xs
+    %table.table.table-hover
+      %tr.no-hover
+        %th.col-pic.pl-0
+          %span.in-grey-600= t('order.product')
+        %th.col-title
+        %th.col-price
+          %span.in-grey-600= t('order.price')
+        %th.col-quantity
+          %span.in-grey-600= t('order.quantity')
+        %th.col-total
+          %span.in-grey-600= t('order.subtotal_title')
+        %th.col-close
+      - @cart.order_books.each do |order_books|
+        %tr
+          = render partial: 'orders/show/book', object: order_books.book.decorate
+          = render partial: 'orders/show/order_book', object: order_books.decorate
+  .general-order-wrap{ 'data-controller': 'coupon' }
+    .row
+      .col-sm-4
+        .input-group.general-input-group
+          %label.input-label= t('order.enter_the_coupon')
+          %input#input.form-control.mb-30{type: "text", placeholder: "Enter Your Coupon Code "}
+          %span#error.text-danger
+          %div
+            %button.btn.btn-primary.mr-5.mb-15{"data-action": "click->coupon#checkCoupon"}= t('order.apply')
+      .col-sm-8
+        .res-mr-200.text-center.general-text-right
+          %p.in-gold-500.font-18= t('order.order_summery')
+          %table.general-summary-table.general-summary-table-right.general-text-right
+            %tr
+              %td
+                %p.font-16= t('order.subtotal')
+              %td
+                %p#sub_price.font-16
+                  €
+                  = @cart.order_price
+            %tr
+              %td
+                %p.font-16= t('order.coupon_text')
+              %td
+                %p#coupon_price.font-16 € 0.00
+            %tr
+              %td
+                %strong.font-18= t('order.order_total')
+              %td
+                %strong#total_price.font-18
+                  €
+                  = @cart.order_price
+          %button.btn.btn-default.mb-20.visible-xs-inline-block= t('order.checkout')
+  %button.btn.btn-default.mb-20.hidden-xs.center-block= t('order.checkout')

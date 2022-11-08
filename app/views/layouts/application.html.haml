@@ -17,13 +17,11 @@
     = render partial: 'layouts/header'
 
     - unless notice.nil?
-      .container.text-center
-        %p.notice
-          = notice
+      %div.alert.alert-warning.text-center{ role: "alert" }
+        = notice
     - unless alert.nil?
-      .container.text-center
-        %p.alert
-          = alert
+      %div.alert.alert-danger.text-center{ role: "alert" }
+        = alert
 
     = yield
 

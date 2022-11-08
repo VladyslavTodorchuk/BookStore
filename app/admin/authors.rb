@@ -1,5 +1,4 @@
 ActiveAdmin.register Author do
-  config.filters = true
   permit_params :first_name, :last_name
 
   filter :books, collection: Book.all

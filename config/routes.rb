@@ -1,5 +1,11 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
+
+  authenticate :admin_user do
+    mount Sidekiq::Web => '/sidekiq'
+  end
 
   ActiveAdmin.routes(self)
 
@@ -8,6 +14,14 @@ Rails.application.routes.draw do
   devise_for :users, as: 'omniauth', controller: { omniauth_callbacks: 'callbacks' }
 
   root 'home#index'
+
+  resources :orders, only: %i[index] do
+    get '/add_to_order', to: 'order_books#add_to_order'
+    delete '/delete_from_cart/:book_id', to: 'order_books#delete_product'
+    put '/order_update_book', to: 'order_books#update_quantity'
+  end
+
+  get '/coupon_check', to: 'coupons#find'
 
   resources :users
 
