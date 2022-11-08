@@ -27,8 +27,8 @@ RSpec.describe 'Review', type: :feature do
   describe '#post review', js: true do
     context 'when review posted' do
       let(:rating) { "star#{rand(1..5)}" }
-      let(:title_words) { 5 }
-      let(:body_words) { 10 }
+      let(:title_words) { 3 }
+      let(:body_words) { 4 }
       let(:result) { I18n.t('reviews.success') }
 
       include_examples 'review'
@@ -36,7 +36,7 @@ RSpec.describe 'Review', type: :feature do
 
     context 'when review not been posted' do
       let(:rating) { "star#{rand(1..5)}" }
-      let(:title_words) { 80 }
+      let(:title_words) { 20 }
       let(:body_words) { 30 }
       let(:result) { 'Title is too long (maximum is 80 characters)' }
 
