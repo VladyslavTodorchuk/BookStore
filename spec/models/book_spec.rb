@@ -16,6 +16,8 @@ RSpec.describe Book, type: :model do
 
       it { is_expected.to have_many(:books_categories).dependent(:destroy) }
       it { is_expected.to have_many(:categories).through(:books_categories) }
+
+      it { is_expected.to have_many(:reviews).dependent(:destroy) }
     end
   end
 end

@@ -16,10 +16,10 @@ ActiveAdmin.register Book do
     column :year_of_publication
     column :materials
     column :dimensions
-    column :price_cents, &:price
+    column :price
     column :quantity
-    column :authors, &:authors_names
-    column :categories, &:categories_names
+    column :authors_names
+    column :categories_names
 
     actions
   end
@@ -32,7 +32,7 @@ ActiveAdmin.register Book do
       row :description
       row :materials
       row :dimensions
-      row :price_cents, &:price
+      row :price, &:price
       row :created_at
       row :updated_at
     end

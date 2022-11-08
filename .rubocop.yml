@@ -45,3 +45,6 @@ RSpec/MessageSpies:
 
 RSpec/MultipleMemoizedHelpers:
   Max: 9
+
+Rails/OutputSafety:
+  Enabled: false

@@ -6,7 +6,7 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand= t('.name')
+      %a.navbar-brand= t('header.name')
       %a.shop-link.pull-right.visible-xs{href: "/"}
         %span.shop-icon
           %span.shop-quantity 0
@@ -19,10 +19,9 @@
           %span{'aria-hidden': "true"} &times;
         %ul.nav.navbar-nav
           %li
-            %a#root{href: "/"}= t('.home')
+            %a#root{href: "/"}= t('header.home')
           %li
-            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
-              = t('.shop')
+            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
@@ -48,31 +47,30 @@
       .hidden-xs
         %ul.nav.navbar-nav
           %li
-            %a#root_mobile{href: "#"}= t('.home')
+            %a#root_mobile{href: "/"}= t('header.home')
           %li.dropdown
-            %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
-              = t('.shop')
+            %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"} Shop
             %ul.dropdown-menu
               %li
                 %a.collapse-link{href: "/books"}= t('header.all')
               - Category.all.each do |category|
                 %li
-                  %a{href: "#"}= category.name
-          - if user_signed_in?
-            %li
+                  %a.collapse-link{href: "/books?category=#{category.id}"}= category.name
+            - if user_signed_in?
               %li
                 %li.dropdown
                   %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"}
                     = t('header.account')
-                  %ul#account.dropdown-menu
+                  %ul.dropdown-menu
                     %li
                       %a= t('header.orders')
                     %li
                       = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
-          - else
-            %li
-              = link_to t('header.log_in'), new_user_session_path
-            %li
-              = link_to t('header.sing_up'), new_user_registration_path
+
+            - else
+              %li
+                = link_to t('header.log_in'), new_user_session_path
+              %li
+                = link_to t('header.sing_up'), new_user_registration_path

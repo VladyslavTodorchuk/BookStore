@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
 
-  devise_for :users, controller: { omniauth_callbacks: 'callbacks' }
+  devise_for :users
 
   devise_for :users, as: 'omniauth', controller: { omniauth_callbacks: 'callbacks' }
 
@@ -11,5 +11,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  resources :books, only: %i[show index]
+  resources :books, only: %i[show index] do
+    resources :reviews, only: :create
+  end
 end

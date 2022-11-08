@@ -21,8 +21,9 @@ class BooksController < ApplicationController
   def show
     book = Book.find_by(id: params[:id])
 
-    return redirect_to books_path if book.nil?
+    redirect_to books_path if book.nil?
 
     @book = book.decorate
+    @reviews = @book.reviews.where(verified: true).order(created_at: :desc)
   end
 end

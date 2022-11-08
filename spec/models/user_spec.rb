@@ -8,6 +8,7 @@ RSpec.describe User, type: :model do
     context 'with associations' do
       it { is_expected.to have_one(:billing) }
       it { is_expected.to have_one(:shipping) }
+      it { is_expected.to have_many(:reviews).dependent(:nullify) }
     end
   end
 end
