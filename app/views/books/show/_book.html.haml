@@ -32,9 +32,7 @@
               %i.fa.fa-plus.line-height-40
         .col-xs-7.col-md-5
           %div{ "data-controller": "book" }
-            - if @book.quantity == 0
-              %button#add_to_cart.btn.btn-default.pull-right.general-position.disabled= t('book_page.add_to_card')
-            - else
+            - unless @book.quantity == 0
               %button#add_to_cart.btn.btn-default.pull-right.general-position{ "data-action": "click->book#addToCart",
                 "data-book-book-param": @book.id,
                 "data-book-order-param": session[:order_id],
