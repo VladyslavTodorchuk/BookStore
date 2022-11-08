@@ -9,5 +9,5 @@ module Constants
 
   FOOTER_NUMBER = '(555)-555-5555'.freeze
   FOOTER_EMAIL = 'support@bookstore.com'.freeze
-  REVIEW_DATE_MASK = '%m/%d/%Y'.freeze
+  DATE_MASK = '%m/%d/%Y'.freeze
 end

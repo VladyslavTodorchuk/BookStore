@@ -6,6 +6,7 @@ ActiveAdmin.register Review do
 
     column :user_id
     column :book_id
+    column :title
     column :rating
     column :verified
 
@@ -14,6 +15,7 @@ ActiveAdmin.register Review do
 
   show do
     attributes_table do
+      column :title
       row :user_id
       row :book_id
       row :rating
