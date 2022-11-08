@@ -11,11 +11,15 @@
         .row
           .col-sm-5
             .general-img-wrap
-              %img.img-shadow.general-thumbnail-img{src: "http://jonathantweedy.com/users/thumbs/SmashingBook5ResponsiveWebDesign.jpg", alt: "design-show"}
+              - if book.images.any?
+                = image_tag(book.images.first, class: 'img-shadow general-thumbnail-img')
+              - else
+                = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
           .col-sm-7
             .mb-60
               %h1= book.title
-              %p.lead= book.description
+              %p.lead
+                = markdown(book.short_description)
               %p.lead.small
                 = book.authors_names
               .general-align

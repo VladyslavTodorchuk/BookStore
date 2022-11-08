@@ -3,7 +3,10 @@
     .col-xs-6.col-sm-3
       .general-thumb-wrap
         .thumbnail.general-thumbnail
-          %img.img-shadow.general-thumbnail-img{src: "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a98cf15e-2bde-47dd-8b88-d85b15aab9a4/understanding-privacy-shop-opt.png", alt: "design-book"}
+          - if book.images.any?
+            = image_tag(book.images.first, class: 'img-shadow general-thumbnail-img')
+          - else
+            = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
           .thumb-hover
             .general-thumb-link-wrap
               %a.thumb-hover-link{href: book_path(book.id)}

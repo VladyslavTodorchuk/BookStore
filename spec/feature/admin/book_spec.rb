@@ -49,8 +49,34 @@ RSpec.describe 'Book' do
     visit 'admin/books'
 
     click_link('Edit')
+
     fill_in 'book[title]', with: new_title
 
     expect { click_button('Update Book') }.to change { book.reload.title }.from(old_title).to(new_title)
+  end
+
+  context 'when image' do
+    before do
+      book
+      visit 'admin/books'
+
+      click_link('Edit')
+
+      page.attach_file('book[images][]', './app/assets/images/Web-Book-Cover.png')
+
+      click_on 'Update Book'
+    end
+
+    it 'can add images to book' do
+      expect(book.reload.images.count).to eq(1)
+    end
+
+    it 'can delete images from book' do
+      click_link('Edit')
+
+      click_link('Delete')
+
+      expect(book.reload.images.count).to eq(0)
+    end
   end
 end
