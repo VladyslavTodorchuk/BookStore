@@ -8,7 +8,6 @@ class CheckoutsController < ApplicationController
     user = User.new(email: permitted_params[:user][:email],
                     password: Devise.friendly_token.first(Devise.password_length.first))
     user.skip_confirmation!
-
     order = Order.find(session[:order_id])
 
     if user.save
@@ -58,23 +57,17 @@ class CheckoutsController < ApplicationController
   end
 
   private
-  s
-  def update_address(permitted_params)
-    update_billing(permitted_params[:billing]) unless permitted_params[:billing].nil?
 
-    update_shipping(permitted_params[:shipping]) unless permitted_params[:shipping].nil?
-  end
-
-  def update_shipping(params)
-    if @user_shipping.update(params)
+  def update_shipping(update_params)
+    if @user_shipping.update(update_params)
       redirect_to checkout_path(step: :address), notice: 'Shipping was updated'
     else
       redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_shipping.errors.messages)
     end
   end
 
-  def update_billing(params)
-    if @user_billing.update(params)
+  def update_billing(update_params)
+    if @user_billing.update(update_params)
       redirect_to checkout_path(step: :address), notice: 'Billing was updated'
     else
       redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_billing.errors.messages)

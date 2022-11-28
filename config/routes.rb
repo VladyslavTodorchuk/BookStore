@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  resource :checkout, only: %i[new create edit show update]
+
   resources :orders, only: %i[index show update] do
     get '/add_to_order', to: 'order_books#add_to_order'
     delete '/delete_from_cart/:book_id', to: 'order_books#delete_product'
