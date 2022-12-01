@@ -1,5 +1,5 @@
-class CartCleaner < ApplicationJob
-  # include Sidekiq::Job
+class CartCleaner
+  include Sidekiq::Job
   queue_as :default
   def perform(order_id)
     order = Order.find(order_id)

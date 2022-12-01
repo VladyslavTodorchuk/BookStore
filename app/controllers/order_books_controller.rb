@@ -42,6 +42,14 @@ class OrderBooksController < ApplicationController
     end
   end
 
+  def update
+    product = OrderBook.find_by(order_id: session[:order_id], book_id: params[:book_id])
+
+    product.update(quantity: params[:quantity])
+
+    redirect_to orders_path
+  end
+
   private
 
   def order_item_params

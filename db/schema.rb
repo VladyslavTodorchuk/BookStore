@@ -152,13 +152,11 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
 
   create_table "orders", force: :cascade do |t|
     t.bigint "user_id"
-    t.bigint "coupon_id"
     t.integer "total_price", default: 0
     t.string "status", default: "initialized"
     t.datetime "last_action"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["coupon_id"], name: "index_orders_on_coupon_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -198,6 +196,8 @@ ActiveRecord::Schema.define(version: 2022_10_06_102140) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
+    t.string "first_name", default: "", null: false
+    t.string "last_name", default: "", null: false
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

@@ -49,5 +49,9 @@
                 %strong#total_price.font-18
                   €
                   = @cart.order_price
-          %button.btn.btn-default.mb-20.visible-xs-inline-block= t('order.checkout')
-  %button.btn.btn-default.mb-20.hidden-xs.center-block= t('order.checkout')
+          = button_to t('order.checkout'), order_path(session[:order_id]),
+              class: 'btn btn-default mb-20 visible-xs-inline-block',
+              method: :get
+  = button_to t('order.checkout'), order_path(session[:order_id]),
+      class: 'btn btn-default mb-20 hidden-xs center-block',
+      method: :get

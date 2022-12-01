@@ -10,7 +10,7 @@ RSpec.describe 'Cart', type: :feature, js: true do
 
   describe '#add_book_to_order' do
     it 'add book to order' do
-      within('span', class: 'shop-icon') do
+      find_all('span#books_count.shop-quantity')[0] do
         expect(page).to have_content(1)
       end
     end
@@ -43,7 +43,7 @@ RSpec.describe 'Cart', type: :feature, js: true do
   end
 
   describe '#remove_book_from_cart' do
-    it 'book quantity change' do
+    it 'remove book from cart' do
       visit orders_path
 
       find('button.close.general-cart-close').click
