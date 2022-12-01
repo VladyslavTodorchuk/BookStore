@@ -6,13 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 if Rails.env.development?
-  AdminUser.create!(email: 'admin@example.com', password: 'password',
-                    password_confirmation: 'password')
+  AdminUser.create(email: 'admin@example.com', password: 'password',
+                   password_confirmation: 'password')
 
   category = Category.create!(name: FFaker::Book.genre)
   author = Author.create!(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name)
 
-  4.times do
+  16.times do
     book = Book.create!(title: FFaker::Book.title,
                         description: FFaker::Book.description,
                         price_cents: FFaker::Number.rand(10_000),

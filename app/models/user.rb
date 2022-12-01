@@ -6,7 +6,6 @@ class User < ApplicationRecord
 
   has_one :billing, dependent: :destroy
   has_one :shipping, dependent: :destroy
-
   has_one :order, dependent: :destroy
 
   has_many :reviews, dependent: :nullify

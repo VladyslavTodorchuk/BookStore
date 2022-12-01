@@ -49,8 +49,8 @@ class CheckoutsController < ApplicationController
     @credit_card = CreditCard.find_or_create_by(user_id: current_user.id)
 
     case permitted_params[:step]
-    when 'billing' then update_billing(permitted_params)
-    when 'shipping' then update_shipping(permitted_params)
+    when 'billing' then update_billing(permitted_params[:billing])
+    when 'shipping' then update_shipping(permitted_params[:shipping])
     when 'payment' then update_payment(permitted_params)
     when 'complete' then update_complete
     end
@@ -58,28 +58,24 @@ class CheckoutsController < ApplicationController
 
   private
 
-  def update_shipping(permitted_params)
-    return if permitted_params[:shipping].nil?
-
-    if @user_shipping.update(permitted_params[:shipping])
+  def update_shipping(update_params)
+    if @user_shipping.update(update_params)
       redirect_to checkout_path(step: :address), notice: 'Shipping was updated'
     else
       redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_shipping.errors.messages)
     end
   end
 
-  def update_billing(permitted_params)
-    return if permitted_params[:billing].nil?
-
-    if @user_billing.update(permitted_params[:billing])
+  def update_billing(update_params)
+    if @user_billing.update(update_params)
       redirect_to checkout_path(step: :address), notice: 'Billing was updated'
     else
       redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_billing.errors.messages)
     end
   end
 
-  def update_payment(permitted_params)
-    if @credit_card.update(permitted_params[:credit_card])
+  def update_payment(update_params)
+    if @credit_card.update(update_params[:credit_card])
       redirect_to checkout_path(step: :confirm), notice: 'Credit Card was updated'
     else
       redirect_to checkout_path(step: :payment), alert: CheckoutService.to_errors(@credit_card.errors.messages)
@@ -90,7 +86,10 @@ class CheckoutsController < ApplicationController
     @order.coupon&.update(is_active: false)
 
     if @order.update(status: :created, total_price: CheckoutService.count_total_price(@order))
+      CheckoutService.quantity_update(@order.id)
       redirect_to root_path, notice: t('orders.messages.success.order')
+
+      OrderCompleteMailer.with(user: current_user).order_confirmation.deliver_now
     else
       redirect_to checkout_path(step: :confirm), alert: t('orders.messages.error.something_went_wrong')
     end

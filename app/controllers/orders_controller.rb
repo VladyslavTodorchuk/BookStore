@@ -50,14 +50,4 @@ class OrdersController < ApplicationController
       redirect_to checkout_path(step: :address), notice: "#{address.type.capitalize} was picked"
     end
   end
-
-  def update_user_address(permitted_params)
-    if permitted_params[:shipping].nil?
-      current_user.billing.update(permitted_params[:billing])
-    else
-      current_user.shipping.update(permitted_params[:shipping])
-    end
-
-    redirect_to checkout_path(step: :address)
-  end
 end

@@ -3,7 +3,6 @@ RSpec.describe Category do
   include_context 'with api request global before and after hooks'
 
   let(:category) { create(:category) }
-
   let(:new_name) { FFaker::Book.genre }
   let(:old_name) { category.name }
 

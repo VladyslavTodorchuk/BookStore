@@ -37,4 +37,14 @@ class CheckoutService
       true
     end
   end
+
+  def self.quantity_update(order_id)
+    products = OrderBook.where(order_id: order_id)
+
+    return if products.empty?
+
+    products.each do |product|
+      product.book.update(quantity: product.book.quantity - product.quantity)
+    end
+  end
 end
