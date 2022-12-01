@@ -9,6 +9,7 @@ require 'devise'
 require 'capybara/rspec'
 require 'capybara/rails'
 
+require_relative 'support/configs/sidekiq'
 require_relative 'support/configs/shoulda_matcher'
 require_relative 'support/configs/capybara'
 

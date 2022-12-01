@@ -1,4 +1,4 @@
-RSpec.describe 'Author' do
+RSpec.describe Author do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
@@ -22,7 +22,7 @@ RSpec.describe 'Author' do
     fill_in 'author[first_name]', with: first_name
     fill_in 'author[last_name]', with: last_name
 
-    expect { click_button('Create Author') }.to change(Author, :count).from(0).to(1)
+    expect { click_button('Create Author') }.to change(described_class, :count).from(0).to(1)
   end
 
   it 'can delete an author' do
@@ -30,7 +30,7 @@ RSpec.describe 'Author' do
 
     visit 'admin/authors'
 
-    expect { click_link('Delete') }.to change(Author, :count).from(1).to(0)
+    expect { click_link('Delete') }.to change(described_class, :count).from(1).to(0)
   end
 
   it 'can view an author' do

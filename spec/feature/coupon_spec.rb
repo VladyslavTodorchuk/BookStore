@@ -12,14 +12,14 @@ RSpec.describe 'Coupon', type: :feature, js: true do
     sign_in(user)
     order
     order_book
-    visit orders_path
+    visit order_path(order.id)
   end
 
   describe '#valid coupon' do
     before do
       fill_in 'input', with: coupon.code
 
-      click_button I18n.t('order.apply')
+      click_button I18n.t('orders.apply')
     end
 
     it 'sub price' do
@@ -39,9 +39,9 @@ RSpec.describe 'Coupon', type: :feature, js: true do
     it 'show error message' do
       fill_in 'input', with: 'dasdasdqe1243wasad'
 
-      click_button I18n.t('order.apply')
+      click_button I18n.t('orders.apply')
 
-      expect(page).to have_content(I18n.t('order.coupon.error'))
+      expect(page).to have_content(I18n.t('orders.messages.error.error_coupon'))
     end
   end
 end

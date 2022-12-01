@@ -7,13 +7,13 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand= t('header.name')
-      %a.shop-link.pull-right.visible-xs{href: "/"}
+      %a.shop-link.pull-right.visible-xs{href: order_path(session[:order_id])}
         %span.shop-icon
           - if session[:order_id]
             %span#books_count_mobile.shop-quantity= Order.find(session[:order_id]).books.count
           - else
             %span#books_count_mobile.shop-quantity 0
-    %a.shop-link.pull-right.hidden-xs{href: orders_path}
+    %a.shop-link.pull-right.hidden-xs{href: order_path(session[:order_id])}
       %span.shop-icon
         - if session[:order_id]
           %span#books_count.shop-quantity= Order.find(session[:order_id]).books.count
@@ -25,9 +25,10 @@
           %span{'aria-hidden': "true"} &times;
         %ul.nav.navbar-nav
           %li
-            %a#root{href: "/"}= t('header.home')
+            %a#root{href: "/"}= t('.home')
           %li
-            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"} Shop
+            %a{type: "button", 'data-toggle': "collapse", href: "#menu", 'aria-expanded': "false", 'aria-controls': "menu"}
+              = t('.shop')
             %ul#nav.collapse.list-unstyled.pl-30.mb-10{'aria-expanded': "false"}
               - Category.all.each do |category|
                 %li
@@ -40,9 +41,9 @@
                     = t('header.account')
                   %ul#account.dropdown-menu
                     %li
-                      %a= t('header.orders')
+                      = link_to t('header.orders'), orders_path
                     %li
-                      %a{ href: edit_user_path(current_user.id) }= t('header.settings')
+                      = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li
                       = link_to t('header.log_out'), destroy_user_session_path, method: :delete
           - else
@@ -69,7 +70,7 @@
                     = t('header.account')
                   %ul.dropdown-menu
                     %li
-                      %a= t('header.orders')
+                      = link_to t('header.orders'), orders_path
                     %li
                       = link_to t('header.settings'), edit_user_path(current_user.id)
                     %li

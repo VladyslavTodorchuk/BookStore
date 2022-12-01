@@ -1,10 +1,12 @@
 FactoryBot.define do
   factory :address do
     user
-    address { FFaker::AddressUA.street_address }
-    city { FFaker::AddressUA.city }
+    first_name { FFaker::Name.first_name }
+    last_name { FFaker::Name.last_name }
+    address { FFaker::AddressUK.street_address }
+    city { FFaker::AddressUK.city }
     zip { FFaker::AddressUA.zip_code }
-    country { FFaker::AddressUA.country }
+    country { FFaker::AddressUK.country }
     phone { FFaker::PhoneNumberUA.home_phone_number }
   end
 end

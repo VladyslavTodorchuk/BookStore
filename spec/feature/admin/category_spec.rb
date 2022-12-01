@@ -1,4 +1,4 @@
-RSpec.describe 'Category' do
+RSpec.describe Category do
   include_context 'with api request authentication helper methods'
   include_context 'with api request global before and after hooks'
 
@@ -18,7 +18,7 @@ RSpec.describe 'Category' do
 
     fill_in 'category[name]', with: new_name
 
-    expect { click_button('Create Category') }.to change(Category, :count).from(0).to(1)
+    expect { click_button('Create Category') }.to change(described_class, :count).from(0).to(1)
   end
 
   it 'can delete an category' do
@@ -26,7 +26,7 @@ RSpec.describe 'Category' do
 
     visit 'admin/categories'
 
-    expect { click_link('Delete') }.to change(Category, :count).from(1).to(0)
+    expect { click_link('Delete') }.to change(described_class, :count).from(1).to(0)
   end
 
   it 'can view an category' do

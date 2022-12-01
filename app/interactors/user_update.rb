@@ -18,8 +18,8 @@ class UserUpdate
   end
 
   def billing_and_shipping_update(params, user)
-    return if !params[:billing].nil? && BillingUpdate.call(permitted_params: params, current_user: user)
+    BillingUpdate.call(permitted_params: params, current_user: user) unless params[:billing].nil?
 
-    !params[:shipping].nil? && ShippingUpdate.call(permitted_params: params, current_user: user)
+    ShippingUpdate.call(permitted_params: params, current_user: user) unless params[:shipping].nil?
   end
 end

@@ -1,0 +1,59 @@
+%main.container.general-main-wrap
+  = render 'progress'
+  %h3.general-subtitle= t('checkout.delivery_page.delivery')
+  = form_for @order, url: order_path(@order.id), method: :put do |f|
+    .visible-xs
+      .general-cart-item.divider-lg-bottom
+        %table.table
+          - Delivery.all.each do |delivery|
+            %tr
+              %td.col-half
+                %span.in-grey-600= t('checkout.delivery_page.method')
+              %td.col-half
+                .form-group.radio.mt-0.mb-0
+                  %label.radio-label
+                    = f.radio_button :delivery_id, delivery.id, class: 'radio-input', hidden: "true"
+                    %span.radio-icon
+                    %span.radio-text
+                      = delivery.delivery_method
+            %tr
+              %td
+                %span.in-grey-600= t('checkout.delivery_page.day')
+              %td
+                %span.font-16.fw-300= delivery.delivery_day
+            %tr
+              %td
+                %span.in-grey-600= t('checkout.delivery_page.price')
+              %td
+                %span.font-16.in-gold-500
+                €
+                = delivery.decorate.price
+    .hidden-xs.mb-res-50
+      %table.table.table-hover
+        %thead
+          %tr
+            %th.col-method
+              %span.in-grey-600.ml-40= t('checkout.delivery_page.method')
+            %th
+              %span.in-grey-600= t('checkout.delivery_page.day')
+            %th
+              %span.in-grey-600= t('checkout.delivery_page.price')
+        %tbody
+          - Delivery.all.each do |delivery|
+            %tr
+              %td
+                .form-group.radio.mt-0.mb-0
+                  %label.radio-label
+                    = f.radio_button :delivery_id, delivery.id, class: 'radio-input', hidden: "true"
+                    %span.radio-icon
+                    %span.radio-text= delivery.delivery_method
+              %td
+                %span= delivery.delivery_day
+              %td
+                %span.font-16.in-gold-500
+                  €
+                  = delivery.decorate.price
+    .general-text-align
+      = render 'summary'
+    .text-center
+      = f.submit t('checkout.save_continue'), class: 'btn center-block mb-20'

@@ -8,6 +8,10 @@ Metrics/LineLength:
   Exclude:
     - 'config/initializers/devise.rb'
 
+Style/MultilineIfModifier:
+  Exclude:
+    - 'app/controllers/checkouts_controller.rb'
+
 Rails/BulkChangeTable:
   Enabled: false
 

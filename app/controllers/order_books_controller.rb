@@ -7,13 +7,10 @@ class OrderBooksController < ApplicationController
     product = OrderBook.new(order_id: params[:order_id], book_id: params[:book_id], quantity: params[:quantity])
 
     respond_to do |format|
-      format.html
       format.json do
-        if product.save
-          render json: { notice: 'Added!' }
-        else
-          render json: { notice: 'Error!' }
-        end
+        product.save if OrderBook.where(order_id: params[:order_id], book_id: params[:book_id]).empty?
+
+        render json: { count: OrderBook.where(order_id: product.order.id).count }
       end
     end
   end
@@ -22,9 +19,9 @@ class OrderBooksController < ApplicationController
     product = OrderBook.find_by(order_id: params[:order_id], book_id: params[:book_id])
 
     if product.destroy
-      redirect_to orders_path, notice: I18n.t('order.messages.delete')
+      redirect_to order_path(session[:order_id]), notice: I18n.t('orders.messages.error.delete')
     else
-      redirect_to orders_path, alert: I18n.t('order.errors.error_delete')
+      redirect_to order_path(session[:order_id]), alert: I18n.t('orders.messages.error.error_delete')
     end
   end
 
@@ -57,6 +54,6 @@ class OrderBooksController < ApplicationController
   end
 
   def update_order_last_action
-    Order.find(session[:order_id]).update(last_action: DateTime.now)
+    Order.find(session[:order_id]).update(updated_at: DateTime.now)
   end
 end

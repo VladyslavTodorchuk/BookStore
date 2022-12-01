@@ -8,6 +8,7 @@ class CreateCoupons < ActiveRecord::Migration[6.1]
 
       t.index :code, unique: true
       t.references :order, null: true
+
       t.timestamps
     end
   end

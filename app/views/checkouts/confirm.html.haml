@@ -1,0 +1,118 @@
+%main.container.general-main-wrap
+  = render 'progress'
+  .row.mb-20
+    .col-sm-3
+      %h3.general-subtitle= t('checkout.address_page.shipping')
+      %p.general-address
+        = @user_shipping.decorate.full_name
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :address), class: 'general-edit'
+        %br
+        = @user_shipping.address
+        %br
+        = @user_shipping.city
+        = @user_shipping.zip
+        %br
+        = @user_shipping.country
+        %br
+        = t('checkout.confirm_page.phone')
+        = @user_shipping.phone
+    .col-sm-3
+      %h3.general-subtitle= t('checkout.address_page.billing')
+      %p.general-address
+        = @user_billing.decorate.full_name
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :address), class: 'general-edit'
+        %br
+        = @user_billing.address
+        %br
+        = @user_billing.city
+        = @user_billing.zip
+        %br
+        = @user_billing.country
+        %br
+        = t('checkout.confirm_page.phone')
+        = @user_billing.phone
+    .col-sm-3
+      %h3.general-subtitle= t('checkout.shipment')
+      %p.general-address
+        = @order.delivery.delivery_method
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :delivery), class: 'general-edit'
+        %br
+        = @order.delivery.delivery_day
+        = t('checkout.delivery_page.day')
+    .col-sm-3
+      %h3.general-subtitle= t('checkout.information')
+      %p.general-address
+        **** **** ****
+        = @credit_card.code.last(4)
+        = link_to t('checkout.confirm_page.edit'), checkout_path(step: :payment), class: 'general-edit'
+        %br
+        = @credit_card.expiration_date
+  .visible-xs
+    - @order.order_books.each do |order_book|
+      .general-cart-item.divider-lg
+        .general-img-wrap-table
+          - if order_book.book.images.any?
+            = image_tag(order_book.book.images.first, class: 'img-shadow general-thumbnail-img')
+          - else
+            = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
+        %p.title= order_book.book.title
+        %P.in-grey-600.fw-300= order_book.book.description
+        %table.table
+          %tr
+            %td
+              %span.in-grey-600= t('checkout.price')
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.book.decorate.price
+          %tr
+            %td.vertical-middle
+              %span.in-grey-600= t('checkout.quantity')
+            %td
+              %span= order_book.quantity
+          %tr
+            %td
+              %span.in-grey-600= t('checkout.subtotal')
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.decorate.total_price
+  .hidden-xs.divider-lg.pt-20
+    %table.table.table-hover
+      %thead
+        %tr
+          %th
+            %span.in-grey-600= t('checkout.book')
+          %th.col-method
+          %th
+            %span.in-grey-600= t('checkout.price')
+          %th
+            %span.in-grey-600= t('checkout.quantity')
+          %th
+            %span.in-grey-600= t('checkout.total')
+      %tbody
+        - @order.order_books.each do |order_book|
+          %tr
+            %td
+              .general-img-wrap-table
+                - if order_book.book.images.any?
+                  = image_tag(order_book.book.images.first, class: 'img-shadow general-thumbnail-img')
+                - else
+                  = image_tag('Web-Book-Cover.png', class: 'img-shadow general-thumbnail-img')
+            %td
+              %p.title= order_book.book.title
+              %p.in-grey-600.fw-300= order_book.book.description
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.book.decorate.price
+            %td
+              %span.ml-30= order_book.quantity
+            %td
+              %span.font-16.in-gold-500
+                €
+                = order_book.decorate.total_price
+  .text-center.general-text-right
+    = render 'summary'
+  .text-center
+    = link_to t('checkout.confirm_page.place'), checkout_path(step: :complete), class: 'btn btn-default mb-20'

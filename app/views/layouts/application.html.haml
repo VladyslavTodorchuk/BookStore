@@ -26,3 +26,7 @@
     = yield
 
     = render partial: 'layouts/footer'
+  :javascript
+     $('.fa.fa-question-circle.general-form-help.cvv_info').click( function() {
+        $('.cvv_item').show();
+     });
