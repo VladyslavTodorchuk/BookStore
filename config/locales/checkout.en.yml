@@ -1,0 +1,56 @@
+en:
+  checkout:
+    title: 'Checkout'
+    returning_customer: 'Returning Customer'
+    log_in_with_password: 'Log In with Password'
+    enter_email: 'Enter Email'
+    password: 'Password'
+    forgot_password: 'Forgot password?'
+    new_customer: 'New Customer'
+    or: 'or'
+    quik_registration: 'Quik Register'
+    message: "You’ll be able to create password later"
+    continue: 'Continue to Checkout'
+    error_message: 'Something went wrong. User is exits'
+    save_continue: 'Save and Continue'
+    shipment: 'Shipment'
+    information: 'Payment Information'
+    header:
+      address: 'Address'
+      delivery: 'Delivery'
+      payment: 'Payment'
+      confitm: 'Confirm'
+      complete: 'Complete'
+    address_page:
+      billing: 'Billing Address'
+      shipping: 'Shipping Address'
+      user_billing: 'Use Billing Address'
+    delivery_page:
+      delivey: 'Delivey'
+      method: 'Method'
+      day: 'Days'
+      price: 'Price'
+    payment_page:
+      payment: 'Credit Card'
+      card_number: 'Card Number'
+      name: 'Name on Card'
+      date: 'MM / YY'
+      cvv: 'CVV'
+    confirm_page:
+      edit: 'edit'
+      place: 'Place Order'
+      phone: 'Phone'
+    summary:
+      order: 'Order Summary'
+      items: 'Item Total:'
+      order_total: 'Order Total:'
+    complete_page:
+      message_thank: 'Thank You for your Order!'
+      message: 'An order confirmation has been has been sent to'
+      order: 'Order'
+      back: 'Back to Store'
+    price: 'Price'
+    quantity: 'Quantity'
+    subtotal: 'SubTotal'
+    book: 'Book'
+    total: 'Total'

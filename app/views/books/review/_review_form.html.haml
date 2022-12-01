@@ -1,0 +1,23 @@
+- if current_user
+  %h3= t('reviews.write')
+  %p.general-info-text= t('reviews.score')
+  %div{ "data-controller": "stars" }
+    .mb-15
+      - Review::STAR_MAX.times do |star_count|
+        %i.fa.fa-star.rate-empty{id: "star#{star_count + 1}","data-target": "star#{star_count + 1}", "data-action": "click->stars#get_rating", "data-stars-star-param": star_count + 1}
+    .row
+      = form_with(model: @review, method: :post, url: book_reviews_path(@book.id)) do |f|
+        .col-md-8
+          .mb-40
+            = f.hidden_field :book_id, value: @book.id
+            = f.hidden_field :user_id, value: current_user.id
+            = f.hidden_field :rating, value: 0, id: 'rating'
+            .form-group
+              = f.label :title, t('reviews.title'), class: 'control-label input-label in-grey-600'
+              = f.text_field :title, class: 'form-control', id: 'title'
+            .form-group
+              = f.label :body, t('reviews.review'), class: 'control-label input-label in-grey-600'
+              = f.text_area :body, class: 'form-control', id: 'body'
+            = f.hidden_field :verified, value: false
+          .text-right
+            = f.submit t('reviews.post'), class: 'btn mb-20'

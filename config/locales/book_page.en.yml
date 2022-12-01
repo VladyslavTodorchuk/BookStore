@@ -7,5 +7,11 @@ en:
       year_of_publication: 'Year of publication'
       dimensions: 'Dimensions'
       materials: 'Materials'
+      reviews: 'Reviews'
+      verified: 'Verified Reviewer'
+      not_verified: 'Not Verified Reviewer'
     read_more: 'Read More'
     read_less: 'Read Less'
+    review:
+      success: 'You have successfully created review'
+      error: 'Something went wrong during this process'

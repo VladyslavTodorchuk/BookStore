@@ -1,0 +1,24 @@
+= form_with model: address, url: checkout_path(step: step), method: :put do |f|
+  .form-group
+    = f.label t('settings.first_name'), class: 'control-label.input-label'
+    = f.text_field :first_name, class: 'form-control', type: "text", placeholder: "First Name"
+  .form-group
+    = f.label t('settings.last_name'), class: 'control-label.input-label'
+    = f.text_field :last_name, class: 'form-control', type: "text", placeholder: "Last Name"
+  .form-group
+    = f.label t('settings.address'), class: 'control-label.input-label'
+    = f.text_field :address, class: 'form-control', type: "text", placeholder: "Address"
+  .form-group
+    = f.label t('settings.city'), class: 'control-label.input-label'
+    = f.text_field :city, class: 'form-control', type: "text", placeholder: "City"
+  .form-group
+    = f.label t('settings.zip'), class: 'control-label.input-label'
+    = f.number_field :zip, class: 'form-control', type: "number", placeholder: "Zip"
+  .form-group
+    = f.label t('settings.country'), class: 'control-label.input-label'
+    = f.text_field :country, class: 'form-control', type: "text", placeholder: "Select a country"
+  .form-group
+    = f.label t('settings.phone'), class: 'control-label.input-label'
+    = f.text_field :phone, class: 'form-control', type: "tel", placeholder: "Example +380 66 123 4567"
+  .text-center.general-text-align
+    = f.submit t('settings.save'), class: 'button btn'

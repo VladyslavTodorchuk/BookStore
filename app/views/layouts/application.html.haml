@@ -1,4 +1,3 @@
-
 %html
   %head
     %title BookStoreFJ1
@@ -16,5 +15,18 @@
 
   %body
     = render partial: 'layouts/header'
+
+    - unless notice.nil?
+      %div.alert.alert-warning.text-center{ role: "alert" }
+        = notice
+    - unless alert.nil?
+      %div.alert.alert-danger.text-center{ role: "alert" }
+        = alert
+
     = yield
+
     = render partial: 'layouts/footer'
+  :javascript
+     $('.fa.fa-question-circle.general-form-help.cvv_info').click( function() {
+        $('.cvv_item').show();
+     });

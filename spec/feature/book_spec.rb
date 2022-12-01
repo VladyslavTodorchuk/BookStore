@@ -1,16 +1,8 @@
 RSpec.describe 'Book', type: :feature do
   let(:category_one) { create(:category) }
   let(:category_two) { create(:category) }
-  let(:params) do
-    { title: FFaker::Book.title,
-      description: FFaker::Book.description,
-      price_cents: FFaker::Number.rand(1..100),
-      dimensions: FFaker::Book.cover,
-      year_of_publication: FFaker::Number.rand(1900..2022),
-      materials: 'Soft cover',
-      quantity: FFaker::Number.rand(2..5) }
-  end
-  let(:book) { BookDecorator.new(create(:book)) }
+  let(:params) { attributes_for(:book) }
+  let(:book) { create(:book).decorate }
 
   describe '#show' do
     it 'show books info' do
@@ -37,7 +29,7 @@ RSpec.describe 'Book', type: :feature do
       it 'clicked read more', js: true do
         visit "books/#{book.id}"
 
-        click_link 'Read More'
+        click_link I18n.t('book_page.read_more')
 
         expect(page).not_to have_content(I18n.t('book_page.read_more'))
       end
@@ -51,7 +43,7 @@ RSpec.describe 'Book', type: :feature do
       end
 
       it 'increase quantity' do
-        expect(page).to have_content("€#{book.price * 2}")
+        expect(page).to have_content("€#{Money.new(book.price_cents * 2)}")
       end
 
       it 'decrease quantity' do
@@ -112,7 +104,7 @@ RSpec.describe 'Book', type: :feature do
 
   describe 'load_more' do
     before do
-      (BooksController::PAGINATION_PER_PAGE * 2).times do
+      Constants::PAGINATION_PER_PAGE.next.times do
         books << create(:book)
       end
     end
@@ -137,7 +129,7 @@ RSpec.describe 'Book', type: :feature do
       it 'show loaded books', js: true do
         visit books_path
 
-        find('a', id: 'view_more', class: 'view_more').click
+        find('a', class: 'view_more').click
 
         expect(page).to have_content(books.last.title)
       end

@@ -5,14 +5,28 @@ require:
 
 Metrics/LineLength:
   Max: 120
+  Exclude:
+    - 'config/initializers/devise.rb'
+
+Style/MultilineIfModifier:
+  Exclude:
+    - 'app/controllers/checkouts_controller.rb'
+
+Rails/BulkChangeTable:
+  Enabled: false
 
 Metrics/MethodLength:
   Max: 16
+  Exclude:
+    - 'db/migrate/*'
 
 Style/Documentation:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Rails/OutputSafety:
   Enabled: false
 
 Rails/FilePath:
@@ -21,15 +35,20 @@ Rails/FilePath:
 Metrics/BlockLength:
   Max: 40
   ExcludedMethods: ['describe']
+  Exclude:
+    - 'app/admin/books.rb'
 
 RSpec/ExampleLength:
-  Max: 25
+  Max: 30
 
 Metrics/AbcSize:
   Max: 30
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
 
 RSpec/MessageSpies:
   Enabled: false
 
 RSpec/MultipleMemoizedHelpers:
-  Max: 6
+  Max: 9

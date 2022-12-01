@@ -21,6 +21,7 @@ executors:
         environment:
           POSTGRES_USER: postgres
           POSTGRES_DB: bookstore_test
+      - image: cimg/redis:6.2.6
 
 cashes:
   - &bundle_cache_full v2-codebreaker-{{ checksum "Gemfile.lock" }}
@@ -42,7 +43,7 @@ commands:
             - vendor/bundle
       - run:
           name: Install dependencies
-          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs 4 --retry 3
+          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --workers 4 --retry 3
 
       - node/install:
           install-yarn: true
@@ -57,7 +58,6 @@ commands:
           command: |
             bundle exec rake db:create
             bundle exec rake db:schema:load
-
   run_rubocop:
     description: command to start rubocop
     steps:
@@ -82,11 +82,9 @@ commands:
           command: |
             RAILS_ENV=test bin/rake assets:precompile
             bundle exec rspec
-
       - store_artifacts:
           path: ~/codebreaker/coverage
           destination: coverage
-
 
 jobs:
   lintering:

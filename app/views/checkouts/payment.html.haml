@@ -1,0 +1,32 @@
+- unless @credit_card.errors.messages.nil?
+  - @credit_card.errors.messages.each do |message|
+    %div.alert.alert-warning.text-center{ role: "alert" }
+      = message
+
+%main.container.mb-res-50
+  = render 'progress'
+  %h3.general-subtitle= t('checkout.payment_page.payment')
+  = form_for(@credit_card, url: checkout_path(step: :payment), method: :put) do |f|
+    .form-group
+      %label.control-label.input-label{for: "cardNumber"}= t('checkout.payment_page.card_number')
+      = f.text_field :code, type: "text", placeholder: "Card Number", class: 'form-control'
+    .row
+      .col-sm-6
+        .form-group
+          %label.control-label.input-label{for: "cardName"}= t('checkout.payment_page.name')
+          = f.text_field :name, type: "text", placeholder: "Name on Card", class: 'form-control'
+      .col-sm-3
+        .form-group
+          %label.control-label.input-label{for: "date"}= t('checkout.payment_page.date')
+          = f.text_field :expiration_date, type: "text", placeholder: "MM / YY", class: 'form-control'
+      .col-sm-3
+        .form-group.relative
+          %label.control-label.input-label{for: "CVV"}= t('checkout.payment_page.cvv')
+          = f.text_field :cvv, type: "text", placeholder: "CVV", class: 'form-control'
+          %i.fa.fa-question-circle.general-form-help.cvv_info
+          .cvv_item
+            %p= t('orders.messages.cvv_message')
+    .general-text-align
+      = render 'summary'
+    .text-center
+      = f.submit 'Continue', class: 'btn btn-default mb-80'

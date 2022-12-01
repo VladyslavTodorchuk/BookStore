@@ -36,7 +36,7 @@
   .mb-120
     %div{"data-controller" => "view-more"}
       %div{"data-view-more-target" => "entries"}
-        = render partial: 'books', formats: [:html]
+        = render partial: 'books/index/books', formats: [:html]
       .text-center.hidden
         %div{"data-view-more-target" => "pagination"}
           = will_paginate(@books)
