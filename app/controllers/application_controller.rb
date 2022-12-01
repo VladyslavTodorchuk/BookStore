@@ -15,12 +15,12 @@ class ApplicationController < ActionController::Base
 
   def create_order_for_user
     session[:order_id] = Order.find_or_create_by(user_id: current_user.id, status: :initialized).id
-    CartCleanerJob.perform_in(3.days, session[:order_id])
+    CartCleanerWorker.perform_in(3.days, session[:order_id])
   end
 
   def create_order_for_guest
     session[:order_id] = Order.create.id
-    CartCleanerJob.perform_in(3.days, session[:order_id])
+    CartCleanerWorker.perform_in(3.days, session[:order_id])
   end
 
   def save_previous_path

@@ -1,4 +1,4 @@
-class CartCleanerJob
+class CartCleanerWorker
   include Sidekiq::Job
   queue_as :default
 

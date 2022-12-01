@@ -1,7 +1,7 @@
 class CheckoutService
   def self.to_errors(message)
-    message.map do |k, v|
-      "#{k} #{v.join(', ')}"
+    message.map do |key, value|
+      "#{key} #{value.join(', ')}"
     end.join("\n")
   end
 
@@ -12,7 +12,7 @@ class CheckoutService
       product.book.price_cents * product.quantity
     end.sum
 
-    total_price *= order.coupon.discount unless order.coupon.nil?
+    total_price *= order.coupon.discount if order.coupon.present?
 
     total_price + order.delivery.price_cents
   end
