@@ -48,57 +48,16 @@ class CheckoutsController < ApplicationController
     @user_shipping = Shipping.find_or_create_by(user_id: current_user.id)
     @credit_card = CreditCard.find_or_create_by(user_id: current_user.id)
 
-    case permitted_params[:step]
-    when 'billing' then update_billing(permitted_params)
-    when 'shipping' then update_shipping(permitted_params)
-    when 'payment' then update_payment(permitted_params)
-    when 'complete' then update_complete
-    end
+    update_case
   end
 
   private
 
-  def update_shipping(permitted_params)
-    return if permitted_params[:shipping].nil?
-
-    if @user_shipping.update(permitted_params[:shipping])
-      redirect_to checkout_path(step: :address), notice: 'Shipping was updated'
-    else
-      redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_shipping.errors.messages)
-    end
-  end
-
-  def update_billing(permitted_params)
-    return if permitted_params[:billing].nil?
-
-    if @user_billing.update(permitted_params[:billing])
-      redirect_to checkout_path(step: :address), notice: 'Billing was updated'
-    else
-      redirect_to checkout_path(step: :address), alert: CheckoutService.to_errors(@user_billing.errors.messages)
-    end
-  end
-
-  def update_payment(permitted_params)
-    if @credit_card.update(permitted_params[:credit_card])
-      redirect_to checkout_path(step: :confirm), notice: 'Credit Card was updated'
-    else
-      redirect_to checkout_path(step: :payment), alert: CheckoutService.to_errors(@credit_card.errors.messages)
-    end
-  end
-
-  def update_complete
-    @order.coupon&.update(is_active: false)
-
-    if @order.update(status: :created, total_price: CheckoutService.count_total_price(@order))
-      redirect_to root_path, notice: t('orders.messages.success.order')
-    else
-      redirect_to checkout_path(step: :confirm), alert: t('orders.messages.error.something_went_wrong')
-    end
-  end
-
   def all_fields_are_required
+    checkout_service = CheckoutService.new
+
     redirect_to checkout_path(step: permitted_params[:step]),
-                alert: t('orders.messages.error.require_fields') unless CheckoutService.check_fields(permitted_params)
+                alert: t('orders.messages.error.require_fields') unless checkout_service.check_fields(permitted_params)
   end
 
   def allow_step
@@ -108,6 +67,25 @@ class CheckoutsController < ApplicationController
       redirect_to books_path
     elsif %w[confirm complete].include?(permitted_params[:step]) && (order.address.nil? || order.delivery.nil?)
       redirect_to checkout_path(step: :address)
+    end
+  end
+
+  def update_case
+    checkout_service = CheckoutUpdateService.new(CheckoutService.new)
+
+    case permitted_params[:step]
+    when 'billing'
+      redirect_to checkout_path(step: :address), checkout_service.update_billing(permitted_params, @user_billing)
+    when 'shipping'
+      redirect_to checkout_path(step: :address), checkout_service.update_shipping(permitted_params, @user_shipping)
+    when 'payment'
+      result = checkout_service.update_payment(permitted_params, @credit_card)
+      redirect_to checkout_path(step: result[:step]), result[:message]
+    when 'complete'
+      result = checkout_service.update_complete(@order)
+      return redirect_to checkout_path(ste: result[:step]), result[:message] if result[:step]
+
+      redirect_to root_path, result[:message] unless result[:step]
     end
   end
 

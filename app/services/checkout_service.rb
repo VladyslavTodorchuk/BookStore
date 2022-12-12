@@ -1,11 +1,11 @@
 class CheckoutService
-  def self.to_errors(message)
+  def to_errors(message)
     message.map do |key, value|
       "#{key} #{value.join(', ')}"
     end.join("\n")
   end
 
-  def self.count_total_price(order)
+  def count_total_price(order)
     order_book = OrderBook.where(order_id: order.id)
 
     total_price = order_book.map do |product|
@@ -17,7 +17,7 @@ class CheckoutService
     total_price + order.delivery.price_cents
   end
 
-  def self.check(attributes)
+  def check(attributes)
     attributes.each do |_k, v|
       return false if v.nil? || v.eql?('')
     end
@@ -25,7 +25,7 @@ class CheckoutService
     true
   end
 
-  def self.check_fields(permitted_params)
+  def check_fields(permitted_params)
     case permitted_params[:step]
     when 'shipping'
       check(permitted_params[:shipping]) unless permitted_params[:shipping].nil?
