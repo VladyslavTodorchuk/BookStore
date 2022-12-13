@@ -1,4 +1,5 @@
 require_relative '../queries/order_query'
+require_relative '../services/order_service'
 class OrdersController < ApplicationController
   before_action :authenticate_user!, only: %i[update index]
   def show
@@ -10,54 +11,25 @@ class OrdersController < ApplicationController
   end
 
   def update
+    order_service = OrderService.new
     order = Order.find(params[:id])
 
     if params[:order].nil?
-      redirect_to checkout_path(step: :delivery), alert: t('orders.messages.error.pick')
+      redirect_to checkout_path(step: :delivery), alert: I18n.t('orders.messages.error.pick')
     elsif params[:order][:delivery_id]
-      update_delivery_method(params[:order][:delivery_id], order)
+      order_service.update_delivery_method(params[:order][:delivery_id],
+                                           order,
+                                           session)
+      form_redirect order_service
     elsif params[:order][:address_id]
-      update_address(params[:order][:address_id], order)
+      order_service.update_address(params[:order][:address_id], order)
+      form_redirect order_service
     end
   end
 
   private
 
-  def update_delivery_method(delivery_id, order)
-    method = Delivery.find(delivery_id)
-
-    redirect_to checkout_path(step: :delivery), alert: t('orders.messages.error.no_method') if order.nil? && method.nil?
-
-    if order.update(delivery_id: method.id)
-      if session[:previous_path].split('=').last.eql?('confirm')
-        redirect_to checkout_path(step: :confirm), notice: t('orders.messages.success.method')
-      else
-        redirect_to checkout_path(step: :payment), notice: t('orders.messages.success.method')
-      end
-    else
-      redirect_to checkout_path(step: :delivery)
-    end
-  end
-
-  def update_address(address_id, order)
-    address = Address.find(address_id)
-
-    redirect_to checkout_path(step: :address), alert: 'No address found!' if order.nil? && address.nil?
-
-    if order.update(address_id: address.id)
-      redirect_to checkout_path(step: :delivery), notice: "#{address.type.capitalize} was picked"
-    else
-      redirect_to checkout_path(step: :address), notice: "#{address.type.capitalize} was picked"
-    end
-  end
-
-  def update_user_address(permitted_params)
-    if permitted_params[:shipping].nil?
-      current_user.billing.update(permitted_params[:billing])
-    else
-      current_user.shipping.update(permitted_params[:shipping])
-    end
-
-    redirect_to checkout_path(step: :address)
+  def form_redirect(result)
+    redirect_to checkout_path(step: result.step), result.message
   end
 end
